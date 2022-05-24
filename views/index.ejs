@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search Engine</title>
+    <link rel="stylesheet" href="./indexstyle.css">
 </head>
 
 <body>
-    <h1>Wtf is ur query ?</h1>
+    <h1>Algo-DS based Search Engine</h1> <br> <br>
     <form>
-        <input type="text" id="userInp"> <br>
-        <input type="submit">
+        <input id="userInp" placeholder="Search Keywords.. 🔍" aria-label="Search Question" aria-describedby="basic-addon2" class="text-center search-input-container form-control" style="font-size: 18px; font-weight: 600; width: 350px; height: 40px;">
+        <button id="submit" class="button" style="vertical-align:middle"><span> Search </span></button>
     </form>
     <br><br><br>
     <h2 id="found"></h2>
@@ -48,18 +49,6 @@
             <a href="#" target="_blank"></a>
         </li> <br>
     </ul>
-    <style>
-        body {
-            background-color: darkslategray;
-            text-align: center;
-            color: floralwhite;
-        }
-        
-        a {
-            color: black;
-            font-size: larger;
-        }
-    </style>
     <script>
         const form = document.querySelector("form");
         const question = form.userInp;

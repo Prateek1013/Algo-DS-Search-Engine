@@ -2,7 +2,7 @@ const stopwords = ['Z', 'whom', 'enough', 'de', 'bill', 'had', 'therefore', 'w',
 const express = require("express");
 const ejs = require("ejs");
 const { json } = require("express");
-
+const path = require("path");
 fs = require('fs')
 var pds = JSON.parse(fs.readFileSync('./tf-idf.json', 'utf-8'))
 var uniq = JSON.parse(fs.readFileSync('./uniqueKeys.json', 'utf-8'))
@@ -22,7 +22,7 @@ for (let i = 0; i < tfidf.length; i++) {
 
 const app = express();
 app.use(express.json());
-
+app.use(express.static(path.join(__dirname, "/public")));
 app.set("view engine", "ejs");
 app.get("/", (req, res) => {
     res.render("index")

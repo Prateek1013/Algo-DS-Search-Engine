@@ -1,0 +1,76 @@
+body {
+    font-size: large;
+    background-color: darkslategray;
+    text-align: center;
+    color: floralwhite;
+    font-family: 'Ubuntu Mono', monospace;
+    background-size: 300% 300%;
+    background-image: linear-gradient( -45deg, rgba(59, 173, 227, 1) 0%, rgba(87, 111, 230, 1) 25%, rgba(152, 68, 183, 1) 51%, rgba(255, 53, 127, 1) 100%);
+    animation: AnimateBG 20s ease infinite;
+}
+
+@keyframes AnimateBG {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+li {
+    border-radius: 15px;
+    margin-left: 500px;
+    margin-right: 500px;
+    height: min-content;
+    background: #21ad3b;
+}
+
+a {
+    color: black;
+    font-size: larger;
+    text-shadow: 2px 2px 5px red;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
