@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Engine</title>
+</head>
+
+<body>
+    <h1>Wtf is ur query ?</h1>
+    <form>
+        <input type="text" id="userInp"> <br>
+        <input type="submit">
+    </form>
+    <br><br><br>
+    <h2 id="found"></h2>
+    <ul style="list-style-type:none; text-align: center; color: black;">
+        <li>
+            <a href="#" target="_blank"></a>
+        </li> <br>
+        <li>
+            <a href="#" target="_blank"></a>
+        </li> <br>
+        <li>
+            <a href="#" target="_blank"></a>
+        </li> <br>
+        <li>
+            <a href="#" target="_blank"></a>
+        </li> <br>
+        <li>
+            <a href="#" target="_blank"></a>
+        </li> <br>
+        <li>
+            <a href="#" target="_blank"></a>
+        </li> <br>
+        <li>
+            <a href="#" target="_blank"></a>
+        </li> <br>
+        <li>
+            <a href="#" target="_blank"></a>
+        </li> <br>
+        <li>
+            <a href="#" target="_blank"></a>
+        </li> <br>
+        <li>
+            <a href="#" target="_blank"></a>
+        </li> <br>
+    </ul>
+    <style>
+        body {
+            background-color: darkslategray;
+            text-align: center;
+            color: floralwhite;
+        }
+        
+        a {
+            color: black;
+            font-size: larger;
+        }
+    </style>
+    <script>
+        const form = document.querySelector("form");
+        const question = form.userInp;
+        const lists = document.querySelectorAll("a");
+        const fnd = document.querySelector("#found");
+        var data;
+        form.addEventListener('submit', async(e) => {
+            e.preventDefault();
+            fnd.innerHTML = `Loading...`
+            for (let i = 0; i < lists.length; i++) {
+                lists[i].innerHTML = ``;
+            }
+            try {
+                const res = await fetch(`/search?question=${question.value}`, {
+                    method: "GET"
+                })
+                data = await res.json();
+                fnd.innerHTML = `Found !!`
+                for (let i = 0; i < lists.length; i++) {
+                    lists[i].innerHTML = data[i].title;
+                    lists[i].href = `/display?question=${data[i].title}`
+                }
+            } catch (error) {
+                alert("error")
+            }
+        })
+    </script>
+
+</body>
+
+</html>
