@@ -57,19 +57,23 @@
         var data;
         form.addEventListener('submit', async(e) => {
             e.preventDefault();
-            fnd.innerHTML = `Loading...`
-            for (let i = 0; i < lists.length; i++) {
-                lists[i].innerHTML = ``;
-            }
+
             try {
-                const res = await fetch(`/search?question=${question.value}`, {
-                    method: "GET"
-                })
-                data = await res.json();
-                fnd.innerHTML = `Found !!`
-                for (let i = 0; i < lists.length; i++) {
-                    lists[i].innerHTML = data[i].title;
-                    lists[i].href = `/display?question=${data[i].title}`
+                if (question.value == '') alert("Please enter something dear!!");
+                else {
+                    fnd.innerHTML = `Loading...`
+                    for (let i = 0; i < lists.length; i++) {
+                        lists[i].innerHTML = ``;
+                    }
+                    const res = await fetch(`/search?question=${question.value}`, {
+                        method: "GET"
+                    })
+                    data = await res.json();
+                    fnd.innerHTML = `Found !!`
+                    for (let i = 0; i < lists.length; i++) {
+                        lists[i].innerHTML = data[i].title;
+                        lists[i].href = `/display?question=${data[i].title}`
+                    }
                 }
             } catch (error) {
                 alert("error")
