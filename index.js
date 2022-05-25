@@ -43,8 +43,8 @@ app.listen(PORT, () => {
     console.log("Server is running on port " + PORT);
 });
 
-function generate(q) {
-    q = remove_stopwords(q.toLowerCase() + '')
+function generate(qc) {
+    q = remove_stopwords(qc.toLowerCase() + '')
 
     function remove_stopwords(str) {
         res = []
@@ -59,20 +59,20 @@ function generate(q) {
     }
     let q_vec = []
     let i_idx = 0,
-        cnt = 0;
+        k = 1.25,
+        b = 0.75;
     uniq.forEach((item) => {
         var x = 0;
         for (let i = 0; i < q.length; i++) {
             if (q[i] == item) x++;
         }
-        if (x > 0) cnt++;
-        q_vec.push(x * idx[i_idx++]);
+        q_vec.push(x * idx[i_idx++] * (k + 1));
     });
-    if (cnt > 0) {
-        q_vec.forEach((item) => {
-            item = item / cnt;
-        })
-    }
+    davg = 787829 / pds.length
+    q_vec.forEach((item) => {
+        item = item / (q.length + k * (1 - b + b * (qc.length / davg)));
+    })
+
     // fucntion for dot
     dot = (a, b) => a.map((x, i) => a[i] * b[i]).reduce((m, n) => m + n);
     const sm = q_vec.reduce((acc, cur) => {
@@ -102,7 +102,7 @@ function generate(q) {
 
     // storing most relevant
     var ans = []
-    for (let i = docRank.length - 1; i >= docRank.length - 10; i--) {
+    for (let i = docRank.length - 1; i >= docRank.length - 12; i--) {
         ans.push({ title: docRank[i], url: lin[docRank[i]][0], text: lin[docRank[i]][1] });
     }
     return ans;
