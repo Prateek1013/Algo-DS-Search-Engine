@@ -1,6 +1,7 @@
 const stopwords = ['Z', 'whom', 'enough', 'de', 'bill', 'had', 'therefore', 'w', 'cses', 'afterwards', '3', 'anyway', 'hers', 'on', '?', 'describe', 'doing', 'but', 'sometimes', 'elsewhere', 'hereafter', 'used', 'co', 'cannot', 'mine', 'D', 'front', 'our', 'four', 'three', 'top', 'whenever', 'again', 'whither', '*', 'must', 'sincere', 'j', '\r', 'e', 'regarding', 'B', ',', 'really', 'itself', 'twenty', 'much', 'already', 'other', 'move', '%', 'otherwise', 'sixty', '4', 'R', 'above', 'me', 'or', 'eleven', 'hereupon', 'nothing', 'somewhere', 't', 'up', 'whole', 'either', 'a', 'meanwhile', 'upon', 'several', 'various', 'such', 'cant', 'submit', 'for', 'anything', 'they', 'thereby', 'L', 'Y', 'back', 'N', 'among', 'the', 'amongst', 'around', 'bottom', 'yourself', 'down', 'my', 'no', 'each', 'myself', 'everyone', 'towards', 'thereafter', '"', 'ours', 'inc', 'however', 'p', 'two', '+', 'twelve', 'more', 'something', 'anyhow', 'per', 'y', 'most', 'and', 'did', 'thereupon', 'then', '[', 'everything', 'S', 'former', 'are', 'codeforces', '$', 'if', 'sometime', 'all', 'latterly', '}', ':', 'one', 'codechef', '#', 'becomes', 'quite', 'hasnt', 'why', 'this', 'beforehand', 'o', 'of', 'O', 'n', 'almost', 'fire', '8', 'last', ']', '\n', 'what', 'V', '<', 'ourselves', 'five', 'whereby', 'etc', 'within', 'nowhere', 'neither', 'eight', 'didn', 'was', '>', 'nevertheless', 'rather', 'also', 'together', 'h', 'its', 'first', 'z', 'beside', '0', '^', 'amount', 'any', 'v', 'without', 'keep', 'at', 'wherein', 'leetcode', 'after', 'here', 'via', 'both', 'own', '6', '\t', 'same', 'behind', 'testcase', 're', '@', 'few', 'may', 'unless', 'J', 'make', 'c', 'further', 'F', 'amoungst', 'so', 'before', 'someone', 'wherever', '-', '7', 'G', '\x0c', '`', 'seems', 'ten', 'in', 'once', 'whereas', 'somehow', 'themselves', 'over', 'can', 'hence', 'computer', 'C', 'become', 'six', 'were', 'from', 'now', 'input', 'k', 'chef', 'f', 'about', 'g', 'Q', 'show', 'namely', '~', 'he', 'often', 'i', 'even', 'call', 'hundred', 'using', 'thick', 'r', 'third', 'is', 'see', 'nine', 'him', 'might', 'whether', 'perhaps', 'none', 'himself', 'empty', '\\', 'only', 'example', 'besides', 'con', 'system', 'by', 'part', 'beyond', 'them', 'ltd', 'yours', 'with', 'always', 'ever', 'l', 'U', 'least', 'km', 'you', 'x', 'whose', 'throughout', 'latter', 'should', 'thin', 'another', 'un', 'because', '.', 'cry', 'take', '=', '|', 'who', 'has', 'into', 'P', 'done', 'am', 'name', 'fifty', 'else', 'b', 'us', 'E', 'against', 'noone', 'onto', 'until', ')', 'although', 'along', 'be', '&', 'she', 'off', 'made', 'when', 'yet', 'we', ' ', 'others', 'go', 'an', 'nor', 'ie', 'q', 'not', 'mill', ';', '2', 'their', 'those', 'been', 'interest', 'how', 'his', 'toward', 'fifteen', 'anywhere', 'thru', 'during', 'eg', 'whoever', 'except', '5', 'than', 'alone', 'though', 'does', 'less', 'please', 'everywhere', 'due', 'formerly', 'to', 'do', 'many', 'whatever', 'get', 'some', '(', 'every', 'full', 'couldnt', 'under', 'could', 'that', 'seeming', 'thence', 'put', 'K', 'fill', 'never', 'would', 'will', 'which', 'nobody', 'seemed', 'moreover', 'just', 'anyone', 'her', 'below', 'became', 'well', 'between', 'find', 'don', 'whence', 'X', 'yourselves', 'd', '_', 'M', 'I', 'seem', 'while', 'say', 'very', 'whereafter', 'output', 'across', 'herein', 'serious', 'out', 'code', 'therein', 'next', 'since', 'too', '!', 'W', 'being', '\x0b', 'T', 'H', 'A', '/', 'kg', 'm', 'herself', '9', 'thus', 'through', 'found', '1', 'mostly', 'side', 'becoming', 'u', 'these', 'where', 'whereupon', "'", 'still', 'it', 'doesn', '{', 's', 'indeed', 'have', 'your', 'hereby', 'detail', 'forty', 'give', 'there', 'as']
 const express = require("express");
 const ejs = require("ejs");
+const lemmi = require('wink-lemmatizer');
 const { json } = require("express");
 const path = require("path");
 fs = require('fs')
@@ -30,6 +31,7 @@ app.get("/", (req, res) => {
 app.get("/search", (req, res) => {
     const query = req.query;
     const question = query.question;
+
     const data = generate(question);
     res.json(data);
 
@@ -66,6 +68,9 @@ function generate(qc) {
         var x = 0;
         for (let i = 0; i < q.length; i++) {
             if (q[i] == item) x++;
+            else if (lemmi.adjective(q[i]) == item) x++;
+            else if (lemmi.noun(q[i]) == item) x++;
+            else if (lemmi.verb(q[i]) == item) x++;
         }
         q_vec.push(x * idx[i_idx++] * (k + 1));
     });
