@@ -1,0 +1,106 @@
+
+You are given an array AA of length NN.
+You can do the following operation on the array atmost once:
+
+Choose any non-negative integer XX and a subarray [L,R][L,R] (1≤L≤R≤N)(1≤L≤R≤N) and update Ai=Ai&XAi=Ai&X for all L≤i≤RL≤i≤R. Here && denotes bitwise AND operation.
+
+Find the maximum bitwise XOR of all the elements of the updated array you can achieve.
+Input Format
+
+First line will contain TT, the number of test cases. Then the test cases follow.
+First line of each test case contains an integer NN - denoting the length of array AA.
+Second line contains NN integers A1,A2,…ANA1,A2,…AN - denoting the array AA.
+
+Output Format
+For each test case, output the maximum XOR of all the elements of the updated array you can achieve.
+Constraints
+
+1≤T≤1041≤T≤104
+2≤N≤2⋅1052≤N≤2⋅105
+0≤Ai<2300≤Ai<230
+Sum of NN over all test cases do not exceed 2⋅1052⋅105
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+2
+4
+3 3 3 3
+3
+1 6 4
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+3
+7
+
+
+Explanation
+Test Case 11: We can choose the subarray [L,R][L,R] as [2,4][2,4] and X=0X=0. Thus, A2=3&0=0,A3=3&0=0,A2=3&0=0,A3=3&0=0, and A4=3&0=0A4=3&0=0. The updated array is [3,0,0,0][3,0,0,0]. The bitwise XOR of all the elements of the updated array is 3⊕0⊕0⊕0=33⊕0⊕0⊕0=3.
+It can be shown that the bitwise XOR of the updated array cannot exceed 33 after applying at most one operation.
+Test Case 22: We can choose the subarray [L,R][L,R] as [1,2][1,2] and X=3X=3. Thus, A1=1&3=1A1=1&3=1 and A2=6&3=2A2=6&3=2. The updated array is [1,2,4][1,2,4]. The bitwise XOR of all the elements of the updated array is 1⊕2⊕4=71⊕2⊕4=7.
+It can be shown that the bitwise XOR of the updated array cannot exceed 77 after applying at most one operation.
+
+
+
+Author:
+utkarsh_adm
+
+
+Editorial:
+https://discuss.codechef.com/problems/MAXXOR
+
+
+Tags:
+
+               
+                 Data Structures, Tries, Bit Manipulation
+                 
+                     
+                     Advanced Data Structures, Mathematics
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+2963
+
+
+Date Added:
+9-05-2022
+
+
+Time Limit:
+2 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

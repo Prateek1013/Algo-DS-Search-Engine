@@ -1,0 +1,32 @@
+
+CSES - Counting Necklaces
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+Your task is to count the number of different necklaces that consist of nn pearls and each pearl has mm possible colors.
+
+Two necklaces are considered to be different if it is not possible to rotate one of them so that they look the same.
+
+Input
+
+The only input line has two numbers nn and mm: the number of pearls and colors.
+
+Output
+
+Print one integer: the number of different necklaces modulo 109+7109+7.
+
+Constraints
+
+1≤n,m≤1061≤n,m≤106
+
+Example
+
+Input:
+4 3
+
+Output:
+24 

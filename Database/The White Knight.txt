@@ -1,0 +1,88 @@
+
+You are given a chessboard of size NxN. There is a white knight and several black pawns located on the board. The knight can move similarly to the normal knight in the game of chess; however it can only move towards the right of the board (see the below figure).
+
+The mission of the knight is to capture as many black pawns as possible. Its journey ends when it moves to the rightmost column of the board.
+Compute the maximum number of black pawns the white knight can capture.
+Input
+The first line contains t, the number of test cases (about 10). Then t test cases follow.
+Each test case has the following form:
+The first line contains N, the size of the chessboard (4 ≤ N ≤ 1000).
+Then N lines follow, each line containing N characters which may be '.', 'K' or 'P', corresponding to the empty cell, the white knight, and the black pawn, respectively. There is exactly one 'K' character in the whole of the board.
+Output
+For each test case, print in a single line the maximum number of black pawns that can be captured.
+
+                        Sample Input 1
+                        
+
+
+
+
+
+1
+5
+K....
+..P..
+.P...
+...P.
+.....
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+2
+
+
+
+
+
+Author:
+u_admin_codechef_pw
+
+
+Tags:
+
+               
+                 Chess, Dynamic Programming
+                 
+                     
+                     Special, Algorithms
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1530
+
+
+Date Added:
+5-06-2009
+
+
+Time Limit:
+0.913548 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

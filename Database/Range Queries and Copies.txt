@@ -1,0 +1,49 @@
+
+CSES - Range Queries and Copies
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+Your task is to maintain a list of arrays which initially has a single array. You have to process the following types of queries:
+Set the value aa in array kk to xx.
+Calculate the sum of values in range [a,b][a,b] in array kk.
+Create a copy of array kk and add it to the end of the list.
+
+Input
+
+The first input line has two integers nn and qq: the array size and the number of queries.
+
+The next line has nn integers t1,t2,…,tnt1,t2,…,tn: the initial contents of the array.
+
+Finally, there are qq lines describing the queries. The format of each line is one of the following: "1 kk aa xx", "2 kk aa bb" or "3 kk".
+
+Output
+
+Print the answer to each sum query.
+
+Constraints
+
+ 1≤n,q≤2⋅1051≤n,q≤2⋅105
+ 1≤ti,x≤1091≤ti,x≤109
+ 1≤a≤b≤n1≤a≤b≤n
+
+Example
+
+Input:
+5 6
+2 3 1 2 5
+3 1
+2 1 1 5
+2 2 1 5
+1 2 2 5
+2 1 1 5
+2 2 1 5
+
+Output:
+13
+13
+13
+15 

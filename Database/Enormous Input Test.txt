@@ -1,0 +1,75 @@
+
+The purpose of this problem is to verify whether the method you are using to read input data is sufficiently fast to handle problems branded with the enormous Input/Output warning. You are expected to be able to process at least 2.5MB of input data per second at runtime.
+
+Input
+The input begins with two positive integers n k (n, k<=107). The next n lines of input contain one positive integer ti, not greater than 109, each.
+
+Output
+Write a single integer to output, denoting how many integers ti are divisible by k.
+
+Example
+Input:
+7 3
+1
+51
+966369
+7
+9
+999996
+11
+
+Output:
+4
+
+
+
+
+Author:
+u_admin_codechef_pw
+
+
+Editorial:
+https://discuss.codechef.com/problems/INTEST
+
+
+Tags:
+
+               
+                 Conditional Statements
+                 
+                     
+                     Basic Programming Concepts
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+464
+
+
+Date Added:
+1-12-2008
+
+
+Time Limit:
+8 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

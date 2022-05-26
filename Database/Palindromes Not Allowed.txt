@@ -1,0 +1,103 @@
+
+It is JJ's birthday and you decide to gift him a string SS (consisting of English alphabet only) of length NN. But you also know that JJ does not like palindromes so you decide that none of the substrings of SS of length ≥2≥2 should be a palindrome.
+Can you find any suitable string which can be gifted to JJ?
+Recall that a string is called palindrome if it reads the same backwards and forwards, for e.g. noonnoon and levellevel are palindromic strings.
+Input Format
+
+The first line contains TT - the number of test cases. Then the test cases follow.
+The first and only line of each test case contains an integer NN - the length of the string SS to be constructed.
+
+Output Format
+For each test case, output a string SS of length NN such that none of its substrings (of length ≥2≥2) is a palindrome.
+If there are multiple strings which satisfy the condition, print any.
+Constraints
+
+1≤T≤1001≤T≤100
+1≤N≤10001≤N≤1000
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+3
+2
+2
+4
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+gl
+hf
+waow
+
+
+Explanation
+Test case 1: glgl is the only substring of length ≥2≥2 and it is not a palindrome.
+Test case 2: hfhf is the only substring of length ≥2≥2 and it is not a palindrome. 
+Test case 3: Following are the substrings of length ≥2≥2:
+
+Length=2Length=2: wawa, aoao, owow
+Length=3Length=3: waowao, aowaow
+Length=4Length=4: waowwaow
+
+We can see that none of these substrings is a palindrome. 
+
+
+
+Author:
+6★jeevanjyot
+
+
+Editorial:
+https://discuss.codechef.com/problems/NOPAL
+
+
+Tags:
+
+               
+                 cook137, easy, jeevanjyot, palindrome
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1360
+
+
+Date Added:
+8-01-2022
+
+
+Time Limit:
+0.5 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

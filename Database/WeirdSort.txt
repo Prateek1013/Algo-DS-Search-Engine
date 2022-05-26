@@ -1,0 +1,25 @@
+B. WeirdSorttime limit per test2 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard outputYou are given an array aa of length nn.You are also given a set of distinct positions p1,p2,…,pmp1,p2,…,pm, where 1≤pi<n1≤pi<n. The position pipi means that you can swap elements a[pi]a[pi] and a[pi+1]a[pi+1]. You can apply this operation any number of times for each of the given positions.Your task is to determine if it is possible to sort the initial array in non-decreasing order (a1≤a2≤⋯≤ana1≤a2≤⋯≤an) using only allowed swaps.For example, if a=[3,2,1]a=[3,2,1] and p=[1,2]p=[1,2], then we can first swap elements a[2]a[2] and a[3]a[3] (because position 22 is contained in the given set pp). We get the array a=[3,1,2]a=[3,1,2]. Then we swap a[1]a[1] and a[2]a[2] (position 11 is also contained in pp). We get the array a=[1,3,2]a=[1,3,2]. Finally, we swap a[2]a[2] and a[3]a[3] again and get the array a=[1,2,3]a=[1,2,3], sorted in non-decreasing order.You can see that if a=[4,1,2,3]a=[4,1,2,3] and p=[3,2]p=[3,2] then you cannot sort the array.You have to answer tt independent test cases.InputThe first line of the input contains one integer tt (1≤t≤1001≤t≤100) — the number of test cases.Then tt test cases follow. The first line of each test case contains two integers nn and mm (1≤m<n≤1001≤m<n≤100) — the number of elements in aa and the number of elements in pp. The second line of the test case contains nn integers a1,a2,…,ana1,a2,…,an (1≤ai≤1001≤ai≤100). The third line of the test case contains mm integers p1,p2,…,pmp1,p2,…,pm (1≤pi<n1≤pi<n, all pipi are distinct) — the set of positions described in the problem statement.OutputFor each test case, print the answer — "YES" (without quotes) if you can sort the initial array in non-decreasing order (a1≤a2≤⋯≤ana1≤a2≤⋯≤an) using only allowed swaps. Otherwise, print "NO".ExampleInputCopy6
+3 2
+3 2 1
+1 2
+4 2
+4 1 2 3
+3 2
+5 1
+1 2 3 4 5
+1
+4 2
+2 1 4 3
+1 3
+4 2
+4 3 2 1
+1 3
+5 2
+2 1 2 3 3
+1 4
+OutputCopyYES
+NO
+YES
+YES
+NO
+YES

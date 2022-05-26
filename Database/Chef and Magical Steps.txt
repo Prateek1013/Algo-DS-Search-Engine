@@ -1,0 +1,111 @@
+
+Chef has a new customer and he wants to prepare his order as soon as possible. While preparing, he sees that the mint sauce is finished. He has to run upstairs to get it from other kitchen. Chef is currently on the XthXth stair. He has to climb all the way up to the YthYth stair in minimum number of steps. In one step, Chef can do one of the following things: 
+
+Climb a single stair. ( i.e go from the XthXth stair to the (X+1)th stair. ) 
+Climb two stairs only if the final stair falls at a prime number position. ( i.e. go from the Xth stair to the (X+2)th stair, only if (X+2) is a prime number) 
+
+Help Chef reach the Yth stair from the Xth stair in minimum number of steps. 
+See Explanation for more clarity.
+Note: The input files are large. The use of Fast I/O is recommended.
+Input Format
+
+The first line contains an integer T denoting the number of test cases. The T test cases then follow.
+The first line of each test case contains X and Y denoting the starting stair and ending stair respectively.
+
+Output Format
+
+Output a single integer representing minimum number of steps chef can take to reach from Xth to Yth stair.
+
+Constraints
+
+1≤T≤106
+1≤X<Y≤107
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+4
+2 10
+5 12
+34 43
+57 63
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+6
+5
+6
+4
+
+
+Explanation
+Test case 1: Chef starts from 2nd, goes to 3rd stair, then to 5th stair as 5 or (3+2) is prime number. Now, from 5th stair, Chef goes to 7th stair as 7 or (5+2) is a prime number, then Chef goes to 8th stair, then to 9th stair and finally to 10th stair. This approach takes a total of 6 steps which is the minimum possible number of steps Chef can take to reach the 10th stair starting from the 2nd stair. 
+Test case 3: Starting from the 34th stair, Chef moves through the stairs as following. 34 → 35 → 37 → 38 → 39 → 41 → 43.
+
+
+
+Author:
+4★shivyyy_21
+
+
+Tester:
+5★mexomerf
+
+
+Editorial:
+https://discuss.codechef.com/problems/CHEFMGX
+
+
+Tags:
+
+               
+                 Sieve of Eratosthenes, Dynamic Programming
+                 
+                     
+                     Mathematics, Number Theory, Algorithms
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+2004
+
+
+Date Added:
+24-09-2021
+
+
+Time Limit:
+2 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

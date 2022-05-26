@@ -1,0 +1,12 @@
+B. A Perfectly Balanced String?time limit per test1 secondmemory limit per test256 megabytesinputstandard inputoutputstandard outputLet's call a string ss perfectly balanced if for all possible triplets (t,u,v)(t,u,v) such that tt is a non-empty substring of ss and uu and vv are characters present in ss, the difference between the frequencies of uu and vv in tt is not more than 11.For example, the strings "aba" and "abc" are perfectly balanced but "abb" is not because for the triplet ("bb",'a','b'), the condition is not satisfied.You are given a string ss consisting of lowercase English letters only. Your task is to determine whether ss is perfectly balanced or not.A string bb is called a substring of another string aa if bb can be obtained by deleting some characters (possibly 00) from the start and some characters (possibly 00) from the end of aa.InputThe first line of input contains a single integer tt (1≤t≤2⋅1041≤t≤2⋅104) denoting the number of testcases.Each of the next tt lines contain a single string ss (1≤|s|≤2⋅1051≤|s|≤2⋅105), consisting of lowercase English letters.It is guaranteed that the sum of |s||s| over all testcases does not exceed 2⋅1052⋅105.OutputFor each test case, print "YES" if ss is a perfectly balanced string, and "NO" otherwise.You may print each letter in any case (for example, "YES", "Yes", "yes", "yEs" will all be recognized as positive answer).ExampleInputCopy5
+aba
+abb
+abc
+aaaaa
+abcba
+OutputCopyYES
+NO
+YES
+YES
+NO
+NoteLet ft(c)ft(c) represent the frequency of character cc in string tt.For the first testcase we have ttft(a)ft(a)ft(b)ft(b)aa1100abab1111abaaba2211bb0011baba1111 It can be seen that for any substring tt of ss, the difference between ft(a)ft(a) and ft(b)ft(b) is not more than 11. Hence the string ss is perfectly balanced.For the second testcase we have ttft(a)ft(a)ft(b)ft(b)aa1100abab1111abbabb1122bb0011bbbb0022 It can be seen that for the substring t=bbt=bb, the difference between ft(a)ft(a) and ft(b)ft(b) is 22 which is greater than 11. Hence the string ss is not perfectly balanced.For the third testcase we have ttft(a)ft(a)ft(b)ft(b)ft(c)ft(c)aa110000abab111100abcabc111111bb001100bcbc001111cc000011It can be seen that for any substring tt of ss and any two characters u,v∈{a,b,c}u,v∈{a,b,c}, the difference between ft(u)ft(u) and ft(v)ft(v) is not more than 11. Hence the string ss is perfectly balanced.

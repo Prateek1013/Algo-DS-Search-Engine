@@ -1,0 +1,42 @@
+B. Dorms Wartime limit per test1 secondmemory limit per test256 megabytesinputstandard inputoutputstandard outputHosssam decided to sneak into Hemose's room while he is sleeping and change his laptop's password. He already knows the password, which is a string ss of length nn. He also knows that there are kk special letters of the alphabet: c1,c2,…,ckc1,c2,…,ck.Hosssam made a program that can do the following.  The program considers the current password ss of some length mm.  Then it finds all positions ii (1≤i<m1≤i<m) such that si+1si+1 is one of the kk special letters.  Then it deletes all of those positions from the password ss even if sisi is a special character. If there are no positions to delete, then the program displays an error message which has a very loud sound. For example, suppose the string ss is "abcdef" and the special characters are 'b' and 'd'. If he runs the program once, the positions 11 and 33 will be deleted as they come before special characters, so the password becomes "bdef". If he runs the program again, it deletes position 11, and the password becomes "def". If he is wise, he won't run it a third time.Hosssam wants to know how many times he can run the program on Hemose's laptop without waking him up from the sound of the error message. Can you help him?InputThe first line contains a single integer tt (1≤t≤1051≤t≤105) — the number of test cases. Then tt test cases follow.The first line of each test case contains a single integer nn (2≤n≤1052≤n≤105) — the initial length of the password.The next line contains a string ss consisting of nn lowercase English letters — the initial password.The next line contains an integer kk (1≤k≤261≤k≤26), followed by kk distinct lowercase letters c1,c2,…,ckc1,c2,…,ck — the special letters.It is guaranteed that the sum of nn over all test cases does not exceed 2⋅1052⋅105.OutputFor each test case, print the maximum number of times Hosssam can run the program without displaying the error message, on a new line.ExampleInputCopy10
+9
+iloveslim
+1 s
+7
+joobeel
+2 o e
+7
+basiozi
+2 s i
+6
+khater
+1 r
+7
+abobeih
+6 a b e h i o
+5
+zondl
+5 a b c e f
+6
+shoman
+2 a h
+7
+shetwey
+2 h y
+5
+samez
+1 m
+6
+mouraz
+1 m
+OutputCopy5
+2
+3
+5
+1
+0
+3
+5
+2
+0
+NoteIn the first test case, the program can run 55 times as follows: iloveslim→ilovslim→iloslim→ilslim→islim→slimiloveslim→ilovslim→iloslim→ilslim→islim→slimIn the second test case, the program can run 22 times as follows: joobeel→oel→eljoobeel→oel→elIn the third test case, the program can run 33 times as follows: basiozi→bioi→ii→ibasiozi→bioi→ii→i.In the fourth test case, the program can run 55 times as follows: khater→khatr→khar→khr→kr→rkhater→khatr→khar→khr→kr→rIn the fifth test case, the program can run only once as follows: abobeih→habobeih→hIn the sixth test case, the program cannot run as none of the characters in the password is a special character.

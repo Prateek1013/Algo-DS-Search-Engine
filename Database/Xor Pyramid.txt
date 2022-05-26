@@ -1,0 +1,36 @@
+
+CSES - Xor Pyramid
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+Consider a xor pyramid where each number is the xor of lower-left and lower-right numbers. Here is an example pyramid:
+
+Given the bottom row of the pyramid, your task is to find the topmost number.
+
+Input
+
+The first input line has an integer nn: the size of the pyramid.
+
+The next line has nn integers a1,a2,…,ana1,a2,…,an: the bottom row of the pyramid.
+
+Output
+
+Print one integer: the topmost number.
+
+Constraints
+
+1≤n≤2⋅1051≤n≤2⋅105
+1≤ai≤1091≤ai≤109
+
+Example
+
+Input:
+8
+2 10 5 12 9 5 1 5
+
+Output:
+9 

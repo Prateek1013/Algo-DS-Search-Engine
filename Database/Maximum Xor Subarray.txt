@@ -1,0 +1,34 @@
+
+CSES - Maximum Xor Subarray
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+Given an array of nn integers, your task is to find the maximum xor sum in a subarray.
+
+Input
+
+The first input line has an integer nn: the size of the array.
+
+The next line has nn integers x1,x2,…,xnx1,x2,…,xn: the contents of the array.
+
+Output
+
+Print one integer: the maximum xor sum in a subarray.
+
+Constraints
+
+1≤n≤2⋅1051≤n≤2⋅105
+0≤xi≤1090≤xi≤109
+
+Example
+
+Input:
+4
+5 1 5 9
+
+Output:
+13 

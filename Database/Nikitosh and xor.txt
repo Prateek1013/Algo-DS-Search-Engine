@@ -1,0 +1,102 @@
+
+ Read problems statements in Mandarin and Russian. Translations in Vietnamese to be uploaded soon.
+Nikitosh the painter has a 1-indexed array A of N elements. He wants to find the maximum value of expression 
+(A[l1] ⊕ A[l1 + 1] ⊕ ... ⊕ A[r1]) + (A[l2] ⊕ A[l2 + 1] ⊕ ... ⊕ A[r2]) where 1 ≤ l1 ≤ r1 < l2 ≤ r2 ≤ N.
+Here, x ⊕ y means the bitwise XOR of x and y.
+Because Nikitosh is a painter and not a mathematician, you need to help him in this task.
+Input
+The first line contains one integer N, denoting the number of elements in the array.
+The second line contains N space-separated integers, denoting A1, A2, ... , AN.
+Output
+Output a single integer denoting the maximum possible value of the given expression.
+Constraints
+
+2 ≤ N ≤ 4*105
+0 ≤ Ai ≤ 109
+
+Subtasks
+
+ Subtask 1 (40 points) : 2 ≤ N ≤ 104
+ Subtask 2 (60 points) : Original constraints
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+5
+1 2 3 1 2
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+6
+
+
+Explanation
+Choose (l1, r1, l2, r2) = (1, 2, 3, 3) or (1, 2, 4, 5) or (3, 3, 4, 5).
+
+
+
+Author:
+4★rebryk
+
+
+Tester:
+7★kevinsogo
+
+
+Editorial:
+https://discuss.codechef.com/problems/REBXOR
+
+
+Tags:
+
+               
+                 Tries with XOR, Bitwise Operation
+                 
+                     
+                     Advanced Data Structures, Tries, Mathematics, Bit Manipulation
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+2160
+
+
+Date Added:
+4-05-2015
+
+
+Time Limit:
+1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, PERL, SCALA, LUA, BASH, JS, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

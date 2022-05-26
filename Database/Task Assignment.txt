@@ -1,0 +1,47 @@
+
+CSES - Task Assignment
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+A company has nn employees and there are nn tasks that need to be done. We know for each employee the cost of carrying out each task. Every employee should be assigned to exactly one task. What is the minimum total cost if we assign the tasks optimally and how could they be assigned?
+
+Input
+
+The first input line has one integer nn: the number of employees and the number of tasks that need to be done.
+
+After this, there are nn lines each consisting of nn integers. The iith line consists of integers ci1,ci2,…,cinci1,ci2,…,cin: the cost of each task when it is assigned to the iith employee.
+
+Output
+
+First print the minimum total cost.
+
+Then print n lines each consisting of two integers aa and bb: you assign the bbth task to the aath employee.
+
+If there are multiple solutions you can print any of them.
+
+Constraints
+
+1≤n≤2001≤n≤200
+1≤cij≤10001≤cij≤1000
+
+Example
+
+Input:
+4
+17 8 16 9
+7 15 12 19
+6 9 10 11
+14 7 13 10
+
+Output:
+33
+1 4
+2 1
+3 3
+4 2
+
+Explanation: The minimum total cost is 3333. We can reach this by assigning employee 1 task 4, employee 2 task 1, employee 3 task 3 and employee 4 task 2. This will cost 9+7+10+7=339+7+10+7=33.    

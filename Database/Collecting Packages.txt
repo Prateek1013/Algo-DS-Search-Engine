@@ -1,0 +1,18 @@
+B. Collecting Packagestime limit per test1 secondmemory limit per test256 megabytesinputstandard inputoutputstandard outputThere is a robot in a warehouse and nn packages he wants to collect. The warehouse can be represented as a coordinate grid. Initially, the robot stays at the point (0,0)(0,0). The ii-th package is at the point (xi,yi)(xi,yi). It is guaranteed that there are no two packages at the same point. It is also guaranteed that the point (0,0)(0,0) doesn't contain a package.The robot is semi-broken and only can move up ('U') and right ('R'). In other words, in one move the robot can go from the point (x,y)(x,y) to the point (x+1,yx+1,y) or to the point (x,y+1)(x,y+1).As we say above, the robot wants to collect all nn packages (in arbitrary order). He wants to do it with the minimum possible number of moves. If there are several possible traversals, the robot wants to choose the lexicographically smallest path.The string ss of length nn is lexicographically less than the string tt of length nn if there is some index 1≤j≤n1≤j≤n that for all ii from 11 to j−1j−1 si=tisi=ti and sj<tjsj<tj. It is the standard comparison of string, like in a dictionary. Most programming languages compare strings in this way.InputThe first line of the input contains an integer tt (1≤t≤1001≤t≤100) — the number of test cases. Then test cases follow.The first line of a test case contains one integer nn (1≤n≤10001≤n≤1000) — the number of packages.The next nn lines contain descriptions of packages. The ii-th package is given as two integers xixi and yiyi (0≤xi,yi≤10000≤xi,yi≤1000) — the xx-coordinate of the package and the yy-coordinate of the package.It is guaranteed that there are no two packages at the same point. It is also guaranteed that the point (0,0)(0,0) doesn't contain a package.The sum of all values nn over test cases in the test doesn't exceed 10001000.OutputPrint the answer for each test case.If it is impossible to collect all nn packages in some order starting from (0,00,0), print "NO" on the first line.Otherwise, print "YES" in the first line. Then print the shortest path — a string consisting of characters 'R' and 'U'. Among all such paths choose the lexicographically smallest path.Note that in this problem "YES" and "NO" can be only uppercase words, i.e. "Yes", "no" and "YeS" are not acceptable.ExampleInputCopy3
+5
+1 3
+1 2
+3 3
+5 5
+4 3
+2
+1 0
+0 1
+1
+4 3
+OutputCopyYES
+RUUURRRRUU
+NO
+YES
+RRRRUUU
+NoteFor the first test case in the example the optimal path RUUURRRRUU is shown below:   

@@ -1,0 +1,23 @@
+B. Putting Bricks in the Walltime limit per test1 secondmemory limit per test256 megabytesinputstandard inputoutputstandard outputPink Floyd are pulling a prank on Roger Waters. They know he doesn't like walls, he wants to be able to walk freely, so they are blocking him from exiting his room which can be seen as a grid.Roger Waters has a square grid of size n×nn×n and he wants to traverse his grid from the upper left (1,11,1) corner to the lower right corner (n,nn,n). Waters can move from a square to any other square adjacent by a side, as long as he is still in the grid. Also except for the cells (1,11,1) and (n,nn,n) every cell has a value 00 or 11 in it.Before starting his traversal he will pick either a 00 or a 11 and will be able to only go to cells values in which are equal to the digit he chose. The starting and finishing cells (1,11,1) and (n,nn,n) are exempt from this rule, he may go through them regardless of picked digit. Because of this the cell (1,11,1) takes value the letter 'S' and the cell (n,nn,n) takes value the letter 'F'.For example, in the first example test case, he can go from (1,11,1) to (n,nn,n) by using the zeroes on this path: (1,11,1), (2,12,1), (2,22,2), (2,32,3), (3,33,3), (3,43,4), (4,44,4)The rest of the band (Pink Floyd) wants Waters to not be able to do his traversal, so while he is not looking they will invert at most two cells in the grid (from 00 to 11 or vice versa). They are afraid they will not be quick enough and asked for your help in choosing the cells.  Note that you cannot invert cells (1,1)(1,1) and (n,n)(n,n).We can show that there always exists a solution for the given constraints.Also note that Waters will pick his digit of the traversal after the band has changed his grid, so he must not be able to reach (n,nn,n) no matter what digit he picks.InputEach test contains multiple test cases. The first line contains the number of test cases tt (1≤t≤501≤t≤50). Description of the test cases follows.The first line of each test case contains one integers nn (3≤n≤2003≤n≤200).The following nn lines of each test case contain the binary grid, square (1,11,1) being colored in 'S' and square (n,nn,n) being colored in 'F'.The sum of values of nn doesn't exceed 200200.OutputFor each test case output on the first line an integer cc (0≤c≤20≤c≤2)  — the number of inverted cells.In ii-th of the following cc lines, print the coordinates of the ii-th cell you inverted. You may not invert the same cell twice.  Note that you cannot invert cells (1,1)(1,1) and (n,n)(n,n).ExampleInputCopy3
+4
+S010
+0001
+1000
+111F
+3
+S10
+101
+01F
+5
+S0101
+00000
+01111
+11111
+0001F
+OutputCopy1
+3 4
+2
+1 2
+2 1
+0
+NoteFor the first test case, after inverting the cell, we get the following grid:S01000011001111F

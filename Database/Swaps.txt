@@ -1,0 +1,14 @@
+B. Swapstime limit per test1 secondmemory limit per test256 megabytesinputstandard inputoutputstandard outputYou are given two arrays aa and bb of length nn. Array aa contains each odd integer from 11 to 2n2n in an arbitrary order, and array bb contains each even integer from 11 to 2n2n in an arbitrary order.You can perform the following operation on those arrays:   choose one of the two arrays  pick an index ii from 11 to n−1n−1  swap the ii-th and the (i+1)(i+1)-th elements of the chosen array  Compute the minimum number of operations needed to make array aa lexicographically smaller than array bb.For two different arrays xx and yy of the same length nn, we say that xx is lexicographically smaller than yy if in the first position where xx and yy differ, the array xx has a smaller element than the corresponding element in yy.InputEach test contains multiple test cases. The first line contains the number of test cases tt (1≤t≤1041≤t≤104).The first line of each test case contains a single integer nn (1≤n≤1051≤n≤105) — the length of the arrays.The second line of each test case contains nn integers a1,a2,…,ana1,a2,…,an (1≤ai≤2n1≤ai≤2n, all aiai are odd and pairwise distinct) — array aa.The third line of each test case contains nn integers b1,b2,…,bnb1,b2,…,bn (1≤bi≤2n1≤bi≤2n, all bibi are even and pairwise distinct) — array bb.It is guaranteed that the sum of nn over all test cases does not exceed 105105.OutputFor each test case, print one integer: the minimum number of operations needed to make array aa lexicographically smaller than array bb.We can show that an answer always exists.ExampleInputCopy3
+2
+3 1
+4 2
+3
+5 3 1
+2 4 6
+5
+7 5 9 1 3
+2 4 6 10 8
+OutputCopy0
+2
+3
+NoteIn the first example, the array aa is already lexicographically smaller than array bb, so no operations are required.In the second example, we can swap 55 and 33 and then swap 22 and 44, which results in [3,5,1][3,5,1] and [4,2,6][4,2,6]. Another correct way is to swap 33 and 11 and then swap 55 and 11, which results in [1,5,3][1,5,3] and [2,4,6][2,4,6]. Yet another correct way is to swap 44 and 66 and then swap 22 and 66, which results in [5,3,1][5,3,1] and [6,2,4][6,2,4].

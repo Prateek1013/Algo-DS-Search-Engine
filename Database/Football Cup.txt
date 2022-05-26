@@ -1,0 +1,104 @@
+
+It is the final day of La Liga. Chef has a certain criteria for assessing football matches.
+In particular, he only likes a match if:
+
+The match ends in a draw, and, 
+At least one goal has been scored by either team. 
+
+Given the goals scored by both the teams as XX and YY respectively, determine whether Chef will like the match or not.
+Input Format
+
+The first line of input will contain a single integer TT, denoting the number of test cases. The description of TT test cases follows.
+Each test case consists of a single line of input containing two space-separated integers XX and YY — the goals scored by each team.
+
+Output Format
+For each test case, output YESYES if Chef will like the match, else output NONO. 
+You may print each character of the string in uppercase or lowercase (for example, the strings YeSYeS, yEsyEs, yesyes and YESYES will all be treated as identical).
+Constraints
+
+1≤T≤1001≤T≤100
+0≤X,Y≤90≤X,Y≤9
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+4
+1 1
+0 1
+0 0
+2 2
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+YES
+NO
+NO
+YES
+
+
+Explanation
+Test case 11: It is a draw in which both teams have scored a goal, Chef will like this match.
+Test case 22: The game is not a draw. Hence, Chef will not like this match.
+Test case 33: Neither team scored a goal, so Chef will not like this match.
+Test case 44: It is a draw in which both teams scored 22 goals each. Chef will like this match.
+
+
+
+Author:
+tejas_adm
+
+
+Editorial:
+https://discuss.codechef.com/problems/FOOTCUP
+
+
+Tags:
+
+               
+                 Basic Programming Concepts
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+412
+
+
+Date Added:
+5-05-2022
+
+
+Time Limit:
+1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

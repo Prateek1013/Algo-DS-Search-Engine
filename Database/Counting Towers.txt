@@ -1,0 +1,42 @@
+
+CSES - Counting Towers
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+Your task is to build a tower whose width is 22 and height is nn. You have an unlimited supply of blocks whose width and height are integers.
+
+For example, here are some possible solutions for n=6n=6:
+
+Given nn, how many different towers can you build? Mirrored and rotated towers are counted separately if they look different.
+
+Input
+
+The first input line contains an integer tt: the number of tests.
+
+After this, there are tt lines, and each line contains an integer nn: the height of the tower.
+
+Output
+
+For each test, print the number of towers modulo 109+7109+7.
+
+Constraints
+
+1≤t≤1001≤t≤100
+1≤n≤1061≤n≤106
+
+Example
+
+Input:
+3
+2
+6
+1337
+
+Output:
+8
+2864
+640403945 

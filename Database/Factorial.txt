@@ -1,0 +1,1 @@
+A. Factorialtime limit per test2 secondsmemory limit per test64 megabytesinputstandard inputoutputstandard outputPrint the factorial of the given integer number n. The factorial of n is equal to 1·2·...·n.InputThe only line contains n (1 ≤ n ≤ 10).OutputPrint the factorial of n.ExamplesInputCopy3OutputCopy6InputCopy5OutputCopy120

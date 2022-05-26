@@ -1,0 +1,23 @@
+B. William the Vigilanttime limit per test2 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard output  Before becoming a successful trader William got a university degree. During his education an interesting situation happened, after which William started to listen to homework assignments much more attentively. What follows is the correct formal description of the homework assignment:You are given a string ss of length nn only consisting of characters "a", "b" and "c". There are qq queries of format (pos,cpos,c), meaning replacing the element of string ss at position pospos with character cc. After each query you must output the minimal number of characters in the string, which have to be replaced, so that the string doesn't contain string "abc" as a substring. A valid replacement of a character is replacing it with "a", "b" or "c".A string xx is a substring of a string yy if xx can be obtained from yy by deletion of several (possibly, zero or all) characters from the beginning and several (possibly, zero or all) characters from the end.InputThe first line contains two integers nn and qq (1≤n,q≤105)(1≤n,q≤105), the length of the string and the number of queries, respectively.The second line contains the string ss, consisting of characters "a", "b" and "c".Each of the next qq lines contains an integer ii and character cc (1≤i≤n)(1≤i≤n), index and the value of the new item in the string, respectively. It is guaranteed that character's cc value is "a", "b" or "c".OutputFor each query output the minimal number of characters that would have to be replaced so that the string doesn't contain "abc" as a substring.ExampleInputCopy9 10
+abcabcabc
+1 a
+1 b
+2 c
+3 a
+4 b
+5 c
+8 a
+9 b
+1 c
+4 a
+OutputCopy3
+2
+2
+2
+1
+2
+1
+1
+1
+0
+NoteLet's consider the state of the string after each query:   s=s= "abcabcabc". In this case 33 replacements can be performed to get, for instance, string s=s= "bbcaccabb". This string does not contain "abc" as a substring. s=s= "bbcabcabc". In this case 22 replacements can be performed to get, for instance, string s=s= "bbcbbcbbc". This string does not contain "abc" as a substring. s=s= "bccabcabc". In this case 22 replacements can be performed to get, for instance, string s=s= "bccbbcbbc". This string does not contain "abc" as a substring. s=s= "bcaabcabc". In this case 22 replacements can be performed to get, for instance, string s=s= "bcabbcbbc". This string does not contain "abc" as a substring. s=s= "bcabbcabc". In this case 11 replacements can be performed to get, for instance, string s=s= "bcabbcabb". This string does not contain "abc" as a substring. s=s= "bcabccabc". In this case 22 replacements can be performed to get, for instance, string s=s= "bcabbcabb". This string does not contain "abc" as a substring. s=s= "bcabccaac". In this case 11 replacements can be performed to get, for instance, string s=s= "bcabbcaac". This string does not contain "abc" as a substring. s=s= "bcabccaab". In this case 11 replacements can be performed to get, for instance, string s=s= "bcabbcaab". This string does not contain "abc" as a substring. s=s= "ccabccaab". In this case 11 replacements can be performed to get, for instance, string s=s= "ccabbcaab". This string does not contain "abc" as a substring. s=s= "ccaaccaab". In this case the string does not contain "abc" as a substring and no replacements are needed.

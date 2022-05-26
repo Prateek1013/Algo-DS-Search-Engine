@@ -1,0 +1,13 @@
+F. Longest Striketime limit per test1 secondmemory limit per test256 megabytesinputstandard inputoutputstandard outputGiven an array aa of length nn and an integer kk, you are tasked to find any two numbers ll and rr (l≤rl≤r) such that:   For each xx (l≤x≤r)(l≤x≤r), xx appears in aa at least kk times (i.e. kk or more array elements are equal to xx).  The value r−lr−l is maximized. If no numbers satisfy the conditions, output -1.For example, if a=[11,11,12,13,13,14,14]a=[11,11,12,13,13,14,14] and k=2k=2, then:   for l=12l=12, r=14r=14 the first condition fails because 1212 does not appear at least k=2k=2 times.  for l=13l=13, r=14r=14 the first condition holds, because 1313 occurs at least k=2k=2 times in aa and 1414 occurs at least k=2k=2 times in aa.  for l=11l=11, r=11r=11 the first condition holds, because 1111 occurs at least k=2k=2 times in aa. A pair of ll and rr for which the first condition holds and r−lr−l is maximal is l=13l=13, r=14r=14.InputThe first line of the input contains a single integer tt (1≤t≤10001≤t≤1000) — the number of test cases. The description of test cases follows.The first line of each test case contains the integers nn and kk (1≤n≤2⋅1051≤n≤2⋅105, 1≤k≤n1≤k≤n) — the length of the array aa and the minimum amount of times each number in the range [l,r][l,r] should appear respectively.Then a single line follows, containing nn integers describing the array aa (1≤ai≤1091≤ai≤109).It is guaranteed that the sum of nn over all test cases does not exceed 2⋅1052⋅105.OutputFor each test case output 22 numbers, ll and rr that satisfy the conditions, or "-1" if no numbers satisfy the conditions.If multiple answers exist, you can output any.ExampleInputCopy4
+7 2
+11 11 12 13 13 14 14
+5 1
+6 3 5 2 1
+6 4
+4 3 4 3 3 4
+14 2
+1 1 2 2 2 3 3 3 3 4 4 4 4 4
+OutputCopy13 14
+1 3
+-1
+1 4

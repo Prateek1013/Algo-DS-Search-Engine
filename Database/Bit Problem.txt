@@ -1,0 +1,41 @@
+
+CSES - Bit Problem
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+Given a list of nn integers, your task is to calculate for each element xx:
+ the number of elements yy such that x∣y=xx∣y=x
+ the number of elements yy such that x&y=xx&y=x
+ the number of elements yy such that x&y≠0x&y≠0
+
+Input
+
+The first input line has an integer nn: the size of the list.
+
+The next line has nn integers x1,x2,…,xnx1,x2,…,xn: the elements of the list.
+
+Output
+
+Print nn lines: for each element the required values.
+
+Constraints
+
+ 1≤n≤2⋅1051≤n≤2⋅105
+ 1≤xi≤1061≤xi≤106
+
+Example
+
+Input:
+5
+3 7 2 9 2
+
+Output:
+3 2 5
+4 1 5
+2 4 4
+1 1 3
+2 4 4 

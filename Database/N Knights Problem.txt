@@ -1,0 +1,112 @@
+
+Dave recently mastered the problem of placing N queens on a chessboard so
+that no two queens attack eachother.
+Now he wants to see how many knights he can place on a chessboard so
+that no two knights attack eachother.
+Normally this would be a simple task, but some of the squares of the
+chessboard have been marked as unusable and hence cannot have a knight placed
+on them.
+Recall that a knight can attack another knight if their vertical distance
+is 2 and their horizontal distance is 1, or if their vertical distance is 1 and
+their horizontal distance is 2.  Only one knight may be placed on each square
+of the chessboard
+Input
+The first line of input contains an integer T (0<T≤50), the number of test cases to follow.
+Each test case will begin with a line containing 2 integers M and N (0<M,N≤30), 
+denoting the number of rows and columns, respectively.
+M lines follow, each containing exactly N characters.
+The j-th character of the i-th line is '.' if a knight may be placed in the j-th column of the i-th
+row, and '#' if the square is unusable.
+Output
+For each test case, output on a single line the maximum number of knights that may be placed
+on the chessboard such that no two attack each other.
+
+                        Sample Input 1
+                        
+
+
+
+
+
+2
+2 4
+....
+....
+5 5
+..#..
+#..#.
+##...
+...##
+.....
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+4
+11
+
+
+Explanation
+The following image represents the chessboard and a possible solution to the second test case:
+
+
+
+Author:
+david_adm
+
+
+Tester:
+friggstad
+
+
+Editorial:
+https://discuss.codechef.com/problems/KNIGHTS
+
+
+Tags:
+
+               
+                 Graphs, Bipartite Graphs, Maximum Bipartite Matching
+                 
+                     
+                     Data Structures, Advanced Algorithms, Advanced Graph Algos, Flow Networks
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+2047
+
+
+Date Added:
+9-11-2010
+
+
+Time Limit:
+0.294118 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, PERL, SCALA, LUA, BASH, JS, LISP sbcl, PAS gpc, BF, D, CAML, FORT, ASM, WSPC, LISP clisp, SCM guile, ERL, CLPS, PRLG, ICK, NICE, ICON, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

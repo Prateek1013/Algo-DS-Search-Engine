@@ -1,0 +1,94 @@
+
+In the 2-D world of Flatland, the Circles were having their sports day and wanted to end it with a nice formation. So, they called upon Mr. Sphere from Spaceland for help. Mr Sphere decides to arrange the Circles in square formations. He starts with NN Circles and forms the largest possible square using these Circles. He then takes the remaining Circles and repeats the procedure. A square of side SS requires S2S2 Circles to create.
+Find the number of squares he will be able to form at the end of the process.
+Input:
+
+First line will contain TT, number of testcases. Then the testcases follow.
+Each testcase contains of a single integer NN.
+
+Output:
+For each testcase, output a single integer denoting the number of squares.
+Constraints
+
+1≤T≤10001≤T≤1000
+1≤N≤10001≤N≤1000
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+2
+85
+114
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+2
+4
+
+
+Explanation
+Test case 1 : Mr Sphere forms a square of side 9 using 81 Circles and then forms a square of side 2 using the remaining 4.
+
+
+
+Author:
+4★yashdeepgupta
+
+
+Editorial:
+https://discuss.codechef.com/problems/ICL1902
+
+
+Tags:
+
+               
+                 Inbuilt functions, Brute Force, Implementation
+                 
+                     
+                     Basic Programming Concepts, Algorithms
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1117
+
+
+Date Added:
+20-03-2019
+
+
+Time Limit:
+1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

@@ -1,0 +1,84 @@
+
+Let us calculate the sum of k-th powers of natural numbers from 1 to n. As the result can be quite large, output the result modulo some integer p.
+Input
+First t<=10 - the number of test cases.
+Each test case consist of numbers: 1<=n<=1000000000, 1<=k<=100, 1<=p<=1000000000.
+Output
+For each test case, output the value: (1k+2k+...+nk) mod p.
+
+                        Sample Input 1
+                        
+
+
+
+
+
+4
+10 1 1000000
+10 2 1000000
+10 3 1000000
+10 4 1000000
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+55
+385
+3025
+25333
+
+
+
+
+
+Author:
+admin
+
+
+Tags:
+
+               
+                 Modular Exponentiation, Combinatorics
+                 
+                     
+                     Mathematics, Modular Arithmetic
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1977
+
+
+Date Added:
+20-04-2009
+
+
+Time Limit:
+0.134328 - 0.268657 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

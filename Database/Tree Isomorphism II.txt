@@ -1,0 +1,47 @@
+
+CSES - Tree Isomorphism II
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+Given two (not rooted) trees, your task is to find out if they are isomorphic, i.e., it is possible to draw them so that they look the same.
+
+Input
+
+The first input line has an integer tt: the number of tests. Then, there are tt tests described as follows:
+
+The first line has an integer nn: the number of nodes in both trees. The nodes are numbered 1,2,…,n1,2,…,n.
+
+Then, there are n−1n−1 lines describing the edges of the first tree, and finally n−1n−1 lines describing the edges of the second tree.
+
+Output
+
+For each test, print "YES", if the trees are isomorphic, and "NO" otherwise.
+
+Constraints
+
+1≤t≤10001≤t≤1000
+2≤n≤1052≤n≤105
+the sum of all values of nn is at most 105105
+
+Example
+
+Input:
+2
+3
+1 2
+2 3
+1 2
+1 3
+3
+1 2
+2 3
+1 3
+3 2
+
+Output:
+YES
+YES 

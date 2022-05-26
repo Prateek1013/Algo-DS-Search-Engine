@@ -1,0 +1,116 @@
+
+Read problems statements in Hindi, Mandarin Chinese, Russian, Vietnamese, and Bengali as well.
+Chef is operating a slush machine. The machine produces slush drinks with MM flavors (numbered 11 through MM); for each valid i, the maximum number of drinks with flavour i the machine can produce is Ci.
+Chef expects N customers to come buy slush drinks today. The customers are numbered 1 through N in the order in which they buy the drinks. For each valid i, the favorite flavour of the i-th customer is Di and this customer is willing to pay Fi units of money for a drink with this flavour, or Bi units of money for a drink with any other flavuor. Whenever a customer wants to buy a drink:
+
+if it is possible to sell this customer a drink with their favourite flavour, Chef must sell them a drink with this flavour
+otherwise, Chef must sell this customer a drink, but he may choose its flavour
+
+Chef wants to make the maximum possible profit. He is asking you to help him decide the flavours of the drinks he should sell to the customers in order to maximise the profit.
+Input
+
+The first line of the input contains a single integer T denoting the number of test cases. The description of T test cases follows.
+The first line of each test case contains two space-separated integers N and M.
+The second line contains M space-separated integers C1,C2,…,CM.
+N lines follow. For each valid i, the i-th of these lines contains three space-separated integers Di, Fi and Bi.
+
+Output
+For each test case, print two lines:
+
+The first of these lines should contain a single integer — the maximum profit.
+The second line should contain N space-separated integers denoting the flavours of the drinks Chef should sell, in this order.
+
+If there are multiple solutions, you may find any one.
+Constraints
+
+1≤T≤1,000
+2≤N,M≤105
+1≤Di≤M for each valid i
+1≤Ci≤N for each valid i
+1≤Bi<Fi≤109 for each valid i
+C1+C2+…+CM≥N
+the sum of N over all test cases does not exceed 106
+the sum of M over all test cases does not exceed 106
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+1
+5 3
+1 2 3
+2 6 3
+2 10 7
+2 50 3
+1 10 5
+1 7 4
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+33
+2 2 3 1 3
+
+
+
+
+
+Author:
+6★kingofnumbers
+
+
+Editorial:
+https://discuss.codechef.com/problems/SLUSH
+
+
+Tags:
+
+               
+                 Greedy
+                 
+                     
+                     Algorithms
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1884
+
+
+Date Added:
+19-06-2019
+
+
+Time Limit:
+1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

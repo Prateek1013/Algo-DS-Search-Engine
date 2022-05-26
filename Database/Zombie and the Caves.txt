@@ -1,0 +1,105 @@
+
+Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.
+There are NN caves in a row, numbered 11 through NN. For each valid ii, the radiation power in the ii-th cave is CiCi. Originally, the radiation level in each cave was 00. Then, for each valid ii, the radiation power in cave ii increased the radiation levels in the caves i−Ci,…,i+Cii−Ci,…,i+Ci inclusive (if they exist) by 11, so all the caves are radioactive now.
+Radiation is not the only problem, though. There are also NN zombies with health levels H1,H2,…,HNH1,H2,…,HN. You want to kill all of them by getting them to the caves in such a way that there is exactly one zombie in each cave. A zombie dies in a cave if and only if the radiation level in that cave is equal to the health level of the zombie. Is it possible to kill all the zombies?
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first line of each test case contains a single integer NN.
+The second line contains NN space-separated integers C1,C2,…,CNC1,C2,…,CN.
+The third line contains NN space-separated integers H1,H2,…,HNH1,H2,…,HN.
+
+Output
+For each test case, print a single line containing the string "YES" if it is possible to kill all the zombies or "NO" if it is impossible (without quotes).
+Constraints
+
+1≤T≤100
+1≤N≤105
+1≤Ci,Hi≤109 for each valid i
+
+Subtasks
+Subtask #1 (30 points): 1≤N≤1,000
+Subtask #2 (70 points): original constraints
+
+                        Sample Input 1
+                        
+
+
+
+
+
+2
+5
+1 2 3 4 5
+1 2 3 4 5
+5
+1 2 3 4 5
+5 4 3 4 5
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+NO
+YES
+
+
+Explanation
+In both example test cases, the final radiation levels in the caves are (5,5,4,4,3). For example, the radiation power in cave 1 increased the radiation levels in caves 1 and 2 (there is no cave 0) by 1, and the radiation power in cave 4 increased the radiation levels in all caves by 1.
+
+
+
+Author:
+4★sayantan_das24
+
+
+Editorial:
+https://discuss.codechef.com/problems/ZOMCAV
+
+
+Tags:
+
+               
+                 Difference Arrays, Sorting
+                 
+                     
+                     Data Structures, Arrays, Algorithms
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1661
+
+
+Date Added:
+9-07-2019
+
+
+Time Limit:
+2 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

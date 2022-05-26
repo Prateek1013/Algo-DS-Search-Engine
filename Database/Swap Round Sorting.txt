@@ -1,0 +1,44 @@
+
+CSES - Swap Round Sorting
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+You are given an array containing a permutation of numbers 1,2,…,n1,2,…,n, and your task is to sort the array using swap rounds. On each swap round, you can choose any number of distinct pairs of elements and swap each pair.
+
+Your task is to find the minimum number of rounds and show how you can choose the pairs in each round.
+
+Input
+
+The first input line has an integer nn: the size of the array.
+
+The second line has nn integers x1,x2,…,xnx1,x2,…,xn: the initial permutation.
+
+Output
+
+First print an integer kk: the minimum number of rounds.
+
+Then, for each round, print the number of swaps and the indices of each swap. You can print any valid solution.
+
+Constraints
+
+ 1≤n≤2⋅1051≤n≤2⋅105
+
+Example
+
+Input:
+5
+5 2 1 3 4
+
+Output:
+2
+2
+1 3
+4 5
+1
+3 5
+
+Explanation: The inital array is [5,2,1,3,4][5,2,1,3,4]. After round 11, the array becomes [1,2,5,4,3][1,2,5,4,3]. After round 22, the array becomes [1,2,3,4,5][1,2,3,4,5].    

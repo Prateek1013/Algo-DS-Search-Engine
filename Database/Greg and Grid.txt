@@ -1,0 +1,81 @@
+
+Recently, Greg got a grid with n rows and m columns. Rows are indexed from 1 to n and columns are indexed from 1 to m. The cell (i,j)(i,j) is the cell of intersection of row i and column j. Each cell has a number written on it. The number written on cell  (i,j)(i,j)  is equal to  (i+j)(i+j).  
+Now, Greg wants to select some cells from the grid, such that for every pair of  selected cells ,the numbers on the cells are co-prime.  Determine the maximum number of cells that Greg can select.
+Input 
+Single line containing  integers n and m denoting number of rows and number of columns respectively.
+Output
+Single line containing the answer.
+
+Constraints
+1≤n,m≤1061≤n,m≤106
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+3 4
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+4
+
+
+
+
+
+Author:
+5★kalpitk
+
+
+Tags:
+
+               
+                 Observation, Primes
+                 
+                     
+                     Mathematics, Number Theory, Algorithms
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1519
+
+
+Date Added:
+24-03-2019
+
+
+Time Limit:
+1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

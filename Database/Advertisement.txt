@@ -1,0 +1,36 @@
+
+CSES - Advertisement
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+A fence consists of nn vertical boards. The width of each board is 1 and their heights may vary.
+
+You want to attach a rectangular advertisement to the fence. What is the maximum area of such an advertisement?
+
+Input
+
+The first input line contains an integer nn: the width of the fence.
+
+After this, there are nn integers k1,k2,…,knk1,k2,…,kn: the height of each board.
+
+Output
+
+Print one integer: the maximum area of an advertisement.
+
+Constraints
+
+1≤n≤2⋅1051≤n≤2⋅105
+1≤ki≤1091≤ki≤109
+
+Example
+
+Input:
+8
+4 1 5 3 3 2 4 1
+
+Output:
+10 

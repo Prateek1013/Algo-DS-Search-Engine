@@ -1,0 +1,12 @@
+D. Buying Shovelstime limit per test2 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard outputPolycarp wants to buy exactly nn shovels. The shop sells packages with shovels. The store has kk types of packages: the package of the ii-th type consists of exactly ii shovels (1≤i≤k1≤i≤k). The store has an infinite number of packages of each type.Polycarp wants to choose one type of packages and then buy several (one or more) packages of this type. What is the smallest number of packages Polycarp will have to buy to get exactly nn shovels?For example, if n=8n=8 and k=7k=7, then Polycarp will buy 22 packages of 44 shovels.Help Polycarp find the minimum number of packages that he needs to buy, given that he:   will buy exactly nn shovels in total;  the sizes of all packages he will buy are all the same and the number of shovels in each package is an integer from 11 to kk, inclusive. InputThe first line contains an integer tt (1≤t≤1001≤t≤100) — the number of test cases in the input. Then, tt test cases follow, one per line.Each test case consists of two positive integers nn (1≤n≤1091≤n≤109) and kk (1≤k≤1091≤k≤109) — the number of shovels and the number of types of packages.OutputPrint tt answers to the test cases. Each answer is a positive integer — the minimum number of packages.ExampleInputCopy5
+8 7
+8 1
+6 10
+999999733 999999732
+999999733 999999733
+OutputCopy2
+8
+1
+999999733
+1
+NoteThe answer to the first test case was explained in the statement.In the second test case, there is only one way to buy 88 shovels — 88 packages of one shovel.In the third test case, you need to buy a 11 package of 66 shovels.

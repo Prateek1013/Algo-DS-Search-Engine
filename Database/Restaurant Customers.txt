@@ -1,0 +1,40 @@
+
+CSES - Restaurant Customers
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+You are given the arrival and leaving times of nn customers in a restaurant.
+
+What was the maximum number of customers in the restaurant at any time?
+
+Input
+
+The first input line has an integer nn: the number of customers.
+
+After this, there are nn lines that describe the customers. Each line has two integers aa and bb: the arrival and leaving times of a customer.
+
+You may assume that all arrival and leaving times are distinct.
+
+Output
+
+Print one integer: the maximum number of customers.
+
+Constraints
+
+1≤n≤2⋅1051≤n≤2⋅105
+1≤a<b≤1091≤a<b≤109
+
+Example
+
+Input:
+3
+5 8
+2 4
+3 9
+
+Output:
+2 

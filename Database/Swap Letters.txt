@@ -1,0 +1,18 @@
+C. Swap Letterstime limit per test2 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard outputMonocarp has got two strings ss and tt having equal length. Both strings consist of lowercase Latin letters "a" and "b". Monocarp wants to make these two strings ss and tt equal to each other. He can do the following operation any number of times: choose an index pos1pos1 in the string ss, choose an index pos2pos2 in the string tt, and swap spos1spos1 with tpos2tpos2.You have to determine the minimum number of operations Monocarp has to perform to make ss and tt equal, and print any optimal sequence of operations — or say that it is impossible to make these strings equal.InputThe first line contains one integer nn (1≤n≤2⋅105)(1≤n≤2⋅105) — the length of ss and tt.The second line contains one string ss consisting of nn characters "a" and "b". The third line contains one string tt consisting of nn characters "a" and "b". OutputIf it is impossible to make these strings equal, print −1−1.Otherwise, in the first line print kk — the minimum number of operations required to make the strings equal. In each of the next kk lines print two integers — the index in the string ss and the index in the string tt that should be used in the corresponding swap operation. ExamplesInputCopy4
+abab
+aabb
+OutputCopy2
+3 3
+3 2
+InputCopy1
+a
+b
+OutputCopy-1
+InputCopy8
+babbaabb
+abababaa
+OutputCopy3
+2 6
+1 3
+7 8
+NoteIn the first example two operations are enough. For example, you can swap the third letter in ss with the third letter in tt. Then s=s= "abbb", t=t= "aaab". Then swap the third letter in ss and the second letter in tt. Then both ss and tt are equal to "abab".In the second example it's impossible to make two strings equal.

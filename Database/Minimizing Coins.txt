@@ -1,0 +1,37 @@
+
+CSES - Minimizing Coins
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+Consider a money system consisting of nn coins. Each coin has a positive integer value. Your task is to produce a sum of money xx using the available coins in such a way that the number of coins is minimal.
+
+For example, if the coins are {1,5,7}{1,5,7} and the desired sum is 1111, an optimal solution is 5+5+15+5+1 which requires 33 coins.
+
+Input
+
+The first input line has two integers nn and xx: the number of coins and the desired sum of money.
+
+The second line has nn distinct integers c1,c2,…,cnc1,c2,…,cn: the value of each coin.
+
+Output
+
+Print one integer: the minimum number of coins. If it is not possible to produce the desired sum, print −1−1.
+
+Constraints
+
+1≤n≤1001≤n≤100
+1≤x≤1061≤x≤106
+1≤ci≤1061≤ci≤106
+
+Example
+
+Input:
+3 11
+1 5 7
+
+Output:
+3 

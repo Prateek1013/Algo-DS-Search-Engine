@@ -1,0 +1,110 @@
+
+You are given an integer N. Find another integer X(X>N) such that the following conditions are satisfied :
+
+X is not a multiple of N.
+The value  |gcd(N,X)−lcm(N,X)| is as small as possible.
+
+If there are multiple answers for X, print any.
+For reference, gcd(u,v) is the greatest common divisor between u and v, while lcm(u,v) refers to the least common multiple.
+Input Format
+
+The first line of input contains a single integer T denoting the number of test cases. The description of T test cases follows.
+The first line of each test case contains an integer N.
+
+Output Format
+For each testcase, print any suitable X satisfying the above two conditions for the given N.
+Constraints
+
+1≤T≤1000
+2≤N≤1012.
+Sum of N over all testcases won't exceed 5∗1012.
+
+Subtasks
+
+Subtask 1 (10 points): 2≤N≤1000
+Subtask 2 (20 points): 2≤N≤106
+Subtask 3 (70 points): 2≤N≤1012
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+2
+3
+4
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+4
+6
+
+
+Explanation
+1.In first case , GCD(3,4) =1 and LCM(3,4)= 12 , |1−12|= 11. 11 is the smallest value we can get by choosing X as 4.
+
+
+
+Author:
+6★munch_01
+
+
+Tester:
+7★aryanc403
+
+
+Editorial:
+https://discuss.codechef.com/problems/STRGMNZ
+
+
+Tags:
+
+               
+                 GCD, LCM, Divisors
+                 
+                     
+                     Mathematics, Number Theory, Integer Factorisation
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1928
+
+
+Date Added:
+26-11-2021
+
+
+Time Limit:
+1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

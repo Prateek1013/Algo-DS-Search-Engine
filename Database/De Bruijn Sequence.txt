@@ -1,0 +1,30 @@
+
+CSES - De Bruijn Sequence
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+Your task is to construct a minimum-length bit string that contains all possible substrings of length nn. For example, when n=2n=2, the string 00110 is a valid solution, because its substrings of length 22 are 00, 01, 10 and 11.
+
+Input
+
+The only input line has an integer nn.
+
+Output
+
+Print a minimum-length bit string that contains all substrings of length nn. You can print any valid solution.
+
+Constraints
+
+1≤n≤151≤n≤15
+
+Example
+
+Input:
+2
+
+Output:
+00110 

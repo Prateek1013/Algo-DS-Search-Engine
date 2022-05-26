@@ -1,0 +1,32 @@
+
+CSES - Counting Reorders
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+Calculate the number of ways you can reorder the characters of a string so that no two adjacent characters are the same.
+
+For example, the answer for aabc is 66, because the possible orders are abac, abca, acab, acba, baca, and caba.
+
+Input
+
+The only input line has a string that consists of nn characters between a–z.
+
+Output
+
+Print an integer: the answer modulo 109+7109+7.
+
+Constraints
+
+1≤n≤50001≤n≤5000
+
+Example
+
+Input:
+aabc
+
+Output:
+6 

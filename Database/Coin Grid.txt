@@ -1,0 +1,41 @@
+
+CSES - Coin Grid
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+There is an n×nn×n grid whose each square is empty or has a coin. On each move, you can remove all coins in a row or column.
+
+What is the minimum number of moves after which the grid is empty?
+
+Input
+
+The first input line has an integer nn: the size of the grid. The rows and columns are numbered 1,2,…,n1,2,…,n.
+
+After this, there are nn lines describing the grid. Each line has nn characters: each character is either . (empty) or o (coin).
+
+Output
+
+First print an integer kk: the minimum number of moves. After this, print kk lines describing the moves.
+
+On each line, first print 11 (row) or 22 (column), and then the number of a row or column. You can print any valid solution.
+
+Constraints
+
+1≤n≤1001≤n≤100
+
+Example
+
+Input:
+3
+..o
+o.o
+...
+
+Output:
+2
+1 2
+2 3 

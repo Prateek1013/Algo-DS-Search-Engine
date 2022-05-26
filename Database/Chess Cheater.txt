@@ -1,0 +1,26 @@
+B. Chess Cheatertime limit per test1 secondmemory limit per test256 megabytesinputstandard inputoutputstandard outputYou like playing chess tournaments online.In your last tournament you played nn games. For the sake of this problem, each chess game is either won or lost (no draws). When you lose a game you get 00 points. When you win you get 11 or 22 points: if you have won also the previous game you get 22 points, otherwise you get 11 point. If you win the very first game of the tournament you get 11 point (since there is not a "previous game").The outcomes of the nn games are represented by a string ss of length nn: the ii-th character of ss is W if you have won the ii-th game, while it is L if you have lost the ii-th game.After the tournament, you notice a bug on the website that allows you to change the outcome of at most kk of your games (meaning that at most kk times you can change some symbol L to W, or W to L). Since your only goal is to improve your chess rating, you decide to cheat and use the bug.Compute the maximum score you can get by cheating in the optimal way.InputEach test contains multiple test cases. The first line contains an integer tt (1≤t≤20,0001≤t≤20,000) — the number of test cases. The description of the test cases follows.The first line of each testcase contains two integers n,kn,k (1≤n≤100,0001≤n≤100,000, 0≤k≤n0≤k≤n) – the number of games played and the number of outcomes that you can change.The second line contains a string ss of length nn containing only the characters W and L. If you have won the ii-th game then si=si=W, if you have lost the ii-th game then si=si=L.It is guaranteed that the sum of nn over all testcases does not exceed 200,000200,000.OutputFor each testcase, print a single integer – the maximum score you can get by cheating in the optimal way.ExampleInputCopy8
+5 2
+WLWLL
+6 5
+LLLWWL
+7 1
+LWLWLWL
+15 5
+WWWLLLWWWLLLWWW
+40 7
+LLWLWLWWWLWLLWLWWWLWLLWLLWLLLLWLLWWWLWWL
+1 0
+L
+1 1
+L
+6 1
+WLLWLW
+OutputCopy7
+11
+6
+26
+46
+0
+1
+6
+NoteExplanation of the first testcase. Before changing any outcome, the score is 22. Indeed, you won the first game, so you got 11 point, and you won also the third, so you got another 11 point (and not 22 because you lost the second game).An optimal way to cheat is to change the outcomes of the second and fourth game. Doing so, you end up winning the first four games (the string of the outcomes becomes WWWWL). Hence, the new score is 7=1+2+2+27=1+2+2+2: 11 point for the first game and 22 points for the second, third and fourth game.Explanation of the second testcase. Before changing any outcome, the score is 33. Indeed, you won the fourth game, so you got 11 point, and you won also the fifth game, so you got 22 more points (since you won also the previous game).An optimal way to cheat is to change the outcomes of the first, second, third and sixth game. Doing so, you end up winning all games (the string of the outcomes becomes WWWWWW). Hence, the new score is 11=1+2+2+2+2+211=1+2+2+2+2+2: 11 point for the first game and 22 points for all the other games.

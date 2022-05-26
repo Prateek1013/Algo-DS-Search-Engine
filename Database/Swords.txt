@@ -1,0 +1,13 @@
+D. Swordstime limit per test2 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard outputThere were nn types of swords in the theater basement which had been used during the plays. Moreover there were exactly xx swords of each type. yy people have broken into the theater basement and each of them has taken exactly zz swords of some single type. Note that different people might have taken different types of swords. Note that the values x,yx,y and zz are unknown for you.The next morning the director of the theater discovers the loss. He counts all swords — exactly aiai swords of the ii-th type are left untouched.The director has no clue about the initial number of swords of each type in the basement, the number of people who have broken into the basement and how many swords each of them have taken.For example, if n=3n=3, a=[3,12,6]a=[3,12,6] then one of the possible situations is x=12x=12, y=5y=5 and z=3z=3. Then the first three people took swords of the first type and the other two people took swords of the third type. Note that you don't know values x,yx,y and zz beforehand but know values of nn and aa.Thus he seeks for your help. Determine the minimum number of people yy, which could have broken into the theater basement, and the number of swords zz each of them has taken.InputThe first line of the input contains one integer nn (2≤n≤2⋅105)(2≤n≤2⋅105) — the number of types of swords.The second line of the input contains the sequence a1,a2,…,ana1,a2,…,an (0≤ai≤109)(0≤ai≤109), where aiai equals to the number of swords of the ii-th type, which have remained in the basement after the theft. It is guaranteed that there exists at least one such pair of indices (j,k)(j,k) that aj≠akaj≠ak.OutputPrint two integers yy and zz — the minimum number of people which could have broken into the basement and the number of swords each of them has taken.ExamplesInputCopy3
+3 12 6
+OutputCopy5 3
+InputCopy2
+2 9
+OutputCopy1 7
+InputCopy7
+2 1000000000 4 6 8 4 2
+OutputCopy2999999987 2
+InputCopy6
+13 52 0 13 26 52
+OutputCopy12 13
+NoteIn the first example the minimum value of yy equals to 55, i.e. the minimum number of people who could have broken into the basement, is 55. Each of them has taken 33 swords: three of them have taken 33 swords of the first type, and two others have taken 33 swords of the third type.In the second example the minimum value of yy is 11, i.e. the minimum number of people who could have broken into the basement, equals to 11. He has taken 77 swords of the first type.

@@ -1,0 +1,39 @@
+
+CSES - Prime Multiples
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+You are given kk distinct prime numbers a1,a2,…,aka1,a2,…,ak and an integer nn.
+
+Your task is to calculate how many of the first nn positive integers are divisible by at least one of the given prime numbers.
+
+Input
+
+The first input line has two integers nn and kk.
+
+The second line has kk prime numbers a1,a2,…,aka1,a2,…,ak.
+
+Output
+
+Print one integer: the number integers within the interval 1,2,…,n1,2,…,n that are divisible by at least one of the prime numbers.
+
+Constraints
+
+ 1≤n≤10181≤n≤1018
+ 1≤k≤201≤k≤20
+ 2≤ai≤n2≤ai≤n
+
+Example
+
+Input:
+20 2
+2 5
+
+Output:
+12
+
+Explanation: the 1212 numbers are 2,4,5,6,8,10,12,14,15,16,18,202,4,5,6,8,10,12,14,15,16,18,20.    

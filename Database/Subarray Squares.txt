@@ -1,0 +1,36 @@
+
+CSES - Subarray Squares
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+Given an array of nn elements, your task is to divide into kk subarrays. The cost of each subarray is the square of the sum of the values in the subarray. What is the minimum total cost if you act optimally?
+
+Input
+
+The first input line has two integers nn and kk: the array elements and the number of subarrays. The array elements are numbered 1,2,…,n1,2,…,n.
+
+The second line has nn integers x1,x2,…,xnx1,x2,…,xn: the contents of the array.
+
+Output
+
+Print one integer: the minimum total cost.
+
+Constraints
+
+1≤k≤n≤30001≤k≤n≤3000
+1≤xi≤1051≤xi≤105
+
+Example
+
+Input:
+8 3
+2 3 1 2 2 3 4 1
+
+Output:
+110
+
+Explanation: An optimal solution is [2,3,1][2,3,1], [2,2,3][2,2,3], [4,1][4,1], whose cost is (2+3+1)2+(2+2+3)2+(4+1)2=110(2+3+1)2+(2+2+3)2+(4+1)2=110.    

@@ -1,0 +1,40 @@
+
+CSES - Exponentiation II
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+Your task is to efficiently calculate values abcabc modulo 109+7109+7.
+
+Note that in this task we assume that 00=100=1.
+
+Input
+
+The first input line has an integer nn: the number of calculations.
+
+Afther this, there are nn lines, each containing three integers aa, bb and cc.
+
+Output
+
+Print each value abcabc modulo 109+7109+7.
+
+Constraints
+
+1≤n≤1051≤n≤105
+0≤a,b,c≤1090≤a,b,c≤109
+
+Example
+
+Input:
+3
+3 7 1
+15 2 2
+3 4 5
+
+Output:
+2187
+50625
+763327764 

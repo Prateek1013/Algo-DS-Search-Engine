@@ -1,0 +1,14 @@
+A. Great Sequencetime limit per test1 secondmemory limit per test256 megabytesinputstandard inputoutputstandard outputA sequence of positive integers is called great for a positive integer xx, if we can split it into pairs in such a way that in each pair the first number multiplied by xx is equal to the second number. More formally, a sequence aa of size nn is great for a positive integer xx, if nn is even and there exists a permutation pp of size nn, such that for each ii (1≤i≤n21≤i≤n2) ap2i−1⋅x=ap2iap2i−1⋅x=ap2i. Sam has a sequence aa and a positive integer xx. Help him to make the sequence great: find the minimum possible number of positive integers that should be added to the sequence aa to make it great for the number xx.InputEach test contains multiple test cases. The first line contains a single integer tt (1≤t≤200001≤t≤20000) — the number of test cases. Description of the test cases follows.The first line of each test case contains two integers nn, xx (1≤n≤2⋅1051≤n≤2⋅105, 2≤x≤1062≤x≤106).The next line contains nn integers a1,a2,…,ana1,a2,…,an (1≤ai≤1091≤ai≤109).It is guaranteed that the sum of nn over all test cases does not exceed 2⋅1052⋅105.OutputFor each test case print a single integer — the minimum number of integers that can be added to the end of aa to make it a great sequence for the number xx.ExampleInputCopy4
+4 4
+1 16 4 4
+6 2
+1 2 2 2 4 7
+5 3
+5 2 3 5 15
+9 10
+10 10 10 20 1 100 200 2000 3
+OutputCopy0
+2
+3
+3
+NoteIn the first test case, Sam got lucky and the sequence is already great for the number 44 because you can divide it into such pairs: (1,4)(1,4), (4,16)(4,16). Thus we can add 00 numbers.In the second test case, you can add numbers 11 and 1414 to the sequence, then you can divide all 88 integers into such pairs: (1,2)(1,2), (1,2)(1,2), (2,4)(2,4), (7,14)(7,14). It is impossible to add less than 22 integers to fix the sequence.

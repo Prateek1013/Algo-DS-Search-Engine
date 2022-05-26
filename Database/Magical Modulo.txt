@@ -1,0 +1,106 @@
+
+You are given an array AA of NN integers . You want to convert the array AA into a permutation of N integers. To do this, you can apply the following operation on array A exactly once .
+
+Pick an integer X, where 1≤X≤2⋅107. For each i , 1≤i≤N , replace Ai by Ai%X.
+
+Find out whether it is possible to convert A into a permutation of N integers. If it is possible, print YES (all uppercase alphabets) and any possible value of X for which it is possible. Otherwise, print NO (all uppercase alphabets).
+Note - An array of N integers is called a permutation if it contains all integers from 1  to N exactly once.
+Input Format
+
+The first line contains an integer T denoting the number of test cases. The T test cases then follow.
+The first line of each test case contains an integer N.
+The second line of each test case contains N space-separated integers A1,A2,…,AN.
+
+Output Format
+For each testcase, output the required answer in a single line. If an answer exists, print YES and an integer X (1≤X≤2⋅107) separated by a single space. Otherwise, print NO.
+Note that the strings are case-sensitive and must be in uppercase alphabets.
+Constraints
+
+1≤T≤100
+1≤N≤105
+1≤Ai≤107
+Sum of N over all cases won't exceed 105
+
+Subtasks
+Subtask #1 (100 points): original constraints
+
+                        Sample Input 1
+                        
+
+
+
+
+
+2
+3
+2 7 1
+2
+2 2
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+YES 4
+NO
+
+
+Explanation
+
+In the first case, choosing X=4 yields A as [2%4,7%4,1%4]=[2,3,1] which is a permutation of N=3.
+In the second case, we can't make Ai = 1 for any i and for any value of X.
+
+
+
+
+Author:
+6★munch_01
+
+
+Editorial:
+https://discuss.codechef.com/problems/MAGICMOD
+
+
+Tags:
+
+               
+                 easy, ltime105, munch_01
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+2471
+
+
+Date Added:
+27-02-2022
+
+
+Time Limit:
+1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

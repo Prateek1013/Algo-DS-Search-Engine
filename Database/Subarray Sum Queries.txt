@@ -1,0 +1,43 @@
+
+CSES - Subarray Sum Queries
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+There is an array consisting of nn integers. Some values of the array will be updated, and after each update, your task is to report the maximum subarray sum in the array. 
+
+Input
+
+The first input line contains integers nn and mm: the size of the array and the number of updates. The array is indexed 1,2,…,n1,2,…,n.
+
+The next line has nn integers: x1,x2,…,xnx1,x2,…,xn: the initial contents of the array.
+
+Then there are mm lines describing the changes. Each line has two integers kk and xx: the value at position kk becomes xx.
+
+Output
+
+After each update, print the maximum subarray sum. Empty subarrays (with sum 00) are allowed.
+
+Constraints
+
+1≤n,m≤2⋅1051≤n,m≤2⋅105
+−109≤xi≤109−109≤xi≤109
+1≤k≤n1≤k≤n
+−109≤x≤109−109≤x≤109
+
+Example
+
+Input:
+5 3
+1 2 -3 5 -1
+2 6
+3 1
+2 -2
+
+Output:
+9
+13
+6 

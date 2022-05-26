@@ -1,0 +1,111 @@
+
+Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.
+Chef has two integer sequences A1,A2,…,ANA1,A2,…,AN and B1,B2,…,BMB1,B2,…,BM. You should choose N+M−1N+M−1 pairs, each in the form (Ax,By), such that the sums Ax+By are all pairwise distinct.
+It is guaranteed that under the given constraints, a solution always exists. If there are multiple solutions, you may find any one.
+Input
+
+The first line of the input contains two space-separated integers N and M.
+The second line contains N space-separated integers A1,A2,…,AN.
+The third line contains M space-separated integers B1,B2,…,BM.
+
+Output
+Print N+M−1 lines. Each of these lines should contain two space-separated integers x and y denoting that you chose a pair (Ax+1,By+1).
+Constraints
+
+1≤N,M≤2⋅105
+|Ai|≤109 for each valid i
+|Bi|≤109 for each valid i
+A1,A2,…,AN are pairwise distinct
+B1,B2,…,BM are pairwise distinct
+
+Subtasks
+Subtask #1 (25 points): 1≤N,M≤103
+Subtask #2 (75 points): original constraints
+
+                        Sample Input 1
+                        
+
+
+
+
+
+3 2
+10 1 100
+4 3
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+2 1
+0 0
+1 0
+0 1
+
+
+Explanation
+The chosen pairs and their sums are:
+
+A3+B2=100+3=103
+A1+B1=10+4=14
+A2+B1=1+4=5
+A1+B2=10+3=13
+
+Since all sums are distinct, this is a correct output.
+
+
+
+Author:
+5★sanroylozan
+
+
+Editorial:
+https://discuss.codechef.com/problems/DPAIRS
+
+
+Tags:
+
+               
+                 Maps, Sorting
+                 
+                     
+                     Data Structures, Algorithms
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1699
+
+
+Date Added:
+31-12-2018
+
+
+Time Limit:
+1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

@@ -1,0 +1,112 @@
+
+Read problems statements in Hindi, Mandarin Chinese, Russian, Vietnamese and Bengali as well.
+You are given an undirected graph with NN nodes (numbered 11 through NN) and M edges. Each node has a value; let's denote the value of node i by Ai. Note that the graph is not necessarily simple.
+A doubly increasing path is a directed path such that both the values of nodes and differences of values of nodes on this path are strictly increasing. Formally, it is a sequence of nodes p1,p2,p3,…,pk for some integer (the length of this path) k≥1 such that 0<Ap2−Ap1<Ap3−Ap2<…<Apk−Apk−1 and for each valid i, nodes pi and pi−1 are connected by an edge.
+You need to find the length of the longest doubly increasing path in the graph.
+Input
+
+The first line of the input contains a single integer T denoting the number of test cases. The description of T test cases follows.
+The first line of each test case contains two space-separated integers N and M.
+The second line contains N space-separated integers A1,A2,…,AN.
+Each of the following M lines contains two space-separated integers u and v denoting that nodes u and v are connected by an edge.
+
+Output
+For each test case, print a single line containing one integer — the maximum length of a doubly increasing path.
+Constraints
+
+1≤T≤10
+1≤N≤105
+1≤M≤105
+1≤u,v≤N
+|Ai|≤1015 for each valid i
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+2
+5 4
+1 2 3 4 5
+2 4
+1 5
+1 3
+3 5
+5 4
+1 2 3 4 5
+3 5
+1 2
+4 5
+5 2
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+2
+3
+
+
+Explanation
+Example case 1: Any path with length 2 from a smaller node to a larger one is doubly increasing. There is no doubly increasing path with length greater than 2.
+Example case 2: The path 1→2→5 is doubly increasing.
+
+
+
+Author:
+6★mathecodician
+
+
+Editorial:
+https://discuss.codechef.com/problems/DINCPATH
+
+
+Tags:
+
+               
+                 Directed Acyclic Graphs, Topological Sorting, Binary Search
+                 
+                     
+                     Data Structures, Graphs, Directed Graphs, Algorithms, Graph Algos, DAG Algos, Searching
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+2493
+
+
+Date Added:
+13-04-2019
+
+
+Time Limit:
+1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

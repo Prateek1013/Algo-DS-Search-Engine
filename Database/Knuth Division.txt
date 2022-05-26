@@ -1,0 +1,38 @@
+
+CSES - Knuth Division
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+Given an array of nn numbers, your task is to divide it into nn subarrays, each of which has a single element.
+
+On each move, you may choose any subarray and split it into two subarrays. The cost of such a move is the sum of values in the chosen subarray.
+
+What is the minimum total cost if you act optimally?
+
+Input
+
+The first input line has an integer nn: the array size. The array elements are numbered 1,2,…,n1,2,…,n.
+
+The second line has nn integers x1,x2,…,xnx1,x2,…,xn: the contents of the array.
+
+Output
+
+Print one integer: the minimum total cost.
+
+Constraints
+
+1≤n≤50001≤n≤5000
+1≤xi≤1091≤xi≤109
+
+Example
+
+Input:
+5
+2 7 3 2 5
+
+Output:
+43 

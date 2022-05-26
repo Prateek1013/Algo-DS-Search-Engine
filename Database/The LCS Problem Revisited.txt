@@ -1,0 +1,94 @@
+
+The Longest Common Subsequence (LCS) problem is a well known problem in Computer Science.
+Every computer science students in Byteland knows this problem. Johnny does, too.
+Recall that a subsequence of a string S is obtained by deleting some characters from S. 
+Given two strings S and T, the LCS problem is the find the longest sequence that is a subsequence of both S and T.
+Johnny has the habit of deriving harder problems from a familiar problem. This time, based on the LCS problem, he has thought up the following problem:
+
+Given two strings S and T, how many distinct LCS of S and T are there?
+Write a program to help Johnny solve this problem. Since the result may be very large, you only need to print the remainder of the result when dividing by 23102009.
+Input
+The first line contains t, the number of test cases (about 10). Then t test cases follow.
+Each test case consists of two lines, the first line is the string S and the second line is the string T. You may assume that the strings consists of only lowercase characters and the length of the each string is at most 1000 characters.
+
+Successive test cases at input are separated by a single blank line.
+Output
+For each test case, print a single line containing two numbers which are the length of the LCS and the remainder of the number of distinct LCS of S and T when dividing by 23102009.
+
+                        Sample Input 1
+                        
+
+
+
+
+
+2
+acbd
+acbd
+
+vnvn
+vn
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+4 1
+2 1
+
+
+Explanation
+The only LCS in the first case is "acbd" and in the second case is "vn".
+
+
+
+Author:
+u_admin_codechef_pw
+
+
+Tags:
+
+               
+                 Longest Common Subsequence
+                 
+                     
+                     Algorithms, Dynamic Programming, DP on sequences
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1872
+
+
+Date Added:
+15-10-2009
+
+
+Time Limit:
+0.675238 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

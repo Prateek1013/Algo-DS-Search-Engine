@@ -1,0 +1,83 @@
+
+The BSA (Bytelandian Security Agency) has intercepted several secret keys from the Trojan Kingdom.
+Each secret key is a prime number. But BSA was only able to retrieve some part of the digits, not all of them!
+
+Johnny's job is to help BSA recover these lost primes, and he has delegated the task to you!
+Input
+The first line contains a number t (about 15) which is the number of test cases. Then t test cases follow. Each test case is described in a single line containing the  patterns of the lost primes (the unknown digits are represented by '?'s.
+Each pattern's length is at most 12.
+Output
+For each test case, print the recovered prime. If there are multiple solutions, print any of them. The recovered prime should have the same number of digits as the corresponding pattern and should contain no leading zeros.
+You can assume that there is at least one solution for each test case.
+
+                        Sample Input 1
+                        
+
+
+
+
+
+3
+?
+?3
+1??
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+5
+23
+101
+
+
+
+
+
+Author:
+Shankar_IT150
+
+
+Tags:
+
+               
+                 Shankar_IT150
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1662
+
+
+Date Added:
+15-12-2009
+
+
+Time Limit:
+0.615385 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

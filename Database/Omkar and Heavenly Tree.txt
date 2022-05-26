@@ -1,0 +1,21 @@
+B. Omkar and Heavenly Treetime limit per test2 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard outputLord Omkar would like to have a tree with nn nodes (3≤n≤1053≤n≤105) and has asked his disciples to construct the tree. However, Lord Omkar has created mm (1≤m<n1≤m<n) restrictions to ensure that the tree will be as heavenly as possible. A tree with nn nodes is an connected undirected graph with nn nodes and n−1n−1 edges. Note that for any two nodes, there is exactly one simple path between them, where a simple path is a path between two nodes that does not contain any node more than once.Here is an example of a tree:   A restriction consists of 33 pairwise distinct integers, aa, bb, and cc (1≤a,b,c≤n1≤a,b,c≤n). It signifies that node bb cannot lie on the simple path between node aa and node cc. Can you help Lord Omkar and become his most trusted disciple? You will need to find heavenly trees for multiple sets of restrictions. It can be shown that a heavenly tree will always exist for any set of restrictions under the given constraints.InputEach test contains multiple test cases. The first line contains the number of test cases tt (1≤t≤1041≤t≤104). Description of the test cases follows.The first line of each test case contains two integers, nn and mm (3≤n≤1053≤n≤105, 1≤m<n1≤m<n), representing the size of the tree and the number of restrictions.The ii-th of the next mm lines contains three integers aiai, bibi, cici (1≤ai,bi,ci≤n1≤ai,bi,ci≤n, aa, bb, cc are distinct), signifying that node bibi cannot lie on the simple path between nodes aiai and cici. It is guaranteed that the sum of nn across all test cases will not exceed 105105.OutputFor each test case, output n−1n−1 lines representing the n−1n−1 edges in the tree. On each line, output two integers uu and vv (1≤u,v≤n1≤u,v≤n, u≠vu≠v) signifying that there is an edge between nodes uu and vv. Given edges have to form a tree that satisfies Omkar's restrictions.ExampleInputCopy2
+7 4
+1 2 3
+3 4 5
+5 6 7
+6 5 4
+5 3
+1 2 3
+2 3 4
+3 4 5
+OutputCopy1 2
+1 3
+3 5
+3 4
+2 7
+7 6
+5 1
+1 3
+3 2
+2 4
+NoteThe output of the first sample case corresponds to the following tree:    For the first restriction, the simple path between 11 and 33 is 1,31,3, which doesn't contain 22. The simple path between 33 and 55 is 3,53,5, which doesn't contain 44. The simple path between 55 and 77 is 5,3,1,2,75,3,1,2,7, which doesn't contain 66. The simple path between 66 and 44 is 6,7,2,1,3,46,7,2,1,3,4, which doesn't contain 55. Thus, this tree meets all of the restrictions.The output of the second sample case corresponds to the following tree:   

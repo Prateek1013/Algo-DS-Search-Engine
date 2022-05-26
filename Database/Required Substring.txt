@@ -1,0 +1,36 @@
+
+CSES - Required Substring
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+Your task is to calculate the number of strings of length nn having a given pattern of length mm as their substring. All strings consist of characters A–Z.
+
+Input
+
+The first input line has an integer nn: the length of the final string.
+
+The second line has a pattern of length mm.
+
+Output
+
+Print the number of strings modulo 109+7109+7.
+
+Constraints
+
+1≤n≤10001≤n≤1000
+1≤m≤1001≤m≤100
+
+Example
+
+Input:
+6
+ABCDB
+
+Output:
+52
+
+Explanation: The final string will be of the form ABCDBxx or xxABCDB where xx is any character between A–Z.    

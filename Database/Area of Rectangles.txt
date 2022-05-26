@@ -1,0 +1,37 @@
+
+CSES - Area of Rectangles
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+Given nn rectangles, your task is to determine the total area of their union.
+
+Input
+
+The first input line has an integer nn: the number of rectangles.
+
+After that, there are nn lines describing the rectangles. Each line has four integers x1x1, y1y1, x2x2 and y2y2: a rectangle begins at point (x1,y1)(x1,y1) and ends at point (x2,y2)(x2,y2).
+
+Output
+
+Print the total area covered by the rectangles.
+
+Constraints
+
+1≤n≤1051≤n≤105
+−106≤x1<x2≤106−106≤x1<x2≤106
+−106≤y1<y2≤106−106≤y1<y2≤106
+
+Example
+
+Input:
+3
+1 3 4 5
+3 1 7 4
+5 3 8 6
+
+Output:
+24 

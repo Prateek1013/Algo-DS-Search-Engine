@@ -1,0 +1,46 @@
+
+CSES - Teleporters Path
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+A game has nn levels and mm teleportes between them. You win the game if you move from level 11 to level nn using every teleporter exactly once.
+
+Can you win the game, and what is a possible way to do it?
+
+Input
+
+The first input line has two integers nn and mm: the number of levels and teleporters. The levels are numbered 1,2,…,n1,2,…,n.
+
+Then, there are mm lines describing the teleporters. Each line has two integers aa and bb: there is a teleporter from level aa to level bb.
+
+You can assume that each pair (a,b)(a,b) in the input is distinct.
+
+Output
+
+Print m+1m+1 integers: the sequence in which you visit the levels during the game. You can print any valid solution.
+
+If there are no solutions, print "IMPOSSIBLE".
+
+Constraints
+
+2≤n≤1052≤n≤105
+1≤m≤2⋅1051≤m≤2⋅105
+1≤a,b≤n1≤a,b≤n
+
+Example
+
+Input:
+5 6
+1 2
+1 3
+2 4
+2 5
+3 1
+4 2
+
+Output:
+1 3 1 2 4 2 5 

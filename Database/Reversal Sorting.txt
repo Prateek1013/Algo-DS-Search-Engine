@@ -1,0 +1,37 @@
+
+CSES - Reversal Sorting
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+You have an array that contains a permutation of integers 1,2,…,n1,2,…,n. Your task is to sort the array in increasing order by reversing subarrays. You can construct any solution that has at most nn reversals.
+
+Input
+
+The first input line has an integer nn: the size of the array. The array elements are numbered 1,2,…,n1,2,…,n.
+
+The next line has nn integers x1,x2,…,xnx1,x2,…,xn: the contents of the array.
+
+Output
+
+First print an integer kk: the number of reversals.
+
+After that, print kk lines that describe the reversals. Each line has two integers aa and bb: you reverse a subarray from position aa to position bb.
+
+Constraints
+
+1≤n≤2⋅1051≤n≤2⋅105
+
+Example
+
+Input:
+4
+2 3 1 4
+
+Output:
+2
+1 3
+2 3 

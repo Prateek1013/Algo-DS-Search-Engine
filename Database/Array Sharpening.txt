@@ -1,0 +1,32 @@
+B. Array Sharpeningtime limit per test1 secondmemory limit per test256 megabytesinputstandard inputoutputstandard outputYou're given an array a1,…,ana1,…,an of nn non-negative integers.Let's call it sharpened if and only if there exists an integer 1≤k≤n1≤k≤n such that a1<a2<…<aka1<a2<…<ak and ak>ak+1>…>anak>ak+1>…>an. In particular, any strictly increasing or strictly decreasing array is sharpened. For example:  The arrays [4][4], [0,1][0,1], [12,10,8][12,10,8] and [3,11,15,9,7,4][3,11,15,9,7,4] are sharpened;  The arrays [2,8,2,8,6,5][2,8,2,8,6,5], [0,1,1,0][0,1,1,0] and [2,5,6,9,8,8][2,5,6,9,8,8] are not sharpened. You can do the following operation as many times as you want: choose any strictly positive element of the array, and decrease it by one. Formally, you can choose any ii (1≤i≤n1≤i≤n) such that ai>0ai>0 and assign ai:=ai−1ai:=ai−1.Tell if it's possible to make the given array sharpened using some number (possibly zero) of these operations.InputThe input consists of multiple test cases. The first line contains a single integer tt (1≤t≤15 0001≤t≤15 000)  — the number of test cases. The description of the test cases follows.The first line of each test case contains a single integer nn (1≤n≤3⋅1051≤n≤3⋅105).The second line of each test case contains a sequence of nn non-negative integers a1,…,ana1,…,an (0≤ai≤1090≤ai≤109).It is guaranteed that the sum of nn over all test cases does not exceed 3⋅1053⋅105.OutputFor each test case, output a single line containing "Yes" (without quotes) if it's possible to make the given array sharpened using the described operations, or "No" (without quotes) otherwise.ExampleInputCopy10
+1
+248618
+3
+12 10 8
+6
+100 11 15 9 7 8
+4
+0 1 1 0
+2
+0 0
+2
+0 1
+2
+1 0
+2
+1 1
+3
+0 1 0
+3
+1 0 1
+OutputCopyYes
+Yes
+Yes
+No
+No
+Yes
+Yes
+Yes
+Yes
+No
+NoteIn the first and the second test case of the first test, the given array is already sharpened.In the third test case of the first test, we can transform the array into [3,11,15,9,7,4][3,11,15,9,7,4] (decrease the first element 9797 times and decrease the last element 44 times). It is sharpened because 3<11<153<11<15 and 15>9>7>415>9>7>4.In the fourth test case of the first test, it's impossible to make the given array sharpened.

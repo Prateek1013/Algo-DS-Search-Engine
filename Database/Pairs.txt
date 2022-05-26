@@ -1,0 +1,22 @@
+B. Pairstime limit per test2 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard outputToad Ivan has mm pairs of integers, each integer is between 11 and nn, inclusive. The pairs are (a1,b1),(a2,b2),…,(am,bm)(a1,b1),(a2,b2),…,(am,bm). He asks you to check if there exist two integers xx and yy (1≤x<y≤n1≤x<y≤n) such that in each given pair at least one integer is equal to xx or yy.InputThe first line contains two space-separated integers nn and mm (2≤n≤3000002≤n≤300000, 1≤m≤3000001≤m≤300000) — the upper bound on the values of integers in the pairs, and the number of given pairs.The next mm lines contain two integers each, the ii-th of them contains two space-separated integers aiai and bibi (1≤ai,bi≤n,ai≠bi1≤ai,bi≤n,ai≠bi) — the integers in the ii-th pair.OutputOutput "YES" if there exist two integers xx and yy (1≤x<y≤n1≤x<y≤n) such that in each given pair at least one integer is equal to xx or yy. Otherwise, print "NO". You can print each letter in any case (upper or lower).ExamplesInputCopy4 6
+1 2
+1 3
+1 4
+2 3
+2 4
+3 4
+OutputCopyNO
+InputCopy5 4
+1 2
+2 3
+3 4
+4 5
+OutputCopyYES
+InputCopy300000 5
+1 2
+1 2
+1 2
+1 2
+1 2
+OutputCopyYES
+NoteIn the first example, you can't choose any xx, yy because for each such pair you can find a given pair where both numbers are different from chosen integers.In the second example, you can choose x=2x=2 and y=4y=4.In the third example, you can choose x=1x=1 and y=2y=2.

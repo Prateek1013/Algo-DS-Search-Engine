@@ -1,0 +1,44 @@
+
+CSES - Critical Cities
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+There are nn cities and mm flight connections between them. A city is called a critical city if it appears on every route from a city to another city.
+
+Your task is to find all critical cities from Syrjälä to Lehmälä.
+
+Input
+
+The first input line has two integers nn and mm: the number of cities and flights. The cities are numbered 1,2,…,n1,2,…,n. City 11 is Syrjälä, and city nn is Lehmälä.
+
+Then, there are mm lines describing the connections. Each line has two integers aa and bb: there is a flight from city aa to city bb. All flights are one-way.
+
+You may assume that there is a route from Syrjälä to Lehmälä.
+
+Output
+
+First print an integer kk: the number of critical cities. After this, print kk integers: the critical cities in increasing order.
+
+Constraints
+
+2≤n≤1052≤n≤105
+1≤m≤2⋅1051≤m≤2⋅105
+1≤a,b≤n1≤a,b≤n
+
+Example
+
+Input:
+5 5
+1 2
+2 3
+2 4
+3 5
+4 5
+
+Output:
+3
+1 2 5 

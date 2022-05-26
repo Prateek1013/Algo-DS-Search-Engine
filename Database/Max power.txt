@@ -1,0 +1,86 @@
+
+Given a binary number (of NN bits) XX. Find the highest power of 2 that divides this number.
+Note: If the binary number is "100" then the highest power of 2 that divides it is 2 (as 2222 = 4)Input:
+The first line contains N the number of bits in the number
+The next line contains a binary number of N bits
+Output:
+The first and only line contains the max power of 2 that divides the given number
+Constraints:
+ 1≤N≤1051≤N≤105
+ 1≤X1≤X
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+5
+10100
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+2
+
+
+
+
+
+Author:
+5★kalpitk
+
+
+Editorial:
+https://discuss.codechef.com/problems/MAX2
+
+
+Tags:
+
+               
+                 String, Binary
+                 
+                     
+                     Data Structures, Mathematics, Number System
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1282
+
+
+Date Added:
+7-04-2019
+
+
+Time Limit:
+1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

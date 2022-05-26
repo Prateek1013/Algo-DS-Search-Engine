@@ -1,0 +1,41 @@
+
+CSES - Grid Paths
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+Consider an n×nn×n grid whose top-left square is (1,1)(1,1) and bottom-right square is (n,n)(n,n).
+
+Your task is to move from the top-left square to the bottom-right square. On each step you may move one square right or down. In addition, there are mm traps in the grid. You cannot move to a square with a trap.
+
+What is the total number of possible paths?
+
+Input
+
+The first input line contains two integers nn and mm: the size of the grid and the number of traps.
+
+After this, there are mm lines describing the traps. Each such line contains two integers yy and xx: the location of a trap.
+
+You can assume that there are no traps in the top-left and bottom-right square.
+
+Output
+
+Print the number of paths modulo 109+7109+7.
+
+Constraints
+
+1≤n≤1061≤n≤106
+1≤m≤10001≤m≤1000
+1≤y,x≤n1≤y,x≤n
+
+Example
+
+Input:
+3 1
+2 2
+
+Output:
+2 

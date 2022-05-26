@@ -1,0 +1,16 @@
+D. Co-growing Sequencetime limit per test2 secondsmemory limit per test512 megabytesinputstandard inputoutputstandard outputA sequence of non-negative integers a1,a2,…,ana1,a2,…,an is called growing if for all ii from 11 to n−1n−1 all ones (of binary representation) in aiai are in the places of ones (of binary representation) in ai+1ai+1 (in other words, ai&ai+1=aiai&ai+1=ai, where && denotes bitwise AND). If n=1n=1 then the sequence is considered growing as well.For example, the following four sequences are growing:   [2,3,15,175][2,3,15,175] — in binary it's [102,112,11112,101011112][102,112,11112,101011112];  [5][5] — in binary it's [1012][1012];  [1,3,7,15][1,3,7,15] — in binary it's [12,112,1112,11112][12,112,1112,11112];  [0,0,0][0,0,0] — in binary it's [02,02,02][02,02,02]. The following three sequences are non-growing:   [3,4,5][3,4,5] — in binary it's [112,1002,1012][112,1002,1012];  [5,4,3][5,4,3] — in binary it's [1012,1002,0112][1012,1002,0112];  [1,2,4,8][1,2,4,8] — in binary it's [00012,00102,01002,10002][00012,00102,01002,10002]. Consider two sequences of non-negative integers x1,x2,…,xnx1,x2,…,xn and y1,y2,…,yny1,y2,…,yn. Let's call this pair of sequences co-growing if the sequence x1⊕y1,x2⊕y2,…,xn⊕ynx1⊕y1,x2⊕y2,…,xn⊕yn is growing where ⊕⊕ denotes bitwise XOR.You are given a sequence of integers x1,x2,…,xnx1,x2,…,xn. Find the lexicographically minimal sequence y1,y2,…,yny1,y2,…,yn such that sequences xixi and yiyi are co-growing.The sequence a1,a2,…,ana1,a2,…,an is lexicographically smaller than the sequence b1,b2,…,bnb1,b2,…,bn if there exists 1≤k≤n1≤k≤n such that ai=biai=bi for any 1≤i<k1≤i<k but ak<bkak<bk.InputThe first line contains an integer tt (1≤t≤1041≤t≤104). Then tt test cases follow.The first line of each test case contains an integer nn (1≤n≤2⋅1051≤n≤2⋅105) — length of the sequence xixi.The second line contains nn integers x1,x2,…,xnx1,x2,…,xn (0≤xi<2300≤xi<230) — elements of the sequence xixi.It is guaranteed that the sum of nn overall all test cases doesn't exceed 2⋅1052⋅105.OutputFor each test case, print nn integers y1,y2,…,yny1,y2,…,yn (0≤yi<2300≤yi<230) — lexicographically minimal sequence such that such that it's co-growing with given sequence xixi.ExampleInputCopy5
+4
+1 3 7 15
+4
+1 2 4 8
+5
+1 2 3 4 5
+4
+11 13 15 1
+1
+0
+OutputCopy0 0 0 0 
+0 1 3 7 
+0 1 0 3 2 
+0 2 0 14 
+0 

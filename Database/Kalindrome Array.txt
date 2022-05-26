@@ -1,0 +1,14 @@
+B. Kalindrome Arraytime limit per test1 secondmemory limit per test256 megabytesinputstandard inputoutputstandard outputAn array [b1,b2,…,bm][b1,b2,…,bm] is a palindrome, if bi=bm+1−ibi=bm+1−i for each ii from 11 to mm. Empty array is also a palindrome.An array is called kalindrome, if the following condition holds: It's possible to select some integer xx and delete some of the elements of the array equal to xx, so that the remaining array (after gluing together the remaining parts) is a palindrome. Note that you don't have to delete all elements equal to xx, and you don't have to delete at least one element equal to xx.For example :   [1,2,1][1,2,1] is kalindrome because you can simply not delete a single element.  [3,1,2,3,1][3,1,2,3,1] is kalindrome because you can choose x=3x=3 and delete both elements equal to 33, obtaining array [1,2,1][1,2,1], which is a palindrome.  [1,2,3][1,2,3] is not kalindrome. You are given an array [a1,a2,…,an][a1,a2,…,an]. Determine if aa is kalindrome or not.InputThe first line contains a single integer tt (1≤t≤1041≤t≤104) — the number of test cases. The description of the test cases follows.The first line of each test case contains a single integer nn (1≤n≤2⋅1051≤n≤2⋅105) — the length of the array.The second line of each test case contains nn integers a1,a2,…,ana1,a2,…,an (1≤ai≤n1≤ai≤n) — elements of the array.It's guaranteed that the sum of nn over all test cases won't exceed 2⋅1052⋅105.OutputFor each test case, print YES if aa is kalindrome and NO otherwise. You can print each letter in any case.ExampleInputCopy4
+1
+1
+2
+1 2
+3
+1 2 3
+5
+1 4 4 1 4
+OutputCopyYES
+YES
+NO
+YES
+NoteIn the first test case, array [1][1] is already a palindrome, so it's a kalindrome as well.In the second test case, we can choose x=2x=2, delete the second element, and obtain array [1][1], which is a palindrome.In the third test case, it's impossible to obtain a palindrome.In the fourth test case, you can choose x=4x=4 and delete the fifth element, obtaining [1,4,4,1][1,4,4,1]. You also can choose x=1x=1, delete the first and the fourth elements, and obtain [4,4,4][4,4,4].

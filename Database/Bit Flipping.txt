@@ -1,0 +1,25 @@
+B. Bit Flippingtime limit per test1 secondmemory limit per test256 megabytesinputstandard inputoutputstandard outputYou are given a binary string of length nn. You have exactly kk moves. In one move, you must select a single bit. The state of all bits except that bit will get flipped (00 becomes 11, 11 becomes 00). You need to output the lexicographically largest string that you can get after using all kk moves. Also, output the number of times you will select each bit. If there are multiple ways to do this, you may output any of them.A binary string aa is lexicographically larger than a binary string bb of the same length, if and only if the following holds:   in the first position where aa and bb differ, the string aa contains a 11, and the string bb contains a 00. InputThe first line contains a single integer tt (1≤t≤10001≤t≤1000)  — the number of test cases.Each test case has two lines. The first line has two integers nn and kk (1≤n≤2⋅1051≤n≤2⋅105; 0≤k≤1090≤k≤109).The second line has a binary string of length nn, each character is either 00 or 11.The sum of nn over all test cases does not exceed 2⋅1052⋅105.OutputFor each test case, output two lines.The first line should contain the lexicographically largest string you can obtain.The second line should contain nn integers f1,f2,…,fnf1,f2,…,fn, where fifi is the number of times the ii-th bit is selected. The sum of all the integers must be equal to kk.ExampleInputCopy6
+6 3
+100001
+6 4
+100011
+6 0
+000000
+6 1
+111001
+6 11
+101100
+6 12
+001110
+OutputCopy111110
+1 0 0 2 0 0 
+111110
+0 1 1 1 0 1 
+000000
+0 0 0 0 0 0 
+100110
+1 0 0 0 0 0 
+111111
+1 2 1 3 0 4 
+111110
+1 1 4 2 0 4NoteHere is the explanation for the first testcase. Each step shows how the binary string changes in a move.  Choose bit 11: 1–00001→1–111101_00001→1_11110.  Choose bit 44: 1111–10→0001–011111_10→0001_01.  Choose bit 44: 0001–01→1111–100001_01→1111_10.  The final string is 111110111110 and this is the lexicographically largest string we can get.

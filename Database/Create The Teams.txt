@@ -1,0 +1,10 @@
+C. Create The Teamstime limit per test2 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard outputThere are nn programmers that you want to split into several non-empty teams. The skill of the ii-th programmer is aiai. You want to assemble the maximum number of teams from them. There is a restriction for each team: the number of programmers in the team multiplied by the minimum skill among all programmers in the team must be at least xx.Each programmer should belong to at most one team. Some programmers may be left without a team.Calculate the maximum number of teams that you can assemble.InputThe first line contains the integer tt (1≤t≤10001≤t≤1000) — the number of test cases.The first line of each test case contains two integers nn and xx (1≤n≤105;1≤x≤1091≤n≤105;1≤x≤109) — the number of programmers and the restriction of team skill respectively.The second line of each test case contains nn integers a1,a2,…,ana1,a2,…,an (1≤ai≤1091≤ai≤109), where aiai is the skill of the ii-th programmer.The sum of nn over all inputs does not exceed 105105.OutputFor each test case print one integer — the maximum number of teams that you can assemble. ExampleInputCopy3
+5 10
+7 11 2 9 5
+4 8
+2 4 2 3
+4 11
+1 3 3 7
+OutputCopy2
+1
+0

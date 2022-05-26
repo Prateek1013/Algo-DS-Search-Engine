@@ -1,0 +1,103 @@
+
+Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.
+There are N people standing in a queue for Chef's ice cream. They are numbered 1 through N from the front to the back of the queue.
+Chef's customers do not like to wait too long. For each valid i, we know that the ice cream ordered by the i-th person will take Pi seconds to prepare and cost Vi units of money, but if this person has to wait strictly more than Wi seconds in the queue (until Chef starts preparing their order), they will leave. At any time, it is only allowed to prepare the ice cream of the person standing at the front of the queue.
+Chef wants to maximise his profit (the sum of prices of sold ice creams). In order to do that, he may choose to kick some of the customers (possibly nobody) out of the queue. Find the maximum profit Chef can make.
+Input
+
+The first line of the input contains a single integer T denoting the number of test cases. The description of T test cases follows.
+The first line of each test case contains a single integer N.
+N lines follow. For each i (1≤i≤N), each of these lines contains three space-separated integers Wi, Pi and Vi.
+
+Output
+For each test case, print a single line containing one integer — the maximum possible profit.
+Constraints
+
+1≤T≤10
+1≤N≤40
+1≤Pi,Wi,Vi≤109 for each valid i
+
+Subtasks
+Subtask #1 (50 points): 1≤N≤20
+Subtask #2 (50 points): original constraints
+
+                        Sample Input 1
+                        
+
+
+
+
+
+2
+2
+3 7 4
+7 10 5
+2
+3 7 4
+6 10 5
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+9
+5
+
+
+
+
+
+Author:
+6★kingofnumbers
+
+
+Editorial:
+https://discuss.codechef.com/problems/ICECREM
+
+
+Tags:
+
+               
+                 Meet in the middle, Binary Search
+                 
+                     
+                     Algorithms, Searching
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+2382
+
+
+Date Added:
+26-09-2019
+
+
+Time Limit:
+4 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

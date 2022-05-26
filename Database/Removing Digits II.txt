@@ -1,0 +1,34 @@
+
+CSES - Removing Digits II
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+You are given an integer nn. On each step, you may substract from it any one-digit number that appears in it.
+
+How many steps are required to make the number equal to 00?
+
+Input
+
+The only input line has an integer nn.
+
+Output
+
+Print one integer: the minimum number of steps.
+
+Constraints
+
+1≤n≤10181≤n≤1018
+
+Example
+
+Input:
+27
+
+Output:
+5
+
+Explanation: An optimal solution is 27→20→18→10→9→027→20→18→10→9→0.    

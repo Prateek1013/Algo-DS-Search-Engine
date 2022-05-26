@@ -1,0 +1,41 @@
+
+CSES - Network Renovation
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+Syrjälä's network consists of nn computers and n−1n−1 connections between them. It is possible to send data between any two computers.
+
+However, if any connection breaks down, it will no longer be possible to send data between some computers. Your task is to add the minimum number of new connections in such a way that you can still send data between any two computers even if any single connection breaks down.
+
+Input
+
+The first input line has an integer nn: the number of computers. The computers are numbered 1,2,…,n1,2,…,n.
+
+After this, there are n−1n−1 lines describing the connections. Each line has two integers aa and bb: there is a connection between computers aa and bb.
+
+Output
+
+First print an integer kk: the minimum number of new connections. After this, print kk lines describing the connections. You can print any valid solution.
+
+Constraints
+
+3≤n≤1053≤n≤105
+1≤a,b≤n1≤a,b≤n
+
+Example
+
+Input:
+5
+1 2
+1 3
+3 4
+3 5
+
+Output:
+2
+2 4
+4 5 

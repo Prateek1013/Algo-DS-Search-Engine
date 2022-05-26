@@ -1,0 +1,30 @@
+
+CSES - Counting Numbers
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+Your task is to count the number of integers between aa and bb where no two adjacent digits are the same.
+
+Input
+
+The only input line has two integers aa and bb.
+
+Output
+
+Print one integer: the answer to the problem.
+
+Constraints
+
+0≤a≤b≤10180≤a≤b≤1018
+
+Example
+
+Input:
+123 321
+
+Output:
+171 

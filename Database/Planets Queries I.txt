@@ -1,0 +1,45 @@
+
+CSES - Planets Queries I
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+You are playing a game consisting of nn planets. Each planet has a teleporter to another planet (or the planet itself).
+
+Your task is to process qq queries of the form: when you begin on planet xx and travel through kk teleporters, which planet will you reach?
+
+Input
+
+The first input line has two integers nn and qq: the number of planets and queries. The planets are numbered 1,2,…,n1,2,…,n.
+
+The second line has nn integers t1,t2,…,tnt1,t2,…,tn: for each planet, the destination of the teleporter. It is possible that ti=iti=i.
+
+Finally, there are qq lines describing the queries. Each line has two integers xx and kk: you start on planet xx and travel through kk teleporters.
+
+Output
+
+Print the answer to each query.
+
+Constraints
+
+1≤n,q≤2⋅1051≤n,q≤2⋅105
+1≤ti≤n1≤ti≤n
+1≤x≤n1≤x≤n
+0≤k≤1090≤k≤109
+
+Example
+
+Input:
+4 3
+2 1 1 4
+1 2
+3 4
+4 1
+
+Output:
+1
+2
+4 

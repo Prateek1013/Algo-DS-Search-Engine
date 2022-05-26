@@ -1,0 +1,33 @@
+
+CSES - Subordinates
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+Given the structure of a company, your task is to calculate for each employee the number of their subordinates.
+
+Input
+
+The first input line has an integer nn: the number of employees. The employees are numbered 1,2,…,n1,2,…,n, and employee 11 is the general director of the company.
+
+After this, there are n−1n−1 integers: for each employee 2,3,…,n2,3,…,n their direct boss in the company.
+
+Output
+
+Print nn integers: for each employee 1,2,…,n1,2,…,n the number of their subordinates.
+
+Constraints
+
+1≤n≤2⋅1051≤n≤2⋅105
+
+Example
+
+Input:
+5
+1 1 2 3
+
+Output:
+4 1 1 0 0 

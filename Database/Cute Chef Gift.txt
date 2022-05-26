@@ -1,0 +1,108 @@
+
+Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.
+Chef wants to give a gift to Chefina to celebrate their anniversary. Of course, he has a sequence a1,a2,…,aNa1,a2,…,aN ready for this occasion. Since the half-heart necklace is kind of cliche, he decided to cut his sequence into two pieces and give her a piece instead. Formally, he wants to choose an integer ll (1≤l<N1≤l<N) and split the sequence into its prefix with length l and its suffix with length N−l.
+Chef wants his gift to be cute; he thinks that it will be cute if the product of the elements in Chefina's piece is coprime with the product of the elements in his piece. Can you tell him where to cut the sequence? Find the smallest valid l such that Chef's gift would be cute.
+Input
+
+The first line of the input contains a single integer T denoting the number of test cases. The description of T test cases follows.
+The first line of each test case contains the integer N.
+The second line contains N space-separated integers a1,a2,…,aN.
+
+Output
+For each test case, print a single line containing one integer l where Chef should cut the sequence.
+It is guaranteed that a solution exists for the given test data.
+Constraints
+
+1≤T≤20
+2≤N≤105
+2≤ai≤105 for each valid i
+the sum of N over all test cases does not exceed 3⋅105
+
+Subtasks
+Subtask #1 (25 points):
+
+N≤200
+the sum of N over all test cases does not exceed 600
+
+Subtask #2 (40 points):
+
+N≤2,000
+the sum of N over all test cases does not exceed 6,000
+
+Subtask #3 (35 points): original constraints
+
+                        Sample Input 1
+                        
+
+
+
+
+
+1
+4
+2 3 4 5
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+3
+
+
+
+
+
+Author:
+6★mohammed200218
+
+
+Editorial:
+https://discuss.codechef.com/problems/COPAR
+
+
+Tags:
+
+               
+                 Difference Arrays, Prime Divisors
+                 
+                     
+                     Data Structures, Arrays, Mathematics, Number Theory, Integer Factorisation, Divisors
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+2235
+
+
+Date Added:
+19-10-2020
+
+
+Time Limit:
+1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

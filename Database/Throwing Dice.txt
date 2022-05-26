@@ -1,0 +1,32 @@
+
+CSES - Throwing Dice
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+Your task is to calculate the number of ways to get a sum nn by throwing dice. Each throw yields an integer between 1…61…6.
+
+For example, if n=10n=10, some possible ways are 3+3+43+3+4, 1+4+1+41+4+1+4 and 1+1+6+1+11+1+6+1+1.
+
+Input
+
+The only input line contains an integer nn.
+
+Output
+
+Print the number of ways modulo 109+7109+7.
+
+Constraints
+
+1≤n≤10181≤n≤1018
+
+Example
+
+Input:
+8
+
+Output:
+125 

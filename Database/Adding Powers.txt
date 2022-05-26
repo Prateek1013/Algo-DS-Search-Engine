@@ -1,0 +1,17 @@
+C. Adding Powerstime limit per test2 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard outputSuppose you are performing the following algorithm. There is an array v1,v2,…,vnv1,v2,…,vn filled with zeroes at start. The following operation is applied to the array several times — at ii-th step (00-indexed) you can:   either choose position pospos (1≤pos≤n1≤pos≤n) and increase vposvpos by kiki;  or not choose any position and skip this step. You can choose how the algorithm would behave on each step and when to stop it. The question is: can you make array vv equal to the given array aa (vj=ajvj=aj for each jj) after some step?InputThe first line contains one integer TT (1≤T≤10001≤T≤1000) — the number of test cases. Next 2T2T lines contain test cases — two lines per test case.The first line of each test case contains two integers nn and kk (1≤n≤301≤n≤30, 2≤k≤1002≤k≤100) — the size of arrays vv and aa and value kk used in the algorithm.The second line contains nn integers a1,a2,…,ana1,a2,…,an (0≤ai≤10160≤ai≤1016) — the array you'd like to achieve.OutputFor each test case print YES (case insensitive) if you can achieve the array aa after some step or NO (case insensitive) otherwise.ExampleInputCopy5
+4 100
+0 0 0 0
+1 2
+1
+3 4
+1 4 1
+3 2
+0 1 3
+3 9
+0 59049 810
+OutputCopyYES
+YES
+NO
+NO
+YES
+NoteIn the first test case, you can stop the algorithm before the 00-th step, or don't choose any position several times and stop the algorithm.In the second test case, you can add k0k0 to v1v1 and stop the algorithm.In the third test case, you can't make two 11 in the array vv.In the fifth test case, you can skip 9090 and 9191, then add 9292 and 9393 to v3v3, skip 9494 and finally, add 9595 to v2v2.

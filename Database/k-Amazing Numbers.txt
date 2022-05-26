@@ -1,0 +1,10 @@
+A. k-Amazing Numberstime limit per test1 secondmemory limit per test256 megabytesinputstandard inputoutputstandard outputYou are given an array aa consisting of nn integers numbered from 11 to nn.Let's define the kk-amazing number of the array as the minimum number that occurs in all of the subsegments of the array having length kk (recall that a subsegment of aa of length kk is a contiguous part of aa containing exactly kk elements). If there is no integer occuring in all subsegments of length kk for some value of kk, then the kk-amazing number is −1−1.For each kk from 11 to nn calculate the kk-amazing number of the array aa.InputThe first line contains one integer tt (1≤t≤10001≤t≤1000) — the number of test cases. Then tt test cases follow.The first line of each test case contains one integer nn (1≤n≤3⋅1051≤n≤3⋅105) — the number of elements in the array. The second line contains nn integers a1,a2,…,ana1,a2,…,an (1≤ai≤n1≤ai≤n) — the elements of the array. It is guaranteed that the sum of nn over all test cases does not exceed 3⋅1053⋅105.OutputFor each test case print nn integers, where the ii-th integer is equal to the ii-amazing number of the array.ExampleInputCopy3
+5
+1 2 3 4 5
+5
+4 4 4 4 2
+6
+1 3 1 5 3 1
+OutputCopy-1 -1 3 2 1 
+-1 4 4 4 2 
+-1 -1 1 1 1 1 

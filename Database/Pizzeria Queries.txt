@@ -1,0 +1,47 @@
+
+CSES - Pizzeria Queries
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+There are nn buildings on a street, numbered 1,2,…,n1,2,…,n. Each building has a pizzeria and an apartment.
+
+The pizza price in building kk is pkpk. If you order a pizza from building aa to building bb, its price (with delivery) is pa+|a−b|pa+|a−b|.
+
+Your task is to process two types of queries:
+ The pizza price pkpk in building kk becomes xx.
+ You are in building kk and want to order a pizza. What is the minimum price?
+
+Input
+
+The first input line has two integers nn and qq: the number of buildings and queries.
+
+The second line has nn integers p1,p2,…,pnp1,p2,…,pn: the initial pizza price in each building.
+
+Finally, there are qq lines that describe the queries. Each line is either "1 kk xx" or "2 kk".
+
+Output
+
+Print the answer for each query of type 2.
+
+Constraints
+
+1≤n,q≤2⋅1051≤n,q≤2⋅105
+1≤pi,x≤1091≤pi,x≤109
+1≤k≤n1≤k≤n
+
+Example
+
+Input:
+6 3
+8 6 4 5 7 5
+2 2
+1 5 1
+2 2
+
+Output:
+5
+4 

@@ -1,0 +1,17 @@
+C. Ternary XORtime limit per test1 secondmemory limit per test256 megabytesinputstandard inputoutputstandard outputA number is ternary if it contains only digits 00, 11 and 22. For example, the following numbers are ternary: 10221022, 1111, 2121, 20022002.You are given a long ternary number xx. The first (leftmost) digit of xx is guaranteed to be 22, the other digits of xx can be 00, 11 or 22.Let's define the ternary XOR operation ⊙⊙ of two ternary numbers aa and bb (both of length nn) as a number c=a⊙bc=a⊙b of length nn, where ci=(ai+bi)%3ci=(ai+bi)%3 (where %% is modulo operation). In other words, add the corresponding digits and take the remainders of the sums when divided by 33. For example, 10222⊙11021=2121010222⊙11021=21210.Your task is to find such ternary numbers aa and bb both of length nn and both without leading zeros that a⊙b=xa⊙b=x and max(a,b)max(a,b) is the minimum possible.You have to answer tt independent test cases.InputThe first line of the input contains one integer tt (1≤t≤1041≤t≤104) — the number of test cases. Then tt test cases follow. The first line of the test case contains one integer nn (1≤n≤5⋅1041≤n≤5⋅104) — the length of xx. The second line of the test case contains ternary number xx consisting of nn digits 0,10,1 or 22. It is guaranteed that the first digit of xx is 22. It is guaranteed that the sum of nn over all test cases does not exceed 5⋅1045⋅104 (∑n≤5⋅104∑n≤5⋅104).OutputFor each test case, print the answer — two ternary integers aa and bb both of length nn and both without leading zeros such that a⊙b=xa⊙b=x and max(a,b)max(a,b) is the minimum possible. If there are several answers, you can print any.ExampleInputCopy4
+5
+22222
+5
+21211
+1
+2
+9
+220222021
+OutputCopy11111
+11111
+11000
+10211
+1
+1
+110111011
+110111010

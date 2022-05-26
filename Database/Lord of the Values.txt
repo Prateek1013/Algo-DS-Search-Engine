@@ -1,0 +1,24 @@
+B. Lord of the Valuestime limit per test1 secondmemory limit per test256 megabytesinputstandard inputoutputstandard output  While trading on his favorite exchange trader William realized that he found a vulnerability. Using this vulnerability he could change the values of certain internal variables to his advantage. To play around he decided to change the values of all internal variables from a1,a2,…,ana1,a2,…,an to −a1,−a2,…,−an−a1,−a2,…,−an. For some unknown reason, the number of service variables is always an even number.William understands that with his every action he attracts more and more attention from the exchange's security team, so the number of his actions must not exceed 50005000 and after every operation no variable can have an absolute value greater than 10181018. William can perform actions of two types for two chosen variables with indices ii and jj, where i<ji<j:  Perform assignment ai=ai+ajai=ai+aj  Perform assignment aj=aj−aiaj=aj−ai  William wants you to develop a strategy that will get all the internal variables to the desired values.InputEach test contains multiple test cases. The first line contains the number of test cases tt (1≤t≤201≤t≤20). Description of the test cases follows.The first line of each test case contains a single even integer nn (2≤n≤1032≤n≤103), which is the number of internal variables.The second line of each test case contains nn integers a1,a2,…,ana1,a2,…,an (1≤ai≤109)(1≤ai≤109), which are initial values of internal variables.OutputFor each test case print the answer in the following format:The first line of output must contain the total number of actions kk, which the strategy will perform. Note that you do not have to minimize kk. The inequality k≤5000k≤5000 must be satisfied. Each of the next kk lines must contain actions formatted as "type i j", where "type" is equal to "1" if the strategy needs to perform an assignment of the first type and "2" if the strategy needs to perform an assignment of the second type. Note that i<ji<j should hold.We can show that an answer always exists.ExampleInputCopy2
+4
+1 1 1 1
+4
+4 3 1 2
+OutputCopy8
+2 1 2
+2 1 2
+2 1 3
+2 1 3
+2 1 4
+2 1 4
+1 1 2
+1 1 2
+8
+2 1 4
+1 2 4
+1 2 4
+1 2 4
+1 3 4
+1 1 2
+1 1 2
+1 1 4
+NoteFor the first sample test case one possible sequence of operations is as follows:  "2 1 2". Values of variables after performing the operation: [1, 0, 1, 1]  "2 1 2". Values of variables after performing the operation: [1, -1, 1, 1]  "2 1 3". Values of variables after performing the operation: [1, -1, 0, 1]  "2 1 3". Values of variables after performing the operation: [1, -1, -1, 1]  "2 1 4". Values of variables after performing the operation: [1, -1, -1, 0]  "2 1 4". Values of variables after performing the operation: [1, -1, -1, -1]  "1 1 2". Values of variables after performing the operation: [0, -1, -1, -1]  "1 1 2". Values of variables after performing the operation: [-1, -1, -1, -1] For the second sample test case one possible sequence of operations is as follows:  "2 1 4". Values of variables after performing the operation: [4, 3, 1, -2]  "1 2 4". Values of variables after performing the operation: [4, 1, 1, -2]  "1 2 4". Values of variables after performing the operation: [4, -1, 1, -2]  "1 2 4". Values of variables after performing the operation: [4, -3, 1, -2]  "1 3 4". Values of variables after performing the operation: [4, -3, -1, -2]  "1 1 2". Values of variables after performing the operation: [1, -3, -1, -2]  "1 1 2". Values of variables after performing the operation: [-2, -3, -1, -2]  "1 1 4". Values of variables after performing the operation: [-4, -3, -1, -2] 

@@ -1,0 +1,30 @@
+
+CSES - Creating Strings II
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+Given a string, your task is to calculate the number of different strings that can be created using its characters.
+
+Input
+
+The only input line has a string of length nn. Each character is between a–z.
+
+Output
+
+Print the number of different strings modulo 109+7109+7.
+
+Constraints
+
+1≤n≤1061≤n≤106
+
+Example
+
+Input:
+aabac
+
+Output:
+20 

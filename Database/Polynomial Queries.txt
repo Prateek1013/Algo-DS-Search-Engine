@@ -1,0 +1,43 @@
+
+CSES - Polynomial Queries
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+Your task is to maintain an array of nn values and efficiently process the following types of queries:
+Increase the first value in range [a,b][a,b] by 11, the second value by 22, the third value by 33, and so on.
+Calculate the sum of values in range [a,b][a,b].
+
+Input
+
+The first input line has two integers nn and qq: the size of the array and the number of queries.
+
+The next line has nn values t1,t2,…,tnt1,t2,…,tn: the initial contents of the array.
+
+Finally, there are qq lines describing the queries. The format of each line is either "1 aa bb" or "2 aa bb".
+
+Output
+
+Print the answer to each sum query.
+
+Constraints
+
+ 1≤n,q≤2⋅1051≤n,q≤2⋅105
+ 1≤ti≤1061≤ti≤106
+ 1≤a≤b≤n1≤a≤b≤n
+
+Example
+
+Input:
+5 3
+4 2 3 1 7
+2 1 5
+1 1 5
+2 1 5
+
+Output:
+17
+32 

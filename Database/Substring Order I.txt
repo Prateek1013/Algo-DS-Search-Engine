@@ -1,0 +1,37 @@
+
+CSES - Substring Order I
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+You are given a string of length nn. If all of its distinct substrings are ordered lexicographically, what is the kkth smallest of them?
+
+Input
+
+The first input line has a string of length nn that consists of characters a–z.
+
+The second input line has an integer kk.
+
+Output
+
+Print the kkth smallest distinct substring in lexicographical order.
+
+Constraints
+
+1≤n≤1051≤n≤105
+1≤k≤n(n+1)21≤k≤n(n+1)2
+It is guaranteed that kk does not exceed the number of distinct substrings.
+
+Example
+
+Input:
+babaacbaab
+10
+
+Output:
+aba
+
+Explanation: The 10 smallest distinct substrings in order are a, aa, aab, aac, aacb, aacba, aacbaa, aacbaab, ab, and aba.    

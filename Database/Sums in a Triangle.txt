@@ -1,0 +1,126 @@
+
+Given an integer NN, let us consider a triangle of numbers of NN lines in which a number a11a11 appears in the first line, two numbers a21a21 and a22a22 appear in the second line, three numbers a31a31, a32a32 and a33a33 appear in the third line, etc. In general, ii numbers ai1,ai2…aiiai1,ai2…aii appear in the ithith line for all 1≤i≤N1≤i≤N. Develop a program that will compute the largest of the sums of numbers that appear on the paths starting from the top towards the base, so that:
+
+on each path the next number is located on the row below, more precisely either directly below or below and one place to the right.
+
+Warning: large Input/Output data, be careful with certain languages 
+Input Format
+
+The first line of the input contains an integer TT, the number of test cases. 
+Then T test cases follow. Each test case starts with an integer NN, the number of rows. Then NN lines follow where in ithith line contains ii integers ai1,ai2…aiiai1,ai2…aii.
+
+Output Format
+For each test case print the maximum path sum in a separate line.
+Constraints
+
+1≤T≤10001≤T≤1000
+1≤N<1001≤N<100
+0≤aij<1000≤aij<100
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+2
+3
+1
+2 1
+1 2 3
+4
+1
+1 2
+4 1 2
+2 3 1 1
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+5
+9
+
+
+Explanation
+Test case 1:
+There are a total of 44 paths
+
+(1,1)→(2,1)→(3,1)(1,1)→(2,1)→(3,1) with sum equal to 44.
+(1,1)→(2,1)→(3,2)(1,1)→(2,1)→(3,2) with sum equal to 55.
+(1,1)→(2,2)→(3,2)(1,1)→(2,2)→(3,2) with sum equal to 44.
+(1,1)→(2,2)→(3,3)(1,1)→(2,2)→(3,3) with sum equal to 55.
+
+Therefore, the maximum sum over all paths is equal to 55.
+Test case 2:
+There are a total of 88 paths
+
+(1,1)→(2,1)→(3,1)→(4,1)(1,1)→(2,1)→(3,1)→(4,1) with sum equal to 88.
+(1,1)→(2,1)→(3,1)→(4,2)(1,1)→(2,1)→(3,1)→(4,2) with sum equal to 99.
+(1,1)→(2,1)→(3,2)→(4,2)(1,1)→(2,1)→(3,2)→(4,2) with sum equal to 77.
+(1,1)→(2,1)→(3,2)→(4,3)(1,1)→(2,1)→(3,2)→(4,3) with sum equal to 44.
+(1,1)→(2,2)→(3,2)→(4,2)(1,1)→(2,2)→(3,2)→(4,2) with sum equal to 77.
+(1,1)→(2,2)→(3,2)→(4,3)(1,1)→(2,2)→(3,2)→(4,3) with sum equal to 55.
+(1,1)→(2,2)→(3,3)→(4,3)(1,1)→(2,2)→(3,3)→(4,3) with sum equal to 66.
+(1,1)→(2,2)→(3,3)→(4,4)(1,1)→(2,2)→(3,3)→(4,4) with sum equal to 66.
+
+Therefore, the maximum sum over all paths is equal to 99.
+
+
+
+Author:
+u_admin_codechef_pw
+
+
+Editorial:
+https://discuss.codechef.com/problems/SUMTRIAN
+
+
+Tags:
+
+               
+                 Top-down, Bottom-up
+                 
+                     
+                     Algorithms, Dynamic Programming, DP Approach
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+869
+
+
+Date Added:
+1-12-2008
+
+
+Time Limit:
+3 secs
+
+
+Source Limit:
+5000 Bytes
+
+
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

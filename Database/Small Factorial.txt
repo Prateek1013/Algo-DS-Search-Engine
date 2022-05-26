@@ -1,0 +1,81 @@
+
+
+Write a program to find the factorial value of any number entered by the user.
+
+Input
+ 
+
+The first line contains an integer T, the total number of testcases. Then T lines follow, each line contains an integer N. 
+
+Output
+For each test case, display the factorial of the given number N in a new line.
+Constraints
+
+1 ≤ T ≤ 1000
+0 ≤ N ≤ 20
+
+Example
+Input
+3 
+3 
+4
+5
+
+Output
+
+6
+24
+120
+
+
+
+
+Author:
+1★vicky002
+
+
+Editorial:
+https://discuss.codechef.com/problems/FLOW018
+
+
+Tags:
+
+               
+                 Loops, Factorials, Implementation
+                 
+                     
+                     Basic Programming Concepts, Mathematics, Basic Maths, Algorithms
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+760
+
+
+Date Added:
+27-04-2015
+
+
+Time Limit:
+1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, PERL, SCALA, LUA, BASH, JS, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

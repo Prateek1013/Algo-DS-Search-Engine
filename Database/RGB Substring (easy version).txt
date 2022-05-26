@@ -1,0 +1,11 @@
+D1. RGB Substring (easy version)time limit per test2 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard outputThe only difference between easy and hard versions is the size of the input.You are given a string ss consisting of nn characters, each character is 'R', 'G' or 'B'.You are also given an integer kk. Your task is to change the minimum number of characters in the initial string ss so that after the changes there will be a string of length kk that is a substring of ss, and is also a substring of the infinite string "RGBRGBRGB ...".A string aa is a substring of string bb if there exists a positive integer ii such that a1=bia1=bi, a2=bi+1a2=bi+1, a3=bi+2a3=bi+2, ..., a|a|=bi+|a|−1a|a|=bi+|a|−1. For example, strings "GBRG", "B", "BR" are substrings of the infinite string "RGBRGBRGB ..." while "GR", "RGR" and "GGG" are not.You have to answer qq independent queries.InputThe first line of the input contains one integer qq (1≤q≤20001≤q≤2000) — the number of queries. Then qq queries follow.The first line of the query contains two integers nn and kk (1≤k≤n≤20001≤k≤n≤2000) — the length of the string ss and the length of the substring.The second line of the query contains a string ss consisting of nn characters 'R', 'G' and 'B'.It is guaranteed that the sum of nn over all queries does not exceed 20002000 (∑n≤2000∑n≤2000).OutputFor each query print one integer — the minimum number of characters you need to change in the initial string ss so that after changing there will be a substring of length kk in ss that is also a substring of the infinite string "RGBRGBRGB ...".ExampleInputCopy3
+5 2
+BGGGG
+5 3
+RBRGR
+5 5
+BBBRR
+OutputCopy1
+0
+3
+NoteIn the first example, you can change the first character to 'R' and obtain the substring "RG", or change the second character to 'R' and obtain "BR", or change the third, fourth or fifth character to 'B' and obtain "GB".In the second example, the substring is "BRG".

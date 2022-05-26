@@ -1,0 +1,40 @@
+
+CSES - Binomial Coefficients
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+Your task is to calculate nn binomial coefficients modulo 109+7109+7.
+
+A binomial coefficient (ab)(ab) can be calculated using the formula a!b!(a−b)!a!b!(a−b)!. We assume that aa and bb are integers and 0≤b≤a0≤b≤a.
+
+Input
+
+The first input line contains an integer nn: the number of calculations.
+
+After this, there are nn lines, each of which contains two integers aa and bb.
+
+Output
+
+Print each binomial coefficient modulo 109+7109+7.
+
+Constraints
+
+1≤n≤1051≤n≤105
+0≤b≤a≤1060≤b≤a≤106
+
+Example
+
+Input:
+3
+5 3
+8 1
+9 5
+
+Output:
+10
+8
+126 

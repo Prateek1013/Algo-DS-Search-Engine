@@ -1,0 +1,108 @@
+
+Alice and Bob play the following game.They choose a number N to play with.The runs are as follows :
+
+1.Bob plays first and the two players alternate.
+
+2.In his/her turn ,a player can subtract from N any prime     number(including 1) less than N.The number thus obtained is the new N.
+
+3.The person who cannot make a move in his/her turn loses the game.
+
+Assuming both play optimally,who wins the game ?
+Input format:
+The first line contains the number of test cases T.Each of the next lines contains an integer N.
+Output format:
+Output T lines one for each test case,containing "ALICE" if Alice wins the game ,or "BOB" if Bob wins the game.
+Constraints:
+1 <= T <= 1000000
+1 <= N <= 1000000000
+
+
+Note : For the first test case, Bob cannot make any move and hence Alice wins the game. For the second test case, Bob subtracts 1 from N. Now, Alice cannot make a move and loses the game.
+
+            
+            
+            
+            
+            
+                
+                    
+                        Sample Input 1
+                        
+
+
+
+
+
+2
+1
+2
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+ALICE
+BOB
+
+
+
+
+
+Author:
+snigdha_adm
+
+
+Tester:
+4★rajivka
+
+
+Editorial:
+https://discuss.codechef.com/problems/NUMGAME2
+
+
+Tags:
+
+               
+                 Game Theory
+                 
+                     
+                     Algorithms
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1316
+
+
+Date Added:
+23-11-2010
+
+
+Time Limit:
+0.31 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, PERL, SCALA, LUA, BASH, JS, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

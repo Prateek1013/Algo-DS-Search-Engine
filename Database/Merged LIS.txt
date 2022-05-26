@@ -1,0 +1,103 @@
+
+You have two arrays AA and BB of size NN and M respectively. You have to merge both the arrays to form a new array C of size N+M (the relative order of elements in the original arrays A and B should not change in the array C).
+For e.g. if A=[1,2,7] and B=[3,6,5], one possible way to merge them to form C is: C=[1,3,6,2,5,7].
+Maximize the length of longest non-decreasing subsequence of the merged array C.
+As a reminder, a non-decreasing subsequence of some array X is a sequence of indices i1,i2,...,ik, such that i1<i2<...<ik and Xi1≤Xi2≤...≤Xik
+Input Format
+
+The first line contains T - the number of test cases. Then the test cases follow.
+The first line of each test case contains two integers N and M - the size of the array A and B respectively.
+The second line of each test case contains N space-separated integers A1,A2,…,AN denoting the array A.
+The third line of each test case contains M space-separated integers B1,B2,…,BM denoting the array B.
+
+Output Format
+For each test case, output the maximum possible length of longest non-decreasing subsequence in the merged array.
+Constraints
+
+1≤T≤1000
+1≤N,M≤105 
+1≤Ai,Bi≤109
+It is guaranteed that the sum of N over all test cases does not exceed 4⋅105.
+It is guaranteed that the sum of M over all test cases does not exceed 4⋅105.
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+2
+3 2
+6 4 5
+1 3
+2 3
+1 3
+2 2 4
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+4
+5
+
+
+Explanation
+Test Case-1: We can merge the arrays in the following way: C=[6,1,3,4,5]. The length of longest non-decreasing subsequence in this case is 4.
+Test Case-2: We can merge the arrays in the following way: C=[1,2,2,3,4]. The length of longest non-decreasing subsequence in this case is 5.
+
+
+
+Author:
+6★jeevanjyot
+
+
+Editorial:
+https://discuss.codechef.com/problems/MERGEDLIS
+
+
+Tags:
+
+               
+                 cook-off, cook137, easy, jeevanjyot
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1978
+
+
+Date Added:
+11-01-2022
+
+
+Time Limit:
+1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

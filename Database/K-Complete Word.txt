@@ -1,0 +1,14 @@
+C. K-Complete Wordtime limit per test2 secondsmemory limit per test512 megabytesinputstandard inputoutputstandard outputWord ss of length nn is called kk-complete if   ss is a palindrome, i.e. si=sn+1−isi=sn+1−i for all 1≤i≤n1≤i≤n;  ss has a period of kk, i.e. si=sk+isi=sk+i for all 1≤i≤n−k1≤i≤n−k. For example, "abaaba" is a 33-complete word, while "abccba" is not.Bob is given a word ss of length nn consisting of only lowercase Latin letters and an integer kk, such that nn is divisible by kk. He wants to convert ss to any kk-complete word.To do this Bob can choose some ii (1≤i≤n1≤i≤n) and replace the letter at position ii with some other lowercase Latin letter.So now Bob wants to know the minimum number of letters he has to replace to convert ss to any kk-complete word.Note that Bob can do zero changes if the word ss is already kk-complete.You are required to answer tt test cases independently.InputThe first line contains a single integer tt (1≤t≤1051≤t≤105) — the number of test cases.The first line of each test case contains two integers nn and kk (1≤k<n≤2⋅1051≤k<n≤2⋅105, nn is divisible by kk).The second line of each test case contains a word ss of length nn.It is guaranteed that word ss only contains lowercase Latin letters. And it is guaranteed that the sum of nn over all test cases will not exceed 2⋅1052⋅105.OutputFor each test case, output one integer, representing the minimum number of characters he has to replace to convert ss to any kk-complete word.ExampleInputCopy4
+6 2
+abaaba
+6 3
+abaaba
+36 9
+hippopotomonstrosesquippedaliophobia
+21 7
+wudixiaoxingxingheclp
+OutputCopy2
+0
+23
+16
+NoteIn the first test case, one optimal solution is aaaaaa.In the second test case, the given word itself is kk-complete.

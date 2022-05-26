@@ -1,0 +1,13 @@
+C. K-th Not Divisible by ntime limit per test1 secondmemory limit per test256 megabytesinputstandard inputoutputstandard outputYou are given two positive integers nn and kk. Print the kk-th positive integer that is not divisible by nn.For example, if n=3n=3, and k=7k=7, then all numbers that are not divisible by 33 are: 1,2,4,5,7,8,10,11,13…1,2,4,5,7,8,10,11,13…. The 77-th number among them is 1010.InputThe first line contains an integer tt (1≤t≤10001≤t≤1000) — the number of test cases in the input. Next, tt test cases are given, one per line.Each test case is two positive integers nn (2≤n≤1092≤n≤109) and kk (1≤k≤1091≤k≤109).OutputFor each test case print the kk-th positive integer that is not divisible by nn.ExampleInputCopy6
+3 7
+4 12
+2 1000000000
+7 97
+1000000000 1000000000
+2 1
+OutputCopy10
+15
+1999999999
+113
+1000000001
+1

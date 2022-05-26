@@ -1,0 +1,88 @@
+
+Write a program to obtain 2 numbers (( AA andand BB )) and an arithmetic operator (C)(C) and then design a calculatorcalculator depending upon the operator entered by the user.
+So for example if C="+", you have to sum the two numbers.
+If C="-", you have to subtract the two numbers.
+If C=" * ", you have to print the product.
+If C=" / ", you have to divide the two numbers.
+Input:
+
+First line will contain the first number AA.
+Second line will contain the second number BB.
+Third line will contain the operator CC, that is to be performed on A and B.
+
+Output:
+Output a single line containing the answer, obtained by, performing the operator on the numbers. Your output will be considered to be correct if the difference between your output and the actual answer is not more than 10−610−6.
+Constraints
+
+−1000≤A≤1000−1000≤A≤1000
+−1000≤B≤1000−1000≤B≤1000 andand B≠0B≠0
+CC cancan onlyonly bebe oneone ofof thesethese 44 operatorsoperators {" + ", " - ", " * ", " / "}
+
+Sample Input:
+8
+2
+/
+
+Sample Output:
+4.0
+
+Sample Input:
+5
+3
++
+
+Sample Output:
+8
+
+
+
+
+Author:
+5★tanmay28
+
+
+Editorial:
+https://discuss.codechef.com/problems/URCALC
+
+
+Tags:
+
+               
+                 Implementation
+                 
+                     
+                     Algorithms
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1028
+
+
+Date Added:
+2-06-2018
+
+
+Time Limit:
+1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

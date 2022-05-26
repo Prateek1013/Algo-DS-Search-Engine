@@ -1,0 +1,45 @@
+
+CSES - Road Reparation
+
+
+Time limit: 1.00 s
+Memory limit: 128 MB
+
+
+
+There are nn cities and mm roads between them. Unfortunately, the condition of the roads is so poor that they cannot be used. Your task is to repair some of the roads so that there will be a decent route between any two cities.
+
+For each road, you know its reparation cost, and you should find a solution where the total cost is as small as possible.
+
+Input
+
+The first input line has two integers nn and mm: the number of cities and roads. The cities are numbered 1,2,…,n1,2,…,n.
+
+Then, there are mm lines describing the roads. Each line has three integers aa, bb and cc: there is a road between cities aa and bb, and its reparation cost is cc. All roads are two-way roads.
+
+Every road is between two different cities, and there is at most one road between two cities.
+
+Output
+
+Print one integer: the minimum total reparation cost. However, if there are no solutions, print "IMPOSSIBLE".
+
+Constraints
+
+1≤n≤1051≤n≤105
+1≤m≤2⋅1051≤m≤2⋅105
+1≤a,b≤n1≤a,b≤n
+1≤c≤1091≤c≤109
+
+Example
+
+Input:
+5 6
+1 2 3
+2 3 5
+2 4 2
+3 4 8
+5 1 7
+5 4 4
+
+Output:
+14 

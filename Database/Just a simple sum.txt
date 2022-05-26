@@ -1,0 +1,84 @@
+
+Given n and m, calculate 11 +  22 + 33 + ... + nn modulo m.
+Input
+The first line contains 1 ≤ t ≤ 10, the number of test cases. Then the test case definitions follow. Each test case is of the form: 1 ≤ n 1018, 1 ≤ m ≤ 200000
+Output
+For each test case simply write a single line containing the answer to the problem.
+
+                        Sample Input 1
+                        
+
+
+
+
+
+6
+1 100000
+2 100000
+3 100000
+4 100000
+5 100000
+6 100000
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+1
+5
+32
+288
+3413
+50069
+
+
+
+
+
+Author:
+admin
+
+
+Tags:
+
+               
+                 admin
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+2023
+
+
+Date Added:
+15-09-2009
+
+
+Time Limit:
+2.13807 - 17.1046 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

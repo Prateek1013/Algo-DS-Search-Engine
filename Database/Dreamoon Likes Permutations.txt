@@ -1,0 +1,24 @@
+B. Dreamoon Likes Permutationstime limit per test2 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard outputThe sequence of mm integers is called the permutation if it contains all integers from 11 to mm exactly once. The number mm is called the length of the permutation.Dreamoon has two permutations p1p1 and p2p2 of non-zero lengths l1l1 and l2l2.Now Dreamoon concatenates these two permutations into another sequence aa of length l1+l2l1+l2. First l1l1 elements of aa is the permutation p1p1 and next l2l2 elements of aa is the permutation p2p2. You are given the sequence aa, and you need to find two permutations p1p1 and p2p2. If there are several possible ways to restore them, you should find all of them. (Note that it is also possible that there will be no ways.)InputThe first line contains an integer tt (1≤t≤100001≤t≤10000) denoting the number of test cases in the input.Each test case contains two lines. The first line contains one integer nn (2≤n≤2000002≤n≤200000): the length of aa. The second line contains nn integers a1,a2,…,ana1,a2,…,an (1≤ai≤n−11≤ai≤n−1).The total sum of nn is less than 200000200000.OutputFor each test case, the first line of output should contain one integer kk: the number of ways to divide aa into permutations p1p1 and p2p2.Each of the next kk lines should contain two integers l1l1 and l2l2 (1≤l1,l2≤n,l1+l2=n1≤l1,l2≤n,l1+l2=n), denoting, that it is possible to divide aa into two permutations of length l1l1 and l2l2 (p1p1 is the first l1l1 elements of aa, and p2p2 is the last l2l2 elements of aa). You can print solutions in any order.ExampleInputCopy6
+5
+1 4 3 2 1
+6
+2 4 1 3 2 1
+4
+2 1 1 3
+4
+1 3 3 1
+12
+2 1 3 4 5 6 7 8 9 1 10 2
+3
+1 1 1
+OutputCopy2
+1 4
+4 1
+1
+4 2
+0
+0
+1
+2 10
+0
+NoteIn the first example, two possible ways to divide aa into permutations are {1}+{4,3,2,1}{1}+{4,3,2,1} and {1,4,3,2}+{1}{1,4,3,2}+{1}.In the second example, the only way to divide aa into permutations is {2,4,1,3}+{2,1}{2,4,1,3}+{2,1}.In the third example, there are no possible ways.

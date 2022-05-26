@@ -1,0 +1,118 @@
+
+Read problems statements in Mandarin Chinese  and Russian.
+Chef loves games! But he likes to invent his own. Now he plays game "Digit Jump". Chef has a sequence of digits S1,S2,…,SNS1,S2,…,SN. He is staying in the first digit S1 and wants to reach the last digit SN in the minimal number of jumps. 
+While staying in some index i Chef can jump into i−1 and i+1, but he can't jump out from sequence. Or he can jump into any digit with the same value Si. 
+Help Chef to find the minimal number of jumps he need to reach digit SN from digit S1. 
+Input
+Input contains a single line consist of string S of length N - the sequence of digits.
+Output
+In a single line print single integer - the minimal number of jumps he needs.
+Constraints
+
+1≤N≤105
+Each symbol of S is a digit from 0 to 9. 
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+01234567890
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+1
+
+
+Explanation
+Test Case 1: Chef can directly jump from the first digit (it is 0) to the last (as it is also 0).
+
+                        Sample Input 2
+                        
+
+
+
+
+
+012134444444443
+
+
+
+                        Sample Output 2
+                        
+
+
+
+
+
+4
+
+
+Explanation
+Test Case 2: Chef should follow the following path: 1−2−4−5−15.
+
+
+
+Author:
+berezin
+
+
+Tester:
+2★shiplu
+
+
+Editorial:
+https://discuss.codechef.com/problems/DIGJUMP
+
+
+Tags:
+
+               
+                 String, BFS
+                 
+                     
+                     Data Structures, Algorithms, Graph Algos, Traversals
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1886
+
+
+Date Added:
+12-03-2014
+
+
+Time Limit:
+1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, PERL, SCALA, LUA, BASH, JS, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

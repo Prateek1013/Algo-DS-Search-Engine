@@ -1,0 +1,14 @@
+C. Minimize Distancetime limit per test1 secondmemory limit per test256 megabytesinputstandard inputoutputstandard outputA total of nn depots are located on a number line. Depot ii lies at the point xixi for 1≤i≤n1≤i≤n.You are a salesman with nn bags of goods, attempting to deliver one bag to each of the nn depots. You and the nn bags are initially at the origin 00. You can carry up to kk bags at a time. You must collect the required number of goods from the origin, deliver them to the respective depots, and then return to the origin to collect your next batch of goods.Calculate the minimum distance you need to cover to deliver all the bags of goods to the depots. You do not have to return to the origin after you have delivered all the bags.InputEach test contains multiple test cases. The first line contains the number of test cases tt (1≤t≤105001≤t≤10500). Description of the test cases follows.The first line of each test case contains two integers nn and kk (1≤k≤n≤2⋅1051≤k≤n≤2⋅105).The second line of each test case contains nn integers x1,x2,…,xnx1,x2,…,xn (−109≤xi≤109−109≤xi≤109). It is possible that some depots share the same position.It is guaranteed that the sum of nn over all test cases does not exceed 2⋅1052⋅105.OutputFor each test case, output a single integer denoting the minimum distance you need to cover to deliver all the bags of goods to the depots. ExampleInputCopy4
+5 1
+1 2 3 4 5
+9 3
+-5 -10 -15 6 5 8 3 7 4
+5 3
+2 2 3 3 3
+4 2
+1000000000 1000000000 1000000000 1000000000
+OutputCopy25
+41
+7
+3000000000
+NoteIn the first test case, you can carry only one bag at a time. Thus, the following is a solution sequence that gives a minimum travel distance: 0→2→0→4→0→3→0→1→0→50→2→0→4→0→3→0→1→0→5, where each 00 means you go the origin and grab one bag, and each positive integer means you deliver the bag to a depot at this coordinate, giving a total distance of 2525 units. It must be noted that there are other sequences that give the same distance.In the second test case, you can follow the following sequence, among multiple such sequences, to travel minimum distance: 0→6→8→7→0→5→4→3→0→(−5)→(−10)→(−15)0→6→8→7→0→5→4→3→0→(−5)→(−10)→(−15), with distance 4141. It can be shown that 4141 is the optimal distance for this test case.

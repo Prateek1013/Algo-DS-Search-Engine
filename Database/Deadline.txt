@@ -1,0 +1,8 @@
+A. Deadlinetime limit per test2 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard outputAdilbek was assigned to a special project. For Adilbek it means that he has nn days to run a special program and provide its results. But there is a problem: the program needs to run for dd days to calculate the results.Fortunately, Adilbek can optimize the program. If he spends xx (xx is a non-negative integer) days optimizing the program, he will make the program run in ⌈dx+1⌉⌈dx+1⌉ days (⌈a⌉⌈a⌉ is the ceiling function: ⌈2.4⌉=3⌈2.4⌉=3, ⌈2⌉=2⌈2⌉=2). The program cannot be run and optimized simultaneously, so the total number of days he will spend is equal to x+⌈dx+1⌉x+⌈dx+1⌉.Will Adilbek be able to provide the generated results in no more than nn days?InputThe first line contains a single integer TT (1≤T≤501≤T≤50) — the number of test cases.The next TT lines contain test cases – one per line. Each line contains two integers nn and dd (1≤n≤1091≤n≤109, 1≤d≤1091≤d≤109) — the number of days before the deadline and the number of days the program runs.OutputPrint TT answers — one per test case. For each test case print YES (case insensitive) if Adilbek can fit in nn days or NO (case insensitive) otherwise.ExampleInputCopy3
+1 1
+4 5
+5 11
+OutputCopyYES
+YES
+NO
+NoteIn the first test case, Adilbek decides not to optimize the program at all, since d≤nd≤n.In the second test case, Adilbek can spend 11 day optimizing the program and it will run ⌈52⌉=3⌈52⌉=3 days. In total, he will spend 44 days and will fit in the limit.In the third test case, it's impossible to fit in the limit. For example, if Adilbek will optimize the program 22 days, it'll still work ⌈112+1⌉=4⌈112+1⌉=4 days.

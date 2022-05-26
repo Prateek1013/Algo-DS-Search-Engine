@@ -1,0 +1,40 @@
+
+CSES - Projects
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+There are nn projects you can attend. For each project, you know its starting and ending days and the amount of money you would get as reward. You can only attend one project during a day.
+
+What is the maximum amount of money you can earn?
+
+Input
+
+The first input line contains an integer nn: the number of projects.
+
+After this, there are nn lines. Each such line has three integers aiai, bibi, and pipi: the starting day, the ending day, and the reward.
+
+Output
+
+Print one integer: the maximum amount of money you can earn.
+
+Constraints
+
+1≤n≤2⋅1051≤n≤2⋅105
+1≤ai≤bi≤1091≤ai≤bi≤109
+1≤pi≤1091≤pi≤109
+
+Example
+
+Input:
+4
+2 4 4
+3 6 6
+6 8 2
+5 7 3
+
+Output:
+7 

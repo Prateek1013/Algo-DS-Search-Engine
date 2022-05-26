@@ -1,0 +1,14 @@
+C. Gas Pipelinetime limit per test2 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard outputYou are responsible for installing a gas pipeline along a road. Let's consider the road (for simplicity) as a segment [0,n][0,n] on OXOX axis. The road can have several crossroads, but for simplicity, we'll denote each crossroad as an interval (x,x+1)(x,x+1) with integer xx. So we can represent the road as a binary string consisting of nn characters, where character 0 means that current interval doesn't contain a crossroad, and 1 means that there is a crossroad.Usually, we can install the pipeline along the road on height of 11 unit with supporting pillars in each integer point (so, if we are responsible for [0,n][0,n] road, we must install n+1n+1 pillars). But on crossroads we should lift the pipeline up to the height 22, so the pipeline won't obstruct the way for cars.We can do so inserting several zig-zag-like lines. Each zig-zag can be represented as a segment [x,x+1][x,x+1] with integer xx consisting of three parts: 0.50.5 units of horizontal pipe + 11 unit of vertical pipe + 0.50.5 of horizontal. Note that if pipeline is currently on height 22, the pillars that support it should also have length equal to 22 units.  Each unit of gas pipeline costs us aa bourles, and each unit of pillar — bb bourles. So, it's not always optimal to make the whole pipeline on the height 22. Find the shape of the pipeline with minimum possible cost and calculate that cost.Note that you must start and finish the pipeline on height 11 and, also, it's guaranteed that the first and last characters of the input string are equal to 0.InputThe fist line contains one integer TT (1≤T≤1001≤T≤100) — the number of queries. Next 2⋅T2⋅T lines contain independent queries — one query per two lines.The first line contains three integers nn, aa, bb (2≤n≤2⋅1052≤n≤2⋅105, 1≤a≤1081≤a≤108, 1≤b≤1081≤b≤108) — the length of the road, the cost of one unit of the pipeline and the cost of one unit of the pillar, respectively.The second line contains binary string ss (|s|=n|s|=n, si∈{0,1}si∈{0,1}, s1=sn=0s1=sn=0) — the description of the road.It's guaranteed that the total length of all strings ss doesn't exceed 2⋅1052⋅105.OutputPrint TT integers — one per query. For each query print the minimum possible cost of the constructed pipeline.ExampleInputCopy4
+8 2 5
+00110010
+8 1 1
+00110010
+9 100000000 100000000
+010101010
+2 5 1
+00
+OutputCopy94
+25
+2900000000
+13
+NoteThe optimal pipeline for the first query is shown at the picture above.The optimal pipeline for the second query is pictured below:  The optimal (and the only possible) pipeline for the third query is shown below:  The optimal pipeline for the fourth query is shown below:  

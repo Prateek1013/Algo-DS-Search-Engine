@@ -1,0 +1,34 @@
+
+CSES - Writing Numbers
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+You would like to write a list of positive integers 1,2,3,…1,2,3,… using your computer. However, you can press each key 00–99 at most nn times during the process.
+
+What is the last number you can write?
+
+Input
+
+The only input line contains the value of nn.
+
+Output
+
+Print the last number you can write.
+
+Constraints
+
+1≤n≤10181≤n≤1018
+
+Example
+
+Input:
+5
+
+Output:
+12
+
+Explanation: You can write the numbers 1,2,…,121,2,…,12. This requires that you press key 11 five times, so you cannot write the number 1313.    

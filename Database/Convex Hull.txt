@@ -1,0 +1,47 @@
+
+CSES - Convex Hull
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+Given a set of nn points in the two-dimensional plane, your task is to determine the convex hull of the points.
+
+Input
+
+The first input line has an integer nn: the number of points.
+
+After this, there are nn lines that describe the points. Each line has two integers xx and yy: the coordinates of a point.
+
+You may assume that each point is distinct, and the area of the hull is positive.
+
+Output
+
+First print an integer kk: the number of points in the convex hull.
+
+After this, print kk lines that describe the points. You can print the points in any order. Print all points that lie on the convex hull.
+
+Constraints
+
+3≤n≤2⋅1053≤n≤2⋅105
+−109≤x,y≤109−109≤x,y≤109
+
+Example
+
+Input:
+6
+2 1
+2 5
+3 3
+4 3
+4 4
+6 3
+
+Output:
+4
+2 1
+2 5
+4 4
+6 3 

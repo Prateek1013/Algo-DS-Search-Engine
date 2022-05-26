@@ -1,0 +1,100 @@
+
+There are coins of 22 different denominations in Crazyland, 11-cent coins and 22-cent coins. They have two faces - heads and tails.
+Your task is to find out the the number of ways to create a linear arrangement of these coins so that their sum is N cents. The only condition on the linear arrangement is that the first coin in the arrangement should always have heads up. All other coins could have either tails or heads up. 
+Take N=2 as an example. The possible arrangements are (1H,1H), (2H), (1H,1T), where H is heads and T is tails. Therefore there are 3 possible arrangements that sum up to 2-cents.
+Note: While counting make sure to differentiate between heads and tails.
+Input
+
+First line contains a single integer - T, the number of test cases.
+T lines follow, each containing a single integer N, the required sum.
+
+Constraints
+
+0≤T≤104
+1≤N≤109
+
+Output
+For each case the output should be a single integer representing the number of such arrangements possible. As the answer can be very large, print it modulo 109+7.
+
+                        Sample Input 1
+                        
+
+
+
+
+
+3
+1
+2
+3
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+1
+3
+8
+
+
+
+
+
+Author:
+kaush_adm
+
+
+Tester:
+6★laycurse
+
+
+Editorial:
+https://discuss.codechef.com/problems/CSUMD
+
+
+Tags:
+
+               
+                 Matrix Exponentiation
+                 
+                     
+                     Mathematics, Matrices, Matrix Multiplication
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1744
+
+
+Date Added:
+5-05-2012
+
+
+Time Limit:
+0.314214 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, PERL, SCALA, LUA, BASH, JS, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

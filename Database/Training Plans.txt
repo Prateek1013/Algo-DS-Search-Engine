@@ -1,0 +1,120 @@
+
+Nathan is preparing for the Dash marathon. He has N training plans. The i-th plan has an effectiveness of Ai, but requires that at least Bi other training plans must be performed before it. A training plan cannot be repeated. 
+If he performs some K>0 distinct trainings - P1,P2,…,PK (1 \le P_i \le N, P_i \neq P_j) then his training score is \frac{\sum_{j=1}^{K} A_{P_j}}{K}. If Nathan does not perform any training plan (K = 0), then his score is 0.
+What is the highest score that Nathan can get by performing zero or more training plans, if he can perform them in any order?
+Input Format
+
+The first line of the input contains a single integer T - the number of test cases. The description of T test cases follows.
+The first line of each test case contains N - the number of training plans.
+The second line contains N integers A_1, A_2, \ldots, A_N where A_i is the effectiveness of the i-th training plan.
+The third line contains N integers B_1, B_2, \ldots, B_N where B_i is the number of pre-requisite training plans for the i-th training plan.
+
+Output Format
+
+For each test case, output a single real number - the highest score that Nathan can get by performing zero or more training plans.
+Your answer is considered correct if its absolute or relative error does not exceed 10^{-6}.
+Formally, let your answer be X, and the jury's answer be Y. Your answer is accepted if and only if \frac{|X - Y|}{\max{(1, |Y|)}} \le 10^{-6}.
+
+Constraints
+
+1 \leq T \leq 1000
+1 \leq N \leq 10^5
+-10^5 \leq A_i \leq 10^5
+0 \leq B_i \leq N - 1
+Sum of N over all test cases does not exceed 5\cdot 10^5.
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+3
+4
+-9 -21 -4 -43
+0 0 0 0
+5
+10 14 5 9 1
+4 1 3 0 0
+7
+-1 101 5 63 -7 -88 59
+0 1 6 2 3 4 5
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+0.000000
+11.500000
+54.333333
+
+
+Explanation
+Test case 1: It is optimal for Nathan to not perform any training plans as all the plans have negative A_i value.
+Test case 2: It is optimal for Nathan to:
+
+First, perform the 4-th training plan (for which B_i = 0).
+Then perform the 2-nd training plan (for which B_i = 1 which is satisfied as he has already performed 1 training plan)
+
+Test case 3: It is optimal for Nathan to:
+
+First, perform the 1-st training plan (for which B_i = 0).
+Then perform the 2-nd training plan (for which B_i = 1 which is satisfied as he has already performed 1 training plan)
+Then perform the 4-th training plan (for which B_i = 2 which is satisfied as he has already performed 2 training plans)
+
+
+
+
+Author:
+5★ereh
+
+
+Editorial:
+https://discuss.codechef.com/problems/TRAINPLN
+
+
+Tags:
+
+               
+                 easy, ereh, greedy, priority-queue, start32
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+2065
+
+
+Date Added:
+25-03-2022
+
+
+Time Limit:
+1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

@@ -1,0 +1,114 @@
+
+Dazzler has a blank canvas and (N−1)(N−1) colours numbered from 22 to NN.
+Let BB denote the beauty of the canvas. The beauty of a blank canvas is 11.
+Dazzler paints the canvas by using all the (N−1)(N−1) colours exactly once. On applying the ithith colour (2≤i≤N)(2≤i≤N):
+
+If ii is odd, B=BB=B && ii.
+If ii is even, B=B⊕iB=B⊕i. 
+
+Find the beauty of the canvas after applying all (N−1)(N−1) colours.
+Note: The colours are applied in ascending order. Colour number 22 is applied first. The ithith numbered colour is applied after (i−1)th(i−1)th numbered colour for all i>2i>2.
+Here && and ⊕⊕ denote the bitwise AND and bitwise XOR operations respectively.
+Input Format
+
+First line will contain TT, the number of test cases. Then the test cases follow.
+Each test case contains of a single line of input, a single integer NN.
+
+Output Format
+For each test case, output a single integer, the beauty of the canvas after applying all (N−1)(N−1) colours.
+Constraints
+
+1≤T≤1051≤T≤105
+2≤N≤10162≤N≤1016
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+2
+4
+10
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+7
+3
+
+
+Explanation
+Initially, B=1B=1.
+
+On applying colour 22: Since 22 is even, B=B⊕2=1⊕2=3B=B⊕2=1⊕2=3.
+On applying colour 33: Since 33 is odd, B=B&3=3&3=3B=B&3=3&3=3.
+On applying colour 44: Since 44 is even, B=B⊕4=3⊕4=7B=B⊕4=3⊕4=7.
+On applying colour 55: Since 55 is odd, B=B&5=7&5=5B=B&5=7&5=5.
+On applying colour 66: Since 66 is even, B=B⊕6=5⊕6=3B=B⊕6=5⊕6=3.
+On applying colour 77: Since 77 is odd, B=B&7=3&7=3B=B&7=3&7=3.
+On applying colour 88: Since 88 is even, B=B⊕8=3⊕8=11B=B⊕8=3⊕8=11.
+On applying colour 99: Since 99 is odd, B=B&9=11&9=9B=B&9=11&9=9.
+On applying colour 1010: Since 1010 is even, B=B⊕10=9⊕10=3B=B⊕10=9⊕10=3.
+
+Test case 11: There are 33 colours numbered 2,3,2,3, and 44. Initially, B=1B=1.
+The final beauty of the canvas is 77.
+Test case 22: There are 99 colours numbered 2,3,4,5,6,7,8,9,2,3,4,5,6,7,8,9, and 1010. Initially, B=1B=1.
+The final beauty of the canvas is 33.
+
+
+
+Author:
+5★dazlersan1
+
+
+Editorial:
+https://discuss.codechef.com/problems/AXNODR
+
+
+Tags:
+
+               
+                 april221, bit-manipulation, dazlersan1, easy, finding-pattern
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1246
+
+
+Date Added:
+4-04-2022
+
+
+Time Limit:
+1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

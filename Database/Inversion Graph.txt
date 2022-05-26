@@ -1,0 +1,20 @@
+C. Inversion Graphtime limit per test1 secondmemory limit per test256 megabytesinputstandard inputoutputstandard outputYou are given a permutation p1,p2,…,pnp1,p2,…,pn. Then, an undirected graph is constructed in the following way: add an edge between vertices ii, jj such that i<ji<j if and only if pi>pjpi>pj. Your task is to count the number of connected components in this graph.Two vertices uu and vv belong to the same connected component if and only if there is at least one path along edges connecting uu and vv.A permutation is an array consisting of nn distinct integers from 11 to nn in arbitrary order. For example, [2,3,1,5,4][2,3,1,5,4] is a permutation, but [1,2,2][1,2,2] is not a permutation (22 appears twice in the array) and [1,3,4][1,3,4] is also not a permutation (n=3n=3 but there is 44 in the array).InputEach test contains multiple test cases. The first line contains a single integer tt (1≤t≤1051≤t≤105) — the number of test cases. Description of the test cases follows.The first line of each test case contains a single integer nn (1≤n≤1051≤n≤105) — the length of the permutation.The second line of each test case contains nn integers p1,p2,…,pnp1,p2,…,pn (1≤pi≤n1≤pi≤n) — the elements of the permutation.It is guaranteed that the sum of nn over all test cases does not exceed 2⋅1052⋅105.OutputFor each test case, print one integer kk — the number of connected components.ExampleInputCopy6
+3
+1 2 3
+5
+2 1 4 3 5
+6
+6 1 4 2 5 3
+1
+1
+6
+3 2 1 6 5 4
+5
+3 1 5 2 4
+OutputCopy3
+3
+1
+1
+2
+1
+NoteEach separate test case is depicted in the image below. The colored squares represent the elements of the permutation. For one permutation, each color represents some connected component. The number of distinct colors is the answer.  

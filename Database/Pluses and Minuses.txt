@@ -1,0 +1,7 @@
+C. Pluses and Minusestime limit per test2 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard outputYou are given a string ss consisting only of characters + and -. You perform some process with this string. This process can be described by the following pseudocode: res = 0for init = 0 to inf    cur = init    ok = true    for i = 1 to |s|        res = res + 1        if s[i] == '+'            cur = cur + 1        else            cur = cur - 1        if cur < 0            ok = false            break    if ok        breakNote that the infinf denotes infinity, and the characters of the string are numbered from 11 to |s||s|.You have to calculate the value of the resres after the process ends.InputThe first line contains one integer tt (1≤t≤10001≤t≤1000) — the number of test cases.The only lines of each test case contains string ss (1≤|s|≤1061≤|s|≤106) consisting only of characters + and -.It's guaranteed that sum of |s||s| over all test cases doesn't exceed 106106.OutputFor each test case print one integer — the value of the resres after the process ends.ExampleInputCopy3
+--+-
+---
+++--+-
+OutputCopy7
+9
+6

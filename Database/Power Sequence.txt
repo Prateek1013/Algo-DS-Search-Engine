@@ -1,0 +1,7 @@
+B. Power Sequencetime limit per test1 secondmemory limit per test256 megabytesinputstandard inputoutputstandard outputLet's call a list of positive integers a0,a1,...,an−1a0,a1,...,an−1 a power sequence if there is a positive integer cc, so that for every 0≤i≤n−10≤i≤n−1 then ai=ciai=ci.Given a list of nn positive integers a0,a1,...,an−1a0,a1,...,an−1, you are allowed to:  Reorder the list (i.e. pick a permutation pp of {0,1,...,n−1}{0,1,...,n−1} and change aiai to apiapi), then  Do the following operation any number of times: pick an index ii and change aiai to ai−1ai−1 or ai+1ai+1 (i.e. increment or decrement aiai by 11) with a cost of 11. Find the minimum cost to transform a0,a1,...,an−1a0,a1,...,an−1 into a power sequence.InputThe first line contains an integer nn (3≤n≤1053≤n≤105).The second line contains nn integers a0,a1,...,an−1a0,a1,...,an−1 (1≤ai≤1091≤ai≤109).OutputPrint the minimum cost to transform a0,a1,...,an−1a0,a1,...,an−1 into a power sequence.ExamplesInputCopy3
+1 3 2
+OutputCopy1
+InputCopy3
+1000000000 1000000000 1000000000
+OutputCopy1999982505
+NoteIn the first example, we first reorder {1,3,2}{1,3,2} into {1,2,3}{1,2,3}, then increment a2a2 to 44 with cost 11 to get a power sequence {1,2,4}{1,2,4}.

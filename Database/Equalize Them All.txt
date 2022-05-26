@@ -1,0 +1,13 @@
+D. Equalize Them Alltime limit per test2 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard outputYou are given an array aa consisting of nn integers. You can perform the following operations arbitrary number of times (possibly, zero):  Choose a pair of indices (i,j)(i,j) such that |i−j|=1|i−j|=1 (indices ii and jj are adjacent) and set ai:=ai+|ai−aj|ai:=ai+|ai−aj|;  Choose a pair of indices (i,j)(i,j) such that |i−j|=1|i−j|=1 (indices ii and jj are adjacent) and set ai:=ai−|ai−aj|ai:=ai−|ai−aj|. The value |x||x| means the absolute value of xx. For example, |4|=4|4|=4, |−3|=3|−3|=3.Your task is to find the minimum number of operations required to obtain the array of equal elements and print the order of operations to do it.It is guaranteed that you always can obtain the array of equal elements using such operations.Note that after each operation each element of the current array should not exceed 10181018 by absolute value.InputThe first line of the input contains one integer nn (1≤n≤2⋅1051≤n≤2⋅105) — the number of elements in aa.The second line of the input contains nn integers a1,a2,…,ana1,a2,…,an (0≤ai≤2⋅1050≤ai≤2⋅105), where aiai is the ii-th element of aa.OutputIn the first line print one integer kk — the minimum number of operations required to obtain the array of equal elements.In the next kk lines print operations itself. The pp-th operation should be printed as a triple of integers (tp,ip,jp)(tp,ip,jp), where tptp is either 11 or 22 (11 means that you perform the operation of the first type, and 22 means that you perform the operation of the second type), and ipip and jpjp are indices of adjacent elements of the array such that 1≤ip,jp≤n1≤ip,jp≤n, |ip−jp|=1|ip−jp|=1. See the examples for better understanding.Note that after each operation each element of the current array should not exceed 10181018 by absolute value.If there are many possible answers, you can print any.ExamplesInputCopy5
+2 4 6 6 6
+OutputCopy2
+1 2 3 
+1 1 2 
+InputCopy3
+2 8 10
+OutputCopy2
+2 2 1 
+2 3 2 
+InputCopy4
+1 1 1 1
+OutputCopy0

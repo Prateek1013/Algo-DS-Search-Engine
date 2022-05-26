@@ -1,0 +1,19 @@
+B. Replace and Keep Sortedtime limit per test2 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard outputGiven a positive integer kk, two arrays are called kk-similar if:  they are strictly increasing;  they have the same length;  all their elements are positive integers between 11 and kk (inclusive);  they differ in exactly one position. You are given an integer kk, a strictly increasing array aa and qq queries. For each query, you are given two integers li≤rili≤ri. Your task is to find how many arrays bb exist, such that bb is kk-similar to array [ali,ali+1…,ari][ali,ali+1…,ari]. InputThe first line contains three integers nn, qq and kk (1≤n,q≤1051≤n,q≤105, n≤k≤109n≤k≤109) — the length of array aa, the number of queries and number kk.The second line contains nn integers a1,a2,…,ana1,a2,…,an (1≤ai≤k1≤ai≤k). This array is strictly increasing  — a1<a2<…<ana1<a2<…<an.Each of the following qq lines contains two integers lili, riri (1≤li≤ri≤n1≤li≤ri≤n).OutputPrint qq lines. The ii-th of them should contain the answer to the ii-th query.ExamplesInputCopy4 2 5
+1 2 4 5
+2 3
+3 4
+OutputCopy4
+3
+InputCopy6 5 10
+2 4 6 7 8 9
+1 4
+1 2
+3 5
+1 6
+5 5
+OutputCopy8
+9
+7
+6
+9
+NoteIn the first example:In the first query there are 44 arrays that are 55-similar to [2,4][2,4]: [1,4],[3,4],[2,3],[2,5][1,4],[3,4],[2,3],[2,5].In the second query there are 33 arrays that are 55-similar to [4,5][4,5]: [1,5],[2,5],[3,5][1,5],[2,5],[3,5].

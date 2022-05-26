@@ -1,0 +1,45 @@
+
+CSES - Company Queries I
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+A company has nn employees, who form a tree hierarchy where each employee has a boss, except for the general director.
+
+Your task is to process qq queries of the form: who is employee xx's boss kk levels higher up in the hierarchy?
+
+Input
+
+The first input line has two integers nn and qq: the number of employees and queries. The employees are numbered 1,2,…,n1,2,…,n, and employee 11 is the general director.
+
+The next line has n−1n−1 integers e2,e3,…,ene2,e3,…,en: for each employee 2,3,…,n2,3,…,n their boss.
+
+Finally, there are qq lines describing the queries. Each line has two integers xx and kk: who is employee xx's boss kk levels higher up?
+
+Output
+
+Print the answer for each query. If such a boss does not exist, print −1−1.
+
+Constraints
+
+1≤n,q≤2⋅1051≤n,q≤2⋅105
+1≤ei≤i−11≤ei≤i−1
+1≤x≤n1≤x≤n
+1≤k≤n1≤k≤n
+
+Example
+
+Input:
+5 3
+1 1 3 3
+4 1
+4 2
+4 3
+
+Output:
+3
+1
+-1 

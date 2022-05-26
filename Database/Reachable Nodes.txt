@@ -1,0 +1,41 @@
+
+CSES - Reachable Nodes
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+A directed acyclic graph consists of nn nodes and mm edges. The nodes are numbered 1,2,…,n1,2,…,n.
+
+Calculate for each node the number of nodes you can reach from that node (including the node itself).
+
+Input
+
+The first input line has two integers nn and mm: the number of nodes and edges.
+
+Then there are mm lines describing the edges. Each line has two distinct integers aa and bb: there is an edge from node aa to node bb.
+
+Output
+
+Print nn integers: for each node the number of reachable nodes.
+
+Constraints
+
+1≤n≤5⋅1041≤n≤5⋅104
+1≤m≤1051≤m≤105
+
+Example
+
+Input:
+5 6
+1 2
+1 3
+1 4
+2 3
+3 5
+4 5
+
+Output:
+5 3 2 2 1 

@@ -1,0 +1,19 @@
+B. Square Fillingtime limit per test1 secondmemory limit per test256 megabytesinputstandard inputoutputstandard outputYou are given two matrices AA and BB. Each matrix contains exactly nn rows and mm columns. Each element of AA is either 00 or 11; each element of BB is initially 00.You may perform some operations with matrix BB. During each operation, you choose any submatrix of BB having size 2×22×2, and replace every element in the chosen submatrix with 11. In other words, you choose two integers xx and yy such that 1≤x<n1≤x<n and 1≤y<m1≤y<m, and then set Bx,yBx,y, Bx,y+1Bx,y+1, Bx+1,yBx+1,y and Bx+1,y+1Bx+1,y+1 to 11.Your goal is to make matrix BB equal to matrix AA. Two matrices AA and BB are equal if and only if every element of matrix AA is equal to the corresponding element of matrix BB.Is it possible to make these matrices equal? If it is, you have to come up with a sequence of operations that makes BB equal to AA. Note that you don't have to minimize the number of operations.InputThe first line contains two integers nn and mm (2≤n,m≤502≤n,m≤50).Then nn lines follow, each containing mm integers. The jj-th integer in the ii-th line is Ai,jAi,j. Each integer is either 00 or 11.OutputIf it is impossible to make BB equal to AA, print one integer −1−1.Otherwise, print any sequence of operations that transforms BB into AA in the following format: the first line should contain one integer kk — the number of operations, and then kk lines should follow, each line containing two integers xx and yy for the corresponding operation (set Bx,yBx,y, Bx,y+1Bx,y+1, Bx+1,yBx+1,y and Bx+1,y+1Bx+1,y+1 to 11). The condition 0≤k≤25000≤k≤2500 should hold.ExamplesInputCopy3 3
+1 1 1
+1 1 1
+0 1 1
+OutputCopy3
+1 1
+1 2
+2 2
+InputCopy3 3
+1 0 1
+1 0 1
+0 0 0
+OutputCopy-1
+InputCopy3 2
+0 0
+0 0
+0 0
+OutputCopy0
+NoteThe sequence of operations in the first example: 000000000→110110000→110110110→110111111000110111111000→110→111→111000000000011 

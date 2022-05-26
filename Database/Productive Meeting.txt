@@ -1,0 +1,42 @@
+D. Productive Meetingtime limit per test2 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard outputAn important meeting is to be held and there are exactly nn people invited. At any moment, any two people can step back and talk in private. The same two people can talk several (as many as they want) times per meeting.Each person has limited sociability. The sociability of the ii-th person is a non-negative integer aiai. This means that after exactly aiai talks this person leaves the meeting (and does not talk to anyone else anymore). If ai=0ai=0, the ii-th person leaves the meeting immediately after it starts.A meeting is considered most productive if the maximum possible number of talks took place during it.You are given an array of sociability aa, determine which people should talk to each other so that the total number of talks is as large as possible.InputThe first line contains an integer tt (1≤t≤10001≤t≤1000) — the number of test cases.The next 2t2t lines contain descriptions of the test cases.The first line of each test case description contains an integer nn (2≤n≤2⋅1052≤n≤2⋅105) —the number of people in the meeting. The second line consists of nn space-separated integers a1,a2,…,ana1,a2,…,an (0≤ai≤2⋅1050≤ai≤2⋅105) — the sociability parameters of all people. It is guaranteed that the sum of nn over all test cases does not exceed 2⋅1052⋅105. It is also guaranteed that the sum of all aiai (over all test cases and all ii) does not exceed 2⋅1052⋅105.OutputPrint tt answers to all test cases.On the first line of each answer print the number kk — the maximum number of talks possible in a meeting.On each of the next kk lines print two integers ii and jj (1≤i,j≤n1≤i,j≤n and i≠ji≠j) — the numbers of people who will have another talk.If there are several possible answers, you may print any of them.ExampleInputCopy8
+2
+2 3
+3
+1 2 3
+4
+1 2 3 4
+3
+0 0 2
+2
+6 2
+3
+0 0 2
+5
+8 2 0 1 1
+5
+0 1 0 0 6
+OutputCopy2
+1 2
+1 2
+3
+1 3
+2 3
+2 3
+5
+1 3
+2 4
+2 4
+3 4
+3 4
+0
+2
+1 2
+1 2
+0
+4
+1 2
+1 5
+1 4
+1 2
+1
+5 2

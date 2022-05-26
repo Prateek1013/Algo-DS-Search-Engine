@@ -1,0 +1,34 @@
+
+CSES - Special Substrings
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+A substring is called special if every character that appears in the string appears the same number of times in the substring.
+
+Your task is to count the number of special substrings in a given string.
+
+Input
+
+The only input line has a string of length nn. Every character is between a...z.
+
+Output
+
+Print one integer: the number of special substrings.
+
+Constraints
+
+1≤n≤2⋅1051≤n≤2⋅105
+
+Example
+
+Input:
+abccabab
+
+Output:
+5
+
+Explanation: The special substrings are abc, cab, abccab, bccaba and ccabab.    

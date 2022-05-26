@@ -1,0 +1,21 @@
+B. Epic Noveltime limit per test2 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard outputAlex has bought a new novel that was published in nn volumes. He has read these volumes one by one, and each volume has taken him several (maybe one) full days to read. So, on the first day, he was reading the first volume, and on each of the following days, he was reading either the same volume he had been reading on the previous day, or the next volume.Let vivi be the number of the volume Alex was reading on the ii-th day. Here are some examples:  one of the possible situations is v1=1v1=1, v2=1v2=1, v3=2v3=2, v4=3v4=3, v5=3v5=3 — this situation means that Alex has spent two days (11-st and 22-nd) on the first volume, one day (33-rd) on the second volume, and two days (44-th and 55-th) on the third volume;  a situation v1=2v1=2, v2=2v2=2, v3=3v3=3 is impossible, since Alex started with the first volume (so v1v1 cannot be anything but 11);  a situation v1=1v1=1, v2=2v2=2, v3=3v3=3, v4=1v4=1 is impossible, since Alex won't return to the first volume after reading the third one;  a situation v1=1v1=1, v2=3v2=3 is impossible, since Alex doesn't skip volumes. You know that Alex was reading the volume vava on the day aa, and the volume vcvc on the day cc. Now you want to guess which volume was he reading on the day bb, which is between the days aa and cc (so a<b<ca<b<c). There may be some ambiguity, so you want to make any valid guess (i. e. choose some volume number vbvb so it's possible that Alex was reading volume vava on day aa, volume vbvb on day bb, and volume vcvc on day cc).InputEach test contains multiple test cases. The first line contains the number of test cases tt (1≤t≤1001≤t≤100). Description of the test cases follows.The first line of each test case contains a single integer nn (1≤n≤1001≤n≤100) — the number of volumes the novel consists of.The second line of each test case contains two integers aa and vava (1≤a≤981≤a≤98; 1≤va≤a1≤va≤a) denoting that Alex was reading volume vava at day aa.The third line of each test case contains two integers cc and vcvc (a+2≤c≤100a+2≤c≤100; va≤vc≤cva≤vc≤c) denoting that Alex was reading volume vcvc at day cc.The fourth line of each test case contains one integer bb (a<b<ca<b<c) — the day you are interested in.It's guaranteed that the input is not controversial, in other words, Alex could read volume vava at day aa and volume vcvc at day cc.OutputFor each test case, print the possible index of volume Alex could read at day bb. If there are multiple answers, print any.ExampleInputCopy4
+1
+1 1
+100 1
+99
+4
+10 1
+20 4
+16
+100
+1 1
+100 100
+42
+100
+1 1
+100 2
+99
+OutputCopy1
+2
+42
+1NoteIn the first test case, since Alex was reading volume 11 both at day 11 and at day 100100 then he was reading volume 11 at any day between them.In the second test case, Alex could read any volume from 11 to 44 at day 1616. For example, he could read volume 11 from day 11 to day 1515, volume 22 at days 1616 and 1717, volume 33 at day 1818 and volume 44 at days 1919 and 2020.In the third test case, there is only one possible situation: Alex read one volume per day, so at day 4242 he read volume 4242.

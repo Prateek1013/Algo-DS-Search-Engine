@@ -1,0 +1,143 @@
+
+You are given an array A=[A1,A2,…,AN] containing N integers.
+Consider any subarray [AL,AL+1,…,AR] of this subarray (where 1≤L≤R≤N). Ther weirdness of this subarray, denoted w(L,R), is defined to be the number of indices L≤i≤R such that Ai equals the number of occurrences of Ai in this subarray.
+Formally, we define w(L,R) for 1≤L≤R≤N as follows:
+
+For every integer x, let fL,R(x) denote the number of indices L≤j≤R such that Aj=x.
+w(L,R) then equals the number of L≤i≤R such that Ai=fL,R(Ai)
+
+For example, let A=[1,3,5,2,1,2,9,5]. Then,
+
+w(1,8)=2, which can be computed as follows.
+We have
+f1,8(1)=2
+f1,8(2)=2
+f1,8(3)=1
+f1,8(5)=2
+f1,8(9)=1
+
+The only indices which satisfy f1,8(Ai)=Ai are i=4 and i=6, and hence w(1,8)=2.
+
+w(3,5)=1 — the subarray is [5,2,1], and each of 1,2,5 occur exactly once in this subarray. Of these, only 1 equals the number of its occurrences in this subarray.
+
+Given A, your task is to compute the sum of the weirdness of all subarrays of A, i.e, the value
+N∑L=1N∑R=Lw(L,R)
+Input Format
+
+The first line of input contains a single integer T, denoting the number of test cases. The description of T test cases follows.
+The first line of each test case contains an integer N, the size of the given array.
+The second line of each test case contains N space-separated integers A1,A2,…,AN — the elements of A.
+
+Output Format
+For each test case, output a single line containing a single integer — the sum of the weirdness of all subarrays of the given array.
+Constraints
+
+1≤T≤103
+1≤N≤106
+1≤Ai≤106
+The sum of N across all test cases does not exceed 106.
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+4
+3
+3 3 3
+4
+1 2 1 2
+5
+1 2 3 2 1
+8
+1 2 2 3 2 3 3 1
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+3
+10
+16
+54
+
+
+Explanation
+Test Case 1: The only subarray with non-zero weirdness is the whole array, which has w(1,3)=3 because every value is 3 and it appears thrice.
+Test Case 2: There are 10 subarrays. Their weirdness values are as follows:
+
+w(1,1)=1, because A1=1 and f1,1(1)=1.
+w(1,2)=1, because A1=1 and f1,2(1)=1; but A2=2 and f1,2(2)=1≠2.
+w(1,3)=0, here f1,3(1)=2≠1 and f1,3(2)=1≠2 so no index satisfies the condition.
+w(1,4)=2, here indices 2 and 4 satisfy the condition.
+w(2,2)=0
+w(2,3)=1, index 3 satisfies the condition.
+w(2,4)=3, all indices satisfy the condition.
+w(3,3)=1
+w(3,4)=1, index 3 satisfies the condition.
+w(4,4)=0
+
+
+
+
+Author:
+6★retarded_ape
+
+
+Tester:
+7★aryanc403
+
+
+Editorial:
+https://discuss.codechef.com/problems/WRDVLS
+
+
+Tags:
+
+               
+                 1D Arrays, Basic Maths, Sliding Window
+                 
+                     
+                     Data Structures, Arrays, Mathematics, Algorithms, Greedy
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+2393
+
+
+Date Added:
+12-12-2021
+
+
+Time Limit:
+2 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

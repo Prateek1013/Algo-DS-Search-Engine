@@ -1,0 +1,108 @@
+
+In Chefland, each chicken has XX legs and each duck has YY legs. Chef's farm can have exactly one type of bird. 
+Given that the birds on the farm have a total of ZZ legs:
+
+Print CHICKEN, if the farm can have only chickens but not ducks.
+Print DUCK, if the farm can have only ducks but not chickens.
+Print ANY, if the farm can have either chickens or ducks.
+Print NONE, if the farm can have neither chickens nor ducks.
+
+Input Format
+
+The first line will contain TT, the number of test cases. Then the test cases follow.
+Each test case consists of a single line of input, containing three space-separated integers X,Y,ZX,Y,Z.
+
+Output Format
+For each test case, output in a single line the type of bird on the farm.
+
+Print CHICKEN, if the farm can have only chickens but not ducks.
+Print DUCK, if the farm can have only ducks but not chickens.
+Print ANY, if the farm can have either chickens or ducks.
+Print NONE, if the farm can have neither chickens nor ducks.
+
+You may print each character of the string in uppercase or lowercase (for example, the strings AnYAnY, anYanY, anyany and ANYANY will all be treated as identical).
+Constraints
+
+1≤T≤10001≤T≤1000
+1≤X,Y,Z≤10001≤X,Y,Z≤1000
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+3
+2 3 5
+2 2 2
+3 4 6
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+NONE
+ANY
+CHICKEN
+
+
+Explanation
+Test case 11: There are 55 legs on the farm. Each chicken has 22 legs and each duck has 33 legs. Thus, the farm can have neither chickens nor ducks.
+Test case 22: There are 22 legs on the farm. Each chicken has 22 legs and each duck has 22 legs. Thus, the farm can have any bird among chicken and duck.
+Test case 33: There are 66 legs on the farm. Each chicken has 33 legs and each duck has 44 legs. Thus, the farm can have chicken only.
+
+
+
+Author:
+5★notsoloud
+
+
+Editorial:
+https://discuss.codechef.com/problems/BIRDFARM
+
+
+Tags:
+
+               
+                 logic-maths, notsoloud, start36
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+591
+
+
+Date Added:
+25-04-2022
+
+
+Time Limit:
+1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

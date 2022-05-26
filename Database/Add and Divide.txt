@@ -1,0 +1,100 @@
+
+You are given two positive integers aa and bb. You also have a number xx, which is initially set to 0. At first, you can add a to x any number of times. After that, you can divide x by b any number of times as long as x is divisible by b.
+Print YES if you can make x equal to 1, otherwise print NO.
+Input Format
+
+First line of input will contain T, the number of test cases. Then the test cases follow.
+Each test case contains a single line, two positive integers a,b.
+
+Output Format
+For each test case, output on one line YES if it is possible to make x , or NO if it is not possible to do so. 
+Output is case insensitive, which means that "yes", "Yes", "YEs", "no", "nO" - all such strings will be acceptable.
+Constraints
+
+1≤T≤100000
+1≤a,b≤109
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+4
+3 10
+9 6
+7 30
+8 12
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+NO
+YES
+NO
+YES
+
+
+Explanation
+Test case 2: We initially have x set to 0. Add a=9 to x for 4 times to make x equal to 36. And then divide x by b=6 for 2 times to make x equal to 1.
+Test case 4: We initially have x set to 0. Add a=8 to x for 18 times to make x equal to 144. And then divide x by b=12 for 2 times to make x equal to 1.
+
+
+
+Author:
+utkarsh_adm
+
+
+Editorial:
+https://discuss.codechef.com/problems/ADDNDIV
+
+
+Tags:
+
+               
+                 Number Theory, Basic Maths
+                 
+                     
+                     Mathematics
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1935
+
+
+Date Added:
+15-09-2021
+
+
+Time Limit:
+1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

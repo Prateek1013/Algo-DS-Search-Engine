@@ -1,0 +1,42 @@
+
+CSES - Divisor Analysis
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+Given an integer, your task is to find the number, sum and product of its divisors. As an example, let us consider the number 1212:
+ the number of divisors is 66 (they are 11, 22, 33, 44, 66, 1212)
+ the sum of divisors is 1+2+3+4+6+12=281+2+3+4+6+12=28
+ the product of divisors is 1⋅2⋅3⋅4⋅6⋅12=17281⋅2⋅3⋅4⋅6⋅12=1728
+
+Since the input number may be large, it is given as a prime factorization.
+
+Input
+
+The first line has an integer nn: the number of parts in the prime factorization.
+
+After this, there are nn lines that describe the factorization. Each line has two numbers xx and kk where xx is a prime and kk is its power.
+
+Output
+
+Print three integers modulo 109+7109+7: the number, sum and product of the divisors.
+
+Constraints
+
+1≤n≤1051≤n≤105
+2≤x≤1062≤x≤106
+each xx is a distinct prime
+1≤k≤1091≤k≤109
+
+Example
+
+Input:
+2
+2 2
+3 1
+
+Output:
+6 28 1728 

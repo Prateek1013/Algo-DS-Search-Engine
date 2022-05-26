@@ -1,0 +1,17 @@
+C. Boats Competitiontime limit per test2 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard outputThere are nn people who want to participate in a boat competition. The weight of the ii-th participant is wiwi. Only teams consisting of two people can participate in this competition. As an organizer, you think that it's fair to allow only teams with the same total weight.So, if there are kk teams (a1,b1)(a1,b1), (a2,b2)(a2,b2), ……, (ak,bk)(ak,bk), where aiai is the weight of the first participant of the ii-th team and bibi is the weight of the second participant of the ii-th team, then the condition a1+b1=a2+b2=⋯=ak+bk=sa1+b1=a2+b2=⋯=ak+bk=s, where ss is the total weight of each team, should be satisfied.Your task is to choose such ss that the number of teams people can create is the maximum possible. Note that each participant can be in no more than one team.You have to answer tt independent test cases.InputThe first line of the input contains one integer tt (1≤t≤10001≤t≤1000) — the number of test cases. Then tt test cases follow.The first line of the test case contains one integer nn (1≤n≤501≤n≤50) — the number of participants. The second line of the test case contains nn integers w1,w2,…,wnw1,w2,…,wn (1≤wi≤n1≤wi≤n), where wiwi is the weight of the ii-th participant.OutputFor each test case, print one integer kk: the maximum number of teams people can compose with the total weight ss, if you choose ss optimally.ExampleInputCopy5
+5
+1 2 3 4 5
+8
+6 6 6 6 6 6 8 8
+8
+1 2 2 1 2 1 1 2
+3
+1 3 3
+6
+1 1 3 4 2 2
+OutputCopy2
+3
+4
+1
+2
+NoteIn the first test case of the example, we can reach the optimal answer for s=6s=6. Then the first boat is used by participants 11 and 55 and the second boat is used by participants 22 and 44 (indices are the same as weights).In the second test case of the example, we can reach the optimal answer for s=12s=12. Then first 66 participants can form 33 pairs.In the third test case of the example, we can reach the optimal answer for s=3s=3. The answer is 44 because we have 44 participants with weight 11 and 44 participants with weight 22.In the fourth test case of the example, we can reach the optimal answer for s=4s=4 or s=6s=6.In the fifth test case of the example, we can reach the optimal answer for s=3s=3. Note that participant with weight 33 can't use the boat because there is no suitable pair for him in the list.

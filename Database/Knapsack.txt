@@ -1,0 +1,12 @@
+A. Knapsacktime limit per test2 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard outputYou have a knapsack with the capacity of WW. There are also nn items, the ii-th one has weight wiwi. You want to put some of these items into the knapsack in such a way that their total weight CC is at least half of its size, but (obviously) does not exceed it. Formally, CC should satisfy: ⌈W2⌉≤C≤W⌈W2⌉≤C≤W. Output the list of items you will put into the knapsack or determine that fulfilling the conditions is impossible. If there are several possible lists of items satisfying the conditions, you can output any. Note that you don't have to maximize the sum of weights of items in the knapsack.InputEach test contains multiple test cases. The first line contains the number of test cases tt (1≤t≤1041≤t≤104). Description of the test cases follows.The first line of each test case contains integers nn and WW (1≤n≤2000001≤n≤200000, 1≤W≤10181≤W≤1018). The second line of each test case contains nn integers w1,w2,…,wnw1,w2,…,wn (1≤wi≤1091≤wi≤109) — weights of the items.The sum of nn over all test cases does not exceed 200000200000.OutputFor each test case, if there is no solution, print a single integer −1−1. If there exists a solution consisting of mm items, print mm in the first line of the output and mm integers j1j1, j2j2, ..., jmjm (1≤ji≤n1≤ji≤n, all jiji are distinct) in the second line of the output  — indices of the items you would like to pack into the knapsack.If there are several possible lists of items satisfying the conditions, you can output any. Note that you don't have to maximize the sum of weights items in the knapsack.ExampleInputCopy3
+1 3
+3
+6 2
+19 8 19 69 9 4
+7 12
+1 1 1 17 1 1 1
+OutputCopy1
+1
+-1
+6
+1 2 3 5 6 7NoteIn the first test case, you can take the item of weight 33 and fill the knapsack just right.In the second test case, all the items are larger than the knapsack's capacity. Therefore, the answer is −1−1.In the third test case, you fill the knapsack exactly in half.

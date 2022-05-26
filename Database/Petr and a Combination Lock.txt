@@ -1,0 +1,16 @@
+B. Petr and a Combination Locktime limit per test1 secondmemory limit per test256 megabytesinputstandard inputoutputstandard outputPetr has just bought a new car. He's just arrived at the most known Petersburg's petrol station to refuel it when he suddenly discovered that the petrol tank is secured with a combination lock! The lock has a scale of 360360 degrees and a pointer which initially points at zero:  Petr called his car dealer, who instructed him to rotate the lock's wheel exactly nn times. The ii-th rotation should be aiai degrees, either clockwise or counterclockwise, and after all nn rotations the pointer should again point at zero.This confused Petr a little bit as he isn't sure which rotations should be done clockwise and which should be done counterclockwise. As there are many possible ways of rotating the lock, help him and find out whether there exists at least one, such that after all nn rotations the pointer will point at zero again.InputThe first line contains one integer nn (1≤n≤151≤n≤15) — the number of rotations.Each of the following nn lines contains one integer aiai (1≤ai≤1801≤ai≤180) — the angle of the ii-th rotation in degrees.OutputIf it is possible to do all the rotations so that the pointer will point at zero after all of them are performed, print a single word "YES". Otherwise, print "NO". Petr will probably buy a new car in this case.You can print each letter in any case (upper or lower).ExamplesInputCopy3
+10
+20
+30
+OutputCopyYES
+InputCopy3
+10
+10
+10
+OutputCopyNO
+InputCopy3
+120
+120
+120
+OutputCopyYES
+NoteIn the first example, we can achieve our goal by applying the first and the second rotation clockwise, and performing the third rotation counterclockwise.In the second example, it's impossible to perform the rotations in order to make the pointer point at zero in the end.In the third example, Petr can do all three rotations clockwise. In this case, the whole wheel will be rotated by 360360 degrees clockwise and the pointer will point at zero again.

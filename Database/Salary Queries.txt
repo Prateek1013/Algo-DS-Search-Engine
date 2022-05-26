@@ -1,0 +1,45 @@
+
+CSES - Salary Queries
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+A company has nn employees with certain salaries. Your task is to keep track of the salaries and process queries.
+
+Input
+
+The first input line contains two integers nn and qq: the number of employees and queries. The employees are numbered 1,2,…,n1,2,…,n.
+
+The next line has nn integers p1,p2,…,pnp1,p2,…,pn: each employee's salary.
+
+After this, there are qq lines describing the queries. Each line has one of the following forms:
+! kk xx: change the salary of employee kk to xx
+? aa bb: count the number of employees whose salary is between a…ba…b
+
+Output
+
+Print the answer to each ? query.
+
+Constraints
+
+1≤n,q≤2⋅1051≤n,q≤2⋅105
+1≤pi≤1091≤pi≤109
+1≤k≤n1≤k≤n
+1≤x≤1091≤x≤109
+1≤a≤b≤1091≤a≤b≤109
+
+Example
+
+Input:
+5 3
+3 7 2 2 5
+? 2 3
+! 3 6
+? 2 3
+
+Output:
+3
+2 

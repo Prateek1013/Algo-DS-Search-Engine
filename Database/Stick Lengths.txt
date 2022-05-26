@@ -1,0 +1,38 @@
+
+CSES - Stick Lengths
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+There are nn sticks with some lengths. Your task is to modify the sticks so that each stick has the same length.
+
+You can either lengthen and shorten each stick. Both operations cost xx where xx is the difference between the new and original length.
+
+What is the minimum total cost?
+
+Input
+
+The first input line contains an integer nn: the number of sticks.
+
+Then there are nn integers: p1,p2,…,pnp1,p2,…,pn: the lengths of the sticks.
+
+Output
+
+Print one integer: the minimum total cost.
+
+Constraints
+
+1≤n≤2⋅1051≤n≤2⋅105
+1≤pi≤1091≤pi≤109
+
+Example
+
+Input:
+5
+2 3 1 5 2
+
+Output:
+5 

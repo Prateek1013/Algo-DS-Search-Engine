@@ -1,0 +1,20 @@
+C. Social Distancetime limit per test2 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard outputPolycarp and his friends want to visit a new restaurant. The restaurant has nn tables arranged along a straight line. People are already sitting at some tables. The tables are numbered from 11 to nn in the order from left to right. The state of the restaurant is described by a string of length nn which contains characters "1" (the table is occupied) and "0" (the table is empty).Restaurant rules prohibit people to sit at a distance of kk or less from each other. That is, if a person sits at the table number ii, then all tables with numbers from i−ki−k to i+ki+k (except for the ii-th) should be free. In other words, the absolute difference of the numbers of any two occupied tables must be strictly greater than kk.For example, if n=8n=8 and k=2k=2, then:  strings "10010001", "10000010", "00000000", "00100000" satisfy the rules of the restaurant;  strings "10100100", "10011001", "11111111" do not satisfy to the rules of the restaurant, since each of them has a pair of "1" with a distance less than or equal to k=2k=2. In particular, if the state of the restaurant is described by a string without "1" or a string with one "1", then the requirement of the restaurant is satisfied.You are given a binary string ss that describes the current state of the restaurant. It is guaranteed that the rules of the restaurant are satisfied for the string ss.Find the maximum number of free tables that you can occupy so as not to violate the rules of the restaurant. Formally, what is the maximum number of "0" that can be replaced by "1" such that the requirement will still be satisfied?For example, if n=6n=6, k=1k=1, s=s= "100010", then the answer to the problem will be 11, since only the table at position 33 can be occupied such that the rules are still satisfied.InputThe first line contains a single integer tt (1≤t≤1041≤t≤104) — the number of test cases in the test. Then tt test cases follow.Each test case starts with a line containing two integers nn and kk (1≤k≤n≤2⋅1051≤k≤n≤2⋅105) — the number of tables in the restaurant and the minimum allowed distance between two people.The second line of each test case contains a binary string ss of length nn consisting of "0" and "1" — a description of the free and occupied tables in the restaurant. The given string satisfy to the rules of the restaurant — the difference between indices of any two "1" is more than kk.The sum of nn for all test cases in one test does not exceed 2⋅1052⋅105.OutputFor each test case output one integer — the number of tables that you can occupy so as not to violate the rules of the restaurant. If additional tables cannot be taken, then, obviously, you need to output 00.ExampleInputCopy6
+6 1
+100010
+6 2
+000000
+5 1
+10101
+3 1
+001
+2 2
+00
+1 1
+0
+OutputCopy1
+2
+0
+1
+1
+1
+NoteThe first test case is explained in the statement.In the second test case, the answer is 22, since you can choose the first and the sixth table.In the third test case, you cannot take any free table without violating the rules of the restaurant.

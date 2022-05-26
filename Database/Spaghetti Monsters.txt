@@ -1,0 +1,122 @@
+
+This problem was part of the CodeChef April Challenge.  All user submissions for this contest problem are publicly available here.
+Spaghetti Monsters have stolen The Chef’s golden spoon!  The Chef has a map, on which are marked: his location, the location of the golden spoon, and the locations of the spaghetti monsters. The map is in fact rectangular, consisting of square fields. Each field on the map, except for those adjacent to the boundary, is adjacent to 8 other fields -- fields which share a side or corner are assumed to be at a distance of 1 from each other, and it is possible to move between them directly. The Chef is a bit scared of spaghetti monsters and would prefer not to approach them too closely... Help him compute the minimum distance up to which he must approach some spaghetti monster, so as to find the golden spoon.
+
+Input
+The first line of input contains two numbers 1<=n,m<=1000, where n denotes the height of the map, and m its width.
+The map is given in the next n lines, each of which consists of m characters: 
+The unique field represented by the character '@' is the location of The Chef. 
+The unique field represented by the character '$' is the location of the golden spoon. 
+A field represented by the character 'D' is the location of a spaghetti monsters. 
+All the remaining fields are represented by the character '.' and denote empty positions.
+
+
+Output
+The output should contain exactly one number, equal to the minimum distance, at which The Chef must find himself from one of the spaghetti monsters in order to reach the golden spoon.
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+7 5
+....$
+.....
+.....
+D...D
+.....
+.....
+@....
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+2
+
+
+
+                        Sample Input 2
+                        
+
+
+
+
+
+7 5
+....$
+.....
+.....
+DDDDD
+.....
+.....
+@....
+
+
+
+                        Sample Output 2
+                        
+
+
+
+
+
+0
+
+
+
+
+
+Author:
+u_admin_codechef_pw
+
+
+Tags:
+
+               
+                 0-1 BFS
+                 
+                     
+                     Algorithms, Graph Algos, Traversals, BFS
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1962
+
+
+Date Added:
+15-03-2009
+
+
+Time Limit:
+0.1 - 0.28934 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

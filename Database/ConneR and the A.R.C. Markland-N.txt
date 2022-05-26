@@ -1,0 +1,17 @@
+A. ConneR and the A.R.C. Markland-Ntime limit per test1 secondmemory limit per test256 megabytesinputstandard inputoutputstandard outputSakuzyo - ImprintingA.R.C. Markland-N is a tall building with nn floors numbered from 11 to nn. Between each two adjacent floors in the building, there is a staircase connecting them.It's lunchtime for our sensei Colin "ConneR" Neumann Jr, and he's planning for a location to enjoy his meal.ConneR's office is at floor ss of the building. On each floor (including floor ss, of course), there is a restaurant offering meals. However, due to renovations being in progress, kk of the restaurants are currently closed, and as a result, ConneR can't enjoy his lunch there.CooneR wants to reach a restaurant as quickly as possible to save time. What is the minimum number of staircases he needs to walk to reach a closest currently open restaurant.Please answer him quickly, and you might earn his praise and even enjoy the lunch with him in the elegant Neumanns' way!InputThe first line contains one integer tt (1≤t≤10001≤t≤1000) — the number of test cases in the test. Then the descriptions of tt test cases follow.The first line of a test case contains three integers nn, ss and kk (2≤n≤1092≤n≤109, 1≤s≤n1≤s≤n, 1≤k≤min(n−1,1000)1≤k≤min(n−1,1000)) — respectively the number of floors of A.R.C. Markland-N, the floor where ConneR is in, and the number of closed restaurants.The second line of a test case contains kk distinct integers a1,a2,…,aka1,a2,…,ak (1≤ai≤n1≤ai≤n) — the floor numbers of the currently closed restaurants.It is guaranteed that the sum of kk over all test cases does not exceed 10001000.OutputFor each test case print a single integer — the minimum number of staircases required for ConneR to walk from the floor ss to a floor with an open restaurant.ExampleInputCopy5
+5 2 3
+1 2 3
+4 3 3
+4 1 2
+10 2 6
+1 2 3 4 5 7
+2 1 1
+2
+100 76 8
+76 75 36 67 41 74 10 77
+OutputCopy2
+0
+4
+0
+2
+NoteIn the first example test case, the nearest floor with an open restaurant would be the floor 44.In the second example test case, the floor with ConneR's office still has an open restaurant, so Sensei won't have to go anywhere.In the third example test case, the closest open restaurant is on the 66-th floor.

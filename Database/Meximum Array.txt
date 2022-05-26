@@ -1,0 +1,26 @@
+A. Meximum Arraytime limit per test2 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard outputMihai has just learned about the MEX concept and since he liked it so much, he decided to use it right away.Given an array aa of nn non-negative integers, Mihai wants to create a new array bb that is formed in the following way:While aa is not empty:   Choose an integer kk (1≤k≤|a|1≤k≤|a|).  Append the MEX of the first kk numbers of the array aa to the end of array bb and erase them from the array aa, shifting the positions of the remaining numbers in aa. But, since Mihai loves big arrays as much as the MEX concept, he wants the new array bb to be the lexicographically maximum. So, Mihai asks you to tell him what the maximum array bb that can be created by constructing the array optimally is.An array xx is lexicographically greater than an array yy if in the first position where xx and yy differ xi>yixi>yi or if |x|>|y||x|>|y| and yy is a prefix of xx (where |x||x| denotes the size of the array xx).The MEX of a set of non-negative integers is the minimal non-negative integer such that it is not in the set. For example, MEX({1,2,31,2,3}) =0=0 and MEX({0,1,2,4,50,1,2,4,5}) =3=3.InputThe first line of the input contains a single integer tt (1≤t≤1001≤t≤100) — the number of test cases. The description of test cases follows.The first line of each test case contains a single integer nn (1≤n≤2⋅1051≤n≤2⋅105) — the number of elements in the array aa.The second line of each test case contains nn non-negative integers a1,…,ana1,…,an (0≤ai≤n0≤ai≤n), where aiai is the ii-th integer from the array aa.It is guaranteed that the sum of nn over all test cases does not exceed 2⋅1052⋅105.OutputFor each test case print mm — the length of the maximum array bb Mihai can create, followed by mm integers denoting the elements of the array bb.ExampleInputCopy6
+5
+1 0 2 0 3
+8
+2 2 3 4 0 1 2 0
+1
+1
+5
+0 1 2 3 4
+4
+0 1 1 0
+10
+0 0 2 1 1 1 0 0 1 1
+OutputCopy1
+4 
+2
+5 1 
+1
+0 
+1
+5 
+2
+2 2 
+4
+3 2 2 0 
+NoteIn the first test case, the lexicographically maximum array bb is obtained by selecting k=5k=5, resulting in the MEXMEX of the whole array aa. It is lexicographically maximum because an array starting with a smaller number than 44 is lexicographically smaller, and choosing a k<5k<5 would result in an array starting with a number smaller than 44.In the second test case, there are two ways to obtain the maximum array: first selecting k=6k=6, then k=2k=2, or first selecting k=7k=7 and then k=1k=1.

@@ -1,0 +1,42 @@
+
+CSES - Monster Game II
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+You are playing a game that consists of nn levels. Each level has a monster. On levels 1,2,…,n−11,2,…,n−1, you can either kill or escape the monster. However, on level nn you must kill the final monster to win the game.
+
+Killing a monster takes sfsf time where ss is the monster's strength and ff is your skill factor. After killing a monster, you get a new skill factor  (lower skill factor is better). What is the minimum total time in which you can win the game?
+
+Input
+
+The first input line has two integers nn and xx: the number of levels and your initial skill factor.
+
+The second line has nn integers s1,s2,…,sns1,s2,…,sn: each monster's strength.
+
+The third line has nn integers f1,f2,…,fnf1,f2,…,fn: your new skill factor after killing a monster.
+
+Output
+
+Print one integer: the minimum total time to win the game.
+
+Constraints
+
+ 1≤n≤2⋅1051≤n≤2⋅105
+ 1≤x≤1061≤x≤106
+ 1≤si,fi≤1061≤si,fi≤106
+
+Example
+
+Input:
+5 100
+50 20 30 90 30
+60 20 20 10 90
+
+Output:
+2600
+
+Explanation: The best way to play is to kill the second and fifth monster.    

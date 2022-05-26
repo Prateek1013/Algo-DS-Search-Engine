@@ -1,0 +1,40 @@
+
+CSES - Giant Pizza
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+Uolevi's family is going to order a large pizza and eat it together. A total of nn family members will join the order, and there are mm possible toppings. The pizza may have any number of toppings.
+
+Each family member gives two wishes concerning the toppings of the pizza. The wishes are of the form "topping xx is good/bad". Your task is to choose the toppings so that at least one wish from everybody becomes true (a good topping is included in the pizza or a bad topping is not included).
+
+Input
+
+The first input line has two integers nn and mm: the number of family members and toppings. The toppings are numbered 1,2,…,m1,2,…,m.
+
+After this, there are nn lines describing the wishes. Each line has two wishes of the form "+ xx" (topping xx is good) or "- xx" (topping xx is bad).
+
+Output
+
+Print a line with mm symbols: for each topping "+" if it is included and "-" if it is not included. You can print any valid solution.
+
+If there are no valid solutions, print "IMPOSSIBLE".
+
+Constraints
+
+1≤n,m≤1051≤n,m≤105
+1≤x≤m1≤x≤m
+
+Example
+
+Input:
+3 5
++ 1 + 2
+- 1 + 3
++ 4 - 2
+
+Output:
+- + + + - 

@@ -1,0 +1,10 @@
+C. Array Splittingtime limit per test2 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard outputYou are given a sorted array a1,a2,…,ana1,a2,…,an (for each index i>1i>1 condition ai≥ai−1ai≥ai−1 holds) and an integer kk.You are asked to divide this array into kk non-empty consecutive subarrays. Every element in the array should be included in exactly one subarray. Let max(i)max(i) be equal to the maximum in the ii-th subarray, and min(i)min(i) be equal to the minimum in the ii-th subarray. The cost of division is equal to ∑i=1k(max(i)−min(i))∑i=1k(max(i)−min(i)). For example, if a=[2,4,5,5,8,11,19]a=[2,4,5,5,8,11,19] and we divide it into 33 subarrays in the following way: [2,4],[5,5],[8,11,19][2,4],[5,5],[8,11,19], then the cost of division is equal to (4−2)+(5−5)+(19−8)=13(4−2)+(5−5)+(19−8)=13.Calculate the minimum cost you can obtain by dividing the array aa into kk non-empty consecutive subarrays. InputThe first line contains two integers nn and kk (1≤k≤n≤3⋅1051≤k≤n≤3⋅105).The second line contains nn integers a1,a2,…,ana1,a2,…,an (1≤ai≤1091≤ai≤109, ai≥ai−1ai≥ai−1). OutputPrint the minimum cost you can obtain by dividing the array aa into kk nonempty consecutive subarrays. ExamplesInputCopy6 3
+4 8 15 16 23 42
+OutputCopy12
+InputCopy4 4
+1 3 3 7
+OutputCopy0
+InputCopy8 1
+1 1 2 3 5 8 13 21
+OutputCopy20
+NoteIn the first test we can divide array aa in the following way: [4,8,15,16],[23],[42][4,8,15,16],[23],[42]. 

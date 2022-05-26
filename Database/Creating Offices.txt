@@ -1,0 +1,40 @@
+
+CSES - Creating Offices
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+There are nn cities and n−1n−1 roads between them. There is a unique route between any two cities, and their distance is the number of roads on that route.
+
+A company wants to have offices in some cities, but the distance between any two offices has to be at least dd. What is the maximum number of offices they can have?
+
+Input
+
+The first input line has two integers nn and dd: the number of cities and the minimum distance. The cities are numbered 1,2,…,n1,2,…,n.
+
+After this, there are n−1n−1 lines describing the roads. Each line has two integers aa and bb: there is a road between cities aa and bb.
+
+Output
+
+First print an integer kk: the maximum number of offices. After that, print the cities which will have offices. You can print any valid solution.
+
+Constraints
+
+1≤n,d≤2⋅1051≤n,d≤2⋅105
+1≤a,b≤n1≤a,b≤n
+
+Example
+
+Input:
+5 3
+1 2
+2 3
+3 4
+3 5
+
+Output:
+2
+1 4 

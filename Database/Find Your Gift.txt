@@ -1,0 +1,110 @@
+
+Read problems statements in Mandarin Chinese,Vietnamese, and Bengali as well.
+Today is Chef's birthday and he is looking forward to his gift. As usual, the gift is hidden and Chef has to follow a sequence of NN instructions to reach it.
+Initially, Chef is standing in the cell (0,0)(0,0) of a two-dimensional grid. The sequence of instructions is given as a string SS. If we denote Chef's current cell by (x,y)(x,y), each character of SS corresponds to an instruction as follows:
+
+'L' means to go left, i.e. to the cell (x−1,y)(x−1,y)
+'R' means to go right, i.e. to the cell (x+1,y)(x+1,y)
+'U' means to go up, i.e. to the cell (x,y+1)(x,y+1)
+'D' means to go down, i.e. to the cell (x,y−1)(x,y−1)
+
+In addition, Chef should never perform multiple consecutive moves along the same axis of the grid. If there are multiple consecutive instructions to move along the same axis (left/right or up/down), he should perform only the first of these moves.
+Find the cell (xg,yg)(xg,yg) which contains the hidden gift.
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first line of each test case contains a single integer NN.
+The second line contains a single string SS with length NN.
+
+Output
+For each test case, print a single line containing two space-separated integers xgxg and ygyg.
+Constraints
+
+1≤T≤1001≤T≤100
+1≤N≤1,0001≤N≤1,000
+SS contains only characters 'L', 'R', 'U' and 'D'
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+3
+5
+LLLUR
+7
+LLLRUUD
+8
+LRULLUDU
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+0 1
+-1 1
+-2 2
+
+
+Explanation
+Example case 1: Chef's path is (0,0)→(−1,0)→(−1,0)→(−1,0)→(−1,1)→(0,1)(0,0)→(−1,0)→(−1,0)→(−1,0)→(−1,1)→(0,1).
+
+
+
+Author:
+6★imanik
+
+
+Editorial:
+https://discuss.codechef.com/problems/GIFTSRC
+
+
+Tags:
+
+               
+                 Implementation
+                 
+                     
+                     Algorithms
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1157
+
+
+Date Added:
+13-03-2020
+
+
+Time Limit:
+1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

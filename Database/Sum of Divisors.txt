@@ -1,0 +1,32 @@
+
+CSES - Sum of Divisors
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+Let σ(n)σ(n) denote the sum of divisors of an integer nn. For example, σ(12)=1+2+3+4+6+12=28σ(12)=1+2+3+4+6+12=28.
+
+Your task is to calculate the sum ∑ni=1σ(i)∑i=1nσ(i) modulo 109+7109+7.
+
+Input
+
+The only input line has an integer nn.
+
+Output
+
+Print ∑ni=1σ(i)∑i=1nσ(i) modulo 109+7109+7.
+
+Constraints
+
+1≤n≤10121≤n≤1012
+
+Example
+
+Input:
+5
+
+Output:
+21 

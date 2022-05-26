@@ -1,0 +1,14 @@
+G. White-Black Balanced Subtreestime limit per test1 secondmemory limit per test256 megabytesinputstandard inputoutputstandard outputYou are given a rooted tree consisting of nn vertices numbered from 11 to nn. The root is vertex 11. There is also a string ss denoting the color of each vertex: if si=Bsi=B, then vertex ii is black, and if si=Wsi=W, then vertex ii is white.A subtree of the tree is called balanced if the number of white vertices equals the number of black vertices. Count the number of balanced subtrees.A tree is a connected undirected graph without cycles. A rooted tree is a tree with a selected vertex, which is called the root. In this problem, all trees have root 11.The tree is specified by an array of parents a2,…,ana2,…,an containing n−1n−1 numbers: aiai is the parent of the vertex with the number ii for all i=2,…,ni=2,…,n. The parent of a vertex uu is a vertex that is the next vertex on a simple path from uu to the root.The subtree of a vertex uu is the set of all vertices that pass through uu on a simple path to the root. For example, in the picture below, 77 is in the subtree of 33 because the simple path 7→5→3→17→5→3→1 passes through 33. Note that a vertex is included in its subtree, and the subtree of the root is the entire tree.  The picture shows the tree for n=7n=7, a=[1,1,2,3,3,5]a=[1,1,2,3,3,5], and s=WBBWWBWs=WBBWWBW. The subtree at the vertex 33 is balanced. InputThe first line of input contains an integer tt (1≤t≤1041≤t≤104) — the number of test cases.The first line of each test case contains an integer nn (2≤n≤40002≤n≤4000) — the number of vertices in the tree.The second line of each test case contains n−1n−1 integers a2,…,ana2,…,an (1≤ai<i1≤ai<i) — the parents of the vertices 2,…,n2,…,n.The third line of each test case contains a string ss of length nn consisting of the characters BB and WW — the coloring of the tree.It is guaranteed that the sum of the values nn over all test cases does not exceed 2⋅1052⋅105.OutputFor each test case, output a single integer — the number of balanced subtrees.ExampleInputCopy3
+7
+1 1 2 3 3 5
+WBBWWBW
+2
+1
+BW
+8
+1 2 3 4 5 6 7
+BWBWBWBW
+OutputCopy2
+1
+4
+NoteThe first test case is pictured in the statement. Only the subtrees at vertices 22 and 33 are balanced.In the second test case, only the subtree at vertex 11 is balanced.In the third test case, only the subtrees at vertices 11, 33, 55, and 77 are balanced.

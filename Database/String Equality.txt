@@ -1,0 +1,18 @@
+C. String Equalitytime limit per test2 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard outputAshish has two strings aa and bb, each of length nn, and an integer kk. The strings only contain lowercase English letters.He wants to convert string aa into string bb by performing some (possibly zero) operations on aa.In one move, he can either   choose an index ii (1≤i≤n−11≤i≤n−1) and swap aiai and ai+1ai+1, or  choose an index ii (1≤i≤n−k+11≤i≤n−k+1) and if ai,ai+1,…,ai+k−1ai,ai+1,…,ai+k−1 are all equal to some character cc (c≠c≠ 'z'), replace each one with the next character (c+1)(c+1), that is, 'a' is replaced by 'b', 'b' is replaced by 'c' and so on. Note that he can perform any number of operations, and the operations can only be performed on string aa. Help Ashish determine if it is possible to convert string aa into bb after performing some (possibly zero) operations on it.InputThe first line contains a single integer tt (1≤t≤1051≤t≤105) — the number of test cases. The description of each test case is as follows.The first line of each test case contains two integers nn (2≤n≤1062≤n≤106) and kk (1≤k≤n1≤k≤n).The second line of each test case contains the string aa of length nn consisting of lowercase English letters.The third line of each test case contains the string bb of length nn consisting of lowercase English letters.It is guaranteed that the sum of values nn among all test cases does not exceed 106106.OutputFor each test case, print "Yes" if Ashish can convert aa into bb after some moves, else print "No".You may print the letters of the answer in any case (upper or lower).ExampleInputCopy4
+3 3
+abc
+bcd
+4 2
+abba
+azza
+2 1
+zz
+aa
+6 2
+aaabba
+ddddcc
+OutputCopyNo
+Yes
+No
+Yes
+NoteIn the first test case it can be shown that it is impossible to convert aa into bb.In the second test case,"abba" −→inc→inc "acca" −→inc→inc …… −→inc→inc "azza".Here "swap" denotes an operation of the first type, and "inc" denotes an operation of the second type.In the fourth test case,"aaabba" −→−−swap→swap "aaabab" −→−−swap→swap "aaaabb" −→inc→inc …… −→inc→inc "ddaabb" −→inc→inc …… −→inc→inc "ddddbb" −→inc→inc …… −→inc→inc "ddddcc".

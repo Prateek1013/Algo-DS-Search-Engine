@@ -1,0 +1,7 @@
+C1. Simple Polygon Embeddingtime limit per test2 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard outputThe statement of this problem is the same as the statement of problem C2. The only difference is that, in problem C1, nn is always even, and in C2, nn is always odd.You are given a regular polygon with 2⋅n2⋅n vertices (it's convex and has equal sides and equal angles) and all its sides have length 11. Let's name it as 2n2n-gon.Your task is to find the square of the minimum size such that you can embed 2n2n-gon in the square. Embedding 2n2n-gon in the square means that you need to place 2n2n-gon in the square in such way that each point which lies inside or on a border of 2n2n-gon should also lie inside or on a border of the square.You can rotate 2n2n-gon and/or the square.InputThe first line contains a single integer TT (1≤T≤2001≤T≤200) — the number of test cases.Next TT lines contain descriptions of test cases — one per line. Each line contains single even integer nn (2≤n≤2002≤n≤200). Don't forget you need to embed 2n2n-gon, not an nn-gon.OutputPrint TT real numbers — one per test case. For each test case, print the minimum length of a side of the square 2n2n-gon can be embedded in. Your answer will be considered correct if its absolute or relative error doesn't exceed 10−610−6.ExampleInputCopy3
+2
+4
+200
+OutputCopy1.000000000
+2.414213562
+127.321336469

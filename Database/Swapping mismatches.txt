@@ -1,0 +1,85 @@
+
+You are given a sequence w of integers. A mismatch is any such pair of neighbouring elements of sequence w[i] and w[i+1], that w[i]>w[i+1]+1.
+As long as there is any mismatch, you solve it by swapping the mismatching numbers. Given an input sequence, calculate one of the possible output mismatch-less sequences obtained by successively solving mistmatches by swapping.
+
+
+Input
+First - 1<=t<=10 - the number of tests. For each test: first - 1<=n<=100000. Then, n nonnegative integers.
+
+Output
+For each test, you should output exactly n integers.
+
+                        Sample Input 1
+                        
+
+
+
+
+
+2
+4
+4 3 2 1
+4
+4 3 1 2
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+4 3 2 1
+1 4 3 2
+
+
+
+
+
+Author:
+admin
+
+
+Tags:
+
+               
+                 Merge Sort
+                 
+                     
+                     Algorithms, Sorting
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+2135
+
+
+Date Added:
+20-04-2009
+
+
+Time Limit:
+0.116822 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

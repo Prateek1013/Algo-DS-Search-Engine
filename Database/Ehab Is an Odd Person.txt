@@ -1,0 +1,5 @@
+B. Ehab Is an Odd Persontime limit per test1 secondmemory limit per test256 megabytesinputstandard inputoutputstandard outputYou're given an array aa of length nn. You can perform the following operation on it as many times as you want:  Pick two integers ii and jj (1≤i,j≤n)(1≤i,j≤n) such that ai+ajai+aj is odd, then swap aiai and ajaj. What is lexicographically the smallest array you can obtain?An array xx is lexicographically smaller than an array yy if there exists an index ii such that xi<yixi<yi, and xj=yjxj=yj for all 1≤j<i1≤j<i. Less formally, at the first index ii in which they differ, xi<yixi<yiInputThe first line contains an integer nn (1≤n≤1051≤n≤105) — the number of elements in the array aa.The second line contains nn space-separated integers a1a1, a2a2, ……, anan (1≤ai≤1091≤ai≤109) — the elements of the array aa.OutputThe only line contains nn space-separated integers, the lexicographically smallest array you can obtain.ExamplesInputCopy3
+4 1 7
+OutputCopy1 4 7 InputCopy2
+1 1
+OutputCopy1 1 NoteIn the first example, we can swap 11 and 44 since 1+4=51+4=5, which is odd.

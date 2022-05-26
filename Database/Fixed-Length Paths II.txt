@@ -1,0 +1,37 @@
+
+CSES - Fixed-Length Paths II
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+Given a tree of nn nodes, your task is to count the number of distinct paths that have at least k1k1 and at most k2k2 edges.
+
+Input
+
+The first input line contains three integers nn, k1k1 and k2k2: the number of nodes and the path lengths. The nodes are numbered 1,2,…,n1,2,…,n.
+
+Then there are n−1n−1 lines describing the edges. Each line contains two integers aa and bb: there is an edge between nodes aa and bb.
+
+Output
+
+Print one integer: the number of paths.
+
+Constraints
+
+1≤k1≤k2≤n≤2⋅1051≤k1≤k2≤n≤2⋅105
+1≤a,b≤n1≤a,b≤n
+
+Example
+
+Input:
+5 2 3
+1 2
+2 3
+3 4
+3 5
+
+Output:
+6 

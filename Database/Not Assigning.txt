@@ -1,0 +1,17 @@
+C. Not Assigningtime limit per test1.5 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard outputYou are given a tree of nn vertices numbered from 11 to nn, with edges numbered from 11 to n−1n−1. A tree is a connected undirected graph without cycles. You have to assign integer weights to each edge of the tree, such that the resultant graph is a prime tree.A prime tree is a tree where the weight of every path consisting of one or two edges is prime. A path should not visit any vertex twice. The weight of a path is the sum of edge weights on that path.Consider the graph below. It is a prime tree as the weight of every path of two or less edges is prime. For example, the following path of two edges: 2→1→32→1→3 has a weight of 11+2=1311+2=13, which is prime. Similarly, the path of one edge: 4→34→3 has a weight of 55, which is also prime.  Print any valid assignment of weights such that the resultant tree is a prime tree. If there is no such assignment, then print −1−1. It can be proven that if a valid assignment exists, one exists with weights between 11 and 105105 as well.InputThe input consists of multiple test cases. The first line contains an integer tt (1≤t≤1041≤t≤104) — the number of test cases. The description of the test cases follows.The first line of each test case contains one integer nn (2≤n≤1052≤n≤105) — the number of vertices in the tree.Then, n−1n−1 lines follow. The ii-th line contains two integers uu and vv (1≤u,v≤n1≤u,v≤n) denoting that edge number ii is between vertices uu and vv. It is guaranteed that the edges form a tree.It is guaranteed that the sum of nn over all test cases does not exceed 105105.OutputFor each test case, if a valid assignment exists, then print a single line containing n−1n−1 integers a1,a2,…,an−1a1,a2,…,an−1 (1≤ai≤1051≤ai≤105), where aiai denotes the weight assigned to the edge numbered ii. Otherwise, print −1−1.If there are multiple solutions, you may print any.ExampleInputCopy3
+2
+1 2
+4
+1 3
+4 3
+2 1
+7
+1 2
+1 3
+3 4
+3 5
+6 2
+7 2
+OutputCopy17
+2 5 11
+-1NoteFor the first test case, there are only two paths having one edge each: 1→21→2 and 2→12→1, both having a weight of 1717, which is prime.  The second test case is described in the statement.It can be proven that no such assignment exists for the third test case.

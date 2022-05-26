@@ -1,0 +1,124 @@
+
+Read problem statements in Bengali, Mandarin Chinese, Russian, and Vietnamese as well.
+"All the pain in the world will not help you find something that does not exist…"
+You are Dastan, the great Prince of Persia!
+Under the tunnels of Alamut, you have discovered a path ― a sequence of NN tiles (numbered 11 through N) ahead of you. You are currently on tile 1. There is a signboard beside you, which says thus:
+
+Stepping on tile i (for each valid i) activates a switch described by a binary string Si with length N. When you fell through the tunnels onto tile 1, switch S1 got activated.
+For each valid i, when the switch Si gets activated, then for each j (1≤j≤N), if the j-th character of Si is '0', tile j becomes unsafe to step on; otherwise (if the j-th character is '1'), tile j becomes safe to step on.
+Step on an unsafe tile and you shall testify the fate of all men ― death!
+You shall find that which you seek on reaching tile N. This tile must also be safe when you step on it.
+
+Being a trained warrior, you are able to make jumps with length up to K tiles, in both directions. In other words, if you are currently at a tile i, you may jump to a tile j if j is a valid tile and |i−j|≤K.
+You want to reach tile N as quickly as possible ― you want to minimise the number of jumps you need to make. Find this minimum number of jumps.
+Input
+
+The first line of the input contains a single integer T denoting the number of test cases. The description of T test cases follows.
+The first line of each test case contains two space-separated integers N and K.
+N lines follow. For each i (1≤i≤N), the i-th of these lines contains a single string Si with length N.
+
+Output
+For each test case, print a single line containing one integer ― the minimum number of jumps you need to reach your target, or −1 if it is impossible.
+Constraints
+
+1≤T≤102
+1≤K<N≤103
+S1,S2,…,SN contain only characters '0' and '1'
+for each valid i, the i-th digit of Si is '1'
+the sum of N2 over all test cases does not exceed 106
+
+Subtasks
+Subtask #1 (50 points):
+
+T≤10
+N≤10
+
+Subtask #2 (50 points): original constraints
+
+                        Sample Input 1
+                        
+
+
+
+
+
+2
+5 2
+11001
+01010
+10101
+00110
+10101
+3 1
+110
+010
+011
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+4
+-1
+
+
+Explanation
+Example case 1: The optimal sequence of jumps is 1→2→4→3→5. A shorter sequence does not exist.
+Example case 2: There is no sequence of jumps that would allow you to reach tile 3.
+
+
+
+Author:
+3★infinitepro
+
+
+Editorial:
+https://discuss.codechef.com/problems/POPTUNNL
+
+
+Tags:
+
+               
+                 Graphs, BFS
+                 
+                     
+                     Data Structures, Algorithms, Graph Algos, Traversals
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+2037
+
+
+Date Added:
+24-01-2020
+
+
+Time Limit:
+1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

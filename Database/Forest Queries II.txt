@@ -1,0 +1,48 @@
+
+CSES - Forest Queries II
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+You are given an n×nn×n grid representing the map of a forest. Each square is either empty or has a tree. Your task is to process qq queries of the following types:
+Change the state (empty/tree) of a square.
+How many trees are inside a rectangle in the forest?
+
+Input
+
+The first input line has two integers nn and qq: the size of the forest and the number of queries.
+
+Then, there are nn lines describing the forest. Each line has nn characters: . is an empty square and * is a tree.
+
+Finally, there are qq lines describing the queries. The format of each line is either "11 yy xx" or "2 y1y1 x1x1 y2y2 x2x2".
+
+Output
+
+Print the answer to each query of the second type.
+
+Constraints
+
+1≤n≤10001≤n≤1000
+1≤q≤2⋅1051≤q≤2⋅105
+1≤y,x≤n1≤y,x≤n
+1≤y1≤y2≤n1≤y1≤y2≤n
+1≤x1≤x2≤n1≤x1≤x2≤n
+
+Example
+
+Input:
+4 3
+.*..
+*.**
+**..
+****
+2 2 2 3 4
+1 3 3
+2 2 2 3 4
+
+Output:
+3
+4 

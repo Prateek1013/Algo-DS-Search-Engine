@@ -1,0 +1,10 @@
+B. GCD Lengthtime limit per test2 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard outputYou are given three integers aa, bb and cc.Find two positive integers xx and yy (x>0x>0, y>0y>0) such that:   the decimal representation of xx without leading zeroes consists of aa digits;  the decimal representation of yy without leading zeroes consists of bb digits;  the decimal representation of gcd(x,y)gcd(x,y) without leading zeroes consists of cc digits. gcd(x,y)gcd(x,y) denotes the greatest common divisor (GCD) of integers xx and yy.Output xx and yy. If there are multiple answers, output any of them.InputThe first line contains a single integer tt (1≤t≤2851≤t≤285) — the number of testcases.Each of the next tt lines contains three integers aa, bb and cc (1≤a,b≤91≤a,b≤9, 1≤c≤min(a,b)1≤c≤min(a,b)) — the required lengths of the numbers.It can be shown that the answer exists for all testcases under the given constraints.Additional constraint on the input: all testcases are different.OutputFor each testcase print two positive integers — xx and yy (x>0x>0, y>0y>0) such that   the decimal representation of xx without leading zeroes consists of aa digits;  the decimal representation of yy without leading zeroes consists of bb digits;  the decimal representation of gcd(x,y)gcd(x,y) without leading zeroes consists of cc digits. ExampleInputCopy4
+2 3 1
+2 2 2
+6 6 2
+1 1 1
+OutputCopy11 492
+13 26
+140133 160776
+1 1
+NoteIn the example:   gcd(11,492)=1gcd(11,492)=1  gcd(13,26)=13gcd(13,26)=13  gcd(140133,160776)=21gcd(140133,160776)=21  gcd(1,1)=1gcd(1,1)=1 

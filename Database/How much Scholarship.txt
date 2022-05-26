@@ -1,0 +1,83 @@
+
+The ZCO Scholarship Contest has just finished, and you finish with a rank of RR. You know that Rank 11 to Rank 5050 will get 100%100% scholarship on the ZCO exam fee and Rank 5151 to Rank 100100 will get 50%50% percentage scholarship on the ZCO exam fee. The rest do not get any scholarship.
+What percentage of scholarship will you get ?
+Input
+
+Input consist of single line of input containing one integer RR.
+
+Output
+
+Output a single line containing one integer — the percentage of scholarship you will get.
+
+Constraints
+
+1≤R≤1091≤R≤109
+
+Example Input 1
+49
+
+Example Output 1
+100
+
+Explanation 1
+Since 1≤49≤501≤49≤50, answer is 100100 percentage scholarship.
+Example Input 2
+317
+
+Example Output 2
+0
+
+Explanation 2
+Since 317>100317>100, you do not get any scholarship.
+
+
+
+Author:
+smit_adm
+
+
+Editorial:
+https://discuss.codechef.com/problems/ZCOSCH
+
+
+Tags:
+
+               
+                 Case work, Conditional Statements
+                 
+                     
+                     Special, Basic Programming Concepts
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1012
+
+
+Date Added:
+31-10-2019
+
+
+Time Limit:
+1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

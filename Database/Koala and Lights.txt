@@ -1,0 +1,23 @@
+B. Koala and Lightstime limit per test1 secondmemory limit per test256 megabytesinputstandard inputoutputstandard outputIt is a holiday season, and Koala is decorating his house with cool lights! He owns nn lights, all of which flash periodically.After taking a quick glance at them, Koala realizes that each of his lights can be described with two parameters aiai and bibi. Light with parameters aiai and bibi will toggle (on to off, or off to on) every aiai seconds starting from the bibi-th second. In other words, it will toggle at the moments bibi, bi+aibi+ai, bi+2⋅aibi+2⋅ai and so on.You know for each light whether it's initially on or off and its corresponding parameters aiai and bibi. Koala is wondering what is the maximum number of lights that will ever be on at the same time. So you need to find that out.  Here is a graphic for the first example. InputThe first line contains a single integer nn (1≤n≤1001≤n≤100), the number of lights.The next line contains a string ss of nn characters. The ii-th character is "1", if the ii-th lamp is initially on. Otherwise, ii-th character is "0".The ii-th of the following nn lines contains two integers aiai and bibi (1≤ai,bi≤51≤ai,bi≤5)  — the parameters of the ii-th light.OutputPrint a single integer — the maximum number of lights that will ever be on at the same time.ExamplesInputCopy3
+101
+3 3
+3 2
+3 1
+OutputCopy2
+InputCopy4
+1111
+3 4
+5 2
+3 1
+3 2
+OutputCopy4
+InputCopy6
+011100
+5 3
+5 5
+2 4
+3 5
+4 2
+1 5
+OutputCopy6
+NoteFor first example, the lamps' states are shown in the picture above. The largest number of simultaneously on lamps is 22 (e.g. at the moment 22).In the second example, all lights are initially on. So the answer is 44.

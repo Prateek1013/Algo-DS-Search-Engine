@@ -1,0 +1,107 @@
+
+Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.
+The Fibonacci sequence F0,F1,…F0,F1,… is a special infinite sequence of non-negative integers, where F0=0F0=0, F1=1F1=1 and for each integer n≥2n≥2, Fn=Fn−1+Fn−2Fn=Fn−1+Fn−2.
+Consider the sequence DD of the last decimal digits of the first NN Fibonacci numbers, i.e. D=(F0%10,F1%10,…,FN−1%10)D=(F0%10,F1%10,…,FN−1%10). Now, you should perform the following process:
+
+Let D=(D1,D2,…,Dl)D=(D1,D2,…,Dl).
+If l=1l=1, the process ends.
+Create a new sequence E=(D2,D4,…,D2⌊l/2⌋)E=(D2,D4,…,D2⌊l/2⌋). In other words, EE is the sequence created by removing all odd-indexed elements from DD.
+Change DD to EE.
+
+When this process terminates, the sequence DD contains only one number. You have to find this number.
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first and only line of each test case contains a single integer NN.
+
+Output
+For each test case, print a single line containing one integer ― the last remaining number.
+Constraints
+
+1≤T≤1051≤T≤105
+1≤N≤10181≤N≤1018
+
+Subtasks
+Subtask #1 (20 points):
+
+1≤T≤1051≤T≤105
+1≤N≤1071≤N≤107
+
+Subtask #2 (80 points): original constraints
+
+                        Sample Input 1
+                        
+
+
+
+
+
+1
+9
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+3
+
+
+Explanation
+Example case 1: The first NN Fibonacci numbers are (0,1,1,2,3,5,8,13,21)(0,1,1,2,3,5,8,13,21). The sequence DD is (0,1,1,2,3,5,8,3,1)→(1,2,5,3)→(2,3)→(3)(0,1,1,2,3,5,8,3,1)→(1,2,5,3)→(2,3)→(3).
+
+
+
+Author:
+5★kevinmathew
+
+
+Editorial:
+https://discuss.codechef.com/problems/FIBEASY
+
+
+Tags:
+
+               
+                 Bit Manipulation, Basic Maths
+                 
+                     
+                     Mathematics
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1567
+
+
+Date Added:
+24-05-2019
+
+
+Time Limit:
+1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

@@ -1,0 +1,100 @@
+
+ Chef loves lucky numbers. Everybody knows that lucky numbers are positive integers whose decimal representation contains only the lucky digits 4 and 7. For example, numbers 47, 744, 4 are lucky and 5, 17, 467 are not.
+
+ Let Fd(x) equals to the number of digits d in decimal representation of the positive integer x. Chef interests only in functions F4(x) and F7(x). For the given positive integer N he wants to know the total number of different pairs (L; R) such that  F4(L) + F4(L + 1) + ... + F4(R) equals to  F7(L) + F7(L + 1) + ... + F7(R) and 1 ≤  L ≤ R ≤ N.
+
+Input
+ The first line contains a single positive integer T, the number of test cases. T test cases follow. The only line of each test case contains a positive integer N .
+
+Output
+ For each test case, output a single line containing the answer for the corresponding test case.
+
+Constraints
+
+1 ≤ T ≤ 100000
+
+1 ≤ N ≤ 100000
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+3
+3
+10
+100
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+6
+31
+1266
+
+
+
+
+
+Author:
+2★witaliy_adm
+
+
+Tester:
+6★anton_lunyov
+
+
+Editorial:
+https://discuss.codechef.com/problems/LUCKY1
+
+
+Tags:
+
+               
+                 ad-hoc
+                 
+                     
+                     Algorithms, Constructive
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1892
+
+
+Date Added:
+11-11-2011
+
+
+Time Limit:
+0.508134 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, PERL, SCALA, LUA, BASH, JS, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

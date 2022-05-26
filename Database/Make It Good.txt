@@ -1,0 +1,17 @@
+C. Make It Goodtime limit per test1 secondmemory limit per test256 megabytesinputstandard inputoutputstandard outputYou are given an array aa consisting of nn integers. You have to find the length of the smallest (shortest) prefix of elements you need to erase from aa to make it a good array. Recall that the prefix of the array a=[a1,a2,…,an]a=[a1,a2,…,an] is a subarray consisting several first elements: the prefix of the array aa of length kk is the array [a1,a2,…,ak][a1,a2,…,ak] (0≤k≤n0≤k≤n).The array bb of length mm is called good, if you can obtain a non-decreasing array cc (c1≤c2≤⋯≤cmc1≤c2≤⋯≤cm) from it, repeating the following operation mm times (initially, cc is empty):  select either the first or the last element of bb, remove it from bb, and append it to the end of the array cc. For example, if we do 44 operations: take b1b1, then bmbm, then bm−1bm−1 and at last b2b2, then bb becomes [b3,b4,…,bm−3][b3,b4,…,bm−3] and c=[b1,bm,bm−1,b2]c=[b1,bm,bm−1,b2].Consider the following example: b=[1,2,3,4,4,2,1]b=[1,2,3,4,4,2,1]. This array is good because we can obtain non-decreasing array cc from it by the following sequence of operations:  take the first element of bb, so b=[2,3,4,4,2,1]b=[2,3,4,4,2,1], c=[1]c=[1];  take the last element of bb, so b=[2,3,4,4,2]b=[2,3,4,4,2], c=[1,1]c=[1,1];  take the last element of bb, so b=[2,3,4,4]b=[2,3,4,4], c=[1,1,2]c=[1,1,2];  take the first element of bb, so b=[3,4,4]b=[3,4,4], c=[1,1,2,2]c=[1,1,2,2];  take the first element of bb, so b=[4,4]b=[4,4], c=[1,1,2,2,3]c=[1,1,2,2,3];  take the last element of bb, so b=[4]b=[4], c=[1,1,2,2,3,4]c=[1,1,2,2,3,4];  take the only element of bb, so b=[]b=[], c=[1,1,2,2,3,4,4]c=[1,1,2,2,3,4,4] — cc is non-decreasing. Note that the array consisting of one element is good.Print the length of the shortest prefix of aa to delete (erase), to make aa to be a good array. Note that the required length can be 00.You have to answer tt independent test cases.InputThe first line of the input contains one integer tt (1≤t≤2⋅1041≤t≤2⋅104) — the number of test cases. Then tt test cases follow.The first line of the test case contains one integer nn (1≤n≤2⋅1051≤n≤2⋅105) — the length of aa. The second line of the test case contains nn integers a1,a2,…,ana1,a2,…,an (1≤ai≤2⋅1051≤ai≤2⋅105), where aiai is the ii-th element of aa.It is guaranteed that the sum of nn does not exceed 2⋅1052⋅105 (∑n≤2⋅105∑n≤2⋅105).OutputFor each test case, print the answer: the length of the shortest prefix of elements you need to erase from aa to make it a good array.ExampleInputCopy5
+4
+1 2 3 4
+7
+4 3 3 8 4 5 2
+3
+1 1 1
+7
+1 3 1 4 5 3 2
+5
+5 4 3 2 3
+OutputCopy0
+4
+0
+2
+3
+NoteIn the first test case of the example, the array aa is already good, so we don't need to erase any prefix.In the second test case of the example, the initial array aa is not good. Let's erase first 44 elements of aa, the result is [4,5,2][4,5,2]. The resulting array is good. You can prove that if you erase fewer number of first elements, the result will not be good.

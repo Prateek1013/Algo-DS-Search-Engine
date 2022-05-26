@@ -1,0 +1,84 @@
+
+ For two given sequences of integers, find the longest possible integer sequence which is a subsequence of both these sequences, and whose elements are integers in a (strictly) increasing order.
+Input
+ The first number is n (1 ≤ n ≤ 5000), the length of the first sequence.
+ The next n integers are elements of the first sequence.
+ The next is m (1 ≤ m ≤ 5000), the length of the second sequence.
+ The next m integers are elements of the second sequence.
+Output
+On the first line, print a single number k, the length of the longest possible common subsequence that is increasing.
+In the next line, print k space separated integers which is the answer. If there are multiple possible subsequences, any one would do.
+
+                        Sample Input 1
+                        
+
+
+
+
+
+5
+2 3 1 4 0
+6
+10 3 4 1 0 0
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+2
+3 4
+
+
+
+
+
+Author:
+admin
+
+
+Tags:
+
+               
+                 Longest Common Subsequence, Longest Increasing Subsequence
+                 
+                     
+                     Algorithms, Dynamic Programming, DP on sequences
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+2170
+
+
+Date Added:
+20-04-2009
+
+
+Time Limit:
+0.2 - 0.6 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

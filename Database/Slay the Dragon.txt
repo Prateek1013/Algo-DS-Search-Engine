@@ -1,0 +1,14 @@
+C. Slay the Dragontime limit per test2 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard outputRecently, Petya learned about a new game "Slay the Dragon". As the name suggests, the player will have to fight with dragons. To defeat a dragon, you have to kill it and defend your castle. To do this, the player has a squad of nn heroes, the strength of the ii-th hero is equal to aiai.According to the rules of the game, exactly one hero should go kill the dragon, all the others will defend the castle. If the dragon's defense is equal to xx, then you have to send a hero with a strength of at least xx to kill it. If the dragon's attack power is yy, then the total strength of the heroes defending the castle should be at least yy.The player can increase the strength of any hero by 11 for one gold coin. This operation can be done any number of times.There are mm dragons in the game, the ii-th of them has defense equal to xixi and attack power equal to yiyi. Petya was wondering what is the minimum number of coins he needs to spend to defeat the ii-th dragon.Note that the task is solved independently for each dragon (improvements are not saved).InputThe first line contains a single integer nn (2≤n≤2⋅1052≤n≤2⋅105) — number of heroes.The second line contains nn integers a1,a2,…,ana1,a2,…,an (1≤ai≤10121≤ai≤1012), where aiai is the strength of the ii-th hero.The third line contains a single integer mm (1≤m≤2⋅1051≤m≤2⋅105) — the number of dragons.The next mm lines contain two integers each, xixi and yiyi (1≤xi≤1012;1≤yi≤10181≤xi≤1012;1≤yi≤1018) — defense and attack power of the ii-th dragon.OutputPrint mm lines, ii-th of which contains a single integer — the minimum number of coins that should be spent to defeat the ii-th dragon.ExampleInputCopy4
+3 6 2 3
+5
+3 12
+7 9
+4 14
+1 10
+8 7
+OutputCopy1
+2
+4
+0
+2
+NoteTo defeat the first dragon, you can increase the strength of the third hero by 11, then the strength of the heroes will be equal to [3,6,3,3][3,6,3,3]. To kill the dragon, you can choose the first hero.To defeat the second dragon, you can increase the forces of the second and third heroes by 11, then the strength of the heroes will be equal to [3,7,3,3][3,7,3,3]. To kill the dragon, you can choose a second hero.To defeat the third dragon, you can increase the strength of all the heroes by 11, then the strength of the heroes will be equal to [4,7,3,4][4,7,3,4]. To kill the dragon, you can choose a fourth hero.To defeat the fourth dragon, you don't need to improve the heroes and choose a third hero to kill the dragon.To defeat the fifth dragon, you can increase the strength of the second hero by 22, then the strength of the heroes will be equal to [3,8,2,3][3,8,2,3]. To kill the dragon, you can choose a second hero.

@@ -1,0 +1,40 @@
+
+CSES - List Removals
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+You are given a list consisting of nn integers. Your task is to remove elements from the list at given positions, and report the removed elements.
+
+Input
+
+The first input line has an integer nn: the initial size of the list. During the process, the elements are numbered 1,2,…,k1,2,…,k where kk is the current size of the list.
+
+The second line has nn integers x1,x2,…,xnx1,x2,…,xn: the contents of the list.
+
+The last line has nn integers p1,p2,…,pnp1,p2,…,pn: the positions of the elements to be removed.
+
+Output
+
+Print the elements in the order they are removed.
+
+Constraints
+
+1≤n≤2⋅1051≤n≤2⋅105
+1≤xi≤1091≤xi≤109
+1≤pi≤n−i+11≤pi≤n−i+1
+
+Example
+
+Input:
+5
+2 6 1 4 2
+3 1 3 1 1
+
+Output:
+1 2 2 6 4
+
+Explanation: The contents of the list are [2,6,1,4,2][2,6,1,4,2], [2,6,4,2][2,6,4,2], [6,4,2][6,4,2], [6,4][6,4], [4][4] and [][].    

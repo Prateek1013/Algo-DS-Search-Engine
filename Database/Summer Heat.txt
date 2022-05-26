@@ -1,0 +1,113 @@
+
+Read problem statements in Vietnamese,
+Bengali, Mandarin Chinese, and Russian as well. 
+Chefland has 22 different types of coconut, type AA and type BB. Type AA contains only xaxa milliliters of coconut water and type BB contains only xbxb grams of coconut pulp. Chef's nutritionist has advised him to consume XaXa milliliters of coconut water and XbXb grams of coconut pulp every week in the summer. Find the total number of coconuts (type AA + type BB) that Chef should buy each week to keep himself active in the hot weather.
+Input
+
+The first line contains an integer TT, the number of test cases. Then the test cases follow. 
+Each test case contains a single line of input, four integers xaxa, xbxb, XaXa, XbXb.
+
+Output
+For each test case, output in a single line the answer to the problem.
+Constraints
+
+1≤T≤150001≤T≤15000
+100≤xa≤200100≤xa≤200
+400≤xb≤500400≤xb≤500
+1000≤Xa≤12001000≤Xa≤1200
+1000≤Xb≤15001000≤Xb≤1500
+xaxa divides XaXa.
+xbxb divides XbXb.
+
+Subtasks
+Subtask #1 (100 points): original constraints
+
+                        Sample Input 1
+                        
+
+
+
+
+
+3
+100 400 1000 1200
+100 450 1000 1350
+150 400 1200 1200
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+13
+13
+11
+
+
+Explanation
+TestCase 11: 
+Number of coconuts of Type AA required = 1000100=101000100=10 and number of coconuts of Type BB required = 1200400=31200400=3.  So the total number of coconuts required is 10+3=1310+3=13.
+TestCase 22: 
+Number of coconuts of Type AA required = 1000100=101000100=10 and number of coconuts of Type BB required = 1350450=31350450=3.  So the total number of coconuts required is 10+3=1310+3=13.
+TestCase 33: 
+Number of coconuts of Type AA required = 1200150=81200150=8 and number of coconuts of Type BB required = 1200400=31200400=3.  So the total number of coconuts required is 8+3=118+3=11.
+
+
+
+Author:
+daanish_adm
+
+
+Tester:
+6★iscsi
+
+
+Editorial:
+https://discuss.codechef.com/problems/COCONUT
+
+
+Tags:
+
+               
+                 Integer Division, Arithmetic
+                 
+                     
+                     Mathematics, Basic Maths
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+852
+
+
+Date Added:
+31-05-2021
+
+
+Time Limit:
+0.5 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

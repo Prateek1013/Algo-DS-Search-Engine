@@ -1,0 +1,101 @@
+
+Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.
+Guddu likes a girl that loves playing with numbers. She agreed to go on a date with Guddu, but only if he can solve the following problem:
+An integer is round if it is greater than 00 and the sum of its digits in decimal representation is a multiple of 1010. Find the NN-th smallest round integer.
+However, Guddu does not like playing with numbers at all and he is unable to solve this problem, so he begs you to solve it for him. In return, he will definitely give you a treat.
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first and only line of each test case contains a single integer NN.
+
+Output
+For each test case, print a single line containing the NN-th round integer. It is guaranteed that this number is smaller than 264264.
+Constraints
+
+1≤T≤1051≤T≤105
+1≤N≤10181≤N≤1018
+
+Subtasks
+Subtask #1 (30 points):
+
+1≤T≤101≤T≤10
+1≤N≤1051≤N≤105
+
+Subtask #2 (70 points): original constraints
+
+                        Sample Input 1
+                        
+
+
+
+
+
+1
+2
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+28
+
+
+Explanation
+Example case 1: The smallest round integer is 1919 and the second smallest is 2828.
+
+
+
+Author:
+5★kartik_354
+
+
+Editorial:
+https://discuss.codechef.com/problems/KS2
+
+
+Tags:
+
+               
+                 Observation
+                 
+                     
+                     Algorithms
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1525
+
+
+Date Added:
+25-04-2019
+
+
+Time Limit:
+1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

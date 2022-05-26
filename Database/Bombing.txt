@@ -1,0 +1,94 @@
+
+There are n+1 (0 < n <= 109, indexed 0..n) houses lying on a straight street. One day, they are bombed by an enemy. CodeChef is designing defence systems to protect the street from bombing. Each defense system can protect all houses in some interval, and a house can be protected by more than one system. A defence system can be also moved at any time. By agents, CodeChef knows the bombing schedule of the enemy. Each time they bomb a house and CodeChef wants to know how many systems are protecting that house.
+Input
+The first line contains two integers n, m (0 < m <= 250 000).
+Each of the m following lines follows one of these:P u v: CodeChef adds a defence system protecting all houses from the u-th house to the v-th house (0 <= u <= v <= n). All systems will be indexed by order of appearance in the input, starting from 1.
+M i d: CodeChef moves the i-th system by d houses, d < 0 means moving nearer the 0-th house, and d > 0 means moving away (that is, if the i-th system covers houses u through v, it is moved to instead cover houses w=u+d through t=v+d). After being moved the system will protect from the w-th house to t-th house where 0 <= w <= t <= n.
+B x: The enemy bombs the x-th house.
+
+Output
+For each time of bombing by the enemy (by the appearance in the input), output on a single line a number of systems protecting that house.
+
+                        Sample Input 1
+                        
+
+
+
+
+
+7 5
+P 1 4
+P 3 5
+B 3
+M 2 1
+B 3
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+2
+1
+
+
+
+
+
+Author:
+anhdq_adm
+
+
+Tester:
+6★pieguy
+
+
+Editorial:
+https://discuss.codechef.com/problems/BOMBING
+
+
+Tags:
+
+               
+                 Segment Trees, Fenwick Trees
+                 
+                     
+                     Advanced Data Structures, Advanced Tree Structures
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1894
+
+
+Date Added:
+6-08-2010
+
+
+Time Limit:
+0.504119 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

@@ -1,0 +1,121 @@
+
+You are given a connected undirected graph G = (V,E). We define a simple cycle to be GoodGood, if it consists of an odd number of edges, and if on deleting all those edges, the graph still remains connected. Note that we do not delete any vertices.
+A 4−Coloring4−Coloring of the graph is an assignment of colors to the vertices of the graph and which satisfies these properties:
+
+Every vertex should be assigned exactly 1 color.
+You can only use one of four colours: {1,2,3,4}.
+There should be no edge(u,v)(u,v) such that both uu and vv have been assigned the same color.
+
+You should either find and output a GoodGood cycle, or give a 4−Coloring4−Coloring of the entire graph. Note that the given graph might both of these and multiple instances of these. Any one of them can be printed. Also, you can prove that you can never have a graph which has neither of these.
+Input
+The first line of the input contains a single integer, TT. This denotes the number of testcases.
+The first line of each testcase contains two integers: NN and MM, which denote the number of vertices and edges in the graph. The vertices are numbered from 11 to NN.
+Each of the next MM lines contains two integers, uu and vv, denoting that there is an edge between the nodes uu and vv.
+Output
+The first line of each testcase’s output should contain a single integer: 1 if you are going to print a 4−Coloring4−Coloring, and 2 if you are going to print a GoodGood cycle.
+If you had printed 1 in the previous line, then the second line should contain NN space separated integers, each of which is one of {1, 2, 3, 4}. The i-th of these numbers should denote the color assigned to Node i in your 4−Coloring4−Coloring.
+If you had printed 2 in the previous line, then first print the length of the GoodGood cycle in the second line, and print the vertices in the cycle in order in the same line.
+Constraints
+
+1≤T≤51≤T≤5
+1≤N≤1051≤N≤105
+1≤M≤2000001≤M≤200000
+1≤u,v≤N1≤u,v≤N
+The graph will not contain multi edges or self-loops.
+
+Subtasks:
+Subtask 1 (9 Points) :
+
+M=NM=N
+
+Subtask 2 (91 Points) :
+
+No further constraints.
+
+Sample Input 1:
+1
+6 9
+1 2
+1 3
+2 3
+2 4
+5 2
+3 5
+6 5
+3 6
+4 5
+
+Sample Output 1
+2
+3 5 2 3
+
+Sample Input 2
+1
+6 9
+1 2
+1 3
+2 3
+2 4
+5 2
+3 5
+6 5
+3 6
+4 5
+
+Sample Output 2
+1
+1 2 3 3 1 4
+
+Explanation
+Explanation 1 : The graph is as follows
+
+2-3-4 forms an odd cycle, and after deleting these three edges, the entire graph still remains connected. Hence we have outputted a GoodGood cycle.
+Explanation 2 : The graph is same as before. The colors that we have assigned form a 4−Coloring4−Coloring.
+
+
+
+Author:
+admin2
+
+
+Tags:
+
+               
+                 Coloring, Cycles
+                 
+                     
+                     Algorithms, Graph Algos
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+2455
+
+
+Date Added:
+20-06-2018
+
+
+Time Limit:
+1.5 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

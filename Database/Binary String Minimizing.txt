@@ -1,0 +1,11 @@
+D. Binary String Minimizingtime limit per test1 secondmemory limit per test256 megabytesinputstandard inputoutputstandard outputYou are given a binary string of length nn (i. e. a string consisting of nn characters '0' and '1').In one move you can swap two adjacent characters of the string. What is the lexicographically minimum possible string you can obtain from the given one if you can perform no more than kk moves? It is possible that you do not perform any moves at all.Note that you can swap the same pair of adjacent characters with indices ii and i+1i+1 arbitrary (possibly, zero) number of times. Each such swap is considered a separate move.You have to answer qq independent test cases.InputThe first line of the input contains one integer qq (1≤q≤1041≤q≤104) — the number of test cases.The first line of the test case contains two integers nn and kk (1≤n≤106,1≤k≤n21≤n≤106,1≤k≤n2) — the length of the string and the number of moves you can perform.The second line of the test case contains one string consisting of nn characters '0' and '1'.It is guaranteed that the sum of nn over all test cases does not exceed 106106 (∑n≤106∑n≤106).OutputFor each test case, print the answer on it: the lexicographically minimum possible string of length nn you can obtain from the given one if you can perform no more than kk moves.ExampleInputCopy3
+8 5
+11011010
+7 9
+1111100
+7 11
+1111100
+OutputCopy01011110
+0101111
+0011111
+NoteIn the first example, you can change the string as follows: 110–––11010→10–––111010→011110–––10→01110–––110→0110–––1110→01011110110_11010→10_111010→011110_10→01110_110→0110_1110→01011110. In the third example, there are enough operations to make the string sorted.

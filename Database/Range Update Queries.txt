@@ -1,0 +1,44 @@
+
+CSES - Range Update Queries
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+Given an array of nn integers, your task is to process qq queries of the following types:
+ increase each value in range [a,b][a,b] by uu
+ what is the value at position kk?
+
+Input
+
+The first input line has two integers nn and qq: the number of values and queries.
+
+The second line has nn integers x1,x2,…,xnx1,x2,…,xn: the array values.
+
+Finally, there are qq lines describing the queries. Each line has three integers: either "11 aa bb uu" or "22 kk".
+
+Output
+
+Print the result of each query of type 2.
+
+Constraints
+
+1≤n,q≤2⋅1051≤n,q≤2⋅105
+1≤xi,u≤1091≤xi,u≤109
+1≤k≤n1≤k≤n
+1≤a≤b≤n1≤a≤b≤n
+
+Example
+
+Input:
+8 3
+3 2 4 5 1 1 5 3
+2 4
+1 2 5 1
+2 4
+
+Output:
+5
+6 

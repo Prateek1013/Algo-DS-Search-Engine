@@ -1,0 +1,41 @@
+
+CSES - Polygon Area
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+Your task is to calculate the area of a given polygon.
+
+The polygon consists of nn vertices (x1,y1),(x2,y2),…,(xn,yn)(x1,y1),(x2,y2),…,(xn,yn). The vertices (xi,yi)(xi,yi) and (xi+1,yi+1)(xi+1,yi+1) are adjacent for i=1,2,…,n−1i=1,2,…,n−1, and the vertices (x1,y1)(x1,y1) and (xn,yn)(xn,yn) are also adjacent.
+
+Input
+
+The first input line has an integer nn: the number of vertices.
+
+After this, there are nn lines that describe the vertices. The iith such line has two integers xixi and yiyi.
+
+You may assume that the polygon is simple, i.e., it does not intersect itself.
+
+Output
+
+Print one integer: 2a2a where the area of the polygon is aa (this ensures that the result is an integer).
+
+Constraints
+
+3≤n≤10003≤n≤1000
+−109≤xi,yi≤109−109≤xi,yi≤109
+
+Example
+
+Input:
+4
+1 1
+4 2
+3 5
+1 4
+
+Output:
+16 

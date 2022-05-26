@@ -1,0 +1,28 @@
+C. A-B Palindrometime limit per test2 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard outputYou are given a string ss consisting of the characters '0', '1', and '?'. You need to replace all the characters with '?' in the string ss by '0' or '1' so that the string becomes a palindrome and has exactly aa characters '0' and exactly bb characters '1'. Note that each of the characters '?' is replaced independently from the others.A string tt of length nn is called a palindrome if the equality t[i]=t[n−i+1]t[i]=t[n−i+1] is true for all ii (1≤i≤n1≤i≤n).For example, if s=s="01?????0", a=4a=4 and b=4b=4, then you can replace the characters '?' in the following ways:   "01011010";  "01100110". For the given string ss and the numbers aa and bb, replace all the characters with '?' in the string ss by '0' or '1' so that the string becomes a palindrome and has exactly aa characters '0' and exactly bb characters '1'.InputThe first line contains a single integer tt (1≤t≤1041≤t≤104). Then tt test cases follow.The first line of each test case contains two integers aa and bb (0≤a,b≤2⋅1050≤a,b≤2⋅105, a+b≥1a+b≥1).The second line of each test case contains the string ss of length a+ba+b, consisting of the characters '0', '1', and '?'.It is guaranteed that the sum of the string lengths of ss over all test cases does not exceed 2⋅1052⋅105.OutputFor each test case, output:   "-1", if you can't replace all the characters '?' in the string ss by '0' or '1' so that the string becomes a palindrome and that it contains exactly aa characters '0' and exactly bb characters '1';  the string that is obtained as a result of the replacement, otherwise. If there are several suitable ways to replace characters, you can output any.ExampleInputCopy9
+4 4
+01?????0
+3 3
+??????
+1 0
+?
+2 2
+0101
+2 2
+01?0
+0 1
+0
+0 3
+1?1
+2 2
+?00?
+4 3
+??010?0
+OutputCopy01011010
+-1
+0
+-1
+0110
+-1
+111
+1001
+0101010

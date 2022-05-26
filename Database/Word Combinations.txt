@@ -1,0 +1,43 @@
+
+CSES - Word Combinations
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+You are given a string of length nn and a dictionary containing kk words. In how many ways can you create the string using the words?
+
+Input
+
+The first input line has a string containing nn characters between a–z.
+
+The second line has an integer kk: the number of words in the dictionary.
+
+Finally there are kk lines describing the words. Each word is unique and consists of characters a–z.
+
+Output
+
+Print the number of ways modulo 109+7109+7.
+
+Constraints
+
+1≤n≤50001≤n≤5000
+1≤k≤1051≤k≤105
+the total length of the words is at most 106106
+
+Example
+
+Input:
+ababc
+4
+ab
+abab
+c
+cb
+
+Output:
+2
+
+Explanation: The possible ways are ab+ab+c and abab+c.    

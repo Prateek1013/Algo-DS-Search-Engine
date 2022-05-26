@@ -1,0 +1,12 @@
+B. Long Numbertime limit per test2 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard outputYou are given a long decimal number aa consisting of nn digits from 11 to 99. You also have a function ff that maps every digit from 11 to 99 to some (possibly the same) digit from 11 to 99.You can perform the following operation no more than once: choose a non-empty contiguous subsegment of digits in aa, and replace each digit xx from this segment with f(x)f(x). For example, if a=1337a=1337, f(1)=1f(1)=1, f(3)=5f(3)=5, f(7)=3f(7)=3, and you choose the segment consisting of three rightmost digits, you get 15531553 as the result.What is the maximum possible number you can obtain applying this operation no more than once?InputThe first line contains one integer nn (1≤n≤2⋅1051≤n≤2⋅105) — the number of digits in aa.The second line contains a string of nn characters, denoting the number aa. Each character is a decimal digit from 11 to 99.The third line contains exactly 99 integers f(1)f(1), f(2)f(2), ..., f(9)f(9) (1≤f(i)≤91≤f(i)≤9).OutputPrint the maximum number you can get after applying the operation described in the statement no more than once.ExamplesInputCopy4
+1337
+1 2 5 4 6 6 3 1 9
+OutputCopy1557
+InputCopy5
+11111
+9 8 7 6 5 4 3 2 1
+OutputCopy99999
+InputCopy2
+33
+1 1 1 1 1 1 1 1 1
+OutputCopy33

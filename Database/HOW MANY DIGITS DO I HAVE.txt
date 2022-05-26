@@ -1,0 +1,73 @@
+
+Write a program to obtain a number (N)(N) from the user and display whether the number is a one digit number, 2 digit number, 3 digit number or more than 3 digit number
+Input:
+
+First line will contain the number NN,
+
+Output:
+Print "1" if N is a 1 digit number.
+Print "2" if N is a 2 digit number.
+Print "3" if N is a 3 digit number.
+Print "More than 3 digits" if N has more than 3 digits.
+Constraints
+
+0≤N≤10000000≤N≤1000000
+
+Sample Input:
+9
+
+Sample Output:
+1
+
+
+
+
+Author:
+5★tanmay28
+
+
+Editorial:
+https://discuss.codechef.com/problems/HOWMANY
+
+
+Tags:
+
+               
+                 Case work, Conditional Statements, Basic Maths
+                 
+                     
+                     Special, Basic Programming Concepts, Mathematics
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+908
+
+
+Date Added:
+2-06-2018
+
+
+Time Limit:
+1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

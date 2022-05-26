@@ -1,0 +1,11 @@
+B. Reverse Binary Stringstime limit per test2 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard outputYou are given a string ss of even length nn. String ss is binary, in other words, consists only of 0's and 1's.String ss has exactly n2n2 zeroes and n2n2 ones (nn is even).In one operation you can reverse any substring of ss. A substring of a string is a contiguous subsequence of that string.What is the minimum number of operations you need to make string ss alternating? A string is alternating if si≠si+1si≠si+1 for all ii. There are two types of alternating strings in general: 01010101... or 10101010...InputThe first line contains a single integer tt (1≤t≤10001≤t≤1000) — the number of test cases.The first line of each test case contains a single integer nn (2≤n≤1052≤n≤105; nn is even) — the length of string ss.The second line of each test case contains a binary string ss of length nn (si∈si∈ {0, 1}). String ss has exactly n2n2 zeroes and n2n2 ones.It's guaranteed that the total sum of nn over test cases doesn't exceed 105105.OutputFor each test case, print the minimum number of operations to make ss alternating.ExampleInputCopy3
+2
+10
+4
+0110
+8
+11101000
+OutputCopy0
+1
+2
+NoteIn the first test case, string 10 is already alternating.In the second test case, we can, for example, reverse the last two elements of ss and get: 0110 →→ 0101.In the third test case, we can, for example, make the following two operations:   11101000 →→ 10101100;  10101100 →→ 10101010. 

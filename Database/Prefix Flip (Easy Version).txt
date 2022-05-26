@@ -1,0 +1,22 @@
+A1. Prefix Flip (Easy Version)time limit per test1 secondmemory limit per test256 megabytesinputstandard inputoutputstandard outputThis is the easy version of the problem. The difference between the versions is the constraint on nn and the required number of operations. You can make hacks only if all versions of the problem are solved.There are two binary strings aa and bb of length nn (a binary string is a string consisting of symbols 00 and 11). In an operation, you select a prefix of aa, and simultaneously invert the bits in the prefix (00 changes to 11 and 11 changes to 00) and reverse the order of the bits in the prefix.For example, if a=001011a=001011 and you select the prefix of length 33, it becomes 011011011011. Then if you select the entire string, it becomes 001001001001.Your task is to transform the string aa into bb in at most 3n3n operations. It can be proved that it is always possible.InputThe first line contains a single integer tt (1≤t≤10001≤t≤1000)  — the number of test cases. Next 3t3t lines contain descriptions of test cases.The first line of each test case contains a single integer nn (1≤n≤10001≤n≤1000)  — the length of the binary strings.The next two lines contain two binary strings aa and bb of length nn.It is guaranteed that the sum of nn across all test cases does not exceed 10001000.OutputFor each test case, output an integer kk (0≤k≤3n0≤k≤3n), followed by kk integers p1,…,pkp1,…,pk (1≤pi≤n1≤pi≤n). Here kk is the number of operations you use and pipi is the length of the prefix you flip in the ii-th operation.ExampleInputCopy5
+2
+01
+10
+5
+01011
+11100
+2
+01
+01
+10
+0110011011
+1000110100
+1
+0
+1
+OutputCopy3 1 2 1
+6 5 2 5 3 1 2
+0
+9 4 1 2 10 4 1 2 1 5
+1 1
+NoteIn the first test case, we have 01→11→00→1001→11→00→10.In the second test case, we have 01011→00101→11101→01000→10100→00100→1110001011→00101→11101→01000→10100→00100→11100.In the third test case, the strings are already the same. Another solution is to flip the prefix of length 22, which will leave aa unchanged.

@@ -1,0 +1,42 @@
+
+CSES - Filling Trominos
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+Your task is to fill an n×mn×m grid using L-trominos (three squares that have an L-shape). For example, here is one way to fill a 4×64×6 grid:
+
+Input
+
+The first input line has an integer tt: the number of tests.
+
+After that, there are tt lines that describe the tests. Each line has two integers nn and mm.
+
+Output
+
+For each test, print YES if there is a solution, and NO otherwise.
+
+If there is a solution, also print nn lines that each contain mm letters between A–Z. Adjacent squares must have the same letter exactly when they belong to the same tromino. You can print any valid solution.
+
+Constraints
+
+1≤t≤1001≤t≤100
+1≤n,m≤1001≤n,m≤100
+
+Example
+
+Input:
+2
+4 6
+4 7
+
+Output:
+YES
+AADDBB
+ACCDEB
+BCAEEC
+BBAACC
+NO 

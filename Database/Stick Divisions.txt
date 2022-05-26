@@ -1,0 +1,41 @@
+
+CSES - Stick Divisions
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+You have a stick of length xx and you want to divide it into nn sticks, with given lengths, whose total length is xx.
+
+On each move you can take any stick and divide it into two sticks. The cost of such an operation is the length of the original stick.
+
+What is the minimum cost needed to create the sticks?
+
+Input
+
+The first input line has two integers xx and nn: the length of the stick and the number of sticks in the division.
+
+The second line has nn integers d1,d2,…,dnd1,d2,…,dn: the length of each stick in the division.
+
+Output
+
+Print one integer: the minimum cost of the division.
+
+Constraints
+
+1≤x≤1091≤x≤109
+1≤n≤2⋅1051≤n≤2⋅105
+∑di=x∑di=x
+
+Example
+
+Input:
+8 3
+2 3 3
+
+Output:
+13
+
+Explanation: You first divide the stick of length 88 into sticks of length 33 and 55 (cost 88). After this, you divide the stick of length 55 into sticks of length 22 and 33 (cost 55). The total cost is 8+5=138+5=13.    

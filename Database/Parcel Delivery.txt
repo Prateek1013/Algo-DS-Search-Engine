@@ -1,0 +1,45 @@
+
+CSES - Parcel Delivery
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+There are nn cities and mm routes through which parcels can be carried from one city to another city. For each route, you know the maximum number of parcels and the cost of a single parcel.
+
+You want to send kk parcels from Syrjälä to Lehmälä. What is the cheapest way to do that?
+
+Input
+
+The first input line has three integers nn, mm and kk: the number of cities, routes and parcels. The cities are numbered 1,2,…,n1,2,…,n. City 11 is Syrjälä and city nn is Lehmälä.
+
+After this, there are mm lines that describe the routes. Each line has four integers aa, bb, rr and cc: there is a route from city aa to city bb, at most rr parcels can be carried through the route, and the cost of each parcel is cc.
+
+Output
+
+Print one integer: the minimum total cost or −1−1 if there are no solutions.
+
+Constraints
+
+1≤n≤5001≤n≤500
+1≤m≤10001≤m≤1000
+1≤k≤1001≤k≤100
+1≤a,b≤n1≤a,b≤n
+1≤r,c≤10001≤r,c≤1000
+
+Example
+
+Input:
+4 5 3
+1 2 5 100
+1 3 10 50
+1 4 7 500
+2 4 8 350
+3 4 2 100
+
+Output:
+750
+
+Explanation: One parcel is delivered through route 1→2→41→2→4 (cost 1⋅450=4501⋅450=450) and two parcels are delivered through route 1→3→41→3→4 (cost 2⋅150=3002⋅150=300).    

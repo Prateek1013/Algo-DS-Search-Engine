@@ -1,0 +1,98 @@
+
+Read problems statements in Hindi, Mandarin Chinese, Russian, Vietnamese, and Bengali as well.
+Chef Chick loves to jump a lot. Once, it realised that it was on an infinitely long road, and decided to travel along this road by jumping.
+Let's view the road as the xx-axis in a 1D coordinate system. Initially, Chef Chick is at the coordinate x=0x=0, and it wants to move only in the positive xx-direction. Moreover, Chef Chick has NN favourite integers a1,a2,…,aNa1,a2,…,aN, and it wants to jump on the coordinates that are multiples of these favourite numbers — when its current position is xx, it jumps to the smallest coordinate y>xy>x such that yy is an integer multiple of at least one of the values a1,a2,…,aNa1,a2,…,aN; the length of such a jump is y−xy−x.
+This way, Chef Chick keeps jumping along the road forever in the positive xx-direction. You need to find the length of the longest jump it will make, i.e. the largest integer dd such that Chef Chick makes at least one jump with length dd and never makes any jump with a greater length. It can be proved that such an integer always exists.
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first line of each test case contains a single integer NN.
+The second line contains NN space-separated integers a1,a2,…,aNa1,a2,…,aN.
+
+Output
+For each test case, print a single line containing one integer — the length of the longest jump that Chick will make.
+Constraints
+
+1≤T≤1001≤T≤100
+1≤N≤1001≤N≤100
+1≤ai≤1051≤ai≤105 for each valid ii
+a1,a2,…,aNa1,a2,…,aN are pairwise distinct
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+1
+2
+2 3
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+2
+
+
+Explanation
+Example case 1: The sequence of coordinates on which Chef Chick would jump starts with (0,2,3,4,6,…)(0,2,3,4,6,…). A longest jump is e.g. from 44 to 66, with length 22.
+
+
+
+Author:
+6★adarshag
+
+
+Editorial:
+https://discuss.codechef.com/problems/CHFCHK
+
+
+Tags:
+
+               
+                 Observation
+                 
+                     
+                     Algorithms
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1295
+
+
+Date Added:
+2-01-2020
+
+
+Time Limit:
+1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

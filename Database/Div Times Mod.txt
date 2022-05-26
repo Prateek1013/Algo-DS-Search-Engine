@@ -1,0 +1,7 @@
+B. Div Times Modtime limit per test1 secondmemory limit per test256 megabytesinputstandard inputoutputstandard outputVasya likes to solve equations. Today he wants to solve (x div k)⋅(xmodk)=n(x div k)⋅(xmodk)=n, where divdiv and modmod stand for integer division and modulo operations (refer to the Notes below for exact definition). In this equation, kk and nn are positive integer parameters, and xx is a positive integer unknown. If there are several solutions, Vasya wants to find the smallest possible xx. Can you help him?InputThe first line contains two integers nn and kk (1≤n≤1061≤n≤106, 2≤k≤10002≤k≤1000).OutputPrint a single integer xx — the smallest positive integer solution to (x div k)⋅(xmodk)=n(x div k)⋅(xmodk)=n. It is guaranteed that this equation has at least one positive integer solution.ExamplesInputCopy6 3
+OutputCopy11
+InputCopy1 2
+OutputCopy3
+InputCopy4 6
+OutputCopy10
+NoteThe result of integer division a div ba div b is equal to the largest integer cc such that b⋅c≤ab⋅c≤a. aa modulo bb (shortened amodbamodb) is the only integer cc such that 0≤c<b0≤c<b, and a−ca−c is divisible by bb.In the first sample, 11 div 3=311 div 3=3 and 11mod3=211mod3=2. Since 3⋅2=63⋅2=6, then x=11x=11 is a solution to (x div 3)⋅(xmod3)=6(x div 3)⋅(xmod3)=6. One can see that 1919 is the only other positive integer solution, hence 1111 is the smallest one.

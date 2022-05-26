@@ -1,0 +1,46 @@
+
+CSES - Distance Queries
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+You are given a tree consisting of nn nodes.
+
+Your task is to process qq queries of the form: what is the distance between nodes aa and bb?
+
+Input
+
+The first input line contains two integers nn and qq: the number of nodes and queries. The nodes are numbered 1,2,…,n1,2,…,n.
+
+Then there are n−1n−1 lines describing the edges. Each line contains two integers aa and bb: there is an edge between nodes aa and bb.
+
+Finally, there are qq lines describing the queries. Each line contains two integer aa and bb: what is the distance between nodes aa and bb?
+
+Output
+
+Print qq integers: the answer to each query.
+
+Constraints
+
+1≤n,q≤2⋅1051≤n,q≤2⋅105
+1≤a,b≤n1≤a,b≤n
+
+Example
+
+Input:
+5 3
+1 2
+1 3
+3 4
+3 5
+1 3
+2 5
+1 4
+
+Output:
+1
+3
+2 

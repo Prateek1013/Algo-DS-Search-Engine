@@ -1,0 +1,115 @@
+
+Jonas asked Martha to stand at point (x1,y1) on an infinite cartesian plane. He gave her a string S which consists of operations in the form of characters 'R', 'L', 'U', and 
+'D'.
+Each character of the string corresponds to the following movements: 
+
+'R' means moving right by 1 unit i.e, (x,y) to (x+1,y).
+'L' means moving left by 1 unit i.e, (x,y) to (x−1,y).
+'U' means moving up by 1 unit i.e, (x,y) to (x,y+1).
+'D' means moving down by 1 unit i.e, (x,y) to (x,y−1).
+
+Now, Jonas asks Martha Q queries. In each query, coordinates are given of form (x2,y2). Martha needs to tell if it is possible to move from (x1,y1) to (x2,y2) by choosing a subsequence of given string S and performing the operations in sequential order.Starting point (x1,y1) remains same for all queries.
+If it is possible, print "YES" and the length of the smallest possible subsequence of string, else print "NO".
+Recall that string a is a subsequence of a string b if a can be obtained from b by deletion of several (possibly zero or all) characters. For example, for the string a="codechef", the following strings are subsequences: "code", "ee", "odchef", "df", "", and others, but the following are not subsequences: "ced", "eehc", "cofe".
+Note: Use of Fast IO is recommended.
+Input:
+
+First line will contain T, number of test cases. Then test cases follow.
+For each test case, first line will contain string S, string of operations.
+Second line will contain coordinates x1 and y1.
+Third line will contain Q, number of queries.
+Q lines follow. Each line will contain coordinates x2 and y2.
+
+Output:
+For each query if subsequence exists then print "YES" (without quotes) and length of smallest possible subsequence separated by a space in new line, else print "NO" (without quotes) in new line.
+Constraints
+
+1≤T≤10
+1≤|S|≤106
+−108≤x1,x2,y1,y2≤108
+1≤Q≤105
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+1
+RLUDRLUD
+1 2
+2
+2 3
+1 -2
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+YES 2
+NO
+
+
+Explanation
+Given String is "RLUDRLUD", (x1,y1) is (1,2). We can move from (1,2) to (2,3) in just two operations if we choose subsequence as "RU" or "UR".
+Suppose we choose "RU" as a subsequence. 'R' means moving from (1,2) to (2,2). 'U' means moving from (2,2) to (2,3).
+In the second query, we can't move from (1,2) to (1,-2) using operations of the given string.
+
+
+
+Author:
+4★sarthak_eddy
+
+
+Editorial:
+https://discuss.codechef.com/problems/CENS20G
+
+
+Tags:
+
+               
+                 String, Basic Maths, Cartesian Coordinate System, Subsequence
+                 
+                     
+                     Data Structures, Arrays, Mathematics, Groupings
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1676
+
+
+Date Added:
+13-07-2020
+
+
+Time Limit:
+1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

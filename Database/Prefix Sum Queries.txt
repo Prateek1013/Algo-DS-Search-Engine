@@ -1,0 +1,46 @@
+
+CSES - Prefix Sum Queries
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+Given an array of nn integers, your task is to process qq queries of the following types:
+ update the value at position kk to uu
+ what is the maximum prefix sum in range [a,b][a,b]?
+
+Input
+
+The first input line has two integers nn and qq: the number of values and queries.
+
+The second line has nn integers x1,x2,…,xnx1,x2,…,xn: the array values.
+
+Finally, there are qq lines describing the queries. Each line has three integers: either "11 kk uu" or "22 aa bb".
+
+Output
+
+Print the result of each query of type 2.
+
+Constraints
+
+1≤n,q≤2⋅1051≤n,q≤2⋅105
+−109≤xi,u≤109−109≤xi,u≤109
+1≤k≤n1≤k≤n
+1≤a≤b≤n1≤a≤b≤n
+
+Example
+
+Input:
+8 4
+1 2 -1 3 1 -5 1 4
+2 2 6
+1 4 -2
+2 2 6
+2 3 4
+
+Output:
+5
+2
+0 

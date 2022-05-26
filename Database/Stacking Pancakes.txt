@@ -1,0 +1,93 @@
+
+Chef is good at making pancakes. Generally he gets requests to serve N pancakes at once.
+He serves them in the form of a stack.
+A pancake can be treated as a circular disk with some radius.
+Chef needs to take care that when he places a pancake on the top of the stack the radius of the pancake should not exceed the radius of the largest pancake in the stack by more than 1. 
+Additionally all radii should be positive integers, and the bottom most pancake should have its radius as 1.
+Chef wants you to find out in how many ways can he create a stack containing N pancakes.
+Input
+First line of the input contains T (T <= 1000) denoting the number of test cases.
+T lines follow each containing a single integer N (1 <= N <= 1000) denoting the size of the required stack.
+Output
+For each case the output should be a single integer representing the number of ways a stack of size N can be created. As the answer can be large print it modulo 1000000007.
+
+                        Sample Input 1
+                        
+
+
+
+
+
+2
+1
+2
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+1
+2
+
+
+
+
+
+Author:
+kaush_adm
+
+
+Tester:
+6★laycurse
+
+
+Editorial:
+https://discuss.codechef.com/problems/PANSTACK
+
+
+Tags:
+
+               
+                 Pre processing, Dynamic Programming
+                 
+                     
+                     Advanced Algorithms, Algorithms
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1679
+
+
+Date Added:
+1-03-2012
+
+
+Time Limit:
+0.206897 secs
+
+
+Source Limit:
+5000 Bytes
+
+
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, PERL, SCALA, LUA, BASH, JS, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

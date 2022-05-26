@@ -1,0 +1,19 @@
+B1. K for the Price of One (Easy Version)time limit per test2 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard outputThis is the easy version of this problem. The only difference is the constraint on kk — the number of gifts in the offer. In this version: k=2k=2.Vasya came to the store to buy goods for his friends for the New Year. It turned out that he was very lucky — today the offer "kk of goods for the price of one" is held in store. Remember, that in this problem k=2k=2.Using this offer, Vasya can buy exactly kk of any goods, paying only for the most expensive of them. Vasya decided to take this opportunity and buy as many goods as possible for his friends with the money he has.More formally, for each good, its price is determined by aiai — the number of coins it costs. Initially, Vasya has pp coins. He wants to buy the maximum number of goods. Vasya can perform one of the following operations as many times as necessary:  Vasya can buy one good with the index ii if he currently has enough coins (i.e p≥aip≥ai). After buying this good, the number of Vasya's coins will decrease by aiai, (i.e it becomes p:=p−aip:=p−ai).  Vasya can buy a good with the index ii, and also choose exactly k−1k−1 goods, the price of which does not exceed aiai, if he currently has enough coins (i.e p≥aip≥ai). Thus, he buys all these kk goods, and his number of coins decreases by aiai (i.e it becomes p:=p−aip:=p−ai). Please note that each good can be bought no more than once.For example, if the store now has n=5n=5 goods worth a1=2,a2=4,a3=3,a4=5,a5=7a1=2,a2=4,a3=3,a4=5,a5=7, respectively, k=2k=2, and Vasya has 66 coins, then he can buy 33 goods. A good with the index 11 will be bought by Vasya without using the offer and he will pay 22 coins. Goods with the indices 22 and 33 Vasya will buy using the offer and he will pay 44 coins. It can be proved that Vasya can not buy more goods with six coins.Help Vasya to find out the maximum number of goods he can buy.InputThe first line contains one integer tt (1≤t≤1041≤t≤104) — the number of test cases in the test.The next lines contain a description of tt test cases. The first line of each test case contains three integers n,p,kn,p,k (2≤n≤2⋅1052≤n≤2⋅105, 1≤p≤2⋅1091≤p≤2⋅109, k=2k=2) — the number of goods in the store, the number of coins Vasya has and the number of goods that can be bought by the price of the most expensive of them.The second line of each test case contains nn integers aiai (1≤ai≤1041≤ai≤104) — the prices of goods.It is guaranteed that the sum of nn for all test cases does not exceed 2⋅1052⋅105. It is guaranteed that in this version of the problem k=2k=2 for all test cases.OutputFor each test case in a separate line print one integer mm — the maximum number of goods that Vasya can buy.ExampleInputCopy6
+5 6 2
+2 4 3 5 7
+5 11 2
+2 4 3 5 7
+2 10000 2
+10000 10000
+2 9999 2
+10000 10000
+5 13 2
+8 2 8 2 5
+3 18 2
+1 2 3
+OutputCopy3
+4
+2
+0
+4
+3

@@ -1,0 +1,8 @@
+C. Round Corridortime limit per test1 secondmemory limit per test256 megabytesinputstandard inputoutputstandard outputAmugae is in a very large round corridor. The corridor consists of two areas. The inner area is equally divided by nn sectors, and the outer area is equally divided by mm sectors. A wall exists between each pair of sectors of same area (inner or outer), but there is no wall between the inner area and the outer area. A wall always exists at the 12 o'clock position.  The inner area's sectors are denoted as (1,1),(1,2),…,(1,n)(1,1),(1,2),…,(1,n) in clockwise direction. The outer area's sectors are denoted as (2,1),(2,2),…,(2,m)(2,1),(2,2),…,(2,m) in the same manner. For a clear understanding, see the example image above.Amugae wants to know if he can move from one sector to another sector. He has qq questions.For each question, check if he can move between two given sectors.InputThe first line contains three integers nn, mm and qq (1≤n,m≤10181≤n,m≤1018, 1≤q≤1041≤q≤104) — the number of sectors in the inner area, the number of sectors in the outer area and the number of questions.Each of the next qq lines contains four integers sxsx, sysy, exex, eyey (1≤sx,ex≤21≤sx,ex≤2; if sx=1sx=1, then 1≤sy≤n1≤sy≤n, otherwise 1≤sy≤m1≤sy≤m; constraints on eyey are similar). Amague wants to know if it is possible to move from sector (sx,sy)(sx,sy) to sector (ex,ey)(ex,ey).OutputFor each question, print "YES" if Amugae can move from (sx,sy)(sx,sy) to (ex,ey)(ex,ey), and "NO" otherwise.You can print each letter in any case (upper or lower).ExampleInputCopy4 6 3
+1 1 2 3
+2 6 1 2
+2 6 2 4
+OutputCopyYES
+NO
+YES
+NoteExample is shown on the picture in the statement.

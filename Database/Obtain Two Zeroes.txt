@@ -1,0 +1,8 @@
+B. Obtain Two Zeroestime limit per test1 secondmemory limit per test256 megabytesinputstandard inputoutputstandard outputYou are given two integers aa and bb. You may perform any number of operations on them (possibly zero).During each operation you should choose any positive integer xx and set a:=a−xa:=a−x, b:=b−2xb:=b−2x or a:=a−2xa:=a−2x, b:=b−xb:=b−x. Note that you may choose different values of xx in different operations.Is it possible to make aa and bb equal to 00 simultaneously?Your program should answer tt independent test cases.InputThe first line contains one integer tt (1≤t≤1001≤t≤100) — the number of test cases.Then the test cases follow, each test case is represented by one line containing two integers aa and bb for this test case (0≤a,b≤1090≤a,b≤109).OutputFor each test case print the answer to it — YES if it is possible to make aa and bb equal to 00 simultaneously, and NO otherwise.You may print every letter in any case you want (so, for example, the strings yEs, yes, Yes and YES will all be recognized as positive answer).ExampleInputCopy3
+6 9
+1 1
+1 2
+OutputCopyYES
+NO
+YES
+NoteIn the first test case of the example two operations can be used to make both aa and bb equal to zero:  choose x=4x=4 and set a:=a−xa:=a−x, b:=b−2xb:=b−2x. Then a=6−4=2a=6−4=2, b=9−8=1b=9−8=1;  choose x=1x=1 and set a:=a−2xa:=a−2x, b:=b−xb:=b−x. Then a=2−2=0a=2−2=0, b=1−1=0b=1−1=0. 

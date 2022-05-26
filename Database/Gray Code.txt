@@ -1,0 +1,35 @@
+
+CSES - Gray Code
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+A Gray code is a list of all 2n2n bit strings of length nn, where any two successive strings differ in exactly one bit (i.e., their Hamming distance is one).
+
+Your task is to create a Gray code for a given length nn.
+
+Input
+
+The only input line has an integer nn.
+
+Output
+
+Print 2n2n lines that describe the Gray code. You can print any valid solution.
+
+Constraints
+
+1≤n≤161≤n≤16
+
+Example
+
+Input:
+2
+
+Output:
+00
+01
+11
+10 

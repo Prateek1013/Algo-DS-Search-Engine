@@ -1,0 +1,7 @@
+B. Move and Turntime limit per test2 secondsmemory limit per test512 megabytesinputstandard inputoutputstandard outputA robot is standing at the origin of the infinite two-dimensional plane. Each second the robot moves exactly 11 meter in one of the four cardinal directions: north, south, west, and east. For the first step the robot can choose any of the four directions, but then at the end of every second it has to turn 90 degrees left or right with respect to the direction it just moved in. For example, if the robot has just moved north or south, the next step it takes has to be either west or east, and vice versa.The robot makes exactly nn steps from its starting position according to the rules above. How many different points can the robot arrive to at the end? The final orientation of the robot can be ignored.InputThe only line contains a single integer nn (1≤n≤10001≤n≤1000) — the number of steps the robot makes.OutputPrint a single integer — the number of different possible locations after exactly nn steps.ExamplesInputCopy1
+OutputCopy4
+InputCopy2
+OutputCopy4
+InputCopy3
+OutputCopy12
+NoteIn the first sample case, the robot will end up 1 meter north, south, west, or east depending on its initial direction.In the second sample case, the robot will always end up 2–√2 meters north-west, north-east, south-west, or south-east.

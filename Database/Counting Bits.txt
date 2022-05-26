@@ -1,0 +1,32 @@
+
+CSES - Counting Bits
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+Your task is to count the number of one bits in the binary representations of integers between 11 and nn.
+
+Input
+
+The only input line has an integer nn.
+
+Output
+
+Print the number of one bits in the binary representations of integers between 11 and nn.
+
+Constraints
+
+1≤n≤10151≤n≤1015
+
+Example
+
+Input:
+7
+
+Output:
+12
+
+Explanation: The binary representations of 1…71…7 are 1, 10, 11, 100, 101, 110, and 111, so there are a total of 12 one bits.    

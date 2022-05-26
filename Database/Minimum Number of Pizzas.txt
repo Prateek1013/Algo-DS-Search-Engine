@@ -1,0 +1,108 @@
+
+Chef is throwing a party for his NN friends. There is a pizza store nearby and he wants to buy pizza for his friends. Each pizza has exactly KK slices. Chef's friends get sad if one gets more slices than the other. Also, Chef gets sad if there are some pizza slices left. More formally, suppose Chef buys PP pizzas, then everyone is happy if and only if there is a way to distribute K⋅PK⋅P slices between NN friends.
+You need to find the minimum number of pizzas Chef has to buy to share all the slices among his friends so that none of his friends gets sad. Note that Chef hates pizza and doesn't take any slices.
+Input Format
+
+First line of input contains TT, the number of test cases. Then the test cases follow.
+Each test case contains two space-separated integers NN and KK, where NN is the number of friends of chef and KK is the number of slices in a pizza.
+
+Output Format
+For each test case, print the minimum number of pizzas chef has to buy to share among his friends so that none of his friends gets sad.
+Constraints
+
+1≤T≤2⋅1051≤T≤2⋅105
+1≤N,K≤1091≤N,K≤109
+
+Subtasks
+
+Subtask 1 (100 points): Original constraints
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+3
+2 2
+2 3
+4 2
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+1
+2
+2
+
+
+Explanation
+
+Test case 11: One pizza has 22 slices. And there are 22 friends. So chef can just buy one pizza and give one slice to one friend and another slice to another friend.
+Test case 22: One pizza has 33 slices. And there are 22 friends. So chef can't share one pizza without being left out with a slice. So he needs to buy at least 22 pizzas. And if he buys 22 pizzas, he can give 33 slices to one friend and 33 to another. So the minimum number of pizzas chef needs to buy is equal to 22.
+Test case 33: One pizza has 22 slices. And there are 44 friends. So chef can't share one pizza among the 44 friends. So he needs to buy at least 22 pizzas. And if he buys 22 pizzas, he can give 11 slice to each of his friends. So the minimum number of pizzas chef needs to buy is equal to 22.
+
+
+
+
+Author:
+suryaprak_adm
+
+
+Tester:
+7★aryanc403
+
+
+Editorial:
+https://discuss.codechef.com/problems/MINPIZZAS
+
+
+Tags:
+
+               
+                 Inbuilt functions, Basic Maths, GCD, LCM, ad-hoc, Observation
+                 
+                     
+                     Basic Programming Concepts, Mathematics, Number Theory, Algorithms, Constructive
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1532
+
+
+Date Added:
+22-11-2021
+
+
+Time Limit:
+0.5 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

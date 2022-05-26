@@ -1,0 +1,40 @@
+
+CSES - Apples and Bananas
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+There are apples and bananas and each of them has an integer weight between 1…k1…k. Your task is to calculate for each weight ww between 2...2k2...2k the number of ways we can choose an apple and a banana whose combined weight is ww.
+
+Input
+
+The first input line contains three integers kk, nn and mm: the number kk, the number of apples and the number of bananas.
+
+The next line contains nn integers a1,a2,…,ana1,a2,…,an: weight of each apple.
+
+The last line contains mm integers b1,b2,…,bmb1,b2,…,bm: weight of each banana.
+
+Output
+
+For each integer ww between 2…2k2…2k print the number of ways to choose an apple and a banana whose combined weight is ww.
+
+Constraints
+
+1≤k,n,m≤2⋅1051≤k,n,m≤2⋅105
+1≤ai≤k1≤ai≤k
+1≤bi≤k1≤bi≤k
+
+Example
+
+Input:
+5 3 4
+5 2 5
+4 3 2 3
+
+Output:
+0 0 1 2 1 2 4 2 0  
+
+Explanation: For example for ww = 88 there are 44 different ways: we can pick an apple of weight 55 in two different ways and a banana of weight 33 in two different ways.    

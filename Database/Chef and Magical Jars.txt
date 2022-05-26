@@ -1,0 +1,113 @@
+
+Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.
+Chef decided to teach some advanced recipes to junior chefs. On the very first day of their cooking sessions, to identify the cooking abilities of each junior chef, Chef instructed them to make their premier dishes. The junior chefs were very excited and they all went into the kitchen to cook their dishes.
+Chef has a limited number of jars in the kitchen. The jars are magical ― if a chef that is cooking a dish requiring xx ingredients takes xx jars, each of these jars fills itself with one of the required ingredients, and after this chef finishes cooking and returns the jars to the kitchen, they empty themselves (and are ready for other chefs to take some or all of them). Of course, this means it is impossible to cook a dish requiring xx ingredients with less than xx jars.
+Since Chef did not tell the junior chefs in which order they should prepare their dishes, they started picking up jars simultaneously and in the end, no junior chef was able to acquire enough jars to prepare their premier dish. Also, none of the junior chefs are willing to lend their jars to others. Chef was unable to handle the situation and decided to call off the cooking session for that day, so that he could get more jars and try it again later.
+You know that there are NN junior chefs (numbered 11 through NN) and for each valid ii, the number of ingredients required for the dish of the ii-th chef is AiAi. If there are JJ jars, then formally, the following process happens:
+
+The junior chefs take some jars; let's denote the number of jars taken by the ii-th chef by aiai. Any distribution of jars such that 0≤ai0≤ai for each valid ii and ∑Ni=1ai=J∑i=1Nai=J is possible.
+At any time, if ai<Aiai<Ai for each chef ii that has not prepared their dish yet, the cooking session is a failure.
+Otherwise, one of the chefs who have at least as many jars as the number of required ingredients prepares their dish and returns their jars to the kitchen.
+Whenever some jars are returned to the kitchen, they are immediately taken by some chefs that have not prepared their dishes yet (possibly all the jars by one chef).
+This process continues with chefs taking jars, cooking their dishes and returning jars, until no chef can cook their dish anymore or all chefs have cooked their dishes.
+When all junior chefs have successfully cooked their dishes, the cooking session ends successfully.
+
+Chef wants to know the minimum number of magical jars that should be present in the kitchen initially so that the session would be successful regardless of how the junior chefs pick up the jars. Chef is a legendary cook, but he is not very good at mathematics, so he asks you to find that number.
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first line of each test case contains a single integer NN.
+The second line contains NN space-separated integers A1,A2,…,ANA1,A2,…,AN.
+
+Output
+For each test case, print a single line containing one integer ― the minimum required number of jars.
+Constraints
+
+1≤T≤1,0001≤T≤1,000
+1≤N≤1051≤N≤105
+1≤Ai≤1091≤Ai≤109 for each valid ii
+the sum of NN over all test cases does not exceed 106106
+
+Subtasks
+Subtask #1 (100 points): original constraints
+
+                        Sample Input 1
+                        
+
+
+
+
+
+2   
+4   
+1 1 1 1   
+2   
+1 4
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+1   
+4
+
+
+Explanation
+Example case 1: One of the junior chefs always picks up the only jar, cooks their dish and returns the jar back to the kitchen. Then, another junior chef picks up that jar, cooks their dish and returns the jar. This procedure can be repeated by each junior chef so that they can cook their recipe.
+
+
+
+Author:
+5★akil_av17
+
+
+Editorial:
+https://discuss.codechef.com/problems/MAGICJAR
+
+
+Tags:
+
+               
+                 Observation
+                 
+                     
+                     Algorithms
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1502
+
+
+Date Added:
+24-01-2019
+
+
+Time Limit:
+1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

@@ -1,0 +1,88 @@
+
+Read problems statements in Hindi, Mandarin Chinese, Russian, Vietnamese, and Bengali as well.
+You are given a sequence A1,A2,…,ANA1,A2,…,AN. You should select a (not necessarily contiguous) subsequence of AA and reverse it. In other words, if you select a subsequence Ai1,Ai2,…,AiKAi1,Ai2,…,AiK (1≤i1<…<iK≤N), then for each valid j, the ij-th element of the resulting sequence is equal to the iK+1−j-th element of the original sequence; all other elements are the same as in the original sequence.
+In the resulting sequence, you want to calculate the maximum sum of a contiguous subsequence (possibly an empty sequence, with sum 0). Find its maximum possible value and a subsequence which you should select in order to obtain this maximum value. If there are multiple solutions, you may find any one of them.
+Input
+
+The first line of the input contains a single integer T denoting the number of test cases. The description of T test cases follows.
+The first line of each test case contains a single integer N.
+The second line contains N space-separated integers A1,A2,…,AN.
+
+Output
+For each test case, print two lines.
+
+The first of these lines should contain a single integer ― the maximum possible sum of a contiguous subsequence.
+The second line should contain an integer K followed by a space and K space-separated integers i1,i2,…,iK.
+
+Constraints
+
+1≤T≤2,000
+2≤N≤105
+|Ai|≤109 for each valid i
+the sum of N over all test cases does not exceed 2⋅106
+
+Example Input
+2
+5
+-4 2 -4 3 -5
+3
+-3 -2 -1
+
+Example Output
+5
+2 2 3
+0
+0
+
+
+
+
+Author:
+6★smartnj
+
+
+Editorial:
+https://discuss.codechef.com/problems/MVAL
+
+
+Tags:
+
+               
+                 ad-hoc, Observation
+                 
+                     
+                     Algorithms, Constructive
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+2255
+
+
+Date Added:
+6-09-2020
+
+
+Time Limit:
+1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

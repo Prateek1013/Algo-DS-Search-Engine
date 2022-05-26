@@ -1,0 +1,95 @@
+
+Read problems statements in Mandarin Chinese, Russian, Vietnamese and Bengali as well.
+A circular binary string is called good if it contains at least one character '1' and there is an integer dd such that for each character '1', the distance to the nearest character '1' clockwise is dd.
+You are given a circular binary string SS with length NN. You may choose some characters in this string and flip them (i.e. change '1' to '0' or vice versa). Convert the given string into a good string by flipping the smallest possible number of characters.
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first line of each test case contains a single integer NN.
+The second line contains a single string SS with length NN.
+
+Output
+Print a single line containing one integer ― the minimum number of flips required to transform the initial string into a good string.
+Constraints
+
+1≤T≤1001≤T≤100
+1≤N≤5⋅105
+S contains only characters '0' and '1'
+the sum of N over all test cases does not exceed 5⋅105
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+2
+6
+110011
+4
+0001
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+2
+0
+
+
+
+
+
+Author:
+5★prasant21
+
+
+Editorial:
+https://discuss.codechef.com/problems/BNSONSTR
+
+
+Tags:
+
+               
+                 cook130, easy, prasant21
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1930
+
+
+Date Added:
+18-06-2021
+
+
+Time Limit:
+1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

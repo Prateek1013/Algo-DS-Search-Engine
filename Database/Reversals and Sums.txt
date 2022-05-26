@@ -1,0 +1,45 @@
+
+CSES - Reversals and Sums
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+Given an array of nn integers, you have to process following operations:
+
+ reverse a subarray
+ calculate the sum of values in a subarray
+
+Input
+
+The first input line has two integers nn and mm: the size of the array and the number of operations. The array elements are numbered 1,2,…,n1,2,…,n.
+
+The next line as nn integers x1,x2,…,xnx1,x2,…,xn: the contents of the array.
+
+Finally, there are mm lines that describe the operations. Each line has three integers tt, aa and bb. If t=1t=1, you should reverse a subarray from aa to bb. If t=2t=2, you should calculate the sum of values from aa to bb.
+
+Output
+
+Print the answer to each operation where t=2t=2.
+
+Constraints
+
+ 1≤n≤2⋅1051≤n≤2⋅105
+ 1≤m≤1051≤m≤105
+ 0≤xi≤1090≤xi≤109
+ 1≤a≤b≤n1≤a≤b≤n
+
+Example
+
+Input:
+8 3
+2 1 3 4 5 3 4 4
+2 2 4
+1 3 6
+2 2 4
+
+Output:
+8
+9 

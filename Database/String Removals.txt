@@ -1,0 +1,32 @@
+
+CSES - String Removals
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+You are given a string. You can remove any number of characters from it, but you cannot change the order of the remaining characters.
+
+How many different strings can you generate?
+
+Input
+
+The first input line contains a string of size nn. Each character is one of a–z.
+
+Output
+
+Print one integer: the number of strings modulo 109+7109+7.
+
+Constraints
+
+1≤n≤5⋅1051≤n≤5⋅105
+
+Example
+
+Input:
+aybabtu
+
+Output:
+103 

@@ -1,0 +1,91 @@
+
+Each palindrome can be always created from the other palindromes, if a single character is also a palindrome. For example, the string "bobseesanna" can be created by some ways:
+* bobseesanna = bob + sees + anna
+* bobseesanna = bob + s + ee + s + anna
+* bobseesanna = b + o + b + sees + a + n + n + a
+...
+We want to take the value of function CountPal(s) which is the number of different ways to use the palindromes to create the string s by the above method.
+Input
+The string s
+Output
+The value of function CountPal(s), taking the modulo of 1 000 000 007 (109+7)
+Limitations
+0 < |s| <= 1000
+
+                        Sample Input 1
+                        
+
+
+
+
+
+bobseesanna
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+18
+
+
+
+
+
+Author:
+anhdq_adm
+
+
+Tester:
+4★anshuman_singh
+
+
+Editorial:
+https://discuss.codechef.com/problems/COUNTPAL
+
+
+Tags:
+
+               
+                 Modular Arithmetic, Dynamic Programming
+                 
+                     
+                     Mathematics, Algorithms
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1631
+
+
+Date Added:
+6-08-2010
+
+
+Time Limit:
+0.1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

@@ -36,7 +36,8 @@ app.get("/search", (req, res) => {
 });
 app.get("/display", (req, res) => {
     const query = req.query.question;
-    res.render("display_temp", { title: query, text: lin[query][1].replace(/(?:\r\n|\r|\n)/g, '<br>'), url: lin[query][0] })
+    var g = fs.readFileSync('./Database/' + query + '.txt') + ''
+    res.render("display_temp", { title: query, text: g.replace(/(?:\r\n|\r|\n)/g, '<br>'), url: lin[query] })
 })
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
@@ -103,7 +104,7 @@ function generate(qc) {
     // storing most relevant
     var ans = []
     for (let i = docRank.length - 1; i >= docRank.length - 12; i--) {
-        ans.push({ title: docRank[i], url: lin[docRank[i]][0], text: lin[docRank[i]][1] });
+        ans.push({ title: docRank[i] });
     }
     return ans;
 }

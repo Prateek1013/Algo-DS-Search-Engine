@@ -1,0 +1,106 @@
+
+ Chef loves lucky numbers. Everybody knows that lucky numbers are positive integers whose decimal representation contains only the lucky digits 4 and 7. For example, numbers 47, 744, 4 are lucky and 5, 17, 467 are not.
+
+ Let F(X) equals to the number of lucky digits in decimal representation of X. Chef wants to know the number of such integers X, that L ≤ X ≤ R and F(X) is a lucky number. Help him and calculate that number modulo 109+7.
+
+Input
+First line contains one integer T, the number of test cases. Each of the following T lines contains two space separated positive integers L and R.
+
+Output
+For each of the T test cases print one integer, the number of such X, that L ≤ X ≤ R and F(X) is a lucky number, modulo 1000000007.
+
+Constraints
+
+1 ≤ T ≤ 10
+
+1 ≤ L ≤ R ≤ 101000Notes
+First test case: of course, any number of less than 4 digits can't contain lucky number of lucky digits, so the answer is 0.
+Second test case: 16 required numbers are 4444 4447 4474 4477 4744 4747 4774 4777 7444 7447 7474 7477 7744 7747 7774 7777.
+Third test case: there are 640 required lucky numbers. Some of them are 4474, 14747, 41474, 77277, 44407, 74749.
+Fourth test case: the only two required numbers are 4444 and 4447.
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+4
+1 100
+1 10000
+1 100000
+4444 4447
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+0
+16
+640
+2
+
+
+
+
+
+Author:
+2★witaliy_adm
+
+
+Tester:
+6★anton_lunyov
+
+
+Editorial:
+https://discuss.codechef.com/problems/LUCKY2
+
+
+Tags:
+
+               
+                 Loops, Combinatorics, Dynamic Programming
+                 
+                     
+                     Basic Programming Concepts, Mathematics, Algorithms
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+2015
+
+
+Date Added:
+11-11-2011
+
+
+Time Limit:
+0.376384 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, PERL, SCALA, LUA, BASH, JS, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

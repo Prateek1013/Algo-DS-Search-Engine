@@ -1,0 +1,40 @@
+
+CSES - Hamiltonian Flights
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+There are nn cities and mm flight connections between them. You want to travel from Syrjälä to Lehmälä so that you visit each city exactly once. How many possible routes are there?
+
+Input
+
+The first input line has two integers nn and mm: the number of cities and flights. The cities are numbered 1,2,…,n1,2,…,n. City 11 is Syrjälä, and city nn is Lehmälä.
+
+Then, there are mm lines describing the flights. Each line has two integers aa and bb: there is a flight from city aa to city bb. All flights are one-way flights.
+
+Output
+
+Print one integer: the number of routes modulo 109+7109+7.
+
+Constraints
+
+2≤n≤202≤n≤20
+1≤m≤n21≤m≤n2
+1≤a,b≤n1≤a,b≤n
+
+Example
+
+Input:
+4 6
+1 2
+1 3
+2 3
+3 2
+2 4
+3 4
+
+Output:
+2 

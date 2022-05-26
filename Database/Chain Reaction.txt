@@ -1,0 +1,105 @@
+
+Read problems statements in Hindi, Mandarin Chinese, Russian, Vietnamese and Bengali as well.
+You are given a grid with RR rows (numbered 11 through RR) and CC columns (numbered 11 through CC). A cell in row rr and column cc is denoted by (r,c)(r,c). Two cells in the grid are adjacent if they have a common side. For each valid ii and jj, there is a value ai,jai,j written in cell ai,jai,j.
+A cell in the grid is stable if the number of cells in the grid which are adjacent to this cell is strictly greater than the value written in this cell. The whole grid is stable if all cells in the grid are stable.
+Can you determine whether the grid is stable?
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first line of each test case contains two space-separated integers RR and CC.
+RR lines follow. For each ii (1≤i≤R1≤i≤R), the ii-th of these lines contains CC space-separated integers ai,1,ai,2,…,ai,Cai,1,ai,2,…,ai,C.
+
+Output
+For each test case, print a single line containing the string "Stable" if the grid is stable or "Unstable" if it is unstable (without quotes).
+Constraints
+
+1≤T≤3,0001≤T≤3,000
+3≤R,C≤103≤R,C≤10
+0≤ai,j≤40≤ai,j≤4 for each valid i,ji,j
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+2
+3 3
+1 2 1
+2 3 2
+1 2 1
+3 4
+0 0 0 0
+0 0 0 0
+0 0 4 0
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+Stable
+Unstable
+
+
+Explanation
+Example case 1: Each cell of the grid is stable, so the grid is stable.
+Example case 2: The cell in row 33 and column 33 is unstable since the number of cells adjacent to this cell is 33.
+
+
+
+Author:
+5★solaimanope
+
+
+Editorial:
+https://discuss.codechef.com/problems/REACTION
+
+
+Tags:
+
+               
+                 Implementation
+                 
+                     
+                     Algorithms
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1341
+
+
+Date Added:
+11-05-2019
+
+
+Time Limit:
+1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

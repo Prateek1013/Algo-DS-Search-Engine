@@ -1,0 +1,125 @@
+
+ Read problems statements in Mandarin Chinese  and Russian.
+Chef loves squares! You are given N points with integers coordinates, Chef asks you to find out how many points he should add to these set of N points, so that one could create at least one square having its vertices from the points of the resulting set. Note that the square created need not to be parallel to the axis.
+Input
+The first line contains singe integer N. 
+Each of next N lines contains two integers Xi and Yi denotine the coordinates of i-th point. 
+Output
+In a single line print single integer - the minimal number of points Chef need to paint to receive at least one square. 
+Constraints
+0 ≤ N ≤ 2000
+-10^6 ≤ Xi, Yi ≤ 10^6
+There are NO coincided points
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+3
+0 0
+2 2
+3 3
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+2
+
+
+Explanation
+For the first example Chef can add points (2, 0), (0, 2) or (2, 3), (3, 2)
+
+                        Sample Input 2
+                        
+
+
+
+
+
+5
+0 0
+100 100
+200 200
+100 0
+0 100
+
+
+
+                        Sample Output 2
+                        
+
+
+
+
+
+0
+
+
+Explanation
+For the second example Chef already has square (0, 0), (100, 0), (0, 100), (100, 100). 
+
+
+
+Author:
+berezin
+
+
+Tester:
+3★shangjingbo
+
+
+Editorial:
+https://discuss.codechef.com/problems/CHEFSQUA
+
+
+Tags:
+
+               
+                 Geometry, Squares, ad-hoc
+                 
+                     
+                     Advanced Algorithms, Mathematics, Computational Geometry, Polygons, Algorithms, Constructive
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1994
+
+
+Date Added:
+3-04-2014
+
+
+Time Limit:
+1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, PERL, SCALA, LUA, BASH, JS, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

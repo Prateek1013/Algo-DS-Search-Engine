@@ -1,0 +1,122 @@
+
+Given a positive integer NN, find an array A=[A1,A2,…,AN]A=[A1,A2,…,AN] of length NN consisting of distinct integers from 11 to 109109, such that the following condition is satisfied for each subarray [AL,AL+1,…,Ar][AL,AL+1,…,Ar] (1≤L≤R≤N1≤L≤R≤N):
+
+The sum of elements in the subarray is divisible by its length i.e. AL+AL+1+…+ARAL+AL+1+…+AR is divisible by R−L+1R−L+1.
+
+It can be proved that such an array always exists under given constraints.
+If there are multiple possible arrays, you may print any of them.
+Input Format
+
+The first line of the input contains a single integer TT, denoting the number of test cases. The description of TT test cases follows.
+Each test case consists of a single line containing one positive integer NN, the length of the array AA.
+
+Output Format
+For each test case, print one line containing NN space-separated integers, the contents of the array AA.
+Constraints
+
+1≤T≤1001≤T≤100
+1≤N≤10001≤N≤1000
+Sum of NN over all test cases doesn't exceed 50005000
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+3
+1
+2
+3
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+1
+1 3
+4 2 6
+
+
+Explanation
+Test case 11:
+For array A=[1]A=[1],
+
+The sum of elements of the subarray [1][1] is equal to 11 which is divisible by 11, the length of this subarray.
+
+Test case 22:
+For array A=[1,3]A=[1,3],
+
+The sum of elements of the subarray [1][1] is equal to 11 which is divisible by 11, the length of this subarray.
+The sum of elements of the subarray [3][3] is equal to 33 which is divisible by 11, the length of this subarray.
+The sum of elements of the subarray [1,3][1,3] is equal to 44 which is divisible by 22, the length of this subarray.
+
+Test case 33:
+For array A=[4,2,6]A=[4,2,6],
+
+The sum of elements of the subarray [4][4] is equal to 44 which is divisible by 11, the length of this subarray.
+The sum of elements of the subarray [2][2] is equal to 22 which is divisible by 11, the length of this subarray.
+The sum of elements of the subarray [6][6] is equal to 66 which is divisible by 11, the length of this subarray.
+The sum of elements of the subarray [4,2][4,2] is equal to 66 which is divisible by 22, the length of this subarray.
+The sum of elements of the subarray [2,6][2,6] is equal to 88 which is divisible by 22, the length of this subarray.
+The sum of elements of the subarray [4,2,6][4,2,6] is equal to 1212 which is divisible by 33, the length of this subarray.
+
+
+
+
+Author:
+utkarsh_adm
+
+
+Editorial:
+https://discuss.codechef.com/problems/SUBPRB
+
+
+Tags:
+
+               
+                 1D Arrays, ad-hoc
+                 
+                     
+                     Data Structures, Arrays, Algorithms, Constructive
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1478
+
+
+Date Added:
+3-12-2021
+
+
+Time Limit:
+1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

@@ -1,0 +1,117 @@
+
+We define a function ff on a binary string SS of length NN as follows:
+f(S)=∑N−1i=1|Si+1−Si|.
+JJ and Uttu have a binary string S of length N and they decide to play a game using it. The rules of the game are as follows:
+
+JJ starts the game with players making moves in alternate turns thereafter.
+In one move, a player can pick L,R such that 1≤L≤R≤N and flip all the characters in SL…R (Flipping a character means changing 0 to 1 or 1 to 0).
+A player can only make a move if that move increases the value of f(S).
+The player who can not make any further moves loses.
+
+Which player (out of JJ and Uttu) will win the game, assuming that both the players play optimally?
+Input Format
+
+The first line contains T - the number of test cases. Then the test cases follow.
+The first line of each test case contains N -  the length of the binary string S.
+The second line of each test case contains a binary string S.
+
+Output Format
+For each test case, output which player wins the game, whether it's JJ and Uttu will win the game.
+You may print each character of the string in uppercase or lowercase (for example, the strings JJ, Jj and jj will all be treated as identical).
+Constraints
+
+1≤T≤100
+1≤N≤2000
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+3
+5
+10011
+2
+00
+5
+10101
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+JJ
+JJ
+Uttu
+
+
+Explanation
+
+Test case 1: JJ can perform the following move: 1001_1→10101. Now Uttu cannot perform any moves and thereby loses.
+Test case 2: JJ can perform the following move: 00_→01. Now Uttu cannot perform any moves and thereby loses.
+Test case 3: JJ cannot perform any starting moves, thereby he loses.
+
+
+
+
+Author:
+6★jeevanjyot
+
+
+Tester:
+7★aryanc403
+
+
+Editorial:
+https://discuss.codechef.com/problems/BINSTRGAME
+
+
+Tags:
+
+               
+                 String, nim game, Sprague Grundy Theorem
+                 
+                     
+                     Data Structures, Algorithms, Game Theory
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+2179
+
+
+Date Added:
+10-12-2021
+
+
+Time Limit:
+1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

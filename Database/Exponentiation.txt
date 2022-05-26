@@ -1,0 +1,40 @@
+
+CSES - Exponentiation
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+Your task is to efficiently calculate values abab modulo 109+7109+7.
+
+Note that in this task we assume that 00=100=1.
+
+Input
+
+The first input line contains an integer nn: the number of calculations.
+
+After this, there are nn lines, each containing two integers aa and bb.
+
+Output
+
+Print each value abab modulo 109+7109+7.
+
+Constraints
+
+1≤n≤2⋅1051≤n≤2⋅105
+0≤a,b≤1090≤a,b≤109
+
+Example
+
+Input:
+3
+3 4
+2 8
+123 123
+
+Output:
+81
+256
+921450052 

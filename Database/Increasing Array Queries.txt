@@ -1,0 +1,48 @@
+
+CSES - Increasing Array Queries
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+You are given an array that consists of nn integers. The array elements are indexed 1,2,…,n1,2,…,n.
+
+You can modify the array using the following operation: choose an array element and increase its value by one.
+
+Your task is to process qq queries of the form: when we consider a subarray from position aa to position bb, what is the minimum number of operations after which the subarray is increasing?
+
+An array is increasing if each element is greater than or equal with the previous element.
+
+Input
+
+The first input line has two integers nn and qq: the size of the array and the number of queries.
+
+The next line has nn integers x1,x2,…,xnx1,x2,…,xn: the contents of the array.
+
+Finally, there are qq lines that describe the queries. Each line has two integers aa and bb: the starting and ending position of a subarray.
+
+Output
+
+For each query, print the minimum number of operations.
+
+Constraints
+
+1≤n,q≤2⋅1051≤n,q≤2⋅105
+1≤xi≤1091≤xi≤109
+1≤a≤b≤n1≤a≤b≤n
+
+Example
+
+Input:
+5 3
+2 10 4 2 5
+3 5
+2 2
+1 4
+
+Output:
+2
+0
+14 

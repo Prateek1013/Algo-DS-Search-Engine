@@ -1,0 +1,16 @@
+E. Polycarp's New Jobtime limit per test3 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard outputPolycarp has recently got himself a new job. He now earns so much that his old wallet can't even store all the money he has.Berland bills somehow come in lots of different sizes. However, all of them are shaped as rectangles (possibly squares). All wallets are also produced in form of rectangles (possibly squares).A bill x×yx×y fits into some wallet h×wh×w if either x≤hx≤h and y≤wy≤w or y≤hy≤h and x≤wx≤w. Bills can overlap with each other in a wallet and an infinite amount of bills can fit into a wallet. That implies that all the bills Polycarp currently have fit into a wallet if every single one of them fits into it independently of the others.Now you are asked to perform the queries of two types:  + x y+ x y — Polycarp earns a bill of size x×yx×y;  ? h w? h w — Polycarp wants to check if all the bills he has earned to this moment fit into a wallet of size h×wh×w. It is guaranteed that there is at least one query of type 11 before the first query of type 22 and that there is at least one query of type 22 in the input data.For each query of type 22 print "YES" if all the bills he has earned to this moment fit into a wallet of given size. Print "NO" otherwise.InputThe first line contains a single integer nn (2≤n≤5⋅1052≤n≤5⋅105) — the number of queries.Each of the next nn lines contains a query of one of these two types:  + x y+ x y (1≤x,y≤1091≤x,y≤109) — Polycarp earns a bill of size x×yx×y;  ? h w? h w (1≤h,w≤1091≤h,w≤109) — Polycarp wants to check if all the bills he has earned to this moment fit into a wallet of size h×wh×w. It is guaranteed that there is at least one query of type 11 before the first query of type 22 and that there is at least one query of type 22 in the input data.OutputFor each query of type 22 print "YES" if all the bills he has earned to this moment fit into a wallet of given size. Print "NO" otherwise.ExampleInputCopy9
++ 3 2
++ 2 3
+? 1 20
+? 3 3
+? 2 3
++ 1 5
+? 10 10
+? 1 5
++ 1 1
+OutputCopyNO
+YES
+YES
+YES
+NO
+NoteThe queries of type 22 of the example:  Neither bill fits;  Both bills fit (just checking that you got that bills can overlap);  Both bills fit (both bills are actually the same);  All bills fit (too much of free space in a wallet is not a problem);  Only bill 1×51×5 fit (all the others don't, thus it's "NO"). 

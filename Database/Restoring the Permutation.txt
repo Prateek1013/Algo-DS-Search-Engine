@@ -1,0 +1,17 @@
+E. Restoring the Permutationtime limit per test2 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard outputA permutation is a sequence of nn integers from 11 to nn, in which all numbers occur exactly once. For example, [1][1], [3,5,2,1,4][3,5,2,1,4], [1,3,2][1,3,2] are permutations, and [2,3,2][2,3,2], [4,3,1][4,3,1], [0][0] are not.Polycarp was presented with a permutation pp of numbers from 11 to nn. However, when Polycarp came home, he noticed that in his pocket, the permutation pp had turned into an array qq according to the following rule:   qi=max(p1,p2,…,pi)qi=max(p1,p2,…,pi). Now Polycarp wondered what lexicographically minimal and lexicographically maximal permutations could be presented to him.An array aa of length nn is lexicographically smaller than an array bb of length nn if there is an index ii (1≤i≤n1≤i≤n) such that the first i−1i−1 elements of arrays aa and bb are the same, and the ii-th element of the array aa is less than the ii-th element of the array bb. For example, the array a=[1,3,2,3]a=[1,3,2,3] is lexicographically smaller than the array b=[1,3,4,2]b=[1,3,4,2].For example, if n=7n=7 and p=[3,2,4,1,7,5,6]p=[3,2,4,1,7,5,6], then q=[3,3,4,4,7,7,7]q=[3,3,4,4,7,7,7] and the following permutations could have been as pp initially:   [3,1,4,2,7,5,6][3,1,4,2,7,5,6] (lexicographically minimal permutation);  [3,1,4,2,7,6,5][3,1,4,2,7,6,5];  [3,2,4,1,7,5,6][3,2,4,1,7,5,6];  [3,2,4,1,7,6,5][3,2,4,1,7,6,5] (lexicographically maximum permutation). For a given array qq, find the lexicographically minimal and lexicographically maximal permutations that could have been originally presented to Polycarp.InputThe first line contains one integer tt (1≤t≤1041≤t≤104). Then tt test cases follow.The first line of each test case contains one integer nn (1≤n≤2⋅1051≤n≤2⋅105).The second line of each test case contains nn integers q1,q2,…,qnq1,q2,…,qn (1≤qi≤n1≤qi≤n).It is guaranteed that the array qq was obtained by applying the rule from the statement to some permutation pp.It is guaranteed that the sum of nn over all test cases does not exceed 2⋅1052⋅105.OutputFor each test case, output two lines:   on the first line output nn integers — lexicographically minimal permutation that could have been originally presented to Polycarp;  on the second line print nn integers — lexicographically maximal permutation that could have been originally presented to Polycarp; ExampleInputCopy4
+7
+3 3 4 4 7 7 7
+4
+1 2 3 4
+7
+3 4 5 5 5 7 7
+1
+1
+OutputCopy3 1 4 2 7 5 6 
+3 2 4 1 7 6 5 
+1 2 3 4 
+1 2 3 4 
+3 4 5 1 2 7 6 
+3 4 5 2 1 7 6 
+1 
+1 

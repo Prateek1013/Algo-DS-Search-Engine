@@ -1,0 +1,35 @@
+
+CSES - Meet in the Middle
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+You are given an array of nn numbers. In how many ways can you choose a subset of the numbers with sum xx?
+
+Input
+
+The first input line has two numbers nn and xx: the array size and the required sum.
+
+The second line has nn integers t1,t2,…,tnt1,t2,…,tn: the numbers in the array.
+
+Output
+
+Print the number of ways you can create the sum xx.
+
+Constraints
+
+1≤n≤401≤n≤40
+1≤x≤1091≤x≤109
+1≤ti≤1091≤ti≤109
+
+Example
+
+Input:
+4 5
+1 2 3 2
+
+Output:
+3 

@@ -1,0 +1,14 @@
+C. Poisoned Daggertime limit per test2 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard outputMonocarp is playing yet another computer game. In this game, his character has to kill a dragon. The battle with the dragon lasts 100500100500 seconds, during which Monocarp attacks the dragon with a poisoned dagger. The ii-th attack is performed at the beginning of the aiai-th second from the battle start. The dagger itself does not deal damage, but it applies a poison effect on the dragon, which deals 11 damage during each of the next kk seconds (starting with the same second when the dragon was stabbed by the dagger). However, if the dragon has already been poisoned, then the dagger updates the poison effect (i.e. cancels the current poison effect and applies a new one).For example, suppose k=4k=4, and Monocarp stabs the dragon during the seconds 22, 44 and 1010. Then the poison effect is applied at the start of the 22-nd second and deals 11 damage during the 22-nd and 33-rd seconds; then, at the beginning of the 44-th second, the poison effect is reapplied, so it deals exactly 11 damage during the seconds 44, 55, 66 and 77; then, during the 1010-th second, the poison effect is applied again, and it deals 11 damage during the seconds 1010, 1111, 1212 and 1313. In total, the dragon receives 1010 damage.Monocarp knows that the dragon has hh hit points, and if he deals at least hh damage to the dragon during the battle — he slays the dragon. Monocarp has not decided on the strength of the poison he will use during the battle, so he wants to find the minimum possible value of kk (the number of seconds the poison effect lasts) that is enough to deal at least hh damage to the dragon.InputThe first line contains a single integer tt (1≤t≤10001≤t≤1000) — the number of test cases.The first line of the test case contains two integers nn and hh (1≤n≤100;1≤h≤10181≤n≤100;1≤h≤1018) — the number of Monocarp's attacks and the amount of damage that needs to be dealt.The second line contains nn integers a1a1, a2a2, ..., anan (1≤ai≤109;ai<ai+11≤ai≤109;ai<ai+1), where aiai is the second when the ii-th attack is performed.OutputFor each test case, print a single integer — the minimum value of the parameter kk, such that Monocarp will cause at least hh damage to the dragon.ExampleInputCopy4
+2 5
+1 5
+3 10
+2 4 10
+5 3
+1 2 4 5 7
+4 1000
+3 25 64 1337
+OutputCopy3
+4
+1
+470
+NoteIn the first example, for k=3k=3, damage is dealt in seconds [1,2,3,5,6,7][1,2,3,5,6,7].In the second example, for k=4k=4, damage is dealt in seconds [2,3,4,5,6,7,10,11,12,13][2,3,4,5,6,7,10,11,12,13].In the third example, for k=1k=1, damage is dealt in seconds [1,2,4,5,7][1,2,4,5,7].

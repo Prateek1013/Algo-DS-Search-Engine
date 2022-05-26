@@ -1,0 +1,11 @@
+B. Pleasant Pairstime limit per test2 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard outputYou are given an array a1,a2,…,ana1,a2,…,an consisting of nn distinct integers. Count the number of pairs of indices (i,j)(i,j) such that i<ji<j and ai⋅aj=i+jai⋅aj=i+j.InputThe first line contains one integer tt (1≤t≤1041≤t≤104) — the number of test cases. Then tt cases follow.The first line of each test case contains one integer nn (2≤n≤1052≤n≤105) — the length of array aa.The second line of each test case contains nn space separated integers a1,a2,…,ana1,a2,…,an (1≤ai≤2⋅n1≤ai≤2⋅n) — the array aa. It is guaranteed that all elements are distinct.It is guaranteed that the sum of nn over all test cases does not exceed 2⋅1052⋅105.OutputFor each test case, output the number of pairs of indices (i,j)(i,j) such that i<ji<j and ai⋅aj=i+jai⋅aj=i+j.ExampleInputCopy3
+2
+3 1
+3
+6 1 5
+5
+3 1 5 9 2
+OutputCopy1
+1
+3
+NoteFor the first test case, the only pair that satisfies the constraints is (1,2)(1,2), as a1⋅a2=1+2=3a1⋅a2=1+2=3For the second test case, the only pair that satisfies the constraints is (2,3)(2,3).For the third test case, the pairs that satisfy the constraints are (1,2)(1,2), (1,5)(1,5), and (2,3)(2,3).

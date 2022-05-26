@@ -1,0 +1,102 @@
+
+Read problems statements in Hindi, Mandarin Chinese, Russian, Vietnamese, and Bengali as well.
+You are given an odd integer NN and two integer sequences A1,A2,…,ANA1,A2,…,AN and B1,B2,…,BNB1,B2,…,BN.
+Your task is to reorder the elements of B, forming a new sequence C1,C2,…,CN (i.e. choose a permutation P1,P2,…,PN of the integers 1 through N, where Ci=BPi for each valid i), in such a way that the following condition holds: (A1⊕C1)=(A2⊕C2)=…=(AN⊕CN), where ⊕ denotes bitwise XOR. Find one such reordered sequence or determine that it is impossible.
+Input
+
+The first line of the input contains a single integer T denoting the number of test cases. The description of T test cases follows.
+The first line of each test case contains a single integer N.
+The second line contains N space-separated integers A1,A2,…,AN.
+The third line contains N space-separated integers B1,B2,…,BN.
+
+Output
+For each test case:
+
+If there is no valid way to reorder the sequence B, print a single line containing the integer −1.
+Otherwise, print a single line containing N space-separated integers C1,C2,…,CN. If there are multiple solutions, you may find any one.
+
+Constraints
+
+1≤T≤10
+1≤N≤105
+N is odd
+0≤Ai≤106 for each valid i
+0≤Bi≤106 for each valid i
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+1
+5
+3 1 2 4 5
+2 4 5 1 3
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+3 1 2 4 5
+
+
+
+
+
+Author:
+5★y0u_kn0w_wh0
+
+
+Editorial:
+https://discuss.codechef.com/problems/XORGM
+
+
+Tags:
+
+               
+                 Bitwise Operation
+                 
+                     
+                     Mathematics, Bit Manipulation
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+2028
+
+
+Date Added:
+28-01-2020
+
+
+Time Limit:
+2 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

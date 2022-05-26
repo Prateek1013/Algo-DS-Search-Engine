@@ -1,0 +1,103 @@
+
+
+
+Problem Statement
+Given a weighted and undirected graph G = (V, E), let us define the score of an edge as its weight, and the score of a path as the minimum of the scores of its edges. For each pair of vertices (u, v), let us define a best path as a path with the maximal score, that starts at u and ends at v. Your task is to find out the score of a best path over all pairs of distinct vertices (u, v) given the description of the graph G.
+Input
+ The first line contains V, the number of vertices, and E, the number of edges in the graph. The graph will be weighted, undirected, simple (no self loops and no parallel edges), and connected. Each of the next E lines contains three non-negative integers u, v, and w, denoting that there is an edge (u, v) in the graph with a score of w. u and v are guaranteed to be distinct, and no edge will repeat in the input.
+
+
+Output
+ Output a total of V lines each containing V integers. The vth integer on the uth line should be 0 if u = v, or the score of a best path that starts at vertex u and ends at vertex v.
+
+
+Constraints
+2 ≤ V ≤ 1000
+V - 1 ≤ E ≤ V(V - 1)/2
+0 ≤ u, v ≤ V - 1
+0 ≤ w ≤ 10^8
+ Warning
+Large Input/Output. Use faster Input/Output techniques.
+
+                        Sample Input 1
+                        
+
+
+
+
+
+3 3
+0 1 1
+1 2 2
+0 2 3
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+0 2 3
+2 0 2
+3 2 0
+
+
+
+
+
+Author:
+rahul_adm
+
+
+Tester:
+1★gamabunta
+
+
+Editorial:
+https://discuss.codechef.com/problems/RG_01
+
+
+Tags:
+
+               
+                 Graphs, Disjoint Set Union, DFS, BFS, Kruskal's Algorithm, Sorting
+                 
+                     
+                     Data Structures, Advanced Data Structures, Algorithms, Graph Algos, Traversals, Tree Algos, Minimum Spanning Trees
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1836
+
+
+Date Added:
+10-04-2011
+
+
+Time Limit:
+0.367424 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, PERL, SCALA, LUA, BASH, JS, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

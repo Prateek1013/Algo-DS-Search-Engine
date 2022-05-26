@@ -1,0 +1,32 @@
+
+CSES - Trailing Zeros
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+Your task is to calculate the number of trailing zeros in the factorial n!n!.
+
+For example, 20!=243290200817664000020!=2432902008176640000 and it has 44 trailing zeros.
+
+Input
+
+The only input line has an integer nn.
+
+Output
+
+Print the number of trailing zeros in n!n!.
+
+Constraints
+
+1≤n≤1091≤n≤109
+
+Example
+
+Input:
+20
+
+Output:
+4 

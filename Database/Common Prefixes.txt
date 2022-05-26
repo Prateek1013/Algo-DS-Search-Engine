@@ -1,0 +1,25 @@
+A. Common Prefixestime limit per test1 secondmemory limit per test256 megabytesinputstandard inputoutputstandard outputThe length of the longest common prefix of two strings s=s1s2…sns=s1s2…sn and t=t1t2…tmt=t1t2…tm is defined as the maximum integer kk (0≤k≤min(n,m)0≤k≤min(n,m)) such that s1s2…sks1s2…sk equals t1t2…tkt1t2…tk.Koa the Koala initially has n+1n+1 strings s1,s2,…,sn+1s1,s2,…,sn+1.For each ii (1≤i≤n1≤i≤n) she calculated aiai — the length of the longest common prefix of sisi and si+1si+1.Several days later Koa found these numbers, but she couldn't remember the strings.So Koa would like to find some strings s1,s2,…,sn+1s1,s2,…,sn+1 which would have generated numbers a1,a2,…,ana1,a2,…,an. Can you help her?If there are many answers print any. We can show that answer always exists for the given constraints. InputEach test contains multiple test cases. The first line contains tt (1≤t≤1001≤t≤100) — the number of test cases. Description of the test cases follows.The first line of each test case contains a single integer nn (1≤n≤1001≤n≤100) — the number of elements in the list aa.The second line of each test case contains nn integers a1,a2,…,ana1,a2,…,an (0≤ai≤500≤ai≤50) — the elements of aa.It is guaranteed that the sum of nn over all test cases does not exceed 100100.OutputFor each test case:Output n+1n+1 lines. In the ii-th line print string sisi (1≤|si|≤2001≤|si|≤200), consisting of lowercase Latin letters. Length of the longest common prefix of strings sisi and si+1si+1 has to be equal to aiai.If there are many answers print any. We can show that answer always exists for the given constraints.ExampleInputCopy4
+4
+1 2 4 2
+2
+5 3
+3
+1 3 1
+3
+0 0 0
+OutputCopyaeren
+ari
+arousal
+around
+ari
+monogon
+monogamy
+monthly
+kevinvu
+kuroni
+kurioni
+korone
+anton
+loves
+adhoc
+problemsNoteIn the 11-st test case one of the possible answers is s=[aeren,ari,arousal,around,ari]s=[aeren,ari,arousal,around,ari].Lengths of longest common prefixes are:  Between aerenaeren and ariari →1→1  Between ariari and arousalarousal →2→2  Between arousalarousal and aroundaround →4→4  Between aroundaround and ariari →2→2 

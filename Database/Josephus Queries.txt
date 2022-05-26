@@ -1,0 +1,42 @@
+
+CSES - Josephus Queries
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+Consider a game where there are nn children (numbered 1,2,…,n1,2,…,n) in a circle. During the game, every second child is removed from the circle, until there are no children left.
+
+Your task is to process qq queries of the form: "when there are nn children, who is the kkth child that will be removed?"
+
+Input
+
+The first input line has an integer qq: the number of queries.
+
+After this, there are qq lines that describe the queries. Each line has two integers nn and kk: the number of children and the position of the child.
+
+Output
+
+Print qq integers: the answer for each query.
+
+Constraints
+
+ 1≤q≤1051≤q≤105
+ 1≤k≤n≤1091≤k≤n≤109
+
+Example
+
+Input:
+4
+7 1
+7 3
+2 2
+1337 1313
+
+Output:
+2
+6
+1
+1107 

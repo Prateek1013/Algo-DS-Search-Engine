@@ -1,0 +1,36 @@
+
+CSES - Inversion Probability
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+An array has nn integers x1,x2,…,xnx1,x2,…,xn, and each of them has been randomly chosen between 11 and riri. An inversion is a pair (a,b)(a,b) where a<ba<b and xa>xbxa>xb.
+
+What is the expected number of inversions in the array?
+
+Input
+
+The first input line contains an integer nn: the size of the array.
+
+The second line contains nn integers r1,r2,…,rnr1,r2,…,rn: the range of possible values for each array position.
+
+Output
+
+Print the expected number of inversions rounded to six decimal places.
+
+Constraints
+
+1≤n≤1001≤n≤100
+1≤ri≤1001≤ri≤100
+
+Example
+
+Input:
+3
+5 2 7
+
+Output:
+1.057143 

@@ -1,0 +1,98 @@
+
+Professor X got lost in a maze of an ancient tomb in Egypt. While he was finding the way to escape, he got a message of the tomb builders on the old walls:
+
+The code to open the exit door is the sequence C of n digits formed c1..cn (ci∈[0,9] ).
+For every sequence C, combining with the given integers A,B, call:h0=0
+hi=(hi-1×A+ci)  mod B
+The smallest sequence C (in lexicological order) satisfying hn=G (where G is a given integer) is the exit code which professor X needs.
+Request
+Give the integers n,A,B,G, help professor X find out the exit code!
+
+Input
+One and only line contains the integers n,A,B,G, respectively, each of them is separated with at least one space character.
+Output
+Output in a single line the exit code found.
+Limitations
+1≤n≤12
+10≤A,B≤1015
+0≤G<B
+The input satisfies that the answer always exist.
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+3 11 111 92
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+084
+
+
+
+
+
+Author:
+anhdq_adm
+
+
+Tester:
+5★innocentboy
+
+
+Editorial:
+https://discuss.codechef.com/problems/ECODE
+
+
+Tags:
+
+               
+                 Permutations & Combinations, Binary Search
+                 
+                     
+                     Mathematics, Combinatorics, Algorithms, Searching
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1991
+
+
+Date Added:
+5-05-2010
+
+
+Time Limit:
+0.677106 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

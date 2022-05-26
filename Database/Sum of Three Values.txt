@@ -1,0 +1,34 @@
+
+CSES - Sum of Three Values
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+You are given an array of nn integers, and your task is to find three values (at distinct positions) whose sum is xx.
+
+Input
+
+The first input line has two integers nn and xx: the array size and the target sum.
+
+The second line has nn integers a1,a2,…,ana1,a2,…,an: the array values.
+
+Output
+
+Print three integers: the positions of the values. If there are several solutions, you may print any of them. If there are no solutions, print IMPOSSIBLE.
+
+Constraints
+
+1≤n≤50001≤n≤5000
+1≤x,ai≤1091≤x,ai≤109
+
+Example
+
+Input:
+4 8
+2 7 5 1
+
+Output:
+1 3 4 

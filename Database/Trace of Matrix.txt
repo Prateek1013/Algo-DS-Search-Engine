@@ -1,0 +1,105 @@
+
+Read problems statements in Mandarin chinese and Vietnamese as well.
+Chef is learning linear algebra. Recently, he learnt that for a square matrix MM, trace(M)trace⁡(M) is defined as the sum of all elements on the main diagonal of MM (an element lies on the main diagonal if its row index and column index are equal).
+Now, Chef wants to solve some excercises related to this new quantity, so he wrote down a square matrix AA with size N×NN×N. A square submatrix of AA with size l×ll×l is a contiguous block of l×ll×l elements of AA. Formally, if BB is a submatrix of AA with size l×ll×l, then there must be integers rr and cc (1≤r,c≤N+1−l1≤r,c≤N+1−l) such that Bi,j=Ar+i−1,c+j−1Bi,j=Ar+i−1,c+j−1 for each 1≤i,j≤l1≤i,j≤l.
+Help Chef find the maximum trace of a square submatrix of AA.
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first line of each test case contains a single integer NN.
+NN lines follow. For each ii (1≤i≤N1≤i≤N), the ii-th of these lines contains NN space-separated integers Ai,1,Ai,2,…,Ai,NAi,1,Ai,2,…,Ai,N denoting the ii-th row of the matrix AA.
+
+Output
+For each test case, print a single line containing one integer — the maximum possible trace.
+Constraints
+
+1≤T≤1001≤T≤100
+2≤N≤1002≤N≤100
+1≤Ai,j≤1001≤Ai,j≤100 for each valid i,ji,j
+
+Subtasks
+Subtask #1 (100 points): original constraints
+
+                        Sample Input 1
+                        
+
+
+
+
+
+1
+3
+1 2 5
+6 3 4
+2 7 1
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+13
+
+
+Explanation
+Example case 1: The submatrix with the largest trace is 
+6 3
+2 7
+
+which has trace equal to 6+7=136+7=13. (This submatrix is obtained for r=2,c=1,l=2r=2,c=1,l=2.)
+
+
+
+Author:
+6★kingofnumbers
+
+
+Editorial:
+https://discuss.codechef.com/problems/TRACE
+
+
+Tags:
+
+               
+                 Observation, Brute Force
+                 
+                     
+                     Algorithms
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1198
+
+
+Date Added:
+23-05-2018
+
+
+Time Limit:
+1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

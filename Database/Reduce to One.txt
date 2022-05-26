@@ -1,0 +1,104 @@
+
+Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.
+You have become good friends with Chef. Right now, Chef is busy in the kitchen, so he asked you to solve a problem for him.
+Consider a list of integers LL. Initially, LL contains the integers 11 through NN, each of them exactly once (but it may contain multiple copies of some integers later). The order of elements in LL is not important. You should perform the following operation N−1N−1 times:
+
+Choose two elements of the list, let's denote them by XX and YY. These two elements may be equal.
+Erase the chosen elements from LL.
+Append the number X+Y+X⋅YX+Y+X⋅Y to LL.
+
+At the end, LL contains exactly one integer. Find the maximum possible value of this integer. Since the answer may be large, compute it modulo 1,000,000,0071,000,000,007 (109+7109+7).
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first and only line of each test case contains a single integer NN.
+
+Output
+For each test case, print a single line containing one integer ― the maximum possible value of the final number in the list modulo 109+7109+7.
+Constraints
+
+1≤T≤100,0001≤T≤100,000
+1≤N≤1,000,0001≤N≤1,000,000
+
+Subtasks
+Subtask #1 (20 points): 1≤T,N≤251≤T,N≤25 
+Subtask #2 (80 points): original constraints
+
+                        Sample Input 1
+                        
+
+
+
+
+
+3
+1
+2
+4
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+1
+5
+119
+
+
+Explanation
+Example case 1: L=[1]L=[1]
+Example case 2: L=[1,2]→[1+2+1⋅2]L=[1,2]→[1+2+1⋅2]
+Example case 3: L=[1,2,3,4]→[2,3,9]→[3,29]→[119]L=[1,2,3,4]→[2,3,9]→[3,29]→[119]. The chosen elements in each step are in bold.
+
+
+
+Author:
+4★vinay_katare
+
+
+Tags:
+
+               
+                 Pre processing, Observation
+                 
+                     
+                     Advanced Algorithms, Algorithms
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1507
+
+
+Date Added:
+20-04-2019
+
+
+Time Limit:
+1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

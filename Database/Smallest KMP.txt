@@ -1,0 +1,105 @@
+
+Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.
+Chef has a string SS. He also has another string PP, called pattern. He wants to find the pattern in SS, but that might be impossible. Therefore, he is willing to reorder the characters of SS in such a way that PP occurs in the resulting string (an anagram of SS) as a substring.
+Since this problem was too hard for Chef, he decided to ask you, his genius friend, for help. Can you find the lexicographically smallest anagram of SS that contains PP as substring?
+Note: A string BB is a substring of a string AA if BB can be obtained from AA by deleting several (possibly none or all) characters from the beginning and several (possibly none or all) characters from the end.
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first line of each test case contains a single string SS.
+The second line contains a single string PP.
+
+Output
+For each test case, print a single line containing one string ― the smallest anagram of SS that contains PP.
+Constraints
+
+1≤T≤101≤T≤10
+1≤|P|≤|S|≤1051≤|P|≤|S|≤105
+SS and PP contain only lowercase English letters
+there is at least one anagram of SS that contains PP
+
+Subtasks
+Subtask #1 (20 points): |S|≤1,000|S|≤1,000
+Subtask #2 (80 points): |S|≤105|S|≤105
+
+                        Sample Input 1
+                        
+
+
+
+
+
+3
+akramkeeanany
+aka
+supahotboy
+bohoty
+daehabshatorawy
+badawy
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+aaakaeekmnnry
+abohotypsu
+aabadawyehhorst
+
+
+
+
+
+Author:
+6★triplem5ds
+
+
+Editorial:
+https://discuss.codechef.com/problems/SKMP
+
+
+Tags:
+
+               
+                 Frequency Arrays, String
+                 
+                     
+                     Data Structures, Arrays
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1538
+
+
+Date Added:
+23-07-2020
+
+
+Time Limit:
+1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

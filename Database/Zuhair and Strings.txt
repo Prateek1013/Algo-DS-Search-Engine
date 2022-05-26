@@ -1,0 +1,10 @@
+B. Zuhair and Stringstime limit per test1 secondmemory limit per test256 megabytesinputstandard inputoutputstandard outputGiven a string ss of length nn and integer kk (1≤k≤n1≤k≤n). The string ss has a level xx, if xx is largest non-negative integer, such that it's possible to find in ss:  xx non-intersecting (non-overlapping) substrings of length kk,  all characters of these xx substrings are the same (i.e. each substring contains only one distinct character and this character is the same for all the substrings). A substring is a sequence of consecutive (adjacent) characters, it is defined by two integers ii and jj (1≤i≤j≤n1≤i≤j≤n), denoted as s[i…j]s[i…j] = "sisi+1…sjsisi+1…sj".For example, if k=2k=2, then:  the string "aabb" has level 11 (you can select substring "aa"),  the strings "zzzz" and "zzbzz" has level 22 (you can select two non-intersecting substrings "zz" in each of them),  the strings "abed" and "aca" have level 00 (you can't find at least one substring of the length k=2k=2 containing the only distinct character). Zuhair gave you the integer kk and the string ss of length nn. You need to find xx, the level of the string ss.InputThe first line contains two integers nn and kk (1≤k≤n≤2⋅1051≤k≤n≤2⋅105) — the length of the string and the value of kk.The second line contains the string ss of length nn consisting only of lowercase Latin letters.OutputPrint a single integer xx — the level of the string.ExamplesInputCopy8 2
+aaacaabb
+OutputCopy2
+InputCopy2 1
+ab
+OutputCopy1
+InputCopy4 2
+abab
+OutputCopy0
+NoteIn the first example, we can select 22 non-intersecting substrings consisting of letter 'a': "(aa)ac(aa)bb", so the level is 22.In the second example, we can select either substring "a" or "b" to get the answer 11.

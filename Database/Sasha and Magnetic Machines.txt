@@ -1,0 +1,10 @@
+B. Sasha and Magnetic Machinestime limit per test1 secondmemory limit per test256 megabytesinputstandard inputoutputstandard outputOne day Sasha visited the farmer 2D and his famous magnetic farm. On this farm, the crop grows due to the influence of a special magnetic field. Maintaining of the magnetic field is provided by nn machines, and the power of the ii-th machine is aiai. This year 2D decided to cultivate a new culture, but what exactly he didn't say. For the successful growth of the new culture, it is necessary to slightly change the powers of the machines. 2D can at most once choose an arbitrary integer xx, then choose one machine and reduce the power of its machine by xx times, and at the same time increase the power of one another machine by xx times (powers of all the machines must stay positive integers). Note that he may not do that if he wants. More formally, 2D can choose two such indices ii and jj, and one integer xx such that xx is a divisor of aiai, and change powers as following: ai=aixai=aix, aj=aj⋅xaj=aj⋅xSasha is very curious, that's why he wants to calculate the minimum total power the farmer can reach. There are too many machines, and Sasha can't cope with computations, help him!InputThe first line contains one integer nn (2≤n≤5⋅1042≤n≤5⋅104) — the number of machines.The second line contains nn integers a1,a2,…,ana1,a2,…,an (1≤ai≤1001≤ai≤100) — the powers of the machines.OutputPrint one integer — minimum total power.ExamplesInputCopy5
+1 2 3 4 5
+OutputCopy14
+InputCopy4
+4 2 4 4
+OutputCopy14
+InputCopy5
+2 4 2 3 7
+OutputCopy18
+NoteIn the first example, the farmer can reduce the power of the 44-th machine by 22 times, and increase the power of the 11-st machine by 22 times, then the powers will be: [2,2,3,2,5][2,2,3,2,5].In the second example, the farmer can reduce the power of the 33-rd machine by 22 times, and increase the power of the 22-nd machine by 22 times. At the same time, the farmer can leave is be as it is and the total power won't change.In the third example, it is optimal to leave it be as it is.

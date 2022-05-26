@@ -1,0 +1,36 @@
+
+CSES - Playlist
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+You are given a playlist of a radio station since its establishment. The playlist has a total of nn songs.
+
+What is the longest sequence of successive songs where each song is unique?
+
+Input
+
+The first input line contains an integer nn: the number of songs.
+
+The next line has nn integers k1,k2,…,knk1,k2,…,kn: the id number of each song.
+
+Output
+
+Print the length of the longest sequence of unique songs.
+
+Constraints
+
+1≤n≤2⋅1051≤n≤2⋅105
+1≤ki≤1091≤ki≤109
+
+Example
+
+Input:
+8
+1 2 1 3 2 7 4 2
+
+Output:
+5 

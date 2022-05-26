@@ -1,0 +1,101 @@
+
+ Read problems statements in  Mandarin Chinese  and  Russian.
+Chef doesn't love math anymore. He loves Sasha. Sashen'ka is cute.
+
+Chef goes on a date with her. Flowers are boring, while numbers are not. He knows that most of all this girl loves numbers, that's why he is going to bring ribbon with numbers L, L+1, L+2, ..., R written on it.
+
+
+Sasha thinks that numbers with prime number of divisors are special. That's why she is going to kiss boy for each such number he will bring.
+
+Now Chef wonder how many times he will be kissed by Sashen'ka ?
+
+ 
+Input
+The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.
+The first line of each test case contains two number L, R.
+ 
+Output
+For each test case, output a single line containing answer for corresponding test case.
+ 
+Constraints
+1 ≤ T ≤ 5
+1 ≤ L ≤ R ≤ 1012
+0 ≤ R-L ≤ 106
+ 
+
+                        Sample Input 1
+                        
+
+
+
+
+
+1
+1 10
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+6
+
+
+Explanation
+Example case 1. Numbers 2,3,4,5,7,9 are special.
+
+
+
+Author:
+2★ivanz_adm
+
+
+Editorial:
+https://discuss.codechef.com/problems/PRETNUM
+
+
+Tags:
+
+               
+                 Segmented Sieve
+                 
+                     
+                     Mathematics, Number Theory, Sieve of Eratosthenes
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1850
+
+
+Date Added:
+15-08-2013
+
+
+Time Limit:
+1 - 2 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, PERL, SCALA, LUA, BASH, JS, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

@@ -1,0 +1,14 @@
+H. Maximal ANDtime limit per test2 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard outputLet ANDAND denote the bitwise AND operation, and OROR denote the bitwise OR operation.You are given an array aa of length nn and a non-negative integer kk. You can perform at most kk operations on the array of the following type:  Select an index ii (1≤i≤n1≤i≤n) and replace aiai with aiai OROR 2j2j where jj is any integer between 00 and 3030 inclusive. In other words, in an operation you can choose an index ii (1≤i≤n1≤i≤n) and set the jj-th bit of aiai to 11 (0≤j≤300≤j≤30). Output the maximum possible value of a1a1 ANDAND a2a2 ANDAND …… ANDAND anan after performing at most kk operations. InputThe first line of the input contains a single integer tt (1≤t≤1001≤t≤100) — the number of test cases. The description of test cases follows.The first line of each test case contains the integers nn and kk (1≤n≤2⋅1051≤n≤2⋅105, 0≤k≤1090≤k≤109).Then a single line follows, containing nn integers describing the arrays aa (0≤ai<2310≤ai<231).It is guaranteed that the sum of nn over all test cases does not exceed 2⋅1052⋅105.OutputFor each test case, output a single line containing the maximum possible ANDAND value of a1a1 ANDAND a2a2 ANDAND …… ANDAND anan after performing at most kk operations.ExampleInputCopy4
+3 2
+2 1 1
+7 0
+4 6 6 28 6 6 12
+1 30
+0
+4 4
+3 1 3 1
+OutputCopy2
+4
+2147483646
+1073741825
+NoteFor the first test case, we can set the bit 11 (2121) of the last 22 elements using the 22 operations, thus obtaining the array [22, 33, 33], which has ANDAND value equal to 22.For the second test case, we can't perform any operations so the answer is just the ANDAND of the whole array which is 44.

@@ -1,0 +1,103 @@
+
+The integers 00 to M−1M−1 have been arranged in a circular fashion. That is, 0,1,2,…,M−10,1,2,…,M−1, are in that order and
+also, 0 and M−1 are next to each other. The distance between any two adjacent numbers on this circle is 1. You are given N intervals on this, such that no two intervals touch or intersect with each other. The i-th interval will be of the form [Li,Ri]. This means that the i-th interval contains all the integers between Li and Ri, both end points inclusive. You are supposed to mark exactly one number inside each interval, in such a way that the minimum distance between any two marked numbers is maximized.
+More formally, we have 0≤L1≤R1<L2≤R2<L3…<LN≤RN≤M−1. You are supposed to mark exactly N numbers: A1,A2,…,AN, such that Li≤Ai≤Ri for all 1≤i≤N. And you want to do it in such a manner mini≠j (shortest distance between Ai and Aj ), is maximized.
+Input:
+
+First line of the input contains a pair of integers M and N.
+The i-th of the next N lines contains two numbers Li and Ri which denote the end points of the i-th interval.
+
+Output:
+
+A single integer denoting the maximized minimum distance between any two marked numbers.
+
+Constraints
+
+1≤M≤1018
+2≤N≤4∗105
+
+Subtasks
+
+10 points : 
+1≤M≤10000
+2≤N≤100
+25 points : 
+1≤M≤1018
+2≤N≤1000
+65 points : No further constraints.
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+9 3
+0 2
+3 4
+5 7
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+3
+
+
+Explanation
+We can choose A1=0,A2=3,A3=6. The distance between every adjacent marked pair of numbers is 3, and hence that is the minimum. You can check that you cannot do any better, and hence 3 is the answer.
+
+
+
+Author:
+admin3
+
+
+Tags:
+
+               
+                 Basic Programming Concepts, Binary Search
+                 
+                     
+                     Algorithms, Searching
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1951
+
+
+Date Added:
+22-06-2018
+
+
+Time Limit:
+1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

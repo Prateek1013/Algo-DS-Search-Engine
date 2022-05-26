@@ -1,0 +1,103 @@
+
+Read problems statements in Mandarin Chinese, Russian, Vietnamese, and Bengali as well.
+Chef has a tasty ingredient ― an integer K. He defines a tasty matrix A with N rows (numbered 1 through N) and M columns (numbered 1 through M) as Ai,j=K+i+j for each valid i,j.
+Currently, Chef is busy in the kitchen making this tasty matrix. Help him find the bitwise XOR of all elements of this matrix.
+Input
+
+The first line of the input contains a single integer T denoting the number of test cases. The description of T test cases follows.
+The first and only line of each test case contains three space-separated integers N, M and K.
+
+Output
+For each test case, print a single line containing one integer ― the bitwise XOR of all elements of the tasty matrix with the given dimensions made with the given special ingredient. 
+Constraints
+
+1≤T≤105
+1≤N,M≤2⋅106
+1≤K≤109
+the sum of N over all test cases does not exceed 2⋅106
+the sum of M over all test cases does not exceed 2⋅106
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+2
+2 2 5
+2 3 7
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+14
+5
+
+
+Explanation
+Example case 1: The matrix is
+A=(5+1+15+1+25+2+15+2+2)=(7889).
+The XOR of all its elements is 7⊕8⊕8⊕9=14.
+Example case 2: The matrix is
+A=(7+1+17+1+27+1+37+2+17+2+27+2+3)=(91011101112).
+The XOR of all its elements is 9⊕10⊕11⊕10⊕11⊕12=5.
+
+
+
+Author:
+4★pshishod2645
+
+
+Editorial:
+https://discuss.codechef.com/problems/MATXOR
+
+
+Tags:
+
+               
+                 Loops, Basic Maths, Bitwise Operation, ad-hoc
+                 
+                     
+                     Basic Programming Concepts, Mathematics, Bit Manipulation, Algorithms, Constructive
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1864
+
+
+Date Added:
+16-03-2021
+
+
+Time Limit:
+0.5 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

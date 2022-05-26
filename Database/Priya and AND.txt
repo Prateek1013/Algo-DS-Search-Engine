@@ -1,0 +1,99 @@
+
+Priya loves bitwise AND, but she hates programming. Help her solve this problem.
+Given an array AA of size NN, let BijBij  denote the bitwise AND of A[i]A[i] and A[j]A[j]. You have to find the number of pairs (i,j)(i,j), such that i<ji<j and Bij=A[i]Bij=A[i].
+Input:
+
+The first line of the input contains a single integer TT denoting the number of test cases. 
+The first line of each test case consists of a single integer NN, denoting the Size of Array AA. 
+The second line of each test case contains NN space-separated integers A1,A2,A3...ANA1,A2,A3...AN.
+
+Output:
+For each test case, output a single line, count of such pairs.
+Constraints
+
+1≤T≤1001≤T≤100
+1≤N≤1001≤N≤100
+1≤A[i]≤1001≤A[i]≤100
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+2
+5
+1 1 1 1 1
+1
+10
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+10
+0
+
+
+Explanation
+Example case 1: Number of valid pairs are -(1,2),(1,3),(1,4),(1,5),(2,3),(2,4),(2,5),(3,4),(3,5)(1,2),(1,3),(1,4),(1,5),(2,3),(2,4),(2,5),(3,4),(3,5) and (4,5)(4,5). Therefore, total valid pairs =10=10.
+Example case 2: Since N=1N=1, therefore there are no valid pairs.
+
+
+
+Author:
+5★saurabhshadow
+
+
+Editorial:
+https://discuss.codechef.com/problems/CENS20D
+
+
+Tags:
+
+               
+                 Bit Manipulation, Brute Force
+                 
+                     
+                     Mathematics, Algorithms
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1143
+
+
+Date Added:
+13-07-2020
+
+
+Time Limit:
+1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

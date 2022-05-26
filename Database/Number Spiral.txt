@@ -1,0 +1,40 @@
+
+CSES - Number Spiral
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+A number spiral is an infinite grid whose upper-left square has number 1. Here are the first five layers of the spiral:
+
+Your task is to find out the number in row yy and column xx.
+
+Input
+
+The first input line contains an integer tt: the number of tests.
+
+After this, there are tt lines, each containing integers yy and xx.
+
+Output
+
+For each test, print the number in row yy and column xx.
+
+Constraints
+
+1≤t≤1051≤t≤105
+1≤y,x≤1091≤y,x≤109
+
+Example
+
+Input:
+3
+2 3
+1 1
+4 2
+
+Output:
+8
+1
+15 

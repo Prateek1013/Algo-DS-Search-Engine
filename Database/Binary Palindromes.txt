@@ -1,0 +1,18 @@
+B. Binary Palindromestime limit per test2 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard outputA palindrome is a string tt which reads the same backward as forward (formally, t[i]=t[|t|+1−i]t[i]=t[|t|+1−i] for all i∈[1,|t|]i∈[1,|t|]). Here |t||t| denotes the length of a string tt. For example, the strings 010, 1001 and 0 are palindromes.You have nn binary strings s1,s2,…,sns1,s2,…,sn (each sisi consists of zeroes and/or ones). You can swap any pair of characters any number of times (possibly, zero). Characters can be either from the same string or from different strings — there are no restrictions.Formally, in one move you:  choose four integer numbers x,a,y,bx,a,y,b such that 1≤x,y≤n1≤x,y≤n and 1≤a≤|sx|1≤a≤|sx| and 1≤b≤|sy|1≤b≤|sy| (where xx and yy are string indices and aa and bb are positions in strings sxsx and sysy respectively),  swap (exchange) the characters sx[a]sx[a] and sy[b]sy[b]. What is the maximum number of strings you can make palindromic simultaneously?InputThe first line contains single integer QQ (1≤Q≤501≤Q≤50) — the number of test cases.The first line on each test case contains single integer nn (1≤n≤501≤n≤50) — the number of binary strings you have.Next nn lines contains binary strings s1,s2,…,sns1,s2,…,sn — one per line. It's guaranteed that 1≤|si|≤501≤|si|≤50 and all strings constist of zeroes and/or ones.OutputPrint QQ integers — one per test case. The ii-th integer should be the maximum number of palindromic strings you can achieve simultaneously performing zero or more swaps on strings from the ii-th test case.ExampleInputCopy4
+1
+0
+3
+1110
+100110
+010101
+2
+11111
+000001
+2
+001
+11100111
+OutputCopy1
+2
+2
+2
+NoteIn the first test case, s1s1 is palindrome, so the answer is 11.In the second test case you can't make all three strings palindromic at the same time, but you can make any pair of strings palindromic. For example, let's make s1=0110s1=0110, s2=111111s2=111111 and s3=010000s3=010000.In the third test case we can make both strings palindromic. For example, s1=11011s1=11011 and s2=100001s2=100001.In the last test case s2s2 is palindrome and you can make s1s1 palindrome, for example, by swapping s1[2]s1[2] and s1[3]s1[3].

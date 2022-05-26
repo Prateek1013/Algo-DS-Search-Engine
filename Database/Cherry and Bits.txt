@@ -1,0 +1,112 @@
+
+Cherry has a binary matrix AA consisting of NN rows and MM columns. The rows are numbered from 1 to N, columns are numbered from 1 to M. Element at row i (1 ≤ i ≤ N) and column j (1 ≤ j ≤ M) is denoted as Aij. All elements of A are either 0 or 1.
+He performs Q queries on matrix. Each query is provided by four integers x1, y1, x2, y2 which define the rectangle, where (x1, y1) stands for the coordinates of the top left cell of the rectangle, while (x2, y2) stands for the coordinates of the bottom right cell. You need to flip all the bits i.e. (0 to 1, 1 to 0) that are located fully inside the query rectangle.
+Finally, print the matrix after performing all the queries.
+Note: x1 represents the row number while y1 represents the column number.
+Input:
+
+The first line of the input contains two integers N and M — the number of rows and the number of columns in the matrix.
+Each of the next N lines contains a string of length M, where the jth character of ith line denotes the value of Ai,j. 
+Next line contains an integer Q — the number of queries.
+Then follow Q lines with queries descriptions. Each of them contains four space-seperated integers x1, y1, x2, y2 — coordinates of the up left and bottom right cells of the query rectangle.
+
+Output:
+Print the matrix, in the form of N strings, after performing all the queries.
+Constraints
+
+1≤N,M≤1000
+0≤Aij≤1
+1≤Q≤106
+1≤x1≤x2≤N
+1≤y1≤y2≤M
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+2 2
+00
+00
+3
+1 1 1 1
+2 2 2 2
+1 1 2 2 
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+01
+10
+
+
+Explanation
+Example case 1:
+After processing the 1st query 1 1 1 1, matrix becomes:
+[1000]
+After processing the 2nd query 2 2 2 2, the matrix becomes:
+[1001]
+After processing the 3rd query 1 1 2 2, matrix becomes:
+[0110]
+We need to output the matrix after processing all queries. 
+
+
+
+Author:
+5★cherry0697
+
+
+Editorial:
+https://discuss.codechef.com/problems/CENS20A
+
+
+Tags:
+
+               
+                 2D Arrays, Difference Arrays
+                 
+                     
+                     Data Structures, Arrays
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+2179
+
+
+Date Added:
+13-07-2020
+
+
+Time Limit:
+1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

@@ -1,0 +1,134 @@
+
+There is an array AA with NN elements. Each element of AA has a fixed polarity: either north or south. 
+Chef is allowed to perform some (possibly zero) operations on the array A. In one operation, Chef can:
+
+Pick some subarray of array A, such that, the first and last elements of the subarray have different polarities, and, rearrange the elements in this subarray any way he wants. 
+
+Note that the polarity of each element remains unchanged after an operation.
+Find the minimum number of operations required to sort the array in non-decreasing order, or state that it is impossible.
+A subarray of A is obtained by deletion of several (possibly, zero or all) elements from the beginning and several (possibly, zero or all) elements from the end.
+Input Format
+
+The first line contains an integer T, denoting the number of test cases. The T test cases then follow.
+The first line of each test case contains a single integer N.
+The second line of each test case contains N space-separated integers A1,A2,…,AN.
+The third line of each test case contains a string of length N, the ith character of which is either N or S, representing that the ith element of A has north or south polarity, respectively.
+
+Output Format
+For each test case, if it impossible to sort the array, output −1. Otherwise, output a single integer: the minimum number of operations required to sort the array.
+Constraints
+
+1≤T≤105
+1≤N≤2⋅105
+1≤Ai≤109
+The sum of N across all test cases doesn't exceed 2⋅105.
+
+Subtasks
+Subtask #1 (100 points): original constraints
+
+                        Sample Input 1
+                        
+
+
+
+
+
+6
+5
+1 3 2 3 7
+NNSNS
+2
+2 1
+SS
+3
+1 8 12
+SNS
+3
+3 2 1
+NSN
+5
+1 2 3 5 4
+NSNSN
+5
+1 1 2 2 1
+SNSNN
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+1
+-1
+0
+2
+1
+1
+
+
+Explanation
+Let's represent elements with a polarity of north in red, and elements with a polarity of south in blue. The polarity of each element is also labelled above it.
+
+In the first test case, we can sort the array in a single operation as follows.
+
+Rearrange the subarray [A1,A2,A3]: [N1,N3,S2,N3,S7]→[N1,S2,N3,N3,S7].
+In the second test case, the array [S2,S1] cannot be sorted, since no operations can be performed.
+In the third test case, the array is already sorted, so the answer is 0.
+In the fourth test case, we can sort the array in two operations as follows.
+
+Rearrange the subarray [A2,A3]: [N3,S2,N1]→[N3,N1,S2].
+Rearrange the subarray [A1,A2,A3]: [N3,N1,S2]→[N1,S2,N3].
+
+
+
+
+Author:
+3★flamestorm153
+
+
+Editorial:
+https://discuss.codechef.com/problems/MAGNETSORT
+
+
+Tags:
+
+               
+                 easy, flamestorm153, ltime105, observation
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1804
+
+
+Date Added:
+28-02-2022
+
+
+Time Limit:
+1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

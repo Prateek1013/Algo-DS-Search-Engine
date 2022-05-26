@@ -1,0 +1,14 @@
+C. Paprika and Permutationtime limit per test1 secondmemory limit per test256 megabytesinputstandard inputoutputstandard outputPaprika loves permutations. She has an array a1,a2,…,ana1,a2,…,an. She wants to make the array a permutation of integers 11 to nn.In order to achieve this goal, she can perform operations on the array. In each operation she can choose two integers ii (1≤i≤n1≤i≤n) and xx (x>0x>0), then perform ai:=aimodxai:=aimodx (that is, replace aiai by the remainder of aiai divided by xx). In different operations, the chosen ii and xx can be different.Determine the minimum number of operations needed to make the array a permutation of integers 11 to nn. If it is impossible, output −1−1.A permutation is an array consisting of nn distinct integers from 11 to nn in arbitrary order. For example, [2,3,1,5,4][2,3,1,5,4] is a permutation, but [1,2,2][1,2,2] is not a permutation (22 appears twice in the array) and [1,3,4][1,3,4] is also not a permutation (n=3n=3 but there is 44 in the array).InputEach test contains multiple test cases. The first line contains a single integer tt (1≤t≤1041≤t≤104) — the number of test cases. Description of the test cases follows.The first line of each test case contains an integer nn (1≤n≤1051≤n≤105).The second line of each test case contains nn integers a1,a2,…,ana1,a2,…,an. (1≤ai≤1091≤ai≤109).It is guaranteed that the sum of nn over all test cases does not exceed 2⋅1052⋅105.OutputFor each test case, output the minimum number of operations needed to make the array a permutation of integers 11 to nn, or −1−1 if it is impossible.ExampleInputCopy4
+2
+1 7
+3
+1 5 4
+4
+12345678 87654321 20211218 23571113
+9
+1 2 3 4 18 19 5 6 7
+OutputCopy1
+-1
+4
+2
+NoteFor the first test, the only possible sequence of operations which minimizes the number of operations is:   Choose i=2i=2, x=5x=5. Perform a2:=a2mod5=2a2:=a2mod5=2. For the second test, it is impossible to obtain a permutation of integers from 11 to nn.

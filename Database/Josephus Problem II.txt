@@ -1,0 +1,31 @@
+
+CSES - Josephus Problem II
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+Consider a game where there are nn children (numbered 1,2,…,n1,2,…,n) in a circle. During the game, repeatedly kk children are skipped and one child is removed from the circle. In which order will the children be removed?
+
+Input
+
+The only input line has two integers nn and kk.
+
+Output
+
+Print nn integers: the removal order.
+
+Constraints
+
+ 1≤n≤2⋅1051≤n≤2⋅105
+ 0≤k≤1090≤k≤109
+
+Example
+
+Input:
+7 2
+
+Output:
+3 6 2 7 5 1 4 

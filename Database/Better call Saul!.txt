@@ -1,0 +1,89 @@
+
+"Don't Drink and Drive, but when you do, Better Call Saul."
+Once Jesse and Walter were fighting over extra cash, and Saul decided to settle it with a game of stone piles whose winner gets the extra money. The game is described as follows :
+There are NN piles of stones with AA1, A2, ... AN stones in each pile. 
+Jesse and Walter move alternately, and in one move, they remove one pile entirely. 
+After a total of X moves, if the Sum of all the remaining piles is odd, Walter wins the game and gets the extra cash, else Jesse is the winner.
+Walter moves first. 
+Determine the winner of the game if both of them play optimally. 
+Input:
+
+The first line will contain T, number of testcases. T testcases follow : 
+The first line of each testcase contains two space-separated integers N,X. 
+The second line of each testcase contains N space-separated integers A1, A2, ...,AN.
+
+Output:
+For each test case, print a single line containing the string "Jesse" (without quotes), if Jesse wins the game or "Walter" (without quotes) if Walter wins.
+Constraints
+
+1≤T≤104
+2≤N≤105
+1≤X≤N−1
+1≤Ai ≤100
+The sum of N over all test cases does not exceed 106
+
+Sample Input:
+2
+5 3
+4 4 4 3 4
+7 4
+3 3 1 1 1 2 4
+
+Sample Output:
+Jesse
+Walter
+
+EXPLANATION:
+
+For Test Case 1 : Playing optimally, Walter removes 4. Jesse removes 3 and then Walter removes 4. Jesse wins as 4+4=8 is even.
+For Test Case 2 : Playing optimally, Walter removes 4, Jesse removes 3, Walter removes 2 and Jesse removes 1. Walter wins as  3+3+1=7 is odd.
+
+
+
+
+Author:
+4★zappelectro
+
+
+Editorial:
+https://discuss.codechef.com/problems/GMSTN
+
+
+Tags:
+
+               
+                 game-theory, infy20, zappelectro
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+2484
+
+
+Date Added:
+10-10-2020
+
+
+Time Limit:
+1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

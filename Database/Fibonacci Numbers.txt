@@ -1,0 +1,35 @@
+
+CSES - Fibonacci Numbers
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+The Fibonacci numbers can be defined as follows:
+F0=0F0=0
+F1=1F1=1
+Fn=Fn−2+Fn−1Fn=Fn−2+Fn−1
+
+Your task is to calculate the value of FnFn for a given nn.
+
+Input
+
+The only input line has an integer nn.
+
+Output
+
+Print the value of FnFn modulo 109+7109+7.
+
+Constraints
+
+0≤n≤10180≤n≤1018
+
+Example
+
+Input:
+10
+
+Output:
+55 

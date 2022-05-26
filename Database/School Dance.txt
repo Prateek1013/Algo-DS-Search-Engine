@@ -1,0 +1,43 @@
+
+CSES - School Dance
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+There are nn boys and mm girls in a school. Next week a school dance will be organized. A dance pair consists of a boy and a girl, and there are kk potential pairs.
+
+Your task is to find out the maximum number of dance pairs and show how this number can be achieved.
+
+Input
+
+The first input line has three integers nn, mm and kk: the number of boys, girls, and potential pairs. The boys are numbered 1,2,…,n1,2,…,n, and the girls are numbered 1,2,…,m1,2,…,m.
+
+After this, there are kk lines describing the potential pairs. Each line has two integers aa and bb: boy aa and girl bb are willing to dance together.
+
+Output
+
+First print one integer rr: the maximum number of dance pairs. After this, print rr lines describing the pairs. You can print any valid solution.
+
+Constraints
+
+1≤n,m≤5001≤n,m≤500
+1≤k≤10001≤k≤1000
+1≤a≤n1≤a≤n
+1≤b≤m1≤b≤m
+
+Example
+
+Input:
+3 2 4
+1 1
+1 2
+2 1
+3 1
+
+Output:
+2
+1 2
+3 1 

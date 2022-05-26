@@ -1,0 +1,8 @@
+B. Combinatorics Homeworktime limit per test2 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard outputYou are given four integer values aa, bb, cc and mm.Check if there exists a string that contains:   aa letters 'A';  bb letters 'B';  cc letters 'C';  no other letters;  exactly mm pairs of adjacent equal letters (exactly mm such positions ii that the ii-th letter is equal to the (i+1)(i+1)-th one). InputThe first line contains a single integer tt (1≤t≤1041≤t≤104) — the number of testcases.Each of the next tt lines contains the description of the testcase — four integers aa, bb, cc and mm (1≤a,b,c≤1081≤a,b,c≤108; 0≤m≤1080≤m≤108).OutputFor each testcase print "YES" if there exists a string that satisfies all the requirements. Print "NO" if there are no such strings.You may print every letter in any case you want (so, for example, the strings yEs, yes, Yes and YES will all be recognized as positive answer).ExampleInputCopy3
+2 2 1 0
+1 1 1 1
+1 2 3 2
+OutputCopyYES
+NO
+YES
+NoteIn the first testcase strings "ABCAB" or "BCABA" satisfy the requirements. There exist other possible strings.In the second testcase there's no way to put adjacent equal letters if there's no letter that appears at least twice.In the third testcase string "CABBCC" satisfies the requirements. There exist other possible strings.

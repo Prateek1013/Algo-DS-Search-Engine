@@ -1,0 +1,50 @@
+
+CSES - Shortest Routes II
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+There are nn cities and mm roads between them. Your task is to process qq queries where you have to determine the length of the shortest route between two given cities.
+
+Input
+
+The first input line has three integers nn, mm and qq: the number of cities, roads, and queries.
+
+Then, there are mm lines describing the roads. Each line has three integers aa, bb and cc: there is a road between cities aa and bb whose length is cc. All roads are two-way roads.
+
+Finally, there are qq lines describing the queries. Each line has two integers aa and bb: determine the length of the shortest route between cities aa and bb.
+
+Output
+
+Print the length of the shortest route for each query. If there is no route, print −1−1 instead.
+
+Constraints
+
+1≤n≤5001≤n≤500
+1≤m≤n21≤m≤n2
+1≤q≤1051≤q≤105
+1≤a,b≤n1≤a,b≤n
+1≤c≤1091≤c≤109
+
+Example
+
+Input:
+4 3 5
+1 2 5
+1 3 9
+2 3 3
+1 2
+2 1
+1 3
+1 4
+3 2
+
+Output:
+5
+5
+8
+-1
+3 

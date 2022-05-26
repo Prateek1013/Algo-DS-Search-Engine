@@ -1,0 +1,34 @@
+
+CSES - Moving Robots
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+Each square of an 8×88×8 chessboard has a robot. Each robot independently moves kk steps, and there can be many robots on the same square.
+
+On each turn, a robot moves one step left, right, up or down, but not outside the board. It randomly chooses a direction among those where it can move.
+
+Your task is to calculate the expected number of empty squares after kk turns.
+
+Input
+
+The only input line has an integer kk.
+
+Output
+
+Print the expected number of empty squares rounded to six decimal places.
+
+Constraints
+
+1≤k≤1001≤k≤100
+
+Example
+
+Input:
+10
+
+Output:
+23.120740 

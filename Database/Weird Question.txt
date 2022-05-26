@@ -1,0 +1,107 @@
+
+Read problems statements Mandarin , Bengali , Hindi , Russian and Vietnamese as well.
+You are given an integer sequence AA with length NN. Find the number of ordered pairs of positive integers (a,b)(a,b) such that a occurs in A at least b times and b occurs in A at least a times. 
+Input
+
+The first line of the input contains a single integer T denoting the number of test cases. The description of T test cases follows.
+The first line of each test case contains a single integer N.
+The second line contains N space-separated integers A1,A2,…,AN.
+
+Output
+For each test case, print a single line containing one integer — the number of pairs.
+Constraints
+
+1≤T≤1,000
+2≤N≤106
+1≤Ai≤106 for each valid i
+the sum of N over all test cases does not exceed 3⋅106
+
+Subtasks
+Subtask #1 (30 points):
+
+1≤N≤105
+the sum of N over all test cases does not exceed 3⋅105
+
+Subtask #2 (70 points): original constraints
+
+                        Sample Input 1
+                        
+
+
+
+
+
+3
+5
+1 2 3 4 5
+5
+1 1 2 2 3
+5
+3 3 2 2 2
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+1
+4
+3
+
+
+
+
+
+Author:
+6★kingofnumbers
+
+
+Editorial:
+https://discuss.codechef.com/problems/WEIRD2
+
+
+Tags:
+
+               
+                 Frequency Arrays, Optimization Problems
+                 
+                     
+                     Data Structures, Arrays, Special
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1882
+
+
+Date Added:
+26-10-2018
+
+
+Time Limit:
+1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

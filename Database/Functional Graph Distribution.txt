@@ -1,0 +1,34 @@
+
+CSES - Functional Graph Distribution
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+A functional graph is a directed graph where each node has outdegree 11. For example, here is a functional graph that has 99 nodes and 22 components:
+
+Given nn, your task is to calculate for each k=1…nk=1…n the number of functional graphs that have nn nodes and kk components.
+
+Input
+
+The only input line has an integer nn: the number of nodes.
+
+Output
+
+Print nn lines: for each k=1…nk=1…n the number of graphs modulo 109+7109+7.
+
+Constraints
+
+1≤n≤50001≤n≤5000
+
+Example
+
+Input:
+3
+
+Output:
+17
+9
+1 

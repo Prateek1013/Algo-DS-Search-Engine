@@ -1,0 +1,39 @@
+
+CSES - Array Description
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+You know that an array has nn integers between 11 and  mm, and the absolute difference between two adjacent values is at most 11.
+
+Given a description of the array where some values may be unknown, your task is to count the number of arrays that match the description.
+
+Input
+
+The first input line has two integers nn and mm: the array size and the upper bound for each value.
+
+The next line has nn integers x1,x2,…,xnx1,x2,…,xn: the contents of the array. Value 00 denotes an unknown value.
+
+Output
+
+Print one integer: the number of arrays modulo 109+7109+7.
+
+Constraints
+
+1≤n≤1051≤n≤105
+1≤m≤1001≤m≤100
+0≤xi≤m0≤xi≤m
+
+Example
+
+Input:
+3 5
+2 0 2
+
+Output:
+3
+
+Explanation: The arrays [2,1,2][2,1,2], [2,2,2][2,2,2] and [2,3,2][2,3,2] match the description.    

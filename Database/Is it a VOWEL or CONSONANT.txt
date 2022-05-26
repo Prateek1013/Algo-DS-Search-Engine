@@ -1,0 +1,68 @@
+
+Write a program to take a character (C)(C) as input and check whether the given character is a vowel or a consonant.
+NOTE:−NOTE:−
+Vowels are 'A', 'E', 'I', 'O', 'U'. Rest all alphabets are called consonants.
+Input:
+
+First line will contain the character CC.
+
+Output:
+Print "Vowel" if the given character is a vowel, otherwise print "Consonant".
+Constraints
+
+CC willwill bebe anan upperupper casecase EnglishEnglish alphabetalphabet
+
+Sample Input:
+Z
+
+Sample Output:
+Consonant
+
+
+
+
+Author:
+5★tanmay28
+
+
+Tags:
+
+               
+                 Conditional Statements, Implementation
+                 
+                     
+                     Basic Programming Concepts, Algorithms
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+840
+
+
+Date Added:
+2-06-2018
+
+
+Time Limit:
+1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

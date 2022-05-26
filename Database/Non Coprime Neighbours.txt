@@ -1,0 +1,106 @@
+
+An array BB of length NN (N≥2)(N≥2) is said to be good if the following conditions hold:
+
+For all 1≤i≤N1≤i≤N, 2≤Bi≤106 
+gcd(Bi−1,Bi)≠1 for all i (2≤i≤N).
+
+You have an array A of length N (2≤Ai≤105). You want to make the array A good.
+To do so, you can change atmost ⌈2⋅N3⌉ elements of A. 
+Print the final array after changing A to a good array. If there are multiple possible final arrays, print any of them.
+It is guaranteed that A can be made good  after changing atmost ⌈2⋅N3⌉ elements of A.  
+Input Format
+
+The first line of input contains a single integer T, denoting the number of test cases. The description of T test cases follow.
+The first line of each test case contains an integer N - the length of the array.
+The second line of each test case contains N space-separated integers A1,A2,...,AN representing the initial array A.
+
+Output Format
+For each test case, output a single line containing N space-separated integers, denoting the elements of the final array after converting A to a good array. The i-th of these N integers is i-th element in the final array. 
+If multiple arrays exist which satisfy the conditions, print any of them.
+Note: Final array should differ from original array at atmost ⌈2⋅N3⌉indices.
+Constraints
+
+1≤T≤105
+2≤N≤105
+2≤Ai≤105
+Sum of N does not exceed 2⋅105 over all testcases
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+2
+3
+6 12 5
+3
+5 5 5
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+6 12 8
+5 5 5
+
+
+Explanation
+Test Case 1: We can change A3 to 8. Now, A is good since gcd(A1,A2)=6 and gcd(A2,A3)=4. Hence, we made A good after making only 1 change which is ≤⌈2⋅N3⌉.
+Test Case 2: Array A is already good.
+
+
+
+Author:
+6★satyam_343
+
+
+Editorial:
+https://discuss.codechef.com/problems/NCOPRIMEN
+
+
+Tags:
+
+               
+                 constructive, easy, satyam_343, start27
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+1950
+
+
+Date Added:
+18-02-2022
+
+
+Time Limit:
+1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

@@ -1,0 +1,43 @@
+
+CSES - Room Allocation
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+There is a large hotel, and nn customers will arrive soon. Each customer wants to have a single room.
+
+You know each customer's arrival and departure day. Two customers can stay in the same room if the departure day of the first customer is earlier than the arrival day of the second customer.
+
+What is the minimum number of rooms that are needed to accommodate all customers? And how can the rooms be allocated?
+
+Input
+
+The first input line contains an integer nn: the number of customers.
+
+Then there are nn lines, each of which describes one customer. Each line has two integers aa and bb: the arrival and departure day.
+
+Output
+
+Print first an integer kk: the minimum number of rooms required.
+
+After that, print a line that contains the room number of each customer in the same order as in the input. The rooms are numbered 1,2,…,k1,2,…,k. You can print any valid solution.
+
+Constraints
+
+1≤n≤2⋅1051≤n≤2⋅105
+1≤a≤b≤1091≤a≤b≤109
+
+Example
+
+Input:
+3
+1 2
+2 4
+4 4
+
+Output:
+2
+1 2 1 

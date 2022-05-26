@@ -1,0 +1,112 @@
+
+The alternating sum of an array A=[A1,A2,…,AN] is defined to be
+A1−A2+A3−…+(−1)N−1AN
+You are allowed to perform the following operation at most once on A:
+
+Choose a subarray of A of odd length, remove this subarray from the original array, and concatenate it at the end of the remaining array. In other words, pick 1≤L≤R≤N such that R−L+1 is odd, and transform A into the array [A1,A2,…,AL−1,AR+1,…,AN,AL,AL+1,…,AR].
+
+For example, if the original array is [1,2,3,4,5], two possible moves are:
+
+Choose the subarray [1] and move it to the end to obtain [2,3,4,5,1]
+Choose the subarray [2,3,4] and move it to the end to obtain [1,5,2,3,4]
+
+Given that you can perform this operation at most once, what is the maximum possible alternating sum the resulting array can achieve?
+Input Format
+
+The first line contains a single integer T, denoting the number of test cases. The description of T test cases follows.
+The first line of each test case contains a single integer N, denoting the number of elements in A.
+The second line of each test case contains N space-separated integers A1,A2,…,AN, the elements of A.
+
+Output Format
+For each test case, print a single line containing one integer — the maximum possible alternating sum obtainable after performing the given operation at most once.
+Constraints
+
+1≤T≤105
+3≤N≤105
+1≤Ai≤109
+The sum of N over all test cases does not exceed 106.
+
+
+                        Sample Input 1
+                        
+
+
+
+
+
+2
+3
+1 5 2
+5
+1 10 1 5 2
+
+
+
+                        Sample Output 1
+                        
+
+
+
+
+
+4
+13
+
+
+Explanation
+
+Test Case 1: Move subarray [5] to the end to obtain the array [1,2,5]. The alternating sum of this array is 1−2+5=4, and no larger is possible.
+Test Case 2: Move subarray [1] starting at index 1 to the end to obtain the array [10,1,5,2,1]. The alternating sum of this array is 10−1+5−2+1=13, and no larger is possible.
+
+
+
+
+Author:
+6★lavish315
+
+
+Editorial:
+https://discuss.codechef.com/problems/ALTERSUM
+
+
+Tags:
+
+               
+                 1D Arrays, Pre processing, Prefix Sum, Suffix Sum
+                 
+                     
+                     Data Structures, Arrays, Advanced Algorithms, Algorithms, Simple Algos
+                 
+               
+             
+             
+
+
+
+                        Difficulty Rating:
+                    
+
+2273
+
+
+Date Added:
+10-12-2021
+
+
+Time Limit:
+1 secs
+
+
+Source Limit:
+50000 Bytes
+
+
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+
+
+
+
+Submit
+

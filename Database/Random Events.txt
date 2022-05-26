@@ -1,0 +1,27 @@
+C. Random Eventstime limit per test2 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard outputRon is a happy owner of a permutation aa of length nn.A permutation of length nn is an array consisting of nn distinct integers from 11 to nn in arbitrary order. For example, [2,3,1,5,4][2,3,1,5,4] is a permutation, but [1,2,2][1,2,2] is not a permutation (22 appears twice in the array) and [1,3,4][1,3,4] is also not a permutation (n=3n=3 but there is 44 in the array).  Ron's permutation is subjected to mm experiments of the following type: (riri, pipi). This means that elements in range [1,ri][1,ri] (in other words, the prefix of length riri) have to be sorted in ascending order with the probability of pipi. All experiments are performed in the same order in which they are specified in the input data.As an example, let's take a look at a permutation [4,2,1,5,3][4,2,1,5,3] and an experiment (3,0.63,0.6). After such an experiment with the probability of 60%60% the permutation will assume the form [1,2,4,5,3][1,2,4,5,3] and with a 40%40% probability it will remain unchanged.You have to determine the probability of the permutation becoming completely sorted in ascending order after mm experiments.InputEach test contains one or more test cases. The first line contains the number of test cases tt (1≤t≤1001≤t≤100).The first line of each test case contains two integers nn and mm (1≤n,m≤105)(1≤n,m≤105) — the length of the permutation and the number of experiments, respectively.The second line of each test case contains nn integers a1,a2,…,ana1,a2,…,an (1≤ai≤n)(1≤ai≤n) — contents of the permutation.The following mm lines of each test case each contain an integer riri and a real number pipi (1≤ri≤n,0≤pi≤1)(1≤ri≤n,0≤pi≤1) — the length of the prefix and the probability of it being sorted. All probabilities are given with at most 66 decimal places.It is guaranteed that the sum of nn and the sum of mm does not exceed 105105 (∑n,∑m≤105∑n,∑m≤105).OutputFor each test case, print a single number — the probability that after all experiments the permutation becomes sorted in ascending order. Your answer will be considered correct if its absolute or relative error does not exceed 10−610−6.Formally, let your answer be aa, and the jury's answer be bb. Your answer is accepted if and only if |a−b|max(1,|b|)≤10−6|a−b|max(1,|b|)≤10−6.ExampleInputCopy4
+4 3
+4 3 2 1
+1 0.3
+3 1
+4 0.6
+5 3
+4 2 1 3 5
+3 0.8
+4 0.6
+5 0.3
+6 5
+1 3 2 4 5 6
+4 0.9
+5 0.3
+2 0.4
+6 0.7
+3 0.5
+4 2
+1 2 3 4
+2 0.5
+4 0.1
+OutputCopy0.600000
+0.720000
+0.989500
+1.000000
+NoteExplanation of the first test case: It can be demonstrated that whether the final permutation is sorted or not depends solely on sorting being performed in the (4,0.6)(4,0.6) experiment.

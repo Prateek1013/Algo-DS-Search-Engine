@@ -1,0 +1,46 @@
+
+CSES - Dynamic Connectivity
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+Consider an undirected graph that consists of nn nodes and mm edges. There are two types of events that can happen:
+A new edge is created between nodes aa and bb.
+An existing edge between nodes aa and bb is removed.
+
+Your task is to report the number of components after every event.
+
+Input
+
+The first input line has three integers nn, mm and kk: the number of nodes, edges and events.
+
+After this there are mm lines describing the edges. Each line has two integers aa and bb: there is an edge between nodes aa and bb. There is at most one edge between any pair of nodes.
+
+Then there are kk lines describing the events. Each line has the form "tt aa bb" where tt is 1 (create a new edge) or 2 (remove an edge). A new edge is always created between two nodes that do not already have an edge between them, and only existing edges can get removed.
+
+Output
+
+Print k+1k+1 integers: first the number of components before the first event, and after this the new number of components after each event.
+
+Constraints
+
+2≤n≤1052≤n≤105
+1≤m,k≤1051≤m,k≤105
+1≤a,b≤n1≤a,b≤n
+
+Example
+
+Input:
+5 3 3
+1 4
+2 3
+3 5
+1 2 5
+2 3 5
+1 1 2
+
+Output:
+2 2 2 1 

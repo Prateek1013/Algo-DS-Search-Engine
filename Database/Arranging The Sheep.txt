@@ -1,0 +1,16 @@
+E. Arranging The Sheeptime limit per test2 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard outputYou are playing the game "Arranging The Sheep". The goal of this game is to make the sheep line up. The level in the game is described by a string of length nn, consisting of the characters '.' (empty space) and '*' (sheep). In one move, you can move any sheep one square to the left or one square to the right, if the corresponding square exists and is empty. The game ends as soon as the sheep are lined up, that is, there should be no empty cells between any sheep.For example, if n=6n=6 and the level is described by the string "**.*..", then the following game scenario is possible:   the sheep at the 44 position moves to the right, the state of the level: "**..*.";  the sheep at the 22 position moves to the right, the state of the level: "*.*.*.";  the sheep at the 11 position moves to the right, the state of the level: ".**.*.";  the sheep at the 33 position moves to the right, the state of the level: ".*.**.";  the sheep at the 22 position moves to the right, the state of the level: "..***.";  the sheep are lined up and the game ends. For a given level, determine the minimum number of moves you need to make to complete the level.InputThe first line contains one integer tt (1≤t≤1041≤t≤104). Then tt test cases follow.The first line of each test case contains one integer nn (1≤n≤1061≤n≤106).The second line of each test case contains a string of length nn, consisting of the characters '.' (empty space) and '*' (sheep) — the description of the level.It is guaranteed that the sum of nn over all test cases does not exceed 106106.OutputFor each test case output the minimum number of moves you need to make to complete the level.ExampleInputCopy5
+6
+**.*..
+5
+*****
+3
+.*.
+3
+...
+10
+*.*...*.**
+OutputCopy1
+0
+0
+0
+9

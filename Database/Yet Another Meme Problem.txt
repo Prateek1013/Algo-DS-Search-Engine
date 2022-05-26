@@ -1,0 +1,8 @@
+B. Yet Another Meme Problemtime limit per test1 secondmemory limit per test256 megabytesinputstandard inputoutputstandard outputTry guessing the statement from this picture http://tiny.cc/ogyoiz.You are given two integers AA and BB, calculate the number of pairs (a,b)(a,b) such that 1≤a≤A1≤a≤A, 1≤b≤B1≤b≤B, and the equation a⋅b+a+b=conc(a,b)a⋅b+a+b=conc(a,b) is true; conc(a,b)conc(a,b) is the concatenation of aa and bb (for example, conc(12,23)=1223conc(12,23)=1223, conc(100,11)=10011conc(100,11)=10011). aa and bb should not contain leading zeroes.InputThe first line contains tt (1≤t≤1001≤t≤100) — the number of test cases.Each test case contains two integers AA and BB (1≤A,B≤109)(1≤A,B≤109).OutputPrint one integer — the number of pairs (a,b)(a,b) such that 1≤a≤A1≤a≤A, 1≤b≤B1≤b≤B, and the equation a⋅b+a+b=conc(a,b)a⋅b+a+b=conc(a,b) is true.ExampleInputCopy3
+1 11
+4 2
+191 31415926
+OutputCopy1
+0
+1337
+NoteThere is only one suitable pair in the first test case: a=1a=1, b=9b=9 (1+9+1⋅9=191+9+1⋅9=19).

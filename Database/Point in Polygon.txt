@@ -1,0 +1,50 @@
+
+CSES - Point in Polygon
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+You are given a polygon of nn vertices and a list of mm points. Your task is to determine for each point if it is inside, outside or on the boundary of the polygon.
+
+The polygon consists of nn vertices (x1,y1),(x2,y2),…,(xn,yn)(x1,y1),(x2,y2),…,(xn,yn). The vertices (xi,yi)(xi,yi) and (xi+1,yi+1)(xi+1,yi+1) are adjacent for i=1,2,…,n−1i=1,2,…,n−1, and the vertices (x1,y1)(x1,y1) and (xn,yn)(xn,yn) are also adjacent.
+
+Input
+
+The first input line has two integers nn and mm: the number of vertices in the polygon and the number of points.
+
+After this, there are nn lines that describe the polygon. The iith such line has two integers xixi and yiyi.
+
+You may assume that the polygon is simple, i.e., it does not intersect itself.
+
+Finally, there are mm lines that describe the points. Each line has two integers xx and yy.
+
+Output
+
+For each point, print "INSIDE", "OUTSIDE" or "BOUNDARY".
+
+Constraints
+
+3≤n,m≤10003≤n,m≤1000
+1≤m≤10001≤m≤1000
+−109≤xi,yi≤109−109≤xi,yi≤109
+−109≤x,y≤109−109≤x,y≤109
+
+Example
+
+Input:
+4 3
+1 1
+4 2
+3 5
+1 4
+2 3
+3 1
+1 3
+
+Output:
+INSIDE
+OUTSIDE
+BOUNDARY 

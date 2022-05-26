@@ -1,0 +1,11 @@
+C. Dominant Charactertime limit per test2 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard outputAshish has a string ss of length nn containing only characters 'a', 'b' and 'c'.He wants to find the length of the smallest substring, which satisfies the following conditions:   Length of the substring is at least 22  'a' occurs strictly more times in this substring than 'b'  'a' occurs strictly more times in this substring than 'c'  Ashish is busy planning his next Codeforces round. Help him solve the problem.A string aa is a substring of a string bb if aa can be obtained from bb by deletion of several (possibly, zero or all) characters from the beginning and several (possibly, zero or all) characters from the end.InputThe first line contains a single integer tt (1≤t≤105)(1≤t≤105)  — the number of test cases. The description of test cases follows.The first line of each test case contains a single integer nn (2≤n≤106)(2≤n≤106)  — the length of the string ss.The second line of each test case contains a string ss consisting only of characters 'a', 'b' and 'c'.It is guaranteed that the sum of nn over all test cases does not exceed 106106.OutputFor each test case, output the length of the smallest substring which satisfies the given conditions or print −1−1 if there is no such substring.ExampleInputCopy3
+2
+aa
+5
+cbabb
+8
+cacabccc
+OutputCopy2
+-1
+3
+NoteConsider the first test case. In the substring "aa", 'a' occurs twice, while 'b' and 'c' occur zero times. Since 'a' occurs strictly more times than 'b' and 'c', the substring "aa" satisfies the condition and the answer is 22. The substring "a" also satisfies this condition, however its length is not at least 22.In the second test case, it can be shown that in none of the substrings of "cbabb" does 'a' occur strictly more times than 'b' and 'c' each.In the third test case, "cacabccc", the length of the smallest substring that satisfies the conditions is 33.
