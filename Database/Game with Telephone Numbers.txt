@@ -1,7 +1,0 @@
-B. Game with Telephone Numberstime limit per test1 secondmemory limit per test256 megabytesinputstandard inputoutputstandard outputA telephone number is a sequence of exactly 1111 digits such that its first digit is 8.Vasya and Petya are playing a game. Initially they have a string ss of length nn (nn is odd) consisting of digits. Vasya makes the first move, then players alternate turns. In one move the player must choose a character and erase it from the current string. For example, if the current string 1121, after the player's move it may be 112, 111 or 121. The game ends when the length of string ss becomes 11. If the resulting string is a telephone number, Vasya wins, otherwise Petya wins.You have to determine if Vasya has a winning strategy (that is, if Vasya can win the game no matter which characters Petya chooses during his moves).InputThe first line contains one integer nn (13≤n<10513≤n<105, nn is odd) — the length of string ss.The second line contains the string ss (|s|=n|s|=n) consisting only of decimal digits.OutputIf Vasya has a strategy that guarantees him victory, print YES.Otherwise print NO.ExamplesInputCopy13
-8380011223344
-OutputCopyYES
-InputCopy15
-807345619350641
-OutputCopyNO
-NoteIn the first example Vasya needs to erase the second character. Then Petya cannot erase a character from the remaining string 880011223344 so that it does not become a telephone number.In the second example after Vasya's turn Petya can erase one character character 8. The resulting string can't be a telephone number, because there is no digit 8 at all.

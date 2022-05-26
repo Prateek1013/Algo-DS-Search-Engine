@@ -1,1 +1,40 @@
-B. Permutationstime limit per test1 secondmemory limit per test256 megabytesinputstandard inputoutputstandard outputYou are given n k-digit integers. You have to rearrange the digits in the integers so that the difference between the largest and the smallest number was minimum. Digits should be rearranged by the same rule in all integers.InputThe first line contains integers n and k — the number and digit capacity of numbers correspondingly (1 ≤ n, k ≤ 8). Next n lines contain k-digit positive integers. Leading zeroes are allowed both in the initial integers and the integers resulting from the rearranging of digits.OutputPrint a single number: the minimally possible difference between the largest and the smallest number after the digits are rearranged in all integers by the same rule.ExamplesInputCopy6 4523727537523572353272537OutputCopy2700InputCopy3 3010909012OutputCopy3InputCopy7 550808366033719844911299944254350156OutputCopy20522NoteIn the first sample, if we rearrange the digits in numbers as (3,1,4,2), then the 2-nd and the 4-th numbers will equal 5237 and 2537 correspondingly (they will be maximum and minimum for such order of digits).In the second sample, if we swap the second digits and the first ones, we get integers 100, 99 and 102.
+
+CSES - Permutations
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+A permutation of integers 1,2,…,n1,2,…,n is called beautiful if there are no adjacent elements whose difference is 11.
+
+Given nn, construct a beautiful permutation if such a permutation exists.
+
+Input
+
+The only input line contains an integer nn.
+
+Output
+
+Print a beautiful permutation of integers 1,2,…,n1,2,…,n. If there are several solutions, you may print any of them. If there are no solutions, print "NO SOLUTION".
+
+Constraints
+
+1≤n≤1061≤n≤106
+
+Example 1
+
+Input:
+5
+
+Output:
+4 2 5 3 1
+
+Example 2
+
+Input:
+3
+
+Output:
+NO SOLUTION 

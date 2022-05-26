@@ -1,1 +1,0 @@
-A. Mysterious stringstime limit per test2 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard outputInputThe input contains a single integer a (1 ≤ a ≤ 40).OutputOutput a single string.ExamplesInputCopy2OutputCopyAdamsInputCopy8OutputCopyVan BurenInputCopy29OutputCopyHarding 

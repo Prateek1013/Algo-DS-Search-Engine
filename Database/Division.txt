@@ -1,8 +1,0 @@
-A. Divisiontime limit per test1 secondmemory limit per test512 megabytesinputstandard inputoutputstandard outputOleg's favorite subjects are History and Math, and his favorite branch of mathematics is division.To improve his division skills, Oleg came up with tt pairs of integers pipi and qiqi and for each pair decided to find the greatest integer xixi, such that:   pipi is divisible by xixi;  xixi is not divisible by qiqi.  Oleg is really good at division and managed to find all the answers quickly, how about you?InputThe first line contains an integer tt (1≤t≤501≤t≤50) — the number of pairs.Each of the following tt lines contains two integers pipi and qiqi (1≤pi≤10181≤pi≤1018; 2≤qi≤1092≤qi≤109) — the ii-th pair of integers.OutputPrint tt integers: the ii-th integer is the largest xixi such that pipi is divisible by xixi, but xixi is not divisible by qiqi.One can show that there is always at least one value of xixi satisfying the divisibility conditions for the given constraints.ExampleInputCopy3
-10 4
-12 6
-179 822
-OutputCopy10
-4
-179
-NoteFor the first pair, where p1=10p1=10 and q1=4q1=4, the answer is x1=10x1=10, since it is the greatest divisor of 1010 and 1010 is not divisible by 44.For the second pair, where p2=12p2=12 and q2=6q2=6, note that   1212 is not a valid x2x2, since 1212 is divisible by q2=6q2=6;  66 is not valid x2x2 as well: 66 is also divisible by q2=6q2=6.  The next available divisor of p2=12p2=12 is 44, which is the answer, since 44 is not divisible by 66.

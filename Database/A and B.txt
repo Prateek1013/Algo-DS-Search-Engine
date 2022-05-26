@@ -1,8 +1,0 @@
-B. A and Btime limit per test1 secondmemory limit per test256 megabytesinputstandard inputoutputstandard outputYou are given two integers aa and bb. You can perform a sequence of operations: during the first operation you choose one of these numbers and increase it by 11; during the second operation you choose one of these numbers and increase it by 22, and so on. You choose the number of these operations yourself.For example, if a=1a=1 and b=3b=3, you can perform the following sequence of three operations:   add 11 to aa, then a=2a=2 and b=3b=3;  add 22 to bb, then a=2a=2 and b=5b=5;  add 33 to aa, then a=5a=5 and b=5b=5. Calculate the minimum number of operations required to make aa and bb equal. InputThe first line contains one integer tt (1≤t≤1001≤t≤100) — the number of test cases.The only line of each test case contains two integers aa and bb (1≤a,b≤1091≤a,b≤109).OutputFor each test case print one integer — the minimum numbers of operations required to make aa and bb equal. ExampleInputCopy3
-1 3
-11 11
-30 20
-OutputCopy3
-0
-4
-NoteFirst test case considered in the statement.In the second test case integers aa and bb are already equal, so you don't need to perform any operations.In the third test case you have to apply the first, the second, the third and the fourth operation to bb (bb turns into 20+1+2+3+4=3020+1+2+3+4=30).

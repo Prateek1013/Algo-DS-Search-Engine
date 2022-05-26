@@ -1,8 +1,0 @@
-C. Meaningless Operationstime limit per test1 secondmemory limit per test256 megabytesinputstandard inputoutputstandard outputCan the greatest common divisor and bitwise operations have anything in common? It is time to answer this question.Suppose you are given a positive integer aa. You want to choose some integer bb from 11 to a−1a−1 inclusive in such a way that the greatest common divisor (GCD) of integers a⊕ba⊕b and a&ba&b is as large as possible. In other words, you'd like to compute the following function:f(a)=max0<b<agcd(a⊕b,a&b).f(a)=max0<b<agcd(a⊕b,a&b).Here ⊕⊕ denotes the bitwise XOR operation, and && denotes the bitwise AND operation.The greatest common divisor of two integers xx and yy is the largest integer gg such that both xx and yy are divided by gg without remainder.You are given qq integers a1,a2,…,aqa1,a2,…,aq. For each of these integers compute the largest possible value of the greatest common divisor (when bb is chosen optimally). InputThe first line contains an integer qq (1≤q≤1031≤q≤103) — the number of integers you need to compute the answer for.After that qq integers are given, one per line: a1,a2,…,aqa1,a2,…,aq (2≤ai≤225−12≤ai≤225−1) — the integers you need to compute the answer for. OutputFor each integer, print the answer in the same order as the integers are given in input.ExampleInputCopy3
-2
-3
-5
-OutputCopy3
-1
-7
-NoteFor the first integer the optimal choice is b=1b=1, then a⊕b=3a⊕b=3, a&b=0a&b=0, and the greatest common divisor of 33 and 00 is 33.For the second integer one optimal choice is b=2b=2, then a⊕b=1a⊕b=1, a&b=2a&b=2, and the greatest common divisor of 11 and 22 is 11.For the third integer the optimal choice is b=2b=2, then a⊕b=7a⊕b=7, a&b=0a&b=0, and the greatest common divisor of 77 and 00 is 77.

@@ -1,1 +1,0 @@
-B. Startime limit per test2 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard output  InputThe input contains a single integer a (1 ≤ a ≤ 18257).OutputPrint a single integer output (1 ≤ output ≤ 2·109).ExamplesInputCopy2OutputCopy13

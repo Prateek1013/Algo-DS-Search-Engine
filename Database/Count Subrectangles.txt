@@ -1,9 +1,0 @@
-B. Count Subrectanglestime limit per test1 secondmemory limit per test512 megabytesinputstandard inputoutputstandard outputYou are given an array aa of length nn and array bb of length mm both consisting of only integers 00 and 11. Consider a matrix cc of size n×mn×m formed by following rule: ci,j=ai⋅bjci,j=ai⋅bj (i.e. aiai multiplied by bjbj). It's easy to see that cc consists of only zeroes and ones too.How many subrectangles of size (area) kk consisting only of ones are there in cc?A subrectangle is an intersection of a consecutive (subsequent) segment of rows and a consecutive (subsequent) segment of columns. I.e. consider four integers x1,x2,y1,y2x1,x2,y1,y2 (1≤x1≤x2≤n1≤x1≤x2≤n, 1≤y1≤y2≤m1≤y1≤y2≤m) a subrectangle c[x1…x2][y1…y2]c[x1…x2][y1…y2] is an intersection of the rows x1,x1+1,x1+2,…,x2x1,x1+1,x1+2,…,x2 and the columns y1,y1+1,y1+2,…,y2y1,y1+1,y1+2,…,y2.The size (area) of a subrectangle is the total number of cells in it.InputThe first line contains three integers nn, mm and kk (1≤n,m≤40000,1≤k≤n⋅m1≤n,m≤40000,1≤k≤n⋅m), length of array aa, length of array bb and required size of subrectangles.The second line contains nn integers a1,a2,…,ana1,a2,…,an (0≤ai≤10≤ai≤1), elements of aa.The third line contains mm integers b1,b2,…,bmb1,b2,…,bm (0≤bi≤10≤bi≤1), elements of bb.OutputOutput single integer — the number of subrectangles of cc with size (area) kk consisting only of ones.ExamplesInputCopy3 3 2
-1 0 1
-1 1 1
-OutputCopy4
-InputCopy3 5 4
-1 1 1
-1 1 1 1 1
-OutputCopy14
-NoteIn first example matrix cc is:  There are 44 subrectangles of size 22 consisting of only ones in it:  In second example matrix cc is:  

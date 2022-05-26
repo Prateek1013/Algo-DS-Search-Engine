@@ -1,8 +1,0 @@
-B. AGAGA XOOORRRtime limit per test1 secondmemory limit per test256 megabytesinputstandard inputoutputstandard outputBaby Ehab is known for his love for a certain operation. He has an array aa of length nn, and he decided to keep doing the following operation on it:   he picks 22 adjacent elements; he then removes them and places a single integer in their place: their bitwise XOR. Note that the length of the array decreases by one. Now he asks you if he can make all elements of the array equal. Since babies like to make your life harder, he requires that you leave at least 22 elements remaining.InputThe first line contains an integer tt (1≤t≤151≤t≤15) — the number of test cases you need to solve.The first line of each test case contains an integers nn (2≤n≤20002≤n≤2000) — the number of elements in the array aa.The second line contains nn space-separated integers a1a1, a2a2, ……, anan (0≤ai<2300≤ai<230) — the elements of the array aa.OutputIf Baby Ehab can make all elements equal while leaving at least 22 elements standing, print "YES". Otherwise, print "NO".ExampleInputCopy2
-3
-0 2 2
-4
-2 3 1 10
-OutputCopyYES
-NO
-NoteIn the first sample, he can remove the first 22 elements, 00 and 22, and replace them by 0⊕2=20⊕2=2. The array will be [2,2][2,2], so all the elements are equal.In the second sample, there's no way to make all the elements equal.

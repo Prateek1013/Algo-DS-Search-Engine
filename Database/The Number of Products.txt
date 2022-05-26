@@ -1,9 +1,0 @@
-B. The Number of Productstime limit per test2 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard outputYou are given a sequence a1,a2,…,ana1,a2,…,an consisting of nn non-zero integers (i.e. ai≠0ai≠0). You have to calculate two following values:  the number of pairs of indices (l,r)(l,r) (l≤r)(l≤r) such that al⋅al+1…ar−1⋅aral⋅al+1…ar−1⋅ar is negative;  the number of pairs of indices (l,r)(l,r) (l≤r)(l≤r) such that al⋅al+1…ar−1⋅aral⋅al+1…ar−1⋅ar is positive; InputThe first line contains one integer nn (1≤n≤2⋅105)(1≤n≤2⋅105) — the number of elements in the sequence.The second line contains nn integers a1,a2,…,ana1,a2,…,an (−109≤ai≤109;ai≠0)(−109≤ai≤109;ai≠0) — the elements of the sequence.OutputPrint two integers — the number of subsegments with negative product and the number of subsegments with positive product, respectively.ExamplesInputCopy5
-5 -3 3 -1 1
-OutputCopy8 7
-InputCopy10
-4 2 -4 3 1 2 -4 3 2 3
-OutputCopy28 27
-InputCopy5
--1 -2 -3 -4 -5
-OutputCopy9 6

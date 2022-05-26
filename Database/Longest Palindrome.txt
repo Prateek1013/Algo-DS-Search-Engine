@@ -1,32 +1,30 @@
-B. Longest Palindrometime limit per test1 secondmemory limit per test256 megabytesinputstandard inputoutputstandard outputReturning back to problem solving, Gildong is now studying about palindromes. He learned that a palindrome is a string that is the same as its reverse. For example, strings "pop", "noon", "x", and "kkkkkk" are palindromes, while strings "moon", "tv", and "abab" are not. An empty string is also a palindrome.Gildong loves this concept so much, so he wants to play with it. He has nn distinct strings of equal length mm. He wants to discard some of the strings (possibly none or all) and reorder the remaining strings so that the concatenation becomes a palindrome. He also wants the palindrome to be as long as possible. Please help him find one.InputThe first line contains two integers nn and mm (1≤n≤1001≤n≤100, 1≤m≤501≤m≤50) — the number of strings and the length of each string.Next nn lines contain a string of length mm each, consisting of lowercase Latin letters only. All strings are distinct.OutputIn the first line, print the length of the longest palindrome string you made.In the second line, print that palindrome. If there are multiple answers, print any one of them. If the palindrome is empty, print an empty line or don't print this line at all.ExamplesInputCopy3 3
-tab
-one
-bat
-OutputCopy6
-tabbat
-InputCopy4 2
-oo
-ox
-xo
-xx
-OutputCopy6
-oxxxxo
-InputCopy3 5
-hello
-codef
-orces
-OutputCopy0
 
-InputCopy9 4
-abab
-baba
-abcd
-bcde
-cdef
-defg
-wxyz
-zyxw
-ijji
-OutputCopy20
-ababwxyzijjizyxwbaba
-NoteIn the first example, "battab" is also a valid answer.In the second example, there can be 4 different valid answers including the sample output. We are not going to provide any hints for what the others are.In the third example, the empty string is the only valid palindrome string.
+CSES - Longest Palindrome
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+Given a string, your task is to determine the longest palindromic substring of the string. For example, the longest palindrome in aybabtu is bab.
+
+Input
+
+The only input line contains a string of length nn. Each character is one of a–z.
+
+Output
+
+Print the longest palindrome in the string. If there are several solutions, you may print any of them.
+
+Constraints
+
+1≤n≤1061≤n≤106
+
+Example
+
+Input:
+aybabtu
+
+Output:
+bab 

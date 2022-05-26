@@ -1,8 +1,0 @@
-B. Special Numberstime limit per test2 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard outputTheofanis really likes sequences of positive integers, thus his teacher (Yeltsa Kcir) gave him a problem about a sequence that consists of only special numbers.Let's call a positive number special if it can be written as a sum of different non-negative powers of nn. For example, for n=4n=4 number 1717 is special, because it can be written as 40+42=1+16=1740+42=1+16=17, but 99 is not.Theofanis asks you to help him find the kk-th special number if they are sorted in increasing order. Since this number may be too large, output it modulo 109+7109+7.InputThe first line contains a single integer tt (1≤t≤1041≤t≤104) — the number of test cases.The first and only line of each test case contains two integers nn and kk (2≤n≤1092≤n≤109; 1≤k≤1091≤k≤109).OutputFor each test case, print one integer — the kk-th special number in increasing order modulo 109+7109+7.ExampleInputCopy3
-3 4
-2 12
-105 564
-OutputCopy9
-12
-3595374
-NoteFor n=3n=3 the sequence is [1,3,4,9...][1,3,4,9...]

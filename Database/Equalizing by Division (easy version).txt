@@ -1,9 +1,0 @@
-D1. Equalizing by Division (easy version)time limit per test2 secondsmemory limit per test256 megabytesinputstandard inputoutputstandard outputThe only difference between easy and hard versions is the number of elements in the array.You are given an array aa consisting of nn integers. In one move you can choose any aiai and divide it by 22 rounding down (in other words, in one move you can set ai:=⌊ai2⌋ai:=⌊ai2⌋).You can perform such an operation any (possibly, zero) number of times with any aiai.Your task is to calculate the minimum possible number of operations required to obtain at least kk equal numbers in the array.Don't forget that it is possible to have ai=0ai=0 after some operations, thus the answer always exists.InputThe first line of the input contains two integers nn and kk (1≤k≤n≤501≤k≤n≤50) — the number of elements in the array and the number of equal numbers required.The second line of the input contains nn integers a1,a2,…,ana1,a2,…,an (1≤ai≤2⋅1051≤ai≤2⋅105), where aiai is the ii-th element of aa.OutputPrint one integer — the minimum possible number of operations required to obtain at least kk equal numbers in the array.ExamplesInputCopy5 3
-1 2 2 4 5
-OutputCopy1
-InputCopy5 3
-1 2 3 4 5
-OutputCopy2
-InputCopy5 3
-1 2 3 3 3
-OutputCopy0

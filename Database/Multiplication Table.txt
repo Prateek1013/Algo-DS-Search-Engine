@@ -1,1 +1,34 @@
-H. Multiplication Tabletime limit per test2 secondsmemory limit per test64 megabytesinputstandard inputoutputstandard outputPetya studies positional notations. He has already learned to add and subtract numbers in the systems of notations with different radices and has moved on to a more complicated action — multiplication. To multiply large numbers one has to learn the multiplication table. Unfortunately, in the second grade students learn only the multiplication table of decimals (and some students even learn it in the first grade). Help Petya make a multiplication table for numbers in the system of notations with the radix k.InputThe first line contains a single integer k (2 ≤ k ≤ 10) — the radix of the system.OutputOutput the multiplication table for the system of notations with the radix k. The table must contain k - 1 rows and k - 1 columns. The element on the crossing of the i-th row and the j-th column is equal to the product of i and j in the system of notations with the radix k. Each line may have any number of spaces between the numbers (the extra spaces in the samples are put for clarity).ExamplesInputCopy10OutputCopy1  2  3  4  5  6  7  8  92  4  6  8 10 12 14 16 183  6  9 12 15 18 21 24 274  8 12 16 20 24 28 32 365 10 15 20 25 30 35 40 456 12 18 24 30 36 42 48 547 14 21 28 35 42 49 56 638 16 24 32 40 48 56 64 729 18 27 36 45 54 63 72 81InputCopy3OutputCopy1  22 11
+
+CSES - Multiplication Table
+
+
+Time limit: 1.00 s
+Memory limit: 512 MB
+
+
+
+Find the middle element when the numbers in an n×nn×n multiplication table are sorted in increasing order. It is assumed that nn is odd.
+
+For example, the 3×33×3 multiplication table is as follows:
+123246369123246369
+The numbers in increasing order are [1,2,2,3,3,4,6,6,9][1,2,2,3,3,4,6,6,9], so the answer is 33.
+
+Input
+
+The only input line has an integer nn.
+
+Output
+
+Print one integer: the answer to the task.
+
+Constraints
+
+1≤n<1061≤n<106
+
+Example
+
+Input:
+3
+
+Output:
+3 
