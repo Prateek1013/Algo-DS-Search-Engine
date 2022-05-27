@@ -4,11 +4,11 @@ A Search engine that ranks algo-ds questions based on user's entered query and d
 # Run on Local machine
 * Install node js and npm
 * clone the repo by running 
-  ``` bash 
-  git clone https://github.com/Prateek1013/Algo-DS-Search-engine.git 
-  ```
+ ``` bash 
+ git clone https://github.com/Prateek1013/Algo-DS-Search-engine.git 
+ ```
 * run the command 
  ``` bash 
-  npm start 
-  ``` 
+ npm start 
+ ``` 
 * Open localhost:3000/ in your browser
