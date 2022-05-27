@@ -1,5 +1,5 @@
 ## Algo-DS-Search-engine
-A Search engine that ranks algo-ds questions based on user's entered query and displays top 12 questions.
+A Search engine that ranks algo-ds questions based on user's entered query and displays top 12 most relevant questions.
 [Website is hosted here...](https://desolate-meadow-53585.herokuapp.com/)
 # Run on Local machine
 * Install node js and npm
